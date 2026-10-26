@@ -1,6 +1,6 @@
 # Chapter 8 kit: AI for TPM Leadership
 
-Tested end to end on a synthetic portfolio on 2026-10-20. The prompt index with the book's section names is [../ch08.md](../ch08.md).
+Tested end to end on a synthetic portfolio on 2026-10-20. The prompt index with the book's section names is [../ch08-tpm-leadership.md](../ch08-tpm-leadership.md).
 
 > **People data comes first.** Resumes, interview feedback, 1:1 notes and promotion packets are personal data. New York City requires bias audits for automated hiring tools, and the EU AI Act classifies recruitment AI as high-risk. Sometimes anonymized resumes are enough; sometimes candidates must consent. When in doubt, ask Legal or HR. Label people "Candidate A", "Candidate B" or "TPM-R" before you upload anything, and keep generated output private. Formal steps such as performance improvement plans belong with your HRBP, not with AI. Agents that report on programs should never become a tool for evaluating people.
 
@@ -72,7 +72,7 @@ Full per-test table: [`tests/chapter-8/RUNS.md`](tests/chapter-8/RUNS.md).
 
 ## Run it yourself
 
-1. Open this folder (`prompts/ch08-tpm-leadership/`) in Claude Code (`cd prompts/ch08-tpm-leadership` then `claude`). `CLAUDE.md` registers the skills.
+1. Open this folder (`chapter-prompts/ch08-tpm-leadership/`) in Claude Code (`cd chapter-prompts/ch08-tpm-leadership` then `claude`). `CLAUDE.md` registers the skills.
 2. Try the ad hoc portfolio run:
    ```
    Run /portfolio-reporting-agent as an ad hoc run.

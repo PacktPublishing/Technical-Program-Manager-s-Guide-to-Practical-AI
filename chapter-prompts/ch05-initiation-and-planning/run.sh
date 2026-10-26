@@ -1,10 +1,10 @@
 #!/bin/bash
 # Run every Chapter 5 prompt on the sample inputs with Claude Code, headless.
 #
-#   bash prompts/ch05-payments-consolidation/run.sh          all five use cases
-#   bash prompts/ch05-payments-consolidation/run.sh 3        one use case (1-5)
-#   bash prompts/ch05-payments-consolidation/run.sh 4b       stage 2 of use case 4 only, on existing stage 1 results
-#   bash prompts/ch05-payments-consolidation/run.sh 4c       stage 3 of use case 4 only (milestones), on existing results
+#   bash chapter-prompts/ch05-initiation-and-planning/run.sh          all five use cases
+#   bash chapter-prompts/ch05-initiation-and-planning/run.sh 3        one use case (1-5)
+#   bash chapter-prompts/ch05-initiation-and-planning/run.sh 4b       stage 2 of use case 4 only, on existing stage 1 results
+#   bash chapter-prompts/ch05-initiation-and-planning/run.sh 4c       stage 3 of use case 4 only (milestones), on existing results
 #
 # Writes <name>.new.md next to each saved output, so the saved outputs stay as they are.
 # Use case 5 reads the outputs of 1-4 from the same run.

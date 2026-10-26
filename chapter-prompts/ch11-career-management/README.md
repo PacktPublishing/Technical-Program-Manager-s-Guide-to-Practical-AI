@@ -1,6 +1,6 @@
 # Chapter 11 kit: sample career inputs
 
-Fictional inputs for trying the [Chapter 11 prompts](../ch11.md) before you use your own material. Jordan is an imaginary Senior TPM at NovaGrid, the same imaginary company as the [example agentic OS](../../example-agentic-os/). None of this describes a real person or company.
+Fictional inputs for trying the [Chapter 11 prompts](../ch11-career-management.md) before you use your own material. Jordan is an imaginary Senior TPM at NovaGrid, the same imaginary company as the [example agentic OS](../../example-agentic-os/). None of this describes a real person or company.
 
 | File | Use it with |
 |---|---|

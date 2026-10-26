@@ -123,7 +123,7 @@ Configure an AI to monitor Slack channels, PR review comments, and Jira ticket d
 
 **Section:** Managing Project Risks · **Type:** Full prompt  
 **Paste with it:** A technical design document, your Risk Mitigation tracker: template [templates/risk-mitigation-tracker.md](../templates/risk-mitigation-tracker.md)  
-**Try it with:** [ch05-payments-consolidation/4-dependencies/inputs/doc-07-payments-core-ledger-v3.md](ch05-payments-consolidation/4-dependencies/inputs/doc-07-payments-core-ledger-v3.md) and the tracker's example rows  
+**Try it with:** [ch05-initiation-and-planning/4-dependencies/inputs/doc-07-payments-core-ledger-v3.md](ch05-initiation-and-planning/4-dependencies/inputs/doc-07-payments-core-ledger-v3.md) and the tracker's example rows  
 **In the example OS:** `/tpm-architecture-review`
 
 ```

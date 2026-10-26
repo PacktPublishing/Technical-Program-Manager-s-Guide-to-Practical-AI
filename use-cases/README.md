@@ -8,4 +8,4 @@ A worked example of one TPM job done with AI at every level of the book's progre
 
 Each use case follows the same six sections: the problem, the prompting approach, when to level up, the agent design, the reusable assets, and how to validate the output.
 
-For the book's own worked scenarios, see the kits in [../prompts/](../prompts/README.md).
+For the book's own worked scenarios, see the kits in [../prompts/](../chapter-prompts/README.md).

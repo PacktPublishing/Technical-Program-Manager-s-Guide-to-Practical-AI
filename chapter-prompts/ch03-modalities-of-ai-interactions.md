@@ -17,7 +17,7 @@ Read this architecture doc and tell me what the dependencies are.
 
 **Section:** Prompt engineering and critical thinking · **Type:** Full prompt  
 **Paste with it:** One architecture or system design document  
-**Try it with:** [ch05-payments-consolidation/4-dependencies/inputs/doc-07-payments-core-ledger-v3.md](ch05-payments-consolidation/4-dependencies/inputs/doc-07-payments-core-ledger-v3.md)  
+**Try it with:** [ch05-initiation-and-planning/4-dependencies/inputs/doc-07-payments-core-ledger-v3.md](ch05-initiation-and-planning/4-dependencies/inputs/doc-07-payments-core-ledger-v3.md)  
 **Saved as a skill:** [skills/dependency-extraction/SKILL.md](skills/dependency-extraction/SKILL.md)  
 **Expect:** One Markdown table (Source | Target | Type | Method | Failure Impact | Status), circular dependencies flagged, follow-up questions where the document is unclear.
 
@@ -264,7 +264,7 @@ I categorized this request as a High Priority Backend Bug. Here's the drafted ti
 
 **Section:** Pattern 2: The Supervisor · **Type:** Agent prompt (coordinates three workers)  
 **Workers:** Extractor (pulls the dependencies out of the document, which is P3.2), Cross-referencer (compares them against existing Jira tickets), Reporter (writes the stakeholder summary)  
-**Try it with:** [ch05-payments-consolidation/4-dependencies/inputs/](ch05-payments-consolidation/4-dependencies/inputs/) and [example-agentic-os/1-inputs-triggers/jira/](../example-agentic-os/1-inputs-triggers/jira/)  
+**Try it with:** [ch05-initiation-and-planning/4-dependencies/inputs/](ch05-initiation-and-planning/4-dependencies/inputs/) and [example-agentic-os/1-inputs-triggers/jira/](../example-agentic-os/1-inputs-triggers/jira/)  
 **Set a limit:** at most 3 retries per worker, so a rejected output can't loop forever.
 
 ```
@@ -275,8 +275,8 @@ Act as a supervisor our agent group of the extractor, cross-referencer, and repo
 
 **Section:** Pattern 3: The Swarm · **Type:** Four independent prompts, one per agent  
 **Paste with it:** The same migration plan for all four, run in four separate chats  
-**Try it with:** [ch05-payments-consolidation/3-assumptions/inputs/scope-document.md](ch05-payments-consolidation/3-assumptions/inputs/scope-document.md)  
-**Expect:** Four outputs that disagree. The disagreements are the value. Chapter 5's pre-mortem ([ch05-payments-consolidation/5-premortem/](ch05-payments-consolidation/5-premortem/README.md)) is the full version of this pattern.
+**Try it with:** [ch05-initiation-and-planning/3-assumptions/inputs/scope-document.md](ch05-initiation-and-planning/3-assumptions/inputs/scope-document.md)  
+**Expect:** Four outputs that disagree. The disagreements are the value. Chapter 5's pre-mortem ([ch05-initiation-and-planning/5-premortem/](ch05-initiation-and-planning/5-premortem/README.md)) is the full version of this pattern.
 
 Agent 1 (Security Engineer):
 

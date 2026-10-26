@@ -4,13 +4,13 @@ Two paths. Pick the one that fits you today; you can do the other later.
 
 ## Path 1: Try a prompt from the book (5 minutes, any AI tool)
 
-1. Open [prompts/ch01.md](prompts/ch01.md). It holds the book's first quick win: ramping up on a program that is already running.
+1. Open [chapter-prompts/ch01-how-ai-is-changing-the-tpm-role.md](chapter-prompts/ch01-how-ai-is-changing-the-tpm-role.md). It holds the book's first quick win: ramping up on a program that is already running.
 2. Copy the prompt block.
 3. Open the AI tool your organization approves and paste the prompt.
 4. Open the sample file it names, [atlas-master.md](example-agentic-os/3-memory-knowledge/layer3-programs/atlas-master.md), copy its contents, and paste them underneath the prompt.
 5. Read the result. Then do what the book asks: pick three items and check each one against the source.
 
-Every chapter page in [prompts/](prompts/README.md) works the same way: a prompt, what to paste with it, and a fictional file to try it with.
+Every chapter page in [chapter-prompts/](chapter-prompts/README.md) works the same way: a prompt, what to paste with it, and a fictional file to try it with.
 
 ## Path 2: Run the example agentic OS (15 minutes, Claude Code)
 
@@ -45,10 +45,10 @@ Every chapter page in [prompts/](prompts/README.md) works the same way: a prompt
 The Chapter 5 kit can run all its prompts on the sample inputs for you. You need Claude Code and, on Windows, Git Bash:
 
 ```bash
-bash prompts/ch05-payments-consolidation/run.sh
+bash chapter-prompts/ch05-initiation-and-planning/run.sh
 ```
 
-Fresh results are written next to the recorded ones as `*.new.md`, so you can compare. The Chapter 8 kit runs inside Claude Code: `cd prompts/ch08-tpm-leadership` then `claude`, and see its [README](prompts/ch08-tpm-leadership/README.md).
+Fresh results are written next to the recorded ones as `*.new.md`, so you can compare. The Chapter 8 kit runs inside Claude Code: `cd chapter-prompts/ch08-tpm-leadership` then `claude`, and see its [README](chapter-prompts/ch08-tpm-leadership/README.md).
 
 ## Testing checklist
 

@@ -1,6 +1,6 @@
 # Template: Artifact Index
 
-Book: Chapter 6, *The Monday Morning Debrief*. Used by prompt P6.5 ([../prompts/ch06.md](../prompts/ch06.md)).
+Book: Chapter 6, *The Monday Morning Debrief*. Used by prompt P6.5 ([../chapter-prompts/ch06-execution.md](../chapter-prompts/ch06-execution.md)).
 
 The context file your debrief agent reads first: one row for every Slack channel and document it may use, and why it matters. Without it, the agent has no idea which channel carries engineering updates and which document holds the executive decisions.
 

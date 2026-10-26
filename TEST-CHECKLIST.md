@@ -8,22 +8,22 @@ Result: ✅ works as described · ⚠️ works with a caveat (say which) · ❌ 
 
 | # | Prompt | Paste with it | A good result | Tester | Result |
 |---|---|---|---|---|---|
-| 1 | [P1.1](prompts/ch01.md) quick win | `example-agentic-os/3-memory-knowledge/layer3-programs/atlas-master.md` | Five tables, every item with a quoted source sentence | Claude, 2026-10-25 | ✅ |
-| 2 | [P3.1 then P3.2](prompts/ch03.md) | `prompts/ch05-payments-consolidation/4-dependencies/inputs/doc-07-payments-core-ledger-v3.md` | P3.2 returns one table and flags what P3.1 missed | Claude, 2026-10-25 | ✅ |
-| 3 | [P3.9](prompts/ch03.md) triage agent | the three sample messages in ch03.md | JSON only; message 3 is not turned into a ticket | Claude, 2026-10-25 | ⚠️ msg 3 (venting) is ticketed: expected, see note in ch03.md |
-| 4 | [P3.12](prompts/ch03.md) swarm, 4 chats | `prompts/ch05-payments-consolidation/3-assumptions/inputs/scope-document.md` | Four different sets of risks that disagree | Claude, 2026-10-25 | ✅ |
-| 5 | [Ch5 kit](prompts/ch05-payments-consolidation/README.md) use cases 1 to 5 | the inputs listed in each prompt file | Findings match the "What the recorded run found" table in the kit README | Claude, 2026-10-25 | ✅ |
-| 6 | [P6.1](prompts/ch06.md) persona comms | `stakeholder-personas.md` + `this-week.md` | Three versions with the same facts, different depth and tone | Claude, 2026-10-25 | ✅ |
-| 7 | [P6.10](prompts/ch06.md) risk agent | design doc + `templates/risk-mitigation-tracker.md` | Follow-up questions tied to patterns in the tracker | Claude, 2026-10-25 | ✅ |
-| 8 | [P7.1](prompts/ch07.md) root-cause engine | `raid-log.md`, Jira export, two weekly logs | Four themes, each with quoted evidence and a recommendation | Claude, 2026-10-25 | ✅ |
-| 9 | [8.07 and 8.08](prompts/ch08.md) capacity | `prompts/ch08-tpm-leadership/tests/chapter-8/fixtures/resource/` | Matches `tests/chapter-8/outputs/07` and `08` in substance; no recommendation in 8.08 | Claude, 2026-10-25 | ✅ 8.07 and 8.08 |
-| 10 | [8.11 to 8.14](prompts/ch08.md) hiring | `prompts/ch08-tpm-leadership/tests/chapter-8/fixtures/hiring/` | Anonymized candidates only; no ranking in 8.12; every score cites a resume line | Claude, 2026-10-25 | ✅ 8.11 to 8.14 |
-| 11 | [8.18 to 8.22](prompts/ch08.md) people | `prompts/ch08-tpm-leadership/tests/chapter-8/fixtures/people/` | Every statement traced to a source; no promotion language drafted | Claude, 2026-10-25 | ✅ |
-| 12 | [8.24 to 8.26](prompts/ch08.md) strategic planning | `prompts/ch08-tpm-leadership/tests/chapter-8/fixtures/evolution/` | Matches `tests/chapter-8/outputs/24` to `26` in substance | Claude, 2026-10-25 | ✅ |
-| 13 | [P11.1 and P11.2](prompts/ch11.md) | `prompts/ch11-career-kit/brain-dump-sample.md` | One question at a time; the entry marks missing fields "missing" | Claude, 2026-10-25 | ✅ |
-| 14 | [P11.5](prompts/ch11.md) resume editor | `master-resume-sample.md` + `job-posting-sample.md` | No new claims; gaps listed separately (for example zero-downtime migrations) | Claude, 2026-10-25 | ✅ |
-| 15 | [P11.9](prompts/ch11.md) skeptical interviewer | the sample posting | Quotes your weakest sentence; holds its position when you push back without evidence | Claude, 2026-10-25 | ✅ |
-| 16 | [P11.18](prompts/ch11.md) frameworks | `decision-case-george.md` | The three frameworks lean differently, as in Table 11.1 | Claude, 2026-10-25 | ✅ |
+| 1 | [P1.1](chapter-prompts/ch01-how-ai-is-changing-the-tpm-role.md) quick win | `example-agentic-os/3-memory-knowledge/layer3-programs/atlas-master.md` | Five tables, every item with a quoted source sentence | Claude, 2026-10-25 | ✅ |
+| 2 | [P3.1 then P3.2](chapter-prompts/ch03-modalities-of-ai-interactions.md) | `chapter-prompts/ch05-initiation-and-planning/4-dependencies/inputs/doc-07-payments-core-ledger-v3.md` | P3.2 returns one table and flags what P3.1 missed | Claude, 2026-10-25 | ✅ |
+| 3 | [P3.9](chapter-prompts/ch03-modalities-of-ai-interactions.md) triage agent | the three sample messages in ch03-modalities-of-ai-interactions.md | JSON only; message 3 is not turned into a ticket | Claude, 2026-10-25 | ⚠️ msg 3 (venting) is ticketed: expected, see note in ch03-modalities-of-ai-interactions.md |
+| 4 | [P3.12](chapter-prompts/ch03-modalities-of-ai-interactions.md) swarm, 4 chats | `chapter-prompts/ch05-initiation-and-planning/3-assumptions/inputs/scope-document.md` | Four different sets of risks that disagree | Claude, 2026-10-25 | ✅ |
+| 5 | [Ch5 kit](chapter-prompts/ch05-initiation-and-planning/README.md) use cases 1 to 5 | the inputs listed in each prompt file | Findings match the "What the recorded run found" table in the kit README | Claude, 2026-10-25 | ✅ |
+| 6 | [P6.1](chapter-prompts/ch06-execution.md) persona comms | `stakeholder-personas.md` + `this-week.md` | Three versions with the same facts, different depth and tone | Claude, 2026-10-25 | ✅ |
+| 7 | [P6.10](chapter-prompts/ch06-execution.md) risk agent | design doc + `templates/risk-mitigation-tracker.md` | Follow-up questions tied to patterns in the tracker | Claude, 2026-10-25 | ✅ |
+| 8 | [P7.1](chapter-prompts/ch07-delivery-and-closure.md) root-cause engine | `raid-log.md`, Jira export, two weekly logs | Four themes, each with quoted evidence and a recommendation | Claude, 2026-10-25 | ✅ |
+| 9 | [8.07 and 8.08](chapter-prompts/ch08-tpm-leadership.md) capacity | `chapter-prompts/ch08-tpm-leadership/tests/chapter-8/fixtures/resource/` | Matches `tests/chapter-8/outputs/07` and `08` in substance; no recommendation in 8.08 | Claude, 2026-10-25 | ✅ 8.07 and 8.08 |
+| 10 | [8.11 to 8.14](chapter-prompts/ch08-tpm-leadership.md) hiring | `chapter-prompts/ch08-tpm-leadership/tests/chapter-8/fixtures/hiring/` | Anonymized candidates only; no ranking in 8.12; every score cites a resume line | Claude, 2026-10-25 | ✅ 8.11 to 8.14 |
+| 11 | [8.18 to 8.22](chapter-prompts/ch08-tpm-leadership.md) people | `chapter-prompts/ch08-tpm-leadership/tests/chapter-8/fixtures/people/` | Every statement traced to a source; no promotion language drafted | Claude, 2026-10-25 | ✅ |
+| 12 | [8.24 to 8.26](chapter-prompts/ch08-tpm-leadership.md) strategic planning | `chapter-prompts/ch08-tpm-leadership/tests/chapter-8/fixtures/evolution/` | Matches `tests/chapter-8/outputs/24` to `26` in substance | Claude, 2026-10-25 | ✅ |
+| 13 | [P11.1 and P11.2](chapter-prompts/ch11-career-management.md) | `chapter-prompts/ch11-career-management/brain-dump-sample.md` | One question at a time; the entry marks missing fields "missing" | Claude, 2026-10-25 | ✅ |
+| 14 | [P11.5](chapter-prompts/ch11-career-management.md) resume editor | `master-resume-sample.md` + `job-posting-sample.md` | No new claims; gaps listed separately (for example zero-downtime migrations) | Claude, 2026-10-25 | ✅ |
+| 15 | [P11.9](chapter-prompts/ch11-career-management.md) skeptical interviewer | the sample posting | Quotes your weakest sentence; holds its position when you push back without evidence | Claude, 2026-10-25 | ✅ |
+| 16 | [P11.18](chapter-prompts/ch11-career-management.md) frameworks | `decision-case-george.md` | The three frameworks lean differently, as in Table 11.1 | Claude, 2026-10-25 | ✅ |
 
 ## Part 2: Claude Code
 
@@ -33,8 +33,8 @@ Result: ✅ works as described · ⚠️ works with a caveat (say which) · ❌ 
 | 18 | `/tpm-program-health SHIELD` | A scored health check citing the Jira, Vanta and Datadog files | Claude, 2026-10-25 | ✅ |
 | 19 | `/tpm-workflow-program-kickoff` for a new program | All four stages run in order, with a pause for you between stages | Claude, 2026-10-25 | ✅ |
 | 20 | `/start-day-prep` | Runs without connectors, says which sources were missing, writes `1-inputs-triggers/start-day-state.md` | Claude, 2026-10-25 | ✅ |
-| 21 | `cd prompts/ch08-tpm-leadership`, `claude`, then the ad hoc run in [8.05](prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/05-adhoc-agent-run.md) | Four 3P reports and one executive report, saved under `portfolio-reports/ad-hoc/` | Claude, 2026-10-25 | ✅ |
-| 22 | `bash prompts/ch05-payments-consolidation/run.sh 3` | Writes `3-assumptions/output.new.md`; the quote gate reports how many rows matched | Claude, 2026-10-25 | ✅ full run.sh, all five use cases |
+| 21 | `cd chapter-prompts/ch08-tpm-leadership`, `claude`, then the ad hoc run in [8.05](chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/05-adhoc-agent-run.md) | Four 3P reports and one executive report, saved under `portfolio-reports/ad-hoc/` | Claude, 2026-10-25 | ✅ |
+| 22 | `bash chapter-prompts/ch05-initiation-and-planning/run.sh 3` | Writes `3-assumptions/output.new.md`; the quote gate reports how many rows matched | Claude, 2026-10-25 | ✅ full run.sh, all five use cases |
 
 ## Test log
 
@@ -68,10 +68,10 @@ Cloned from github.com (commit `fe60420`), not from a local copy. Every prompt w
 
 **Result: 22 of 22 pass.** Highlights:
 
-- **Ch3 triage agent (P3.9):** correct team and priority for the two real requests. The venting message was ticketed as Medium, because the printed prompt has no rule for non-requests. That is the chapter's lesson (the human approval step in P3.10 catches it); `ch03.md` now says so and offers an optional filter line.
+- **Ch3 triage agent (P3.9):** correct team and priority for the two real requests. The venting message was ticketed as Medium, because the printed prompt has no rule for non-requests. That is the chapter's lesson (the human approval step in P3.10 catches it); `ch03-modalities-of-ai-interactions.md` now says so and offers an optional filter line.
 - **Ch11 skeptical interviewer (P11.9):** quoted the weakest sentence, rated it 1/5, and held its position when pushed without new evidence.
 - **Ch8 hiring and people prompts:** no ranking, no hire recommendation, no promotion language, no gendered pronouns; style remarks kept out of rubric scores.
-- **Ch8 prompts with `[placeholders]`** stopped to ask for values. `ch08.md` now lists the values used in the kit's test run for every such prompt.
+- **Ch8 prompts with `[placeholders]`** stopped to ask for values. `ch08-tpm-leadership.md` now lists the values used in the kit's test run for every such prompt.
 - **`/start-day-prep`:** all six sub-agents ran with no connectors, fell back to the calendar export and seed files, said which sources were missing, and wrote `start-day-state.md`.
 - **Chapter 5 kit (`run.sh`):** 20 runs, all five use cases plus back-scheduling; quote gate 36 of 36; no tool-call artifacts; 8 alignment conflicts, a circular dependency, and the 2-week vs. 11-week legal review identified as what breaks 30 September.
 

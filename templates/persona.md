@@ -7,7 +7,7 @@ One file that says, per stakeholder group or person, what they care about and ho
 to hear it. Keep it in version control and edit it whenever you learn something new about a
 stakeholder. It pays off every time one set of facts has to reach several audiences.
 
-**How to use:** fill it in, save it as `persona.md`, and paste it with prompt P6.1 ([../prompts/ch06.md](../prompts/ch06.md)). A filled example: [../example-agentic-os/2-goals-policies/stakeholder-personas.md](../example-agentic-os/2-goals-policies/stakeholder-personas.md).
+**How to use:** fill it in, save it as `persona.md`, and paste it with prompt P6.1 ([../chapter-prompts/ch06-execution.md](../chapter-prompts/ch06-execution.md)). A filled example: [../example-agentic-os/2-goals-policies/stakeholder-personas.md](../example-agentic-os/2-goals-policies/stakeholder-personas.md).
 In the example OS, `/tpm-stakeholder-update` reads the filled version from that location.
 
 ---

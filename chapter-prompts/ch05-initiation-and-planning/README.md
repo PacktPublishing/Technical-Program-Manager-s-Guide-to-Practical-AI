@@ -25,8 +25,8 @@ per design document, paste all eleven results into stage 2, then run stage 3 on 
 **With Claude Code installed** (optional; needs Git Bash on Windows), from the repo root:
 
 ```bash
-bash prompts/ch05-payments-consolidation/run.sh        # all five, about 30 minutes
-bash prompts/ch05-payments-consolidation/run.sh 3      # one use case
+bash chapter-prompts/ch05-initiation-and-planning/run.sh        # all five, about 30 minutes
+bash chapter-prompts/ch05-initiation-and-planning/run.sh 3      # one use case
 ```
 
 Your results are written as `*.new.md` next to the recorded outputs, so you can compare the two.

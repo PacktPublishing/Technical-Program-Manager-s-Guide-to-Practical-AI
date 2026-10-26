@@ -2,7 +2,7 @@
 
 **Book:** Chapter 5, *Technical Dependency and Architecture Synthesizing*: "Running Chapter 3's
 single-document extraction eleven times gets you eleven lists of dependencies, and eleven lists
-aren't a graph." Stage one is that extraction ([P3.2](../../ch03.md)), run once per document.
+aren't a graph." Stage one is that extraction ([P3.2](../../ch03-modalities-of-ai-interactions.md)), run once per document.
 **Paste underneath:** one design document from [inputs/](inputs/) per run, eleven runs in total
 **Next:** feed all eleven results, plus the ownership map, to [prompt-stage2-synthesize.md](prompt-stage2-synthesize.md)
 

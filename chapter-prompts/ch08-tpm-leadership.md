@@ -5,7 +5,7 @@ Every skill, agent and prompt in the chapter has a working file in the [Chapter 
 **Two ways to use it:**
 
 1. **Any AI tool:** open a prompt file, fill in the `[placeholders]`, paste it, then paste the "Try it with" files underneath.
-2. **Claude Code:** open the kit folder (`cd prompts/ch08-tpm-leadership` then `claude`). Its `CLAUDE.md` registers `/program-3p-report`, `/portfolio-executive-report` and the `portfolio-reporting-agent`. In Claude.ai, zip each skill folder and upload it under Customize > Skills.
+2. **Claude Code:** open the kit folder (`cd chapter-prompts/ch08-tpm-leadership` then `claude`). Its `CLAUDE.md` registers `/program-3p-report`, `/portfolio-executive-report` and the `portfolio-reporting-agent`. In Claude.ai, zip each skill folder and upload it under Customize > Skills.
 
 > **People data comes first.** Resumes, interview feedback, 1:1 notes and promotion packets are personal data. New York City requires bias audits for automated hiring tools, and the EU AI Act classifies recruitment AI as high-risk. Sometimes anonymized resumes are enough; sometimes candidates must consent. When in doubt, ask Legal or HR, and check your company's AI usage policy. Label people "Candidate A", "Candidate B" or "TPM-R" before you upload anything, and keep generated output private. All test data in the kit is synthetic and already anonymized.
 

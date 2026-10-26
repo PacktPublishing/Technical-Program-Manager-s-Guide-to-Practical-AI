@@ -2,7 +2,7 @@
 
 Each prompt exactly as printed in the book, in the order the chapter presents them. Placeholders in [brackets] are yours to fill.
 
-**Three inputs make every prompt here specific to you:** a story log, a career ladder document and a career direction statement. Only you can write them. To try the prompts first, use the fictional samples in [ch11-career-kit/](ch11-career-kit/README.md).
+**Three inputs make every prompt here specific to you:** a story log, a career ladder document and a career direction statement. Only you can write them. To try the prompts first, use the fictional samples in [ch11-career-management/](ch11-career-management/README.md).
 
 > **Before you paste anything:** career material holds your compensation, your performance feedback and details about your employer. Use a plan where your inputs are not used to train models and where you control data retention. Read your employer's AI policy first. Remove customer names, unreleased product details and anything covered by an agreement. A prompt guardrail catches mistakes in the output; it does not make a risky input safe.
 
@@ -12,7 +12,7 @@ Each prompt exactly as printed in the book, in the order the chapter presents th
 
 **Section:** Building Your Story Log · **Type:** Standalone, after your spoken brain dump  
 **How:** Tell one story out loud first (voice mode or dictation), then paste this.  
-**Try it with:** the rough notes in [ch11-career-kit/brain-dump-sample.md](ch11-career-kit/brain-dump-sample.md)
+**Try it with:** the rough notes in [ch11-career-management/brain-dump-sample.md](ch11-career-management/brain-dump-sample.md)
 
 ```
 I just told you a story from my work as a spoken brain dump, so expect rough edges and a messy order. Interview me about it. Ask one question at a time and wait for my answer.
@@ -23,7 +23,7 @@ Ask critical questions that uncover how it really happened: what I knew at the t
 ### P11.2 · Turn the interview into an entry
 
 **Section:** Building Your Story Log · **Type:** Follow-up, same conversation as P11.1  
-**Template:** [ch11-career-kit/story-log-template.md](ch11-career-kit/story-log-template.md)
+**Template:** [ch11-career-management/story-log-template.md](ch11-career-management/story-log-template.md)
 
 ```
 Organize our conversation into a story log entry with these fields: date, situation, action, result, lesson, skills and themes, and growth area.
@@ -39,7 +39,7 @@ Review the entry against your memory and redact anything confidential before you
 
 **Section:** Writing Your Career Direction Statement · **Type:** Standalone, attach your draft  
 **Write the first draft yourself first.** Cover the roles you want in two to three years, what you want more and less of, your constraints, and what you are still unsure about.  
-**Try it with:** [ch11-career-kit/direction-statement-sample.md](ch11-career-kit/direction-statement-sample.md)
+**Try it with:** [ch11-career-management/direction-statement-sample.md](ch11-career-management/direction-statement-sample.md)
 
 ```
 Here is my career direction statement. Ask me questions that expose vague spots, assumptions I have not examined, and places where two of my goals pull against each other. Do not suggest goals of your own and do not rewrite the statement. After I answer, summarize what I clarified so I can revise it myself.
@@ -54,7 +54,7 @@ Revisit the statement every six months, and after any major change such as a new
 ### P11.4 · Story log to job posting (light start)
 
 **Section:** Resume Mastery · **Type:** Two light prompts (Task and Context only)  
-**Try it with:** [ch11-career-kit/job-posting-sample.md](ch11-career-kit/job-posting-sample.md) and [ch11-career-kit/story-log-sample.md](ch11-career-kit/story-log-sample.md)
+**Try it with:** [ch11-career-management/job-posting-sample.md](ch11-career-management/job-posting-sample.md) and [ch11-career-management/story-log-sample.md](ch11-career-management/story-log-sample.md)
 
 ```
 Here is a job posting and my story log. Which entries map best to what this role is asking for?
@@ -68,7 +68,7 @@ What is this posting screening for that my resume does not currently demonstrate
 
 **Section:** Resume Mastery · **Type:** Full prompt  
 **Paste with it:** Your full master resume, the target job listing, optionally your style notes  
-**Try it with:** [ch11-career-kit/master-resume-sample.md](ch11-career-kit/master-resume-sample.md) and [ch11-career-kit/job-posting-sample.md](ch11-career-kit/job-posting-sample.md)  
+**Try it with:** [ch11-career-management/master-resume-sample.md](ch11-career-management/master-resume-sample.md) and [ch11-career-management/job-posting-sample.md](ch11-career-management/job-posting-sample.md)  
 **Expect:** Job priorities, a relevance table, the reordered resume in your own wording, a short summary, and the gaps. The gaps are usually the most useful part.
 
 ```
@@ -185,7 +185,7 @@ Role play this negotiation with me. You play the hiring manager. Push back the w
 ### P11.11 · Ladder comparison
 
 **Section:** Mapping Skills and Gaps · **Type:** Standalone, attach ladder document, story log and direction statement  
-**Try it with:** [leveling-staff-tpm.md](ch08-tpm-leadership/tests/chapter-8/fixtures/people/leveling-staff-tpm.md), [story-log-sample.md](ch11-career-kit/story-log-sample.md), [direction-statement-sample.md](ch11-career-kit/direction-statement-sample.md)
+**Try it with:** [leveling-staff-tpm.md](ch08-tpm-leadership/tests/chapter-8/fixtures/people/leveling-staff-tpm.md), [story-log-sample.md](ch11-career-management/story-log-sample.md), [direction-statement-sample.md](ch11-career-management/direction-statement-sample.md)
 
 ```
 Here is my company's career ladder for my current level and the next one up, my story log, and my career direction statement. Where does my logged work already match the level above? Where do gaps appear? My log may be incomplete, so phrase each gap as a question for me to confirm. What kinds of work might close the gaps that matter, given the direction I described?
@@ -244,7 +244,7 @@ Here is what I know about the culture at each company, and here is the environme
 ### P11.18 · Apply decision frameworks
 
 **Section:** Career Decisions · **Type:** Standalone or follow-up, with your situation described  
-**Try it with:** George's case from the book, in [ch11-career-kit/decision-case-george.md](ch11-career-kit/decision-case-george.md)
+**Try it with:** George's case from the book, in [ch11-career-management/decision-case-george.md](ch11-career-management/decision-case-george.md)
 
 ```
 Walk me through how regret minimization, value maximization, and stability weighting would each frame this decision differently. Which seems to fit my situation, and why?

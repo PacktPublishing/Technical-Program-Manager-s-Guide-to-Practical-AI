@@ -1,6 +1,6 @@
 # Template: Risk Mitigation Tracker
 
-Book: Chapter 6, *Managing Project Risks*. Used by prompt P6.10, the risk agent ([../prompts/ch06.md](../prompts/ch06.md)).
+Book: Chapter 6, *Managing Project Risks*. Used by prompt P6.10, the risk agent ([../chapter-prompts/ch06-execution.md](../chapter-prompts/ch06-execution.md)).
 
 A living register you carry from program to program. The risk agent reads a new design document against it and asks about patterns that bit you before.
 

@@ -30,22 +30,22 @@ Tags follow the book chapters. Chapter 4's summary tables were printed earlier a
 
 Value in days, no alignment needed. The best place to start.
 
-- **Scaffolding Program Infrastructure** (Ch 5, Recurring Time Sinks): [P5.1](../prompts/ch05.md#p51--program-charter-from-mandate) · [kit](../prompts/ch05-payments-consolidation/1-charter/prompt.md)
-- **Aligning Stakeholders from the Start** (Ch 5, Cognitive Overload): [P5.2](../prompts/ch05.md#p52--the-alignment-gap-detector) · [kit](../prompts/ch05-payments-consolidation/2-alignment/prompt.md)
-- **Scoping What You Don't Know Yet** (Ch 5, Quality Gaps): [P5.3](../prompts/ch05.md#p53--the-assumption-extractor) · [kit](../prompts/ch05-payments-consolidation/3-assumptions/prompt.md)
-- **Pre-Mortem on Demand** (Ch 5, Quality Gaps): [P5.5](../prompts/ch05.md#p55--persona-swarm-pre-mortem---sre-lens) · [kit](../prompts/ch05-payments-consolidation/5-premortem/README.md)
-- **Communicating with Stakeholders** (Ch 6, Communication at Scale): [P6.1](../prompts/ch06.md#p61--persona-based-stakeholder-communications) · [P6.3](../prompts/ch06.md#p63--red-status-escalation-in-three-versions) · [persona.md](../templates/persona.md)
-- **The Monday Morning Debrief** (Ch 6, Recurring Time Sinks): [P6.4](../prompts/ch06.md#p64--weekly-debrief-pre-draft) · [P6.5](../prompts/ch06.md#p65--monday-morning-debrief-agent---core-prompt) · [artifact index](../templates/artifact-index.md)
-- **Onboarding New Team Members** (Ch 6, Communication at Scale): [P6.12](../prompts/ch06.md#p612--questions-a-new-team-member-can-ask-the-second-brain)
-- **Measuring Program Health** (Ch 6, Decision Support): [P6.13](../prompts/ch06.md#p613--program-health-questions)
-- **Retrospective Prep & Analysis** (Ch 7, Knowledge Capture): [P7.0](../prompts/ch07.md#p70--chriss-retro-prompt---what-not-to-do) · [P7.1](../prompts/ch07.md#p71--retrospective-root-cause-engine)
-- **Loose Ends & Next Steps** (Ch 7, Recurring Time Sinks): [P7.4](../prompts/ch07.md#p74--operational-handshake--risk-categorization)
-- **Writing the Job Description** (Ch 8, Recurring Time Sinks): [8.11](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/11-job-description.md)
-- **Shortlisting Candidates** (Ch 8, Recurring Time Sinks): [8.12](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/12-shortlisting.md)
-- **Interviewing** (Ch 8, Recurring Time Sinks): [8.13](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/13-interview-questions.md)
-- **Calibrating the Interview Loop Performance** (Ch 8, Cognitive Overload): [8.14](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/14-finalist-comparison.md)
-- **Onboarding** (Ch 8, Recurring Time Sinks): [8.15 to 8.17](../prompts/ch08.md#onboarding)
-- **Performance Management & Growing Talent** (Ch 8, Cognitive Overload): [8.18 to 8.20](../prompts/ch08.md#performance-management--growing-talent)
+- **Scaffolding Program Infrastructure** (Ch 5, Recurring Time Sinks): [P5.1](../chapter-prompts/ch05-initiation-and-planning.md#p51--program-charter-from-mandate) · [kit](../chapter-prompts/ch05-initiation-and-planning/1-charter/prompt.md)
+- **Aligning Stakeholders from the Start** (Ch 5, Cognitive Overload): [P5.2](../chapter-prompts/ch05-initiation-and-planning.md#p52--the-alignment-gap-detector) · [kit](../chapter-prompts/ch05-initiation-and-planning/2-alignment/prompt.md)
+- **Scoping What You Don't Know Yet** (Ch 5, Quality Gaps): [P5.3](../chapter-prompts/ch05-initiation-and-planning.md#p53--the-assumption-extractor) · [kit](../chapter-prompts/ch05-initiation-and-planning/3-assumptions/prompt.md)
+- **Pre-Mortem on Demand** (Ch 5, Quality Gaps): [P5.5](../chapter-prompts/ch05-initiation-and-planning.md#p55--persona-swarm-pre-mortem---sre-lens) · [kit](../chapter-prompts/ch05-initiation-and-planning/5-premortem/README.md)
+- **Communicating with Stakeholders** (Ch 6, Communication at Scale): [P6.1](../chapter-prompts/ch06-execution.md#p61--persona-based-stakeholder-communications) · [P6.3](../chapter-prompts/ch06-execution.md#p63--red-status-escalation-in-three-versions) · [persona.md](../templates/persona.md)
+- **The Monday Morning Debrief** (Ch 6, Recurring Time Sinks): [P6.4](../chapter-prompts/ch06-execution.md#p64--weekly-debrief-pre-draft) · [P6.5](../chapter-prompts/ch06-execution.md#p65--monday-morning-debrief-agent---core-prompt) · [artifact index](../templates/artifact-index.md)
+- **Onboarding New Team Members** (Ch 6, Communication at Scale): [P6.12](../chapter-prompts/ch06-execution.md#p612--questions-a-new-team-member-can-ask-the-second-brain)
+- **Measuring Program Health** (Ch 6, Decision Support): [P6.13](../chapter-prompts/ch06-execution.md#p613--program-health-questions)
+- **Retrospective Prep & Analysis** (Ch 7, Knowledge Capture): [P7.0](../chapter-prompts/ch07-delivery-and-closure.md#p70--chriss-retro-prompt---what-not-to-do) · [P7.1](../chapter-prompts/ch07-delivery-and-closure.md#p71--retrospective-root-cause-engine)
+- **Loose Ends & Next Steps** (Ch 7, Recurring Time Sinks): [P7.4](../chapter-prompts/ch07-delivery-and-closure.md#p74--operational-handshake--risk-categorization)
+- **Writing the Job Description** (Ch 8, Recurring Time Sinks): [8.11](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/11-job-description.md)
+- **Shortlisting Candidates** (Ch 8, Recurring Time Sinks): [8.12](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/12-shortlisting.md)
+- **Interviewing** (Ch 8, Recurring Time Sinks): [8.13](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/13-interview-questions.md)
+- **Calibrating the Interview Loop Performance** (Ch 8, Cognitive Overload): [8.14](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/14-finalist-comparison.md)
+- **Onboarding** (Ch 8, Recurring Time Sinks): [8.15 to 8.17](../chapter-prompts/ch08-tpm-leadership.md#onboarding)
+- **Performance Management & Growing Talent** (Ch 8, Cognitive Overload): [8.18 to 8.20](../chapter-prompts/ch08-tpm-leadership.md#performance-management--growing-talent)
 
 <sub>[↑ Back to the menu](#use-case-catalog)</sub>
 
@@ -55,11 +55,11 @@ Value in days, no alignment needed. The best place to start.
 
 | Use case | Prompts | Stage | Pillar | Role | Tier | Opportunity |
 |---|---|---|---|---|---|---|
-| Scaffolding Program Infrastructure | [P5.1](../prompts/ch05.md#p51--program-charter-from-mandate) · [kit](../prompts/ch05-payments-consolidation/1-charter/prompt.md) | Planning | P+M | IC | Quick Win | Recurring Time Sinks |
-| Aligning Stakeholders from the Start | [P5.2](../prompts/ch05.md#p52--the-alignment-gap-detector) · [kit](../prompts/ch05-payments-consolidation/2-alignment/prompt.md) | Planning | P+M | IC & M | Quick Win | Cognitive Overload |
-| Scoping What You Don't Know Yet | [P5.3](../prompts/ch05.md#p53--the-assumption-extractor) · [kit](../prompts/ch05-payments-consolidation/3-assumptions/prompt.md) | Planning | T+P | IC | Quick Win | Quality Gaps |
-| Technical Dependency and Architecture Synthesizing | [P5.4](../prompts/ch05.md#p54--multi-document-dependency-synthesis-stage-2) · [P5.4b](../prompts/ch05.md#p54b--from-map-to-milestones-back-scheduling) · [kit](../prompts/ch05-payments-consolidation/4-dependencies/prompt-stage2-synthesize.md) | Planning | P | IC | High Value | Cognitive Overload |
-| Pre-Mortem on Demand | [P5.5](../prompts/ch05.md#p55--persona-swarm-pre-mortem---sre-lens) · [kit](../prompts/ch05-payments-consolidation/5-premortem/README.md) | Planning | P+M | IC | Quick Win | Quality Gaps |
+| Scaffolding Program Infrastructure | [P5.1](../chapter-prompts/ch05-initiation-and-planning.md#p51--program-charter-from-mandate) · [kit](../chapter-prompts/ch05-initiation-and-planning/1-charter/prompt.md) | Planning | P+M | IC | Quick Win | Recurring Time Sinks |
+| Aligning Stakeholders from the Start | [P5.2](../chapter-prompts/ch05-initiation-and-planning.md#p52--the-alignment-gap-detector) · [kit](../chapter-prompts/ch05-initiation-and-planning/2-alignment/prompt.md) | Planning | P+M | IC & M | Quick Win | Cognitive Overload |
+| Scoping What You Don't Know Yet | [P5.3](../chapter-prompts/ch05-initiation-and-planning.md#p53--the-assumption-extractor) · [kit](../chapter-prompts/ch05-initiation-and-planning/3-assumptions/prompt.md) | Planning | T+P | IC | Quick Win | Quality Gaps |
+| Technical Dependency and Architecture Synthesizing | [P5.4](../chapter-prompts/ch05-initiation-and-planning.md#p54--multi-document-dependency-synthesis-stage-2) · [P5.4b](../chapter-prompts/ch05-initiation-and-planning.md#p54b--from-map-to-milestones-back-scheduling) · [kit](../chapter-prompts/ch05-initiation-and-planning/4-dependencies/prompt-stage2-synthesize.md) | Planning | P | IC | High Value | Cognitive Overload |
+| Pre-Mortem on Demand | [P5.5](../chapter-prompts/ch05-initiation-and-planning.md#p55--persona-swarm-pre-mortem---sre-lens) · [kit](../chapter-prompts/ch05-initiation-and-planning/5-premortem/README.md) | Planning | P+M | IC | Quick Win | Quality Gaps |
 
 <sub>[↑ Back to the menu](#use-case-catalog)</sub>
 
@@ -67,12 +67,12 @@ Value in days, no alignment needed. The best place to start.
 
 | Use case | Prompts | Stage | Pillar | Role | Tier | Opportunity |
 |---|---|---|---|---|---|---|
-| Communicating with Stakeholders | [P6.1](../prompts/ch06.md#p61--persona-based-stakeholder-communications) · [P6.3](../prompts/ch06.md#p63--red-status-escalation-in-three-versions) · [persona.md](../templates/persona.md) | Executing | M | IC & M | Quick Win | Communication at Scale |
-| The Monday Morning Debrief | [P6.4](../prompts/ch06.md#p64--weekly-debrief-pre-draft) · [P6.5](../prompts/ch06.md#p65--monday-morning-debrief-agent---core-prompt) · [artifact index](../templates/artifact-index.md) | Executing | P | IC & M | Quick Win | Recurring Time Sinks |
-| Managing Project Risks | [P6.6](../prompts/ch06.md#p66--meeting-transcript-to-raid-entries) · [P6.7](../prompts/ch06.md#p67--risk-scoring-and-stale-item-flagging) · [P6.8](../prompts/ch06.md#p68--historical-risk-patterns-for-a-new-kickoff) · [P6.9](../prompts/ch06.md#p69--early-warning-signals-from-communication-channels) · [P6.10](../prompts/ch06.md#p610--risk-agent---core-prompt-design-document-review) | Executing | P | M | High Value | Decision Support |
-| Building a Program Knowledge Base | [P6.11](../prompts/ch06.md#p611--on-demand-state-of-program-brief) | Executing | T+P+M | IC & M | High Value | Knowledge Capture |
-| Onboarding New Team Members | [P6.12](../prompts/ch06.md#p612--questions-a-new-team-member-can-ask-the-second-brain) | Executing | M | IC & M | Quick Win | Communication at Scale |
-| Measuring Program Health | [P6.13](../prompts/ch06.md#p613--program-health-questions) | Executing | P | IC & M | Quick Win | Decision Support |
+| Communicating with Stakeholders | [P6.1](../chapter-prompts/ch06-execution.md#p61--persona-based-stakeholder-communications) · [P6.3](../chapter-prompts/ch06-execution.md#p63--red-status-escalation-in-three-versions) · [persona.md](../templates/persona.md) | Executing | M | IC & M | Quick Win | Communication at Scale |
+| The Monday Morning Debrief | [P6.4](../chapter-prompts/ch06-execution.md#p64--weekly-debrief-pre-draft) · [P6.5](../chapter-prompts/ch06-execution.md#p65--monday-morning-debrief-agent---core-prompt) · [artifact index](../templates/artifact-index.md) | Executing | P | IC & M | Quick Win | Recurring Time Sinks |
+| Managing Project Risks | [P6.6](../chapter-prompts/ch06-execution.md#p66--meeting-transcript-to-raid-entries) · [P6.7](../chapter-prompts/ch06-execution.md#p67--risk-scoring-and-stale-item-flagging) · [P6.8](../chapter-prompts/ch06-execution.md#p68--historical-risk-patterns-for-a-new-kickoff) · [P6.9](../chapter-prompts/ch06-execution.md#p69--early-warning-signals-from-communication-channels) · [P6.10](../chapter-prompts/ch06-execution.md#p610--risk-agent---core-prompt-design-document-review) | Executing | P | M | High Value | Decision Support |
+| Building a Program Knowledge Base | [P6.11](../chapter-prompts/ch06-execution.md#p611--on-demand-state-of-program-brief) | Executing | T+P+M | IC & M | High Value | Knowledge Capture |
+| Onboarding New Team Members | [P6.12](../chapter-prompts/ch06-execution.md#p612--questions-a-new-team-member-can-ask-the-second-brain) | Executing | M | IC & M | Quick Win | Communication at Scale |
+| Measuring Program Health | [P6.13](../chapter-prompts/ch06-execution.md#p613--program-health-questions) | Executing | P | IC & M | Quick Win | Decision Support |
 
 <sub>Chapter 6 prints no tags, so these come from Chapter 4's tables.</sub>
 
@@ -82,10 +82,10 @@ Value in days, no alignment needed. The best place to start.
 
 | Use case | Prompts | Stage | Pillar | Role | Tier | Opportunity |
 |---|---|---|---|---|---|---|
-| Retrospective Prep & Analysis | [P7.0](../prompts/ch07.md#p70--chriss-retro-prompt---what-not-to-do) · [P7.1](../prompts/ch07.md#p71--retrospective-root-cause-engine) | Closing | P+M | IC & M | Quick Win | Knowledge Capture |
-| Program Brain Contributor Highlights | [guardrails](../prompts/ch07.md#contributor-highlights-the-guardrails-no-prompt) | Closing | M | M | High Value | Knowledge Capture |
-| Capturing Institutional Knowledge | [P7.2](../prompts/ch07.md#p72--interactive-program-brain-evaluator) · [P7.3](../prompts/ch07.md#p73--querying-the-program-brain-later) | Closing | T+P+M | IC & M | High Value | Knowledge Capture |
-| Loose Ends & Next Steps | [P7.4](../prompts/ch07.md#p74--operational-handshake--risk-categorization) | Closing | P+M | IC & M | Quick Win | Recurring Time Sinks |
+| Retrospective Prep & Analysis | [P7.0](../chapter-prompts/ch07-delivery-and-closure.md#p70--chriss-retro-prompt---what-not-to-do) · [P7.1](../chapter-prompts/ch07-delivery-and-closure.md#p71--retrospective-root-cause-engine) | Closing | P+M | IC & M | Quick Win | Knowledge Capture |
+| Program Brain Contributor Highlights | [guardrails](../chapter-prompts/ch07-delivery-and-closure.md#contributor-highlights-the-guardrails-no-prompt) | Closing | M | M | High Value | Knowledge Capture |
+| Capturing Institutional Knowledge | [P7.2](../chapter-prompts/ch07-delivery-and-closure.md#p72--interactive-program-brain-evaluator) · [P7.3](../chapter-prompts/ch07-delivery-and-closure.md#p73--querying-the-program-brain-later) | Closing | T+P+M | IC & M | High Value | Knowledge Capture |
+| Loose Ends & Next Steps | [P7.4](../chapter-prompts/ch07-delivery-and-closure.md#p74--operational-handshake--risk-categorization) | Closing | P+M | IC & M | Quick Win | Recurring Time Sinks |
 
 <sub>Chapter 7 prints no tags, so these come from Chapter 4's tables.</sub>
 
@@ -95,18 +95,18 @@ Value in days, no alignment needed. The best place to start.
 
 | Use case | Prompts | Stage | Pillar | Role | Tier | Opportunity |
 |---|---|---|---|---|---|---|
-| Portfolio Health and Reporting for Executives | [8.01 to 8.06](../prompts/ch08.md#portfolio-health-and-reporting-for-executives) | Leadership | P | IC & M | High Value | Recurring Time Sinks |
-| Effective Resource Management | [8.07 to 8.09](../prompts/ch08.md#effective-resource-management) | Leadership | P+M | IC & M | High Value | Cognitive Overload |
-| Program Opportunity Identification, Validation, and Prioritization | [8.10](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/10-socratic-proposal.md) | Leadership | P | IC & M | High Value | Cognitive Overload |
-| Writing the Job Description | [8.11](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/11-job-description.md) | Leadership | M | M | Quick Win | Recurring Time Sinks |
-| Shortlisting Candidates | [8.12](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/12-shortlisting.md) | Leadership | M | M | Quick Win | Recurring Time Sinks |
-| Interviewing | [8.13](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/13-interview-questions.md) | Leadership | M | IC & M | Quick Win | Recurring Time Sinks |
-| Calibrating the Interview Loop Performance | [8.14](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/14-finalist-comparison.md) | Leadership | M | M | Quick Win | Cognitive Overload |
-| Onboarding | [8.15 to 8.17](../prompts/ch08.md#onboarding) | Leadership | P+M | IC & M | Quick Win | Recurring Time Sinks |
-| Performance Management & Growing Talent | [8.18 to 8.20](../prompts/ch08.md#performance-management--growing-talent) | Leadership | M | M | Quick Win | Cognitive Overload |
-| Calibration and Promotion | [8.21 to 8.22](../prompts/ch08.md#calibration-and-promotion) | Leadership | M | M | High Value | Cognitive Overload |
-| Program Scaffolding Standardization for a Team Already Using AI | [8.23](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/23-brief-update-agent.md) | Leadership | T+P+M | IC & M | High Value | Recurring Time Sinks |
-| Continuous Strategic Planning | [8.24 to 8.26](../prompts/ch08.md#continuous-strategic-planning) | Leadership | T+P+M | IC & M | High Value | Recurring Time Sinks |
+| Portfolio Health and Reporting for Executives | [8.01 to 8.06](../chapter-prompts/ch08-tpm-leadership.md#portfolio-health-and-reporting-for-executives) | Leadership | P | IC & M | High Value | Recurring Time Sinks |
+| Effective Resource Management | [8.07 to 8.09](../chapter-prompts/ch08-tpm-leadership.md#effective-resource-management) | Leadership | P+M | IC & M | High Value | Cognitive Overload |
+| Program Opportunity Identification, Validation, and Prioritization | [8.10](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/10-socratic-proposal.md) | Leadership | P | IC & M | High Value | Cognitive Overload |
+| Writing the Job Description | [8.11](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/11-job-description.md) | Leadership | M | M | Quick Win | Recurring Time Sinks |
+| Shortlisting Candidates | [8.12](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/12-shortlisting.md) | Leadership | M | M | Quick Win | Recurring Time Sinks |
+| Interviewing | [8.13](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/13-interview-questions.md) | Leadership | M | IC & M | Quick Win | Recurring Time Sinks |
+| Calibrating the Interview Loop Performance | [8.14](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/14-finalist-comparison.md) | Leadership | M | M | Quick Win | Cognitive Overload |
+| Onboarding | [8.15 to 8.17](../chapter-prompts/ch08-tpm-leadership.md#onboarding) | Leadership | P+M | IC & M | Quick Win | Recurring Time Sinks |
+| Performance Management & Growing Talent | [8.18 to 8.20](../chapter-prompts/ch08-tpm-leadership.md#performance-management--growing-talent) | Leadership | M | M | Quick Win | Cognitive Overload |
+| Calibration and Promotion | [8.21 to 8.22](../chapter-prompts/ch08-tpm-leadership.md#calibration-and-promotion) | Leadership | M | M | High Value | Cognitive Overload |
+| Program Scaffolding Standardization for a Team Already Using AI | [8.23](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/23-brief-update-agent.md) | Leadership | T+P+M | IC & M | High Value | Recurring Time Sinks |
+| Continuous Strategic Planning | [8.24 to 8.26](../chapter-prompts/ch08-tpm-leadership.md#continuous-strategic-planning) | Leadership | T+P+M | IC & M | High Value | Recurring Time Sinks |
 
 <sub>[↑ Back to the menu](#use-case-catalog)</sub>
 
@@ -120,13 +120,13 @@ Too much information to hold in your head at once. 30 use cases.
 
 | Use case | Chapter | Stage | Pillar | Role | Tier | Try it |
 |---|---|---|---|---|---|---|
-| **Aligning Stakeholders from the Start** | Ch 5 | Planning | P+M | IC & M | Quick Win | [P5.2](../prompts/ch05.md#p52--the-alignment-gap-detector) · [kit](../prompts/ch05-payments-consolidation/2-alignment/prompt.md) |
-| **Technical Dependency and Architecture Synthesizing** | Ch 5 | Planning | P | IC | High Value | [P5.4](../prompts/ch05.md#p54--multi-document-dependency-synthesis-stage-2) · [P5.4b](../prompts/ch05.md#p54b--from-map-to-milestones-back-scheduling) · [kit](../prompts/ch05-payments-consolidation/4-dependencies/prompt-stage2-synthesize.md) |
-| **Calibrating the Interview Loop Performance** | Ch 8 | Leadership | M | M | Quick Win | [8.14](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/14-finalist-comparison.md) |
-| **Calibration and Promotion** | Ch 8 | Leadership | M | M | High Value | [8.21 to 8.22](../prompts/ch08.md#calibration-and-promotion) |
-| **Effective Resource Management** | Ch 8 | Leadership | P+M | IC & M | High Value | [8.07 to 8.09](../prompts/ch08.md#effective-resource-management) |
-| **Performance Management & Growing Talent** | Ch 8 | Leadership | M | M | Quick Win | [8.18 to 8.20](../prompts/ch08.md#performance-management--growing-talent) |
-| **Program Opportunity Identification, Validation, and Prioritization** | Ch 8 | Leadership | P | IC & M | High Value | [8.10](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/10-socratic-proposal.md) |
+| **Aligning Stakeholders from the Start** | Ch 5 | Planning | P+M | IC & M | Quick Win | [P5.2](../chapter-prompts/ch05-initiation-and-planning.md#p52--the-alignment-gap-detector) · [kit](../chapter-prompts/ch05-initiation-and-planning/2-alignment/prompt.md) |
+| **Technical Dependency and Architecture Synthesizing** | Ch 5 | Planning | P | IC | High Value | [P5.4](../chapter-prompts/ch05-initiation-and-planning.md#p54--multi-document-dependency-synthesis-stage-2) · [P5.4b](../chapter-prompts/ch05-initiation-and-planning.md#p54b--from-map-to-milestones-back-scheduling) · [kit](../chapter-prompts/ch05-initiation-and-planning/4-dependencies/prompt-stage2-synthesize.md) |
+| **Calibrating the Interview Loop Performance** | Ch 8 | Leadership | M | M | Quick Win | [8.14](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/14-finalist-comparison.md) |
+| **Calibration and Promotion** | Ch 8 | Leadership | M | M | High Value | [8.21 to 8.22](../chapter-prompts/ch08-tpm-leadership.md#calibration-and-promotion) |
+| **Effective Resource Management** | Ch 8 | Leadership | P+M | IC & M | High Value | [8.07 to 8.09](../chapter-prompts/ch08-tpm-leadership.md#effective-resource-management) |
+| **Performance Management & Growing Talent** | Ch 8 | Leadership | M | M | Quick Win | [8.18 to 8.20](../chapter-prompts/ch08-tpm-leadership.md#performance-management--growing-talent) |
+| **Program Opportunity Identification, Validation, and Prioritization** | Ch 8 | Leadership | P | IC & M | High Value | [8.10](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/10-socratic-proposal.md) |
 | Architecture synthesis brief from RFCs and design docs | Ch 5 | Planning | T | IC | Quick Win | [`/tpm-architecture-review`](../example-agentic-os/4-skills-tools/4-architecture-alignment/tpm-architecture-review.md) |
 | Program charter / master document generator | Ch 5 | Planning | P | IC | Quick Win | [`/tpm-master-document`](../example-agentic-os/4-skills-tools/2-program-initiation/tpm-master-document.md) |
 | Technical brief from PRD + architecture | Ch 5 | Planning | T | IC | Quick Win | [`/tpm-technical-brief`](../example-agentic-os/4-skills-tools/4-architecture-alignment/tpm-technical-brief.md) |
@@ -159,16 +159,16 @@ Something you do every week takes longer than it should. 28 use cases.
 
 | Use case | Chapter | Stage | Pillar | Role | Tier | Try it |
 |---|---|---|---|---|---|---|
-| **Scaffolding Program Infrastructure** | Ch 5 | Planning | P+M | IC | Quick Win | [P5.1](../prompts/ch05.md#p51--program-charter-from-mandate) · [kit](../prompts/ch05-payments-consolidation/1-charter/prompt.md) |
-| **The Monday Morning Debrief** | Ch 6 | Executing | P | IC & M | Quick Win | [P6.4](../prompts/ch06.md#p64--weekly-debrief-pre-draft) · [P6.5](../prompts/ch06.md#p65--monday-morning-debrief-agent---core-prompt) · [artifact index](../templates/artifact-index.md) |
-| **Loose Ends & Next Steps** | Ch 7 | Closing | P+M | IC & M | Quick Win | [P7.4](../prompts/ch07.md#p74--operational-handshake--risk-categorization) |
-| **Continuous Strategic Planning** | Ch 8 | Leadership | T+P+M | IC & M | High Value | [8.24 to 8.26](../prompts/ch08.md#continuous-strategic-planning) |
-| **Interviewing** | Ch 8 | Leadership | M | IC & M | Quick Win | [8.13](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/13-interview-questions.md) |
-| **Onboarding** | Ch 8 | Leadership | P+M | IC & M | Quick Win | [8.15 to 8.17](../prompts/ch08.md#onboarding) |
-| **Portfolio Health and Reporting for Executives** | Ch 8 | Leadership | P | IC & M | High Value | [8.01 to 8.06](../prompts/ch08.md#portfolio-health-and-reporting-for-executives) |
-| **Program Scaffolding Standardization for a Team Already Using AI** | Ch 8 | Leadership | T+P+M | IC & M | High Value | [8.23](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/23-brief-update-agent.md) |
-| **Shortlisting Candidates** | Ch 8 | Leadership | M | M | Quick Win | [8.12](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/12-shortlisting.md) |
-| **Writing the Job Description** | Ch 8 | Leadership | M | M | Quick Win | [8.11](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/11-job-description.md) |
+| **Scaffolding Program Infrastructure** | Ch 5 | Planning | P+M | IC | Quick Win | [P5.1](../chapter-prompts/ch05-initiation-and-planning.md#p51--program-charter-from-mandate) · [kit](../chapter-prompts/ch05-initiation-and-planning/1-charter/prompt.md) |
+| **The Monday Morning Debrief** | Ch 6 | Executing | P | IC & M | Quick Win | [P6.4](../chapter-prompts/ch06-execution.md#p64--weekly-debrief-pre-draft) · [P6.5](../chapter-prompts/ch06-execution.md#p65--monday-morning-debrief-agent---core-prompt) · [artifact index](../templates/artifact-index.md) |
+| **Loose Ends & Next Steps** | Ch 7 | Closing | P+M | IC & M | Quick Win | [P7.4](../chapter-prompts/ch07-delivery-and-closure.md#p74--operational-handshake--risk-categorization) |
+| **Continuous Strategic Planning** | Ch 8 | Leadership | T+P+M | IC & M | High Value | [8.24 to 8.26](../chapter-prompts/ch08-tpm-leadership.md#continuous-strategic-planning) |
+| **Interviewing** | Ch 8 | Leadership | M | IC & M | Quick Win | [8.13](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/13-interview-questions.md) |
+| **Onboarding** | Ch 8 | Leadership | P+M | IC & M | Quick Win | [8.15 to 8.17](../chapter-prompts/ch08-tpm-leadership.md#onboarding) |
+| **Portfolio Health and Reporting for Executives** | Ch 8 | Leadership | P | IC & M | High Value | [8.01 to 8.06](../chapter-prompts/ch08-tpm-leadership.md#portfolio-health-and-reporting-for-executives) |
+| **Program Scaffolding Standardization for a Team Already Using AI** | Ch 8 | Leadership | T+P+M | IC & M | High Value | [8.23](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/23-brief-update-agent.md) |
+| **Shortlisting Candidates** | Ch 8 | Leadership | M | M | Quick Win | [8.12](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/12-shortlisting.md) |
+| **Writing the Job Description** | Ch 8 | Leadership | M | M | Quick Win | [8.11](../chapter-prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/11-job-description.md) |
 | Epic decomposition into tasks and user stories | Ch 5 | Planning | T+P | IC | Quick Win | [`/tpm-epic-breakdown`](../example-agentic-os/4-skills-tools/3-planning-design/tpm-epic-breakdown.md) |
 | Cross-team sync agenda and pre-reads | Ch 6 | Executing | P+M | IC | Quick Win | [`/tpm-crossteam-prep`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-crossteam-prep.md) |
 | Structured meeting notes with decisions and action log | Ch 6 | Executing | M | IC | Quick Win | [`/tpm-meeting-notes`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-meeting-notes.md) |
@@ -196,8 +196,8 @@ Mistakes are costly and a second set of eyes helps. 18 use cases.
 
 | Use case | Chapter | Stage | Pillar | Role | Tier | Try it |
 |---|---|---|---|---|---|---|
-| **Pre-Mortem on Demand** | Ch 5 | Planning | P+M | IC | Quick Win | [P5.5](../prompts/ch05.md#p55--persona-swarm-pre-mortem---sre-lens) · [kit](../prompts/ch05-payments-consolidation/5-premortem/README.md) |
-| **Scoping What You Don't Know Yet** | Ch 5 | Planning | T+P | IC | Quick Win | [P5.3](../prompts/ch05.md#p53--the-assumption-extractor) · [kit](../prompts/ch05-payments-consolidation/3-assumptions/prompt.md) |
+| **Pre-Mortem on Demand** | Ch 5 | Planning | P+M | IC | Quick Win | [P5.5](../chapter-prompts/ch05-initiation-and-planning.md#p55--persona-swarm-pre-mortem---sre-lens) · [kit](../chapter-prompts/ch05-initiation-and-planning/5-premortem/README.md) |
+| **Scoping What You Don't Know Yet** | Ch 5 | Planning | T+P | IC | Quick Win | [P5.3](../chapter-prompts/ch05-initiation-and-planning.md#p53--the-assumption-extractor) · [kit](../chapter-prompts/ch05-initiation-and-planning/3-assumptions/prompt.md) |
 | Data preflight check | Ch 5 | Planning | T+P | IC | Quick Win | [`/tpm-preflight`](../example-agentic-os/4-skills-tools/0-meta/tpm-preflight.md) |
 | Data reconciliation (Jira vs Aha vs master doc) | Ch 5 | Planning | T+P | IC | Quick Win | [`/tpm-data-reconciliation`](../example-agentic-os/4-skills-tools/0-meta/tpm-data-reconciliation.md) |
 | Pre-mortem on demand | Ch 5 | Planning | P+M | IC & M | Quick Win | [`/tpm-premortem`](../example-agentic-os/4-skills-tools/2-program-initiation/tpm-premortem.md) |
@@ -223,8 +223,8 @@ You need better data or a clearer risk picture to decide. 37 use cases.
 
 | Use case | Chapter | Stage | Pillar | Role | Tier | Try it |
 |---|---|---|---|---|---|---|
-| **Managing Project Risks** | Ch 6 | Executing | P | M | High Value | [P6.6](../prompts/ch06.md#p66--meeting-transcript-to-raid-entries) · [P6.7](../prompts/ch06.md#p67--risk-scoring-and-stale-item-flagging) · [P6.8](../prompts/ch06.md#p68--historical-risk-patterns-for-a-new-kickoff) · [P6.9](../prompts/ch06.md#p69--early-warning-signals-from-communication-channels) · [P6.10](../prompts/ch06.md#p610--risk-agent---core-prompt-design-document-review) |
-| **Measuring Program Health** | Ch 6 | Executing | P | IC & M | Quick Win | [P6.13](../prompts/ch06.md#p613--program-health-questions) |
+| **Managing Project Risks** | Ch 6 | Executing | P | M | High Value | [P6.6](../chapter-prompts/ch06-execution.md#p66--meeting-transcript-to-raid-entries) · [P6.7](../chapter-prompts/ch06-execution.md#p67--risk-scoring-and-stale-item-flagging) · [P6.8](../chapter-prompts/ch06-execution.md#p68--historical-risk-patterns-for-a-new-kickoff) · [P6.9](../chapter-prompts/ch06-execution.md#p69--early-warning-signals-from-communication-channels) · [P6.10](../chapter-prompts/ch06-execution.md#p610--risk-agent---core-prompt-design-document-review) |
+| **Measuring Program Health** | Ch 6 | Executing | P | IC & M | Quick Win | [P6.13](../chapter-prompts/ch06-execution.md#p613--program-health-questions) |
 | Boardroom advisor (CFO/CTO/CPO peer review) | Ch 5 | Planning | P+M | M | High Value | [`/tpm-boardroom`](../example-agentic-os/4-skills-tools/1-program-strategy/tpm-boardroom.md) |
 | Business case / ROI analysis | Ch 5 | Planning | P+M | M | Quick Win | [`/tpm-roi-checker`](../example-agentic-os/4-skills-tools/3-planning-design/tpm-roi-checker.md) |
 | Cross-team dependency map with risk tiers | Ch 5 | Planning | T+P | IC | Quick Win | [`/tpm-dependency-map`](../example-agentic-os/4-skills-tools/3-planning-design/tpm-dependency-map.md) |
@@ -269,8 +269,8 @@ Many audiences need the same facts, framed differently. 11 use cases.
 
 | Use case | Chapter | Stage | Pillar | Role | Tier | Try it |
 |---|---|---|---|---|---|---|
-| **Communicating with Stakeholders** | Ch 6 | Executing | M | IC & M | Quick Win | [P6.1](../prompts/ch06.md#p61--persona-based-stakeholder-communications) · [P6.3](../prompts/ch06.md#p63--red-status-escalation-in-three-versions) · [persona.md](../templates/persona.md) |
-| **Onboarding New Team Members** | Ch 6 | Executing | M | IC & M | Quick Win | [P6.12](../prompts/ch06.md#p612--questions-a-new-team-member-can-ask-the-second-brain) |
+| **Communicating with Stakeholders** | Ch 6 | Executing | M | IC & M | Quick Win | [P6.1](../chapter-prompts/ch06-execution.md#p61--persona-based-stakeholder-communications) · [P6.3](../chapter-prompts/ch06-execution.md#p63--red-status-escalation-in-three-versions) · [persona.md](../templates/persona.md) |
+| **Onboarding New Team Members** | Ch 6 | Executing | M | IC & M | Quick Win | [P6.12](../chapter-prompts/ch06-execution.md#p612--questions-a-new-team-member-can-ask-the-second-brain) |
 | 3-audience segmented stakeholder update | Ch 6 | Executing | M | IC & M | Quick Win | [`/tpm-stakeholder-update`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-stakeholder-update.md) |
 | Narrative program outcomes and impact summary | Ch 7 | Closing | P+M | M | Quick Win | [`/tpm-programsummary`](../example-agentic-os/4-skills-tools/7-program-closure/tpm-programsummary.md) |
 | QBR / MBR deck with plan-vs-actuals | Ch 8 | Executing | P+M | M | Quick Win | [`/tpm-qbr-prep`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-qbr-prep.md) |
@@ -289,10 +289,10 @@ Knowledge lives in one head and needs to outlast it. 12 use cases.
 
 | Use case | Chapter | Stage | Pillar | Role | Tier | Try it |
 |---|---|---|---|---|---|---|
-| **Building a Program Knowledge Base** | Ch 6 | Executing | T+P+M | IC & M | High Value | [P6.11](../prompts/ch06.md#p611--on-demand-state-of-program-brief) |
-| **Capturing Institutional Knowledge** | Ch 7 | Closing | T+P+M | IC & M | High Value | [P7.2](../prompts/ch07.md#p72--interactive-program-brain-evaluator) · [P7.3](../prompts/ch07.md#p73--querying-the-program-brain-later) |
-| **Program Brain Contributor Highlights** | Ch 7 | Closing | M | M | High Value | [guardrails](../prompts/ch07.md#contributor-highlights-the-guardrails-no-prompt) |
-| **Retrospective Prep & Analysis** | Ch 7 | Closing | P+M | IC & M | Quick Win | [P7.0](../prompts/ch07.md#p70--chriss-retro-prompt---what-not-to-do) · [P7.1](../prompts/ch07.md#p71--retrospective-root-cause-engine) |
+| **Building a Program Knowledge Base** | Ch 6 | Executing | T+P+M | IC & M | High Value | [P6.11](../chapter-prompts/ch06-execution.md#p611--on-demand-state-of-program-brief) |
+| **Capturing Institutional Knowledge** | Ch 7 | Closing | T+P+M | IC & M | High Value | [P7.2](../chapter-prompts/ch07-delivery-and-closure.md#p72--interactive-program-brain-evaluator) · [P7.3](../chapter-prompts/ch07-delivery-and-closure.md#p73--querying-the-program-brain-later) |
+| **Program Brain Contributor Highlights** | Ch 7 | Closing | M | M | High Value | [guardrails](../chapter-prompts/ch07-delivery-and-closure.md#contributor-highlights-the-guardrails-no-prompt) |
+| **Retrospective Prep & Analysis** | Ch 7 | Closing | P+M | IC & M | Quick Win | [P7.0](../chapter-prompts/ch07-delivery-and-closure.md#p70--chriss-retro-prompt---what-not-to-do) · [P7.1](../chapter-prompts/ch07-delivery-and-closure.md#p71--retrospective-root-cause-engine) |
 | ADR-style decision documentation | Ch 6 | Executing | T+P+M | IC & M | Quick Win | [`/tpm-decision-record`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-decision-record.md) |
 | Institutional knowledge capture before team disperses | Ch 7 | Closing | T+P+M | IC & M | Quick Win | [`/tpm-programmemory`](../example-agentic-os/4-skills-tools/7-program-closure/tpm-programmemory.md) |
 | Structured retrospective with prioritized takeaways | Ch 7 | Closing | P+M | IC & M | Quick Win | [`/tpm-programretro`](../example-agentic-os/4-skills-tools/7-program-closure/tpm-programretro.md) |

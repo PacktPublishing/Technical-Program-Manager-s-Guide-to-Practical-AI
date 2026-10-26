@@ -7,7 +7,7 @@ has a skill or agent for the same job. Placeholders in [brackets] are yours to f
 
 **Section:** Scaffolding Program Infrastructure · **Type:** Full prompt (trimmed in print)  
 **Paste with it:** VP mandate email, parent OKR, strategy deck  
-**In this repo:** Complete version and sample run: [ch05-payments-consolidation/1-charter/](ch05-payments-consolidation/1-charter/prompt.md)
+**In this repo:** Complete version and sample run: [ch05-initiation-and-planning/1-charter/](ch05-initiation-and-planning/1-charter/prompt.md)
 
 ```
 [ROLE] Senior TPM drafting a program charter.
@@ -31,7 +31,7 @@ has a skill or agent for the same job. Placeholders in [brackets] are yours to f
 
 **Section:** Aligning Stakeholders from the Start · **Type:** Full prompt (trimmed in print)  
 **Paste with it:** All stakeholder interview notes  
-**In this repo:** Complete version: [ch05-payments-consolidation/2-alignment/](ch05-payments-consolidation/2-alignment/prompt.md) · in the example OS: agent `/tpm-alignment-gap-detector`
+**In this repo:** Complete version: [ch05-initiation-and-planning/2-alignment/](ch05-initiation-and-planning/2-alignment/prompt.md) · in the example OS: agent `/tpm-alignment-gap-detector`
 
 ```
 [ROLE] You reconcile conflicting accounts. You are not a summarizer.
@@ -57,7 +57,7 @@ has a skill or agent for the same job. Placeholders in [brackets] are yours to f
 
 **Section:** Scoping What You Don't Know Yet · **Type:** Full prompt (trimmed in print)  
 **Paste with it:** The approved scope document  
-**In this repo:** Complete version: [ch05-payments-consolidation/3-assumptions/](ch05-payments-consolidation/3-assumptions/prompt.md) · in the example OS: agent `/tpm-assumption-extractor`
+**In this repo:** Complete version: [ch05-initiation-and-planning/3-assumptions/](ch05-initiation-and-planning/3-assumptions/prompt.md) · in the example OS: agent `/tpm-assumption-extractor`
 
 ```
 [ROLE] A skeptical reviewer reading this scope document
@@ -81,9 +81,9 @@ has a skill or agent for the same job. Placeholders in [brackets] are yours to f
 
 **Section:** Technical Dependency and Architecture Synthesizing · **Type:** Full prompt (trimmed in print)  
 **Paste with it:** Stage-1 extractions of every design doc, ownership map  
-**In this repo:** Complete version, with stage 1: [ch05-payments-consolidation/4-dependencies/](ch05-payments-consolidation/4-dependencies/prompt-stage2-synthesize.md)
+**In this repo:** Complete version, with stage 1: [ch05-initiation-and-planning/4-dependencies/](ch05-initiation-and-planning/4-dependencies/prompt-stage2-synthesize.md)
 
-> Stage 1 is Daniella's single-document extraction from Chapter 3 ([P3.2](ch03.md#p32--daniellas-dependency-extraction-one-shot-rtcfc)), run once per document.
+> Stage 1 is Daniella's single-document extraction from Chapter 3 ([P3.2](ch03-modalities-of-ai-interactions.md#p32--daniellas-dependency-extraction-one-shot-rtcfc)), run once per document.
 
 ```
 [ROLE] A systems architect reconciling dependency extractions taken
@@ -107,7 +107,7 @@ has a skill or agent for the same job. Placeholders in [brackets] are yours to f
 
 **Section:** Technical Dependency and Architecture Synthesizing · **Type:** Follow-up prompt, same conversation as P5.4  
 **Paste with it:** The validated dependency map, the charter, the assumption log  
-**In this repo:** Sample run: [ch05-payments-consolidation/4-dependencies/output-milestones.md](ch05-payments-consolidation/4-dependencies/output-milestones.md)  
+**In this repo:** Sample run: [ch05-initiation-and-planning/4-dependencies/output-milestones.md](ch05-initiation-and-planning/4-dependencies/output-milestones.md)  
 **Expect:** 6 to 8 milestones, the critical path and the float in weeks. In the book's scenario the float drops from ten weeks to one once the real eleven-week legal review is used.
 
 ```
@@ -120,7 +120,7 @@ Take each gate to its owner with one question: can you commit to this date?
 
 **Section:** Pre-Mortem on Demand · **Type:** Full prompt (trimmed in print)  
 **Paste with it:** Charter, conflict register, assumption log, validated dependency map, milestone skeleton  
-**In this repo:** All four lenses: [ch05-payments-consolidation/5-premortem/](ch05-payments-consolidation/5-premortem/README.md) · in the example OS: skill `/tpm-premortem`
+**In this repo:** All four lenses: [ch05-initiation-and-planning/5-premortem/](ch05-initiation-and-planning/5-premortem/README.md) · in the example OS: skill `/tpm-premortem`
 
 > The book prints the SRE lens; the other three (security, staff engineer, product) use the same structure.
 
