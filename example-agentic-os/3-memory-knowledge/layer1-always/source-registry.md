@@ -1,5 +1,7 @@
 # Source Registry — NovaGrid Connector Map
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 **Purpose:** Single reference for all connected data sources — file paths, update cadences, owners, trust tiers, and program coverage. Skills resolve file paths and staleness thresholds from here rather than hardcoding them.
 
 **Load this file** before any skill that reads external data exports, or before running `/tpm-preflight` or `/tpm-data-reconciliation`.

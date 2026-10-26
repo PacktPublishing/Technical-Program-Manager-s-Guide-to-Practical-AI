@@ -1,5 +1,7 @@
 # DR-004 — HORIZON: Solaris Logistics Jul 31 GA Commitment Issued
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **Decision ID** | DR-004 |

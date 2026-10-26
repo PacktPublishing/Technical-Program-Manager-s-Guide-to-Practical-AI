@@ -1,5 +1,7 @@
 # Decision Record: NEXUS IAM — Scope Auth0-Only Fast Path as Fallback to Aug 28 Delivery
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 **ID:** DR-20260418-003
 **Date:** April 18, 2026
 **Status:** Proposed — awaiting Yuki Tanaka authorization by May 1, 2026

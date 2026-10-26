@@ -1,5 +1,7 @@
 # Decision Record: PULSE FlowEngine — SDK Launch Takes Priority Over Migration Through Q2
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 **ID:** DR-20260415-001
 **Date:** April 15, 2026
 **Status:** Accepted

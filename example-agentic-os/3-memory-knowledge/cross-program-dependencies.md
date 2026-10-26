@@ -1,5 +1,7 @@
 # Cross-Program Dependencies
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 Last validated: 2026-08-10
 Review cadence: weekly (SteerCo alignment every steering committee cycle)
 Owner: TPM (Karl Bergstrom)

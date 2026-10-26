@@ -1,5 +1,7 @@
 # DR-008 — HORIZON GA Definition: Soft GA July 31 / App Store GA August 31
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-008 |

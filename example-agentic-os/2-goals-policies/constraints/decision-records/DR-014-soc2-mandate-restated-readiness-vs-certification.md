@@ -1,5 +1,7 @@
 # DR-014 — SOC 2 Board Mandate Restated: August 31 Is Audit-Readiness, Certification Is December 15
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-014 |

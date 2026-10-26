@@ -1,5 +1,7 @@
 # Decision Record: Kestrel Media — Restructure to Partial Delivery Deal
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 **ID:** DR-20260415-002
 **Date:** April 15, 2026
 **Status:** Accepted (pending Priya Kaur scope confirmation by Apr 25)

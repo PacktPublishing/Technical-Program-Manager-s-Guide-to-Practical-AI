@@ -1,4 +1,7 @@
 # SHIELD — Program Master Document
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *SOC 2 Type II Certification*
 *Layer 3 context · Load for SHIELD work · Update cadence: weekly*
 

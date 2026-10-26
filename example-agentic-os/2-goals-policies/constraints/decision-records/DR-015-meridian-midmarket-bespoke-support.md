@@ -1,5 +1,7 @@
 # DR-015 — MERIDIAN Mid-Market Long Tail: Bespoke Migration Support and Revised August 21 Target
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-015 |

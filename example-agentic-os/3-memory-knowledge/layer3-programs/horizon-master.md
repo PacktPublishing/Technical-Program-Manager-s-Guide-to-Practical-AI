@@ -1,4 +1,7 @@
 # HORIZON — Program Master Document
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Mobile Platform — NovaGrid iOS & Android App*
 *Layer 3 context · Load for HORIZON work · Update cadence: weekly*
 

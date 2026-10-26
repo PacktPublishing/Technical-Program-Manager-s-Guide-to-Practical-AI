@@ -1,4 +1,7 @@
 # PULSE — Program Master Document
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Data Pipeline Overhaul — Airflow → Temporal Migration*
 *Layer 3 context · Load for PULSE work · Update cadence: weekly*
 

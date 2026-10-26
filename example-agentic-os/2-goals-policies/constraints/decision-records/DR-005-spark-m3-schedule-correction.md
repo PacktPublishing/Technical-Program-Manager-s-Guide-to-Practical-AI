@@ -1,5 +1,7 @@
 # DR-005 — SPARK: M3 Visual Workflow Builder Target Corrected to Sep 30
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **Decision ID** | DR-005 |

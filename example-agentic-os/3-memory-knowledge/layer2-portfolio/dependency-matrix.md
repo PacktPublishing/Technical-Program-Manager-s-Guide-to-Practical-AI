@@ -1,4 +1,7 @@
 # NovaGrid — Cross-Program Dependency Matrix
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Layer 2 context · Load for dependency and portfolio health work · Update cadence: weekly*
 *Last updated: **August 10, 2026***
 

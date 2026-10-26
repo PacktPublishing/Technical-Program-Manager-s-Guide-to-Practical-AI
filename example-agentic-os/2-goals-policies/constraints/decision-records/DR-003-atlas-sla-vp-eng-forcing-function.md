@@ -1,5 +1,7 @@
 # DR-003 — ATLAS: VP Eng Forces Core Infrastructure Priority for SLA Monitoring (M6)
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **Decision ID** | DR-003 |

@@ -1,5 +1,7 @@
 # DR-001 — NEXUS IAM: Auth0-Only Path Authorized
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **Decision ID** | DR-001 |

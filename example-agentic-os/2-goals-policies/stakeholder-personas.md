@@ -1,5 +1,7 @@
 # NovaGrid — Stakeholder Personas
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Read by `/tpm-stakeholder-update`. Structure from `templates/persona.md` (Book Chapter 6).*
 *Replace this file with your own stakeholders. Names and roles below match `3-memory-knowledge/layer1-always/org-chart.md`.*
 

@@ -1,5 +1,7 @@
 # 3-memory-knowledge/
 
+> **Fictional company.** NovaGrid, Inc. and everything about it in this folder (people, customers, programs, numbers, events) is invented for the book. It is not a real company, and any resemblance to real companies or people is coincidental.
+
 Structured program state — the playbook's long-term memory. Skills read from here to ground their output in real program context instead of guessing.
 
 > **This is demo content.** Every file below describes **NovaGrid, Inc.** — a fictional post-IPO B2B data platform with 7 active programs. It exists so you can run any skill immediately and see what good output looks like. To use the playbook on your own programs, replace these files with your own; the skills read by path, not by content.

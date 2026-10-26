@@ -1,4 +1,7 @@
 # This Week — TPM Operating State
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Layer 4 · Weekly rhythm file · Updated by portfolio-monitor agent + TPM*
 *Update cadence: daily during active programs · Replace content each Monday*
 

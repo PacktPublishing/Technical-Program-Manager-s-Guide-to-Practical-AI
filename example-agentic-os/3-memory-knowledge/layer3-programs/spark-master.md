@@ -1,4 +1,7 @@
 # SPARK — Program Master Document
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *NovaAI v2 Core Platform*
 *Layer 3 context · Load for SPARK work · Update cadence: weekly*
 

@@ -1,5 +1,7 @@
 # Absence Reconstruction — August 11 to September 2, 2026
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 > **This is not a contemporaneous weekly file.** No operating file was written between
 > Aug 10 and Sep 4. Karl Bergstrom was on leave Aug 11 – Sep 2 (Sara Lindqvist covering),
 > and the six system exports were never refreshed during the window — Aha!, Jira ×2,

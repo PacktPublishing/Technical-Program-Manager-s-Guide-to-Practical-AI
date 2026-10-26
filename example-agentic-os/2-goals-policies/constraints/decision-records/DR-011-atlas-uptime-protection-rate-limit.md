@@ -1,5 +1,7 @@
 # DR-011 — ATLAS Uptime Protection: Emergency Capacity + Tenant Onboarding Rate Limit
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-011 |

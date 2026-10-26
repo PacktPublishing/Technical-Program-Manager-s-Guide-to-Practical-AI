@@ -1,5 +1,7 @@
 # Active tasks
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 Seed file. `/add-task` appends here and `/focus-tasks` and `/start-day` read it. Delete the example rows when you start using it.
 
 | Added | Task | Program | Priority | Owner | Due | Status |

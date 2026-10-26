@@ -1,4 +1,7 @@
 # Fruit Bowl Portfolio Scan — May 20, 2026
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Skill: /tpm-fruit-bowl (portfolio mode)*
 *Data sources: program-index.md · all 7 program master docs · novagrid-jira-export.json · novagrid-aha-export.json*
 *All data as of: May 20, 2026T08:00:00Z (fresh — ≤1 week)*

@@ -1,5 +1,7 @@
 # DR-016 — HORIZON Ships Android-Only for the August 31 Public GA; iOS Held for Resubmission
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-016 |

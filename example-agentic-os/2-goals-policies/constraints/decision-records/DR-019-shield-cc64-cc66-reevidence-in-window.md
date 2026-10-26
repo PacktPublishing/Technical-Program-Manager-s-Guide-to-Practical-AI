@@ -1,5 +1,7 @@
 # DR-019 — SHIELD CC6.4 and CC6.6 Re-Evidenced Inside the Observation Window, Disclosed to the auditor
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-019 |

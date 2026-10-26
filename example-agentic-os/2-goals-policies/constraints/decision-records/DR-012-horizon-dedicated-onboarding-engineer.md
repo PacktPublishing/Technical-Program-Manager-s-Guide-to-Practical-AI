@@ -1,5 +1,7 @@
 # DR-012 — HORIZON Dedicated Onboarding Engineer for the Beta Cohort
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-012 |

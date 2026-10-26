@@ -1,5 +1,7 @@
 # Reading backlog
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 Seed file. `/save-to-read` appends here; `/reading-recommendations`, `/podcast` and `/start-day-prep` read it. Delete the example row when you start using it.
 
 | Saved | Title | URL | Summary | Priority | Program |

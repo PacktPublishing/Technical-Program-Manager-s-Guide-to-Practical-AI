@@ -1,4 +1,7 @@
 # NovaGrid — Program Index
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Layer 2 context · Load for cross-program work · Update cadence: weekly*
 
 > One row per program. For full detail on any program, load `layer3-programs/[program]-master.md`.

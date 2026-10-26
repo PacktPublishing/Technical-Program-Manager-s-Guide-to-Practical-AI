@@ -1,4 +1,7 @@
 # NovaGrid — FY2026 OKRs
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Approved by Board | January 2026 | Owner: Priya Anand (CEO)*
 *Current values as of: **August 10, 2026** · Previous restatement: March 2026*
 

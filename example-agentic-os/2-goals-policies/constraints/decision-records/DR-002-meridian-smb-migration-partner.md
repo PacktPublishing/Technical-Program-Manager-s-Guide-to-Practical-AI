@@ -1,5 +1,7 @@
 # DR-002 — MERIDIAN: SMB Migration Partner Engagement Approved
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **Decision ID** | DR-002 |

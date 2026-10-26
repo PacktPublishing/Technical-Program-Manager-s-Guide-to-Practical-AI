@@ -1,4 +1,7 @@
 # NovaGrid — Tech Stack
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Layer 1 context · Always loaded · Update cadence: on migrations*
 
 ---

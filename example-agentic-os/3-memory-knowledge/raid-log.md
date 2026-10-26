@@ -1,5 +1,7 @@
 # Portfolio RAID Log — NovaGrid FY2026
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 **TPM:** Karl Bergstrom (Portfolio)
 **Last updated:** 2026-09-04
 **Review cadence:** Weekly (SteerCo cadence for portfolio-level items; program TPMs own program-level RAID logs)

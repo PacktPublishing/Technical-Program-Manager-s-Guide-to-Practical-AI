@@ -1,5 +1,7 @@
 # DR-013 — PULSE FlowEngine: Continue Without Descope After the Sprint 17 Velocity Checkpoint
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-013 |

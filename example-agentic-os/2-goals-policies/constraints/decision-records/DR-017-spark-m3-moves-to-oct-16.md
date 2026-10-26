@@ -1,5 +1,7 @@
 # DR-017 — SPARK M3 Moves from September 30 to October 16; Dec 31 GA Chain Loses Its Last Slack
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-017 |

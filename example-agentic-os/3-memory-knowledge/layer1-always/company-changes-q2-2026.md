@@ -1,4 +1,7 @@
 # NovaGrid — Company-Level Changes Q2 2026
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Layer 1 context · Load for portfolio-level and prioritization work*
 *Update cadence: on significant company-level events*
 

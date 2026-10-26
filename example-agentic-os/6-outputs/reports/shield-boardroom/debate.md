@@ -1,4 +1,7 @@
 # Board Review: SHIELD — SOC 2 Type II Certification
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *March 27, 2026 · TPM: Fatima Al-Hassan*
 
 ---

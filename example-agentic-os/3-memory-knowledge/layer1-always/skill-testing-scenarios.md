@@ -1,4 +1,7 @@
 # NovaGrid — Skill Testing Scenarios & Raw Data
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Reference inputs for running practical-ai-for-tpms skills against realistic program context*
 
 ---

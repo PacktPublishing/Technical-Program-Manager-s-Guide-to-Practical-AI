@@ -1,5 +1,7 @@
 # DR-018 — ATLAS M9 Renegotiated from 15 to 9 Enterprise Customers by December 31
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-018 |

@@ -1,5 +1,7 @@
 # DR-007 — Model Serving Capacity Allocation Split Resolved
 
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 | Field | Value |
 |-------|-------|
 | **DR ID** | DR-007 |

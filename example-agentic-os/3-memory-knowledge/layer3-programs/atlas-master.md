@@ -1,4 +1,7 @@
 # ATLAS — Program Master Document
+
+> *Fictional example: NovaGrid, Inc. is an invented company. All people, customers, numbers and events in this file are made up for the book.*
+
 *Enterprise NovaAI Launch*
 *Layer 3 context · Load for ATLAS work · Update cadence: weekly*
 
