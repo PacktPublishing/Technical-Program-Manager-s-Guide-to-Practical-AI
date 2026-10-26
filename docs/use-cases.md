@@ -135,7 +135,7 @@ Too much information to hold in your head at once. 30 use cases.
 | Daily briefing from current program state | Ch 6 | Executing | P | IC | Quick Win | [`/tpm-daily-briefing`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-daily-briefing.md) |
 | High-leverage questions for cross-team and exec reviews | Ch 6 | Executing | M | IC & M | Quick Win | [`/tpm-power-questions`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-power-questions.md) |
 | RAID log (Risks / Actions / Issues / Decisions) | Ch 6 | Executing | P | IC | Quick Win | [`/tpm-raid-log`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-raid-log.md) |
-| Support ticket mining for customer pain signals | Ch 6 | Executing | T+P | IC | Quick Win |  |
+| Support ticket mining for customer pain signals | Ch 6 | Executing | T+P | IC | Quick Win | [`/tpm-supportticket-check`](../example-agentic-os/4-skills-tools/4-architecture-alignment/tpm-supportticket-check.md) |
 | Architecture review summarization | Ch 5 | Planning | T | IC | Quick Win |  |
 | Document summarization | Ch 5 | Planning | T | IC | Quick Win |  |
 | PRD from AI prototype demos | Ch 5 | Planning | T | IC | Quick Win |  |
@@ -170,7 +170,7 @@ Something you do every week takes longer than it should. 28 use cases.
 | **Shortlisting Candidates** | Ch 8 | Leadership | M | M | Quick Win | [8.12](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/12-shortlisting.md) |
 | **Writing the Job Description** | Ch 8 | Leadership | M | M | Quick Win | [8.11](../prompts/ch08-tpm-leadership/prompts/8-tpm-leadership/11-job-description.md) |
 | Epic decomposition into tasks and user stories | Ch 5 | Planning | T+P | IC | Quick Win | [`/tpm-epic-breakdown`](../example-agentic-os/4-skills-tools/3-planning-design/tpm-epic-breakdown.md) |
-| Cross-team sync agenda and pre-reads | Ch 6 | Executing | P+M | IC | Quick Win |  |
+| Cross-team sync agenda and pre-reads | Ch 6 | Executing | P+M | IC | Quick Win | [`/tpm-crossteam-prep`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-crossteam-prep.md) |
 | Structured meeting notes with decisions and action log | Ch 6 | Executing | M | IC | Quick Win | [`/tpm-meeting-notes`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-meeting-notes.md) |
 | Systematic closure checklist | Ch 7 | Closing | P+M | IC & M | Quick Win | [`/tpm-programclosure`](../example-agentic-os/4-skills-tools/7-program-closure/tpm-programclosure.md) |
 | Interview preparation | Ch 11 | Closing | M | IC | Quick Win |  |
@@ -205,7 +205,7 @@ Mistakes are costly and a second set of eyes helps. 18 use cases.
 | Tech debt register with prioritization | Ch 5 | Planning | T | IC | High Value | [`/tpm-techdebt`](../example-agentic-os/4-skills-tools/4-architecture-alignment/tpm-techdebt.md) |
 | Epic health flags (stale / over-duration / at-risk) | Ch 6 | Executing | P | IC | Quick Win | [`/tpm-epic-checker`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-epic-checker.md) |
 | Launch readiness review for multi-stakeholder sign-off | Ch 6 | Executing | T+P | IC & M | Quick Win | [`/tpm-launchreview`](../example-agentic-os/4-skills-tools/6-launch-release/tpm-launchreview.md) |
-| PRD and design doc quality check | Ch 6 | Executing | T | IC | Quick Win |  |
+| PRD and design doc quality check | Ch 6 | Executing | T | IC | Quick Win | [`/tpm-prd-engdoc-analyze`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-prd-engdoc-analyze.md) |
 | AI-powered PRD analysis and requirements refinement | Ch 5 | Planning | T+P | IC | High Value |  |
 | API specification generation | Ch 5 | Planning | T | IC | High Value |  |
 | Technical debt identification | Ch 5 | Planning | T | IC | High Value |  |
@@ -237,7 +237,7 @@ You need better data or a clearer risk picture to decide. 37 use cases.
 | Risk register with mitigations and trigger conditions | Ch 6 | Executing | P | IC & M | Quick Win | [`/tpm-risk-identifier`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-risk-identifier.md) |
 | Structured escalation with single clear ask | Ch 6 | Executing | P+M | IC & M | Quick Win | [`/tpm-escalation-brief`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-escalation-brief.md) |
 | Portfolio-wide parallel health check across all programs | Ch 8 | Executing | P | M | Strategic | [`portfolio-monitor`](../example-agentic-os/5-agent-harness/sub-agents/portfolio-monitor.md) |
-| Program metrics dashboard structure | Ch 8 | Executing | P | IC & M | High Value |  |
+| Program metrics dashboard structure | Ch 8 | Executing | P | IC & M | High Value | [`/tpm-metricsdashboard`](../example-agentic-os/4-skills-tools/5-execution-delivery/tpm-metricsdashboard.md) |
 | Critical path analysis and optimization | Ch 5 | Planning | P | IC | High Value |  |
 | Cross-project dependency mapping | Ch 5 | Planning | T+P | IC & M | High Value |  |
 | Cross-project dependency mapping (P-pillar) | Ch 5 | Planning | T+P | IC & M | High Value |  |
