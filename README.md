@@ -18,7 +18,7 @@ Every prompt printed in the book is here, with fictional sample data to try it o
 | 6 · AI Use Cases for Execution | [Stakeholders, debriefs, risks, knowledge base, health](chapter-prompts/ch06-execution.md) | [Templates](templates/README.md) |
 | 7 · AI Usage in Delivery & Closure / Monitoring | [Retros, program brain, handover](chapter-prompts/ch07-delivery-and-closure.md) | [Example agentic OS](example-agentic-os/README.md) |
 | 8 · AI for TPM Leadership | [Portfolio, resourcing, hiring, people, planning](chapter-prompts/ch08-tpm-leadership.md) | [Portfolio reporting kit](chapter-prompts/ch08-tpm-leadership/README.md) |
-| 9 · Governance and Ethical Usage of AI | No prompts in this chapter | - |
+| 9 · Responsible AI | No prompts in this chapter | - |
 | 10 · The Importance of EQ in a World of AI | No prompts in this chapter | - |
 | 11 · AI for Career Management | [Story log, resume, interviews, decisions](chapter-prompts/ch11-career-management.md) | [Fictional career inputs](chapter-prompts/ch11-career-management/README.md) |
 | 12 · Staying Relevant and Leading the Way | No prompts in this chapter | - |
