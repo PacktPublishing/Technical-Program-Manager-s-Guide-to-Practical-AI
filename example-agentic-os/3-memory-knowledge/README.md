@@ -2,9 +2,7 @@
 
 > **Fictional company.** NovaGrid, Inc. and everything about it in this folder (people, customers, programs, numbers, events) is invented for the book. It is not a real company, and any resemblance to real companies or people is coincidental.
 
-Structured program state — the playbook's long-term memory. Skills read from here to ground their output in real program context instead of guessing.
-
-> **This is demo content.** Every file below describes **NovaGrid, Inc.** — a fictional post-IPO B2B data platform with 7 active programs. It exists so you can run any skill immediately and see what good output looks like. To use the playbook on your own programs, replace these files with your own; the skills read by path, not by content.
+Layer 3 of the example OS: structured program state, the system's long-term memory. Skills read from here to ground their output in program context instead of guessing. Every file describes NovaGrid, a fictional post-IPO B2B data platform with 7 active programs, so you can run any skill immediately. To use it for your own programs, replace these files with your own; the skills read by path, not by content.
 
 ---
 
@@ -71,7 +69,7 @@ Everything else is read-only to skills.
 
 1. Rewrite `layer1-always/company-snapshot.md` and `org-chart.md` with your company and escalation paths.
 2. Rewrite `layer2-portfolio/program-index.md` with your live programs.
-3. Create one `layer3-programs/<program>-master.md` per program — use `templates/02-planning/program-master-template.md` as the starting point, or run `/tpm-master-document`.
+3. Create one `layer3-programs/<program>-master.md` per program — use `../templates/02-planning/program-master-template.md` as the starting point, or run `/tpm-master-document`.
 4. Point `layer1-always/source-registry.md` at your real exports.
 5. Delete the `layer4-weekly/2026-W*.md` archives — they are NovaGrid history.
 

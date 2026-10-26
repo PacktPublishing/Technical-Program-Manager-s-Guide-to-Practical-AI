@@ -43,21 +43,21 @@ run finds it in its own words, and finds other things too. That difference is th
 | 2 | 7 conflicts; Anika Roth's data residency point in its own list | 8 conflicts, including all three in Table 5.2. Anika's residency point is in the "no one else addressed" list. Two entries in that list quote the TPM's paraphrase rather than the speaker: the kind of slip the validation step exists to catch. |
 | 3 | 35 rows, 4 rejected at the quote gate (the "mobile team" row) | 44 rows, all five of Table 5.3 among them. Row 17 catches the document contradicting itself (a two-week legal review against the eleven weeks in Appendix A). All 44 quotes passed the gate: this run invented nothing. The gate still has to run every time, because you only know that after checking. |
 | 4 | Aliases for payments-core, ledger-api, entitlements-svc; 3 unowned, 2 conflicting, 1 circular, 1 possible alias | The alias table matches Table 5.4 (payments-core in docs 2, 4, 7, 9, 11; ledger-api in 2, 3, 7; entitlements in 4, 9). All three unowned systems found, alongside infrastructure noise (event bus, secrets manager) you would prune. The ledger-api batch-versus-synchronous conflict found; the token-lifetime conflict (doc 4 versus doc 6) missed, because stage 1 flattened doc 6's detail. The loop found, plus a second loop built on an edge no document states. Both the miss and the invented edge are what the [architecture review](4-dependencies/architecture-review-notes.md) is for. |
+| 4c | Back-scheduling: the float drops from ten weeks to one once the real eleven-week legal review is used | The run used every duration in the artifacts, including the Q2 planning cycle, and came back with negative float. Same conclusion: the date does not fit the plan. See [the stage 3 note](4-dependencies/prompt-stage3-milestones.md). |
 | 5 | 17 narratives; the SRE's "cutover with no way back" | 18 narratives (5 SRE, 5 security, 4 staff engineer, 4 product). The SRE ranks "the cutover with no rollback" second, behind the ledger-api conflict it traces to the review's "to be confirmed". Anika's residency point returns through two lenses. SRE and staff engineer both lead with the ledger-api conflict, so deduplicate before the session. |
 
-## Where the repo's agents fit
+## Where the example OS's agents fit
 
-Two of the five use cases became standing agents in this repo. They run on your own program's
-notes and documents rather than on this sample:
+Two of the five use cases became standing agents in the [example agentic OS](../../example-agentic-os/README.md).
+They run on your own program's notes and documents rather than on this sample:
 
 - `/tpm-alignment-gap-detector` — use case 2, with a coverage check and a hedge register
 - `/tpm-assumption-extractor` — use case 3, with OPEN → VALIDATED / BROKEN tracking
 
-`/tpm-premortem` runs the use case 5 lenses on a repo program. `/tpm-master-document` and
+`/tpm-premortem` runs the use case 5 lenses on a program in the example OS. `/tpm-master-document` and
 `/tpm-dependency-map` cover related ground but not the book's inference log or multi-document
 synthesis; for those, use the prompts here.
 
 ## Reviewing this kit
 
 The scenario, names and sample documents are fictional and were written for this kit.
-*Chapter author review: pending.*

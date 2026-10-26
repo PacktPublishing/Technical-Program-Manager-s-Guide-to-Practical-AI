@@ -13,7 +13,7 @@ Chapters 2, 4, 9, 10 and 12 print no prompts. To find a use case by chapter or o
 | 5 · AI for Initiation & Planning | [ch05.md](ch05.md): P5.1 to P5.5, trimmed as printed | [ch05-payments-consolidation/](ch05-payments-consolidation/README.md): complete prompts, one running scenario, five use cases |
 | 6 · AI Use Cases for Execution | [ch06.md](ch06.md): P6.1 to P6.13 (P6.2 is no longer in the book) | Templates: [persona.md](../templates/persona.md), [artifact-index.md](../templates/artifact-index.md), [risk-mitigation-tracker.md](../templates/risk-mitigation-tracker.md) |
 | 7 · AI Usage in Delivery & Closure / Monitoring | [ch07.md](ch07.md): P7.0 to P7.4, plus the contributor-highlight guardrails | Sample data in [../example-agentic-os/](../example-agentic-os/) |
-| 8 · AI for TPM Leadership | [ch08.md](ch08.md): 8.01 to 8.26, skills, agent and prompts | [ch08-tpm-leadership/](ch08-tpm-leadership/README.md): tested end to end by Liana Gevorgyan |
+| 8 · AI for TPM Leadership | [ch08.md](ch08.md): 8.01 to 8.26, skills, agent and prompts | [ch08-tpm-leadership/](ch08-tpm-leadership/README.md): skills, agent and prompts, tested end to end |
 | 11 · AI for Career Management | [ch11.md](ch11.md): P11.1 to P11.26 | [ch11-career-kit/](ch11-career-kit/README.md): fictional story log, resume, posting, direction statement |
 
 ## Skills you can upload

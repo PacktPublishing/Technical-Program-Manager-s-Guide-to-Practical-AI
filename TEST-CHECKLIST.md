@@ -71,7 +71,7 @@ Cloned from github.com (commit `fe60420`), not from a local copy. Every prompt w
 - **Ch3 triage agent (P3.9):** correct team and priority for the two real requests. The venting message was ticketed as Medium, because the printed prompt has no rule for non-requests. That is the chapter's lesson (the human approval step in P3.10 catches it); `ch03.md` now says so and offers an optional filter line.
 - **Ch11 skeptical interviewer (P11.9):** quoted the weakest sentence, rated it 1/5, and held its position when pushed without new evidence.
 - **Ch8 hiring and people prompts:** no ranking, no hire recommendation, no promotion language, no gendered pronouns; style remarks kept out of rubric scores.
-- **Ch8 prompts with `[placeholders]`** stopped to ask for values. `ch08.md` now lists the values Liana used for every such prompt.
+- **Ch8 prompts with `[placeholders]`** stopped to ask for values. `ch08.md` now lists the values used in the kit's test run for every such prompt.
 - **`/start-day-prep`:** all six sub-agents ran with no connectors, fell back to the calendar export and seed files, said which sources were missing, and wrote `start-day-state.md`.
 - **Chapter 5 kit (`run.sh`):** 20 runs, all five use cases plus back-scheduling; quote gate 36 of 36; no tool-call artifacts; 8 alignment conflicts, a circular dependency, and the 2-week vs. 11-week legal review identified as what breaks 30 September.
 

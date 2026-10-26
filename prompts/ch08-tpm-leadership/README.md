@@ -1,6 +1,6 @@
 # Chapter 8 kit: AI for TPM Leadership
 
-Built and tested by **Liana Gevorgyan**, co-author of Chapter 8. Imported from her working repo (commit `e800167`, tested 2026-10-20). The prompt index with the book's section names is [../ch08.md](../ch08.md).
+Tested end to end on a synthetic portfolio on 2026-10-20. The prompt index with the book's section names is [../ch08.md](../ch08.md).
 
 > **People data comes first.** Resumes, interview feedback, 1:1 notes and promotion packets are personal data. New York City requires bias audits for automated hiring tools, and the EU AI Act classifies recruitment AI as high-risk. Sometimes anonymized resumes are enough; sometimes candidates must consent. When in doubt, ask Legal or HR. Label people "Candidate A", "Candidate B" or "TPM-R" before you upload anything, and keep generated output private. Formal steps such as performance improvement plans belong with your HRBP, not with AI. Agents that report on programs should never become a tool for evaluating people.
 
@@ -9,7 +9,7 @@ Skills, agent and prompts from **Chapter 8, AI for TPM Leadership**, built as fi
 
 This kit has three things:
 
-1. **Working versions** of every code section in the chapter: the two skills, their configs, the agent, and 22 prompts.
+1. **Working versions** of every code section in the chapter: the two skills, their configs, the agent, and 23 prompts (05 to 26, plus 04b, the executive review deck).
 2. **Test outputs** from running each one, on 2026-10-20.
 3. **What had to change** for each section to work, with a real unified diff per section: [`docs/chapter-8/CHANGES.md`](docs/chapter-8/CHANGES.md).
 
@@ -40,7 +40,7 @@ Full per-test table: [`tests/chapter-8/RUNS.md`](tests/chapter-8/RUNS.md).
 ├── skills/8-tpm-leadership/
 │   ├── program-3p-report/            # SKILL.md, templates/, configs/program-1..4.md
 │   └── portfolio-executive-report/   # SKILL.md, templates/, configs/platform-modernization.md
-├── prompts/8-tpm-leadership/         # 22 fixed prompts (05–26), one file each
+├── prompts/8-tpm-leadership/         # 23 prompts (04b, 05–26), one file each
 ├── portfolio-reports/                # Skill outputs
 │   ├── 2026-09-24 … 2026-10-15/      #   scheduled 3P reports (history used as input)
 │   ├── ad-hoc/2026-10-20/            #   ad hoc 3P reports and Program 1 deep dive
@@ -122,5 +122,5 @@ Anonymize hiring and people data before you use it (for example "Candidate A" or
 
 ## Caveats
 
-- **How the tests were run:** in one Claude Code session, with the model following each prompt against the fixtures. These aren't automated evals. Re-run in a fresh context (Claude.ai or `claude -p`) to confirm the results.
+- **How the tests were run:** first in one Claude Code session on 2026-10-20, then again on 2026-10-25 from a fresh download of the repository, with each prompt pasted into a fresh model (see [TEST-CHECKLIST.md](../../TEST-CHECKLIST.md)). The results held. These aren't automated evals: your runs will differ in wording.
 - **People data:** the people-leadership fixtures are anonymized ("TPM-R", "Candidate A/B"). Check your company's AI and HR policies before using these prompts with real people data.

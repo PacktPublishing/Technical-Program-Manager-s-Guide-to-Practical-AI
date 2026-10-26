@@ -2,7 +2,7 @@
 
 Run on 2026-10-20 in Claude Code against the four-program Platform Modernization test portfolio.
 
-- **Originals and raw diffs:** in Liana's working repository; the diffs below are complete
+- **Originals and raw diffs:** in the original working repository; the diffs below are complete
 - **Fixed versions:** `skills/8-tpm-leadership/`, `agents/`, `prompts/8-tpm-leadership/`
 - **Test index:** `tests/chapter-8/RUNS.md`
 
