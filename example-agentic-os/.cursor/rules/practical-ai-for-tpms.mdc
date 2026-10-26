@@ -35,7 +35,6 @@ Standalone agents in `5-agent-harness/sub-agents/`:
 ## Skill discovery
 
 - Full catalog: `CLAUDE.md`
-- Cursor-native skills: `.cursor/skills/*/SKILL.md`
 - Claude Code commands: `.claude/commands/`
 
 ## Design principles
