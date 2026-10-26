@@ -99,7 +99,7 @@ this estate, and the runbook did not know what actually depended on what."*
 | **Aug 31** | **SHIELD M6 readiness CLOSED on the board-mandated date.** Signed by James Whitfield against the 5 criteria agreed Aug 13. | EVT-2107 / THR-1006 |
 | **Aug 31** | **SPARK M6 evaluation framework MISSED at 52%.** No new date set. | THR-1008 |
 | Aug 31 | MERIDIAN: **compatibility-shim caveat put on the record** — Brightline and Corvid are on v2 via a shim hosted on v1 infrastructure. | THR-1011 |
-| **Sep 1** | **Deloitte observation window OPENED** (Sep 1 – Nov 30, report Dec 15). Sampling from week of Sep 21, monthly thereafter. | THR-1014 |
+| **Sep 1** | **The auditor observation window OPENED** (Sep 1 – Nov 30, report Dec 15). Sampling from week of Sep 21, monthly thereafter. | THR-1014 |
 | **Sep 1** | **DEP-009 did NOT close.** CC6.4 and CC6.6 entered the window on July compensating documentation. | THR-1006 |
 | Sep 1 | ATLAS M9 escalated — honest number is 8, maybe 9, against a commitment of 15. | THR-1010 |
 | Sep 1 | Solaris escalation — written iOS date needed by Sep 4, legal review opens that day. | THR-1005 |
@@ -126,7 +126,7 @@ TPM waited, and four of them acquired deadlines while waiting:
 |---|---|---|
 | NEXUS M7 target — <200 or <175 | Jul 13 | Sep 4 (board chart) |
 | ATLAS M9 renegotiated number | Aug 3 | Sep 4 (QBR pre-read) |
-| SHIELD DEP-009 evidence call | Aug 7 | Sep 21 (Deloitte sampling) |
+| SHIELD DEP-009 evidence call | Aug 7 | Sep 21 (The auditor sampling) |
 | MERIDIAN shim ownership | Aug 31 | Sep 30 (hard EoL) |
 
 **Two decisions were taken with no decision record**, both of which change something

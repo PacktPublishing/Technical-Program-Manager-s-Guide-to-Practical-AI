@@ -73,7 +73,7 @@
 | Owner | Security / Compliance team |
 | Expected lag | Near-real-time |
 | Preflight max age | 7 days → **BLOCK** |
-| Notes | SOC 2 control completion tracking. Relevant only for SHIELD. Control-level evidence status, Deloitte interaction log, wave progress. |
+| Notes | SOC 2 control completion tracking. Relevant only for SHIELD. Control-level evidence status, the auditor interaction log, wave progress. |
 
 ### DataDog
 

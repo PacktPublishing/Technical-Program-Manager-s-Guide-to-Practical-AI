@@ -143,7 +143,7 @@ Decisions not on today's agenda but approaching their escalation window:
 
 ## 🔴 Decision Item 2: SHIELD Exec Mandate
 
-**Context:** 33 of 100 SOC 2 controls are not started. 8 teams have deprioritized. Deloitte audit is Aug 15 — $180K contract already signed. Without an exec mandate, Fatima cannot compel team ownership.
+**Context:** 33 of 100 SOC 2 controls are not started. 8 teams have deprioritized. The auditor audit is Aug 15 — $180K contract already signed. Without an exec mandate, Fatima cannot compel team ownership.
 
 **Needed from SteerCo:** Yuki Tanaka issues a written directive to all 8 Engineering Division heads: SHIELD controls are P0 alongside existing roadmap, no exceptions.
 

@@ -1,5 +1,6 @@
 {
   "_meta": {
+    "fictional": "NovaGrid, Inc. is a fictional company invented for the book \"Technical Program Manager's Guide to Practical AI\". All people, customers, programs, numbers and events in this file are made up. Any resemblance to real companies or people is coincidental.",
     "source": "Jira",
     "project": "SUPP",
     "instance": "novagrid.atlassian.net",
@@ -518,8 +519,8 @@
       "reporter": "Internal - Compliance",
       "assignee": "Fatima Al-Hassan",
       "team": "Security & Compliance Eng",
-      "description": "Following the Deloitte evidence finding on CC6.4 and CC6.6, the IAM evidence exporter could only produce grant history from Jul 1 onward. Auditor remediation required compensating documentation covering the prior Auth0 workaround period, which had to be reconstructed from Auth0 logs and manual approval records.",
-      "resolution": "Compensating documentation assembled and accepted by Deloitte Aug 7. Exporter extended to ingest historical Auth0 grant records so the gap cannot recur during the observation period."
+      "description": "Following the auditor's evidence finding on CC6.4 and CC6.6, the IAM evidence exporter could only produce grant history from Jul 1 onward. Auditor remediation required compensating documentation covering the prior Auth0 workaround period, which had to be reconstructed from Auth0 logs and manual approval records.",
+      "resolution": "Compensating documentation assembled and accepted by the auditor Aug 7. Exporter extended to ingest historical Auth0 grant records so the gap cannot recur during the observation period."
     }
   ],
   "patternAnalysis": {
@@ -582,8 +583,8 @@
         "ATLAS",
         "SHIELD"
       ],
-      "summary": "1 L3 ticket (SUPP-009, audit log completeness under high request rate) with direct SOC 2 implications. Resolved Jun 3 — Kafka async write path fixed. The Meridian Financial discovery was a near-miss: if they had not caught this during pre-procurement review, it would have emerged during Deloitte observation period (Sep–Nov 2026). SUPP-009 resolution was incorporated into Vanta control evidence for CC7.2.",
-      "tpm_recommendation": "SHIELD/ATLAS TPMs: Audit log completeness testing at realistic enterprise request rates (80+ req/s) should be added to the pre-Deloitte evidence checklist. The fix is in production — but it should be validated in the Vanta automated check."
+      "summary": "1 L3 ticket (SUPP-009, audit log completeness under high request rate) with direct SOC 2 implications. Resolved Jun 3 — Kafka async write path fixed. The Meridian Financial discovery was a near-miss: if they had not caught this during pre-procurement review, it would have emerged during the auditor observation period (Sep–Nov 2026). SUPP-009 resolution was incorporated into Vanta control evidence for CC7.2.",
+      "tpm_recommendation": "SHIELD/ATLAS TPMs: Audit log completeness testing at realistic enterprise request rates (80+ req/s) should be added to the pre-the auditor evidence checklist. The fix is in production — but it should be validated in the Vanta automated check."
     }
   }
 }

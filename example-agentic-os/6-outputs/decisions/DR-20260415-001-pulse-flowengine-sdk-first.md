@@ -63,10 +63,10 @@ The SDK launch has a customer-facing commitment that cannot be slipped without d
 - PULSE M4 slips July 1 → August 12 (6 weeks)
 - PULSE M6 (Airflow decommission) slips August 1 → September 30
 - Dual-run cost extends: $380K/month × 6 additional weeks = ~$570K additional exposure. Total dual-run cost by August 12: approximately $1.04M since baseline.
-- SHIELD 6 Temporal-dependent controls at risk — Airflow decommission now September 30, after August Deloitte audit window
+- SHIELD 6 Temporal-dependent controls at risk — Airflow decommission now September 30, after August external audit window
 
 **Risks:**
-- SHIELD Temporal controls gap — Mitigation: Fatima Al-Hassan to confirm with Deloitte whether compensating controls exist for the 6 PULSE-dependent controls
+- SHIELD Temporal controls gap — Mitigation: Fatima Al-Hassan to confirm with the auditor whether compensating controls exist for the 6 PULSE-dependent controls
 - Dual-run cost must be flagged to Marcus Bauer (CFO) in next QBR — total exposure ~$1.04M exceeds original program budget assumption
 
 ---

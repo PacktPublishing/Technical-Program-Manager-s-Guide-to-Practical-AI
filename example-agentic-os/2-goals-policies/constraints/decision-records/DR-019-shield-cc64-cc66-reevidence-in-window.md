@@ -1,4 +1,4 @@
-# DR-019 — SHIELD CC6.4 and CC6.6 Re-Evidenced Inside the Observation Window, Disclosed to Deloitte
+# DR-019 — SHIELD CC6.4 and CC6.6 Re-Evidenced Inside the Observation Window, Disclosed to the auditor
 
 | Field | Value |
 |-------|-------|
@@ -6,9 +6,9 @@
 | **Date** | September 4, 2026 |
 | **Decision maker** | James Whitfield (CISO) |
 | **Proposed by** | Fatima Al-Hassan (TPM SHIELD), escalated by Karl Bergstrom (Head of TPM) |
-| **Informed** | Yuna Park (TPM PULSE), Amara Osei (Dir. FlowEngine), Yuki Tanaka (VP Eng), E. McBride (Deloitte) |
+| **Informed** | Yuna Park (TPM PULSE), Amara Osei (Dir. FlowEngine), Yuki Tanaka (VP Eng), E. McBride (The auditor) |
 | **Programs affected** | SHIELD · PULSE |
-| **Status** | Decided — execute before Deloitte's first sampling pass, week of September 21 |
+| **Status** | Decided — execute before the auditor's first sampling pass, week of September 21 |
 
 ---
 
@@ -17,7 +17,7 @@
 SHIELD M6 (audit readiness) **closed on August 31, on the board-mandated date.** James
 Whitfield signed against five acceptance criteria agreed August 13: 100/100 controls with
 accepted evidence, a named owner per control, monitoring live on all 100, drift detection
-armed, and a documented exception path. The Deloitte observation window opened **September
+armed, and a documented exception path. The auditor's observation window opened **September
 1** and runs to **November 30**, with the Type II report due **December 15** (DR-014).
 
 **DEP-009 did not close.** Two controls — **CC6.4** and **CC6.6** — entered the observation
@@ -28,11 +28,11 @@ The audit trail is real, complete across 677/677 pipelines, and sitting unused.
 
 Fatima Al-Hassan, September 1: *"Yuna was consumed by the decommission and I did not
 escalate hard enough. Those two controls entered the observation window on the July
-compensating documentation, which Deloitte accepted for readiness but which is the weakest
+compensating documentation, which the auditor accepted for readiness but which is the weakest
 evidence in the pack… this is exactly the $12.2M question and I do not want to choose
 alone."*
 
-Deloitte, September 1 (THR-1014): *"We will sample across the period rather than at the
+The auditor, September 1 (THR-1014): *"We will sample across the period rather than at the
 end, with the first sampling pass in the week of Sep 21 and monthly thereafter. Please
 treat every control as live from today."*
 
@@ -46,7 +46,7 @@ Effective **September 4, 2026**:
 
 - **Re-evidence CC6.4 and CC6.6 against the completed Temporal audit trail, inside the
   observation window, during September.**
-- **Disclose the change to Deloitte proactively**, in writing, before the first sampling
+- **Disclose the change to the auditor proactively**, in writing, before the first sampling
   pass in the week of September 21 — stating what changed, why, and that the underlying
   control did not change.
 - **Complete before September 18** to give a clear week of margin ahead of sampling.
@@ -61,8 +61,8 @@ Two options were on the table, both Fatima's:
 
 | Option | Assessment |
 |--------|-----------|
-| **(a)** Leave them and re-evidence at the first quarterly cycle | Accepts defending compensating documentation on a control that has a complete audit trail available and unused. If Deloitte samples CC6.4 or CC6.6 in September or October, NovaGrid explains why it presented weaker evidence when stronger evidence existed. That is a hard conversation to win. |
-| **(b)** Re-evidence inside the window and disclose | Requires changing evidence mid-observation and telling Deloitte why — which is uncomfortable, visible, and correct. |
+| **(a)** Leave them and re-evidence at the first quarterly cycle | Accepts defending compensating documentation on a control that has a complete audit trail available and unused. If the auditor samples CC6.4 or CC6.6 in September or October, NovaGrid explains why it presented weaker evidence when stronger evidence existed. That is a hard conversation to win. |
+| **(b)** Re-evidence inside the window and disclose | Requires changing evidence mid-observation and telling the auditor why — which is uncomfortable, visible, and correct. |
 
 **(b) is chosen.** Fatima's own preference, and the right one.
 
@@ -125,7 +125,7 @@ programs, recorded at the time the commitment is made.**
 
 ## Conditions and monitoring
 
-- **Re-evidencing complete by September 18.** Deloitte samples from the week of Sep 21.
+- **Re-evidencing complete by September 18.** the auditor samples from the week of Sep 21.
 - **Written disclosure to E. McBride before the first sampling pass**, stating: what changed,
   why, and that the control itself did not change.
 - **PULSE Sep 30 position to be re-stated at SteerCo today** with Yuna's diverted attention

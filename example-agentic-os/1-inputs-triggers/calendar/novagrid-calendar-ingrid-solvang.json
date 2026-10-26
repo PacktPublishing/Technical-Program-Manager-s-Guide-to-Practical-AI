@@ -1,5 +1,6 @@
 {
   "_meta": {
+    "fictional": "NovaGrid, Inc. is a fictional company invented for the book \"Technical Program Manager's Guide to Practical AI\". All people, customers, programs, numbers and events in this file are made up. Any resemblance to real companies or people is coincidental.",
     "source": "Google Workspace — Calendar",
     "calendar": "ingrid.solvang@novagrid.io",
     "exported_at": "2026-09-03T07:00:00Z",
@@ -148,7 +149,7 @@
       "title": "1:1 — Rania Haddad (Security & Compliance Eng)",
       "start": "2026-09-04T14:00:00+02:00",
       "durationMin": 30,
-      "note": "Sec Eng triple-commitment: SHIELD observation 1.5 FTE, DEP-002 at 15%, possible CC6.4/CC6.6 re-evidence before Deloitte's Sep 21 sampling pass."
+      "note": "Sec Eng triple-commitment: SHIELD observation 1.5 FTE, DEP-002 at 15%, possible CC6.4/CC6.6 re-evidence before the auditor's Sep 21 sampling pass."
     },
     {
       "id": "EVT-3205",
@@ -174,7 +175,7 @@
     },
     {
       "id": "EVT-3208",
-      "title": "Deloitte first sampling pass — SHIELD observation window",
+      "title": "The auditor first sampling pass — SHIELD observation window",
       "start": "2026-09-21T09:00:00+02:00",
       "type": "deadline",
       "note": "Any CC6.4/CC6.6 re-evidence has to be done and disclosed before this."

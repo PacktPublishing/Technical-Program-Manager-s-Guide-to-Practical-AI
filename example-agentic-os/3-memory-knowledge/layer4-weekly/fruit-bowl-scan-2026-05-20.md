@@ -108,15 +108,15 @@
 
 **Evidence:**
 - Board mandate Aug 31 SOC 2 Type II — immovable by definition
-- Zero-buffer sequential chain: NEXUS Jun 30 → 14 controls Jul 1 → M4 Jul 15 → evidence Jul 15 → Deloitte audit Aug → cert Aug 31
+- Zero-buffer sequential chain: NEXUS Jun 30 → 14 controls Jul 1 → M4 Jul 15 → evidence Jul 15 → external audit Aug → cert Aug 31
 - Any NEXUS IAM slip does not delay SHIELD — it may make Aug 31 mathematically impossible (3+ weeks required from control completion to cert)
 - 19 non-IAM controls still in progress, must complete Jul 1–15
 
-**Checkpoint 1 annotation:** "Deloitte is not flexible on the timeline. Validation by Deloitte outstanding."
+**Checkpoint 1 annotation:** "The auditor is not flexible on the timeline. Validation by the auditor outstanding."
 
-**Implication:** Deloitte inflexibility confirms the Aug 31 anchor is a hard external constraint (Avocado). Deloitte validation still outstanding means the evidentiary requirements are not fully known — any gap discovered in feedback could compress the already-tight Jul 1–15 window further.
+**Implication:** the auditor inflexibility confirms the Aug 31 anchor is a hard external constraint (Avocado). The auditor validation still outstanding means the evidentiary requirements are not fully known — any gap discovered in feedback could compress the already-tight Jul 1–15 window further.
 
-**Recommended action:** Fatima Al-Hassan must confirm Deloitte validation status on the May 12 evidence submission before the Jul window planning finalizes. Any outstanding feedback from Deloitte becomes a critical path item the moment it arrives.
+**Recommended action:** Fatima Al-Hassan must confirm the auditor validation status on the May 12 evidence submission before the Jul window planning finalizes. Any outstanding feedback from the auditor becomes a critical path item the moment it arrives.
 
 ---
 
@@ -161,7 +161,7 @@
 1. **NEXUS early signal nature** — Portfolio mode cannot name the early signal or assess its impact on Jun 30. Simulation + Sara interview required.
 2. **ATLAS uptime improvement path** — Whether an uptime fix is technically feasible before Jun 30 (or at all) requires deep Leo + Model Serving engagement. Portfolio mode only sees the absence of a plan.
 3. **HORIZON Solaris contract language** — Whether "GA available July 31" in the Solaris contract is satisfiable with a soft GA / direct install requires Legal review of the specific contract clause. Portfolio mode cannot assess contract language.
-4. **SHIELD Deloitte validation feedback** — Whether the May 12 evidence submission has outstanding feedback that could compress the Jul window requires Fatima's direct follow-up with Deloitte. Portfolio mode only sees the validation is outstanding.
+4. **SHIELD the auditor validation feedback** — Whether the May 12 evidence submission has outstanding feedback that could compress the Jul window requires Fatima's direct follow-up with the auditor. Portfolio mode only sees the validation is outstanding.
 5. **MERIDIAN Thornbridge Capital** — Whether the one cautious enterprise customer (Thornbridge) will migrate before Jun 1 enterprise close target requires James's direct account engagement.
 6. **SPARK M2 technical risk** — Whether vLLM-based model serving architecture at 55% allocation can realistically hit Aug 11 without a second ordering-error-style discovery requires deep technical review of the M2 sprint backlog.
 

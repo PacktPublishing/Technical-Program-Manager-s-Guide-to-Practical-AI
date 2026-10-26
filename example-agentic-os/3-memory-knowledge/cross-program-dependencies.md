@@ -6,7 +6,7 @@ Owner: TPM (Karl Bergstrom)
 
 > **Agent loading rule:** For any task spanning more than one program, load this file before reading individual program masters. Canonical source designations in the **Depends on** column take precedence over conflicting values in the consuming program's files. Conflicts not resolvable by this rule escalate to the TPM owner above.
 
-> **Structural note (Aug 10):** NEXUS IAM going live on Jun 30 resolved five of the twelve registry entries at once. **Every internal blocking dependency in this registry is now closed.** The two live gates on the portfolio are external — Apple's App Store review (HORIZON) and Deloitte's observation period (SHIELD) — and neither is a cross-program dependency. This registry has changed character: it is now a record of what was, plus two provider relationships that still carry live dates.
+> **Structural note (Aug 10):** NEXUS IAM going live on Jun 30 resolved five of the twelve registry entries at once. **Every internal blocking dependency in this registry is now closed.** The two live gates on the portfolio are external — Apple's App Store review (HORIZON) and the auditor's observation period (SHIELD) — and neither is a cross-program dependency. This registry has changed character: it is now a record of what was, plus two provider relationships that still carry live dates.
 
 ---
 
@@ -23,7 +23,7 @@ Owner: TPM (Karl Bergstrom)
 | ATLAS | SOC 2 evidence availability | `3-memory-knowledge/layer3-programs/shield-master.md` | 2026-08-10 | SHIELD | — | 🟡 Open — date changed | 100/100 controls complete, evidence accepted Aug 7. **The consumable artifact changed under DR-014:** readiness evidence is available now; the Type II report is Dec 15, not Aug 31. ATLAS expansion revenue ($9.4M across three accounts) re-baselined to Q4. |
 | ATLAS | Vector Store v2 delivery date | `3-memory-knowledge/layer3-programs/spark-master.md` | 2026-08-10 | SPARK | — | 🟢 Closed | Delivered May 29 — 32 days early. |
 | SHIELD | API audit logging availability | `3-memory-knowledge/layer3-programs/meridian-master.md` | 2026-08-10 | MERIDIAN | — | 🟢 Closed | Delivered Apr 3. 8 controls unblocked. |
-| **SHIELD** | **Pipeline audit trail (Temporal) — 2 controls in remediation** | `3-memory-knowledge/layer3-programs/pulse-master.md` | 2026-08-10 | **PULSE** | — | 🟡 **Open — action needed** | **PULSE M4 closed Aug 7, so the Temporal audit trail is now real for the FlowEngine estate. The 2 controls documented to Deloitte as "in remediation" should be re-evidenced before SHIELD's Sep 1 observation window opens. Yuna owes Fatima confirmation.** |
+| **SHIELD** | **Pipeline audit trail (Temporal) — 2 controls in remediation** | `3-memory-knowledge/layer3-programs/pulse-master.md` | 2026-08-10 | **PULSE** | — | 🟡 **Open — action needed** | **PULSE M4 closed Aug 7, so the Temporal audit trail is now real for the FlowEngine estate. The 2 controls documented to the auditor as "in remediation" should be re-evidenced before SHIELD's Sep 1 observation window opens. Yuna owes Fatima confirmation.** |
 | ATLAS · SHIELD · PULSE · SPARK | OTel migration completion | `3-memory-knowledge/layer3-programs/nexus-master.md` | 2026-08-10 | NEXUS | — | 🟢 Closed | Delivered May 2. All 15 teams. *(Consolidated from four identical rows.)* |
 
 ---

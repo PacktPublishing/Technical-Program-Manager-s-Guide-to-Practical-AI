@@ -101,7 +101,7 @@ Referenced by: `/tpm-alignment-gap-detector`
 
 **TPM:** Karl Bergstrom (acting)
 **Analyzed:** 2026-05-14
-**Conversations:** 6 verbatim · 2 notes · 1 rejected (post-hoc summary of the Deloitte sync)
+**Conversations:** 6 verbatim · 2 notes · 1 rejected (post-hoc summary of the auditor's sync)
 **Corpus grade:** 🟢 Full
 **Forcing event:** Monthly Executive SteerCo, May 26 — 12 days to resolve
 
@@ -116,7 +116,7 @@ Referenced by: `/tpm-alignment-gap-detector`
 | Ana Ferreira | Staff Eng, Platform | verbatim | 4% | ✅ | 2 |
 | Tom Achebe | EM, Infra | verbatim | 4% | ✅ | 1 |
 | Lena Vogt | Compliance Analyst | notes | 3% | ✅ | 2 |
-| Deloitte engagement lead | External auditor | verbatim | 1% | ✅ | 1 |
+| The auditor engagement lead | External auditor | verbatim | 1% | ✅ | 1 |
 
 **Volume-bias check:** 2 of 3 gaps involve a bottom-third speaker → 🟢 corrected
 **Uncovered:** DataCore division EM (owns 3 of the 11 outstanding controls) — no conversation captured
@@ -125,19 +125,19 @@ Referenced by: `/tpm-alignment-gap-detector`
 
 | # | Gap | Type | Grade | Parties | Resolve by | Decision owner |
 |---|-----|------|-------|---------|-----------|---------------|
-| 1 | Evidence freeze date vs. control remediation window | Timeline | DIRECT | Whitfield / Deloitte lead | May 26 | Yuki Tanaka |
+| 1 | Evidence freeze date vs. control remediation window | Timeline | DIRECT | Whitfield / the auditor lead | May 26 | Yuki Tanaka |
 | 2 | What "control complete" means for evidence purposes | Success criteria | DIRECT | Whitfield / Ferreira | May 20 | James Whitfield |
 | 3 | Who owns the 3 DataCore controls | Ownership | LATENT | Tanaka / (uncovered) | May 22 | Karl Bergstrom |
 
 ### Gap 1 — Evidence freeze date vs. control remediation window
 
 **Type:** Timeline · **Grade:** DIRECT
-**Blast radius:** The Deloitte audit date is fixed and contractually paid ($180K). A freeze earlier than assumed removes 3 weeks of remediation from the SHIELD plan and puts 11 controls at risk — board-mandated certification failure.
+**Blast radius:** the auditor's audit date is fixed and contractually paid ($180K). A freeze earlier than assumed removes 3 weeks of remediation from the SHIELD plan and puts 11 controls at risk — board-mandated certification failure.
 
 **Side A — James Whitfield, CISO**
 > "We've got until the audit window opens in August, so remediation runs through July and we're fine on the tail-end controls." — 1:1, May 8
 
-**Side B — Deloitte engagement lead**
+**Side B — the auditor engagement lead**
 > "Evidence collection closes six weeks before fieldwork. Anything remediated after that lands in the next cycle." — Audit prep call, May 12
 
 **Why these conflict:** Both cannot be true. A six-week evidence freeze before an August window closes evidence in mid-June, not July — which deletes the entire remediation tail the CISO is planning around.
@@ -168,7 +168,7 @@ Referenced by: `/tpm-alignment-gap-detector`
 | Stakeholder | Said (verbatim) | The condition | Read by others as | Who needs to know |
 |-------------|----------------|--------------|------------------|------------------|
 | Yuki Tanaka | "We can probably free up two platform engineers for SHIELD if NEXUS holds its Q2 dates" | NEXUS holds Q2 dates | Two engineers committed to SHIELD | Karl Bergstrom, Sara Lindqvist |
-| Marcus Bauer | "Budget's there assuming we don't need a second Deloitte engagement" | No re-audit | Budget approved | James Whitfield |
+| Marcus Bauer | "Budget's there assuming we don't need a second audit engagement" | No re-audit | Budget approved | James Whitfield |
 | Tom Achebe | "Infra should be ready, as long as the residency work doesn't land the same sprint" | GDPR residency work not concurrent | Infra ready | Yuki Tanaka |
 
 ## Unverified Concerns

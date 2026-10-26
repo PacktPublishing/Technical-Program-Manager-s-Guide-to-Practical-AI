@@ -1,5 +1,6 @@
 {
   "_meta": {
+    "fictional": "NovaGrid, Inc. is a fictional company invented for the book \"Technical Program Manager's Guide to Practical AI\". All people, customers, programs, numbers and events in this file are made up. Any resemblance to real companies or people is coincidental.",
     "source": "Google Workspace — Gmail",
     "mailbox": "ingrid.solvang@novagrid.io",
     "exported_at": "2026-09-03T07:00:00Z",
@@ -45,7 +46,7 @@
         {
           "sentAt": "2026-08-07T17:00:00Z",
           "from": "anders.holt@novagrid.io",
-          "body": "Week 1. Good week. Rate limit lifted Aug 3 — uptime held above 98.5% for seven straight days and the F6 circuit breaker is doing exactly what it was built to do. Marcus Chen restarted the 4th enterprise onboarding. Sec Eng: Deloitte accepted all three remediated controls Aug 7, so SHIELD is 100/100 with accepted evidence. Rania's people did that and I have told them so. F7 autoscaling at 68%. Nothing for you."
+          "body": "Week 1. Good week. Rate limit lifted Aug 3 — uptime held above 98.5% for seven straight days and the F6 circuit breaker is doing exactly what it was built to do. Marcus Chen restarted the 4th enterprise onboarding. Sec Eng: The auditor accepted all three remediated controls Aug 7, so SHIELD is 100/100 with accepted evidence. Rania's people did that and I have told them so. F7 autoscaling at 68%. Nothing for you."
         },
         {
           "sentAt": "2026-08-12T18:30:00Z",
@@ -181,7 +182,7 @@
         {
           "sentAt": "2026-09-01T12:00:00Z",
           "from": "rania.haddad@novagrid.io",
-          "body": "And the same team is seeded at 15% on DEP-002, the ATLAS full-IAM refactor that retires the Auth0 workaround — Marcus started the sprint Aug 17 and is planning to land it late September. 15% does not deliver that and does not cover the observation load either. There is also a live question from Fatima about re-evidencing CC6.4 and CC6.6 inside the window against the Temporal audit trail, which if we do it is my team doing it, in September, before Deloitte's first sampling pass in the week of Sep 21. Three commitments, one team, and I need you to tell me which two. My recommendation: SHIELD observation is non-negotiable at 1.5 FTE, take the CC6.4/CC6.6 re-evidence if Fatima wants it, and let DEP-002 slip to October with that stated openly rather than discovered in October."
+          "body": "And the same team is seeded at 15% on DEP-002, the ATLAS full-IAM refactor that retires the Auth0 workaround — Marcus started the sprint Aug 17 and is planning to land it late September. 15% does not deliver that and does not cover the observation load either. There is also a live question from Fatima about re-evidencing CC6.4 and CC6.6 inside the window against the Temporal audit trail, which if we do it is my team doing it, in September, before the auditor's first sampling pass in the week of Sep 21. Three commitments, one team, and I need you to tell me which two. My recommendation: SHIELD observation is non-negotiable at 1.5 FTE, take the CC6.4/CC6.6 re-evidence if Fatima wants it, and let DEP-002 slip to October with that stated openly rather than discovered in October."
         }
       ]
     },
@@ -297,8 +298,8 @@
     },
     {
       "id": "THR-2012",
-      "subject": "Deloitte — observation period sampling schedule",
-      "from": "e.mcbride@deloitte.com",
+      "subject": "The auditor — observation period sampling schedule",
+      "from": "external auditor",
       "to": ["fatima.alhassan@novagrid.io"],
       "cc": ["ingrid.solvang@novagrid.io", "rania.haddad@novagrid.io", "james.whitfield@novagrid.io"],
       "labels": ["shield", "external", "fyi"],
@@ -308,7 +309,7 @@
       "messages": [
         {
           "sentAt": "2026-09-01T08:00:00Z",
-          "from": "e.mcbride@deloitte.com",
+          "from": "external auditor",
           "body": "Confirming the observation period runs Sep 1 – Nov 30. We will sample across the period rather than at the end, with the first sampling pass in the week of Sep 21 and monthly thereafter. Please treat every control as live from today. Report issuance target remains Dec 15."
         }
       ]
@@ -327,7 +328,7 @@
         {
           "sentAt": "2026-08-31T17:00:00Z",
           "from": "fatima.alhassan@novagrid.io",
-          "body": "Readiness signed off today against the five criteria agreed Aug 13: 100/100 controls with accepted evidence, named owner per control, monitoring live on all 100, drift detection armed, documented exception path. Deloitte confirmed observation Sep 1 – Nov 30, report Dec 15. M6 closed on the board-mandated date."
+          "body": "Readiness signed off today against the five criteria agreed Aug 13: 100/100 controls with accepted evidence, named owner per control, monitoring live on all 100, drift detection armed, documented exception path. The auditor confirmed observation Sep 1 – Nov 30, report Dec 15. M6 closed on the board-mandated date."
         }
       ]
     },

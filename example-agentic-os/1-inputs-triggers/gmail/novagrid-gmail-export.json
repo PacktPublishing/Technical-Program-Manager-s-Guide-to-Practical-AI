@@ -1,5 +1,6 @@
 {
   "_meta": {
+    "fictional": "NovaGrid, Inc. is a fictional company invented for the book \"Technical Program Manager's Guide to Practical AI\". All people, customers, programs, numbers and events in this file are made up. Any resemblance to real companies or people is coincidental.",
     "source": "Google Workspace — Gmail",
     "mailbox": "karl.bergstrom@novagrid.io",
     "exported_at": "2026-09-03T07:00:00Z",
@@ -157,12 +158,12 @@
         {
           "sentAt": "2026-08-31T17:00:00Z",
           "from": "fatima.alhassan@novagrid.io",
-          "body": "Readiness signed off today. James signed against the five criteria agreed Aug 13: 100/100 controls with accepted evidence, named owner per control, monitoring live on all 100, drift detection armed, and a documented exception path. Deloitte confirmed the observation window opens Sep 1 and closes Nov 30, report Dec 15. That is M6 closed on the board-mandated date, and the definition of 'ready' now exists in writing, which it did not three weeks ago."
+          "body": "Readiness signed off today. James signed against the five criteria agreed Aug 13: 100/100 controls with accepted evidence, named owner per control, monitoring live on all 100, drift detection armed, and a documented exception path. The auditor confirmed the observation window opens Sep 1 and closes Nov 30, report Dec 15. That is M6 closed on the board-mandated date, and the definition of 'ready' now exists in writing, which it did not three weeks ago."
         },
         {
           "sentAt": "2026-09-01T09:05:00Z",
           "from": "fatima.alhassan@novagrid.io",
-          "body": "One thing did not land and I need a portfolio-level call on it. DEP-009 — re-evidencing CC6.4 and CC6.6 against the completed Temporal audit trail — did not happen before Sep 1. Yuna was consumed by the decommission and I did not escalate hard enough. Those two controls entered the observation window on the July compensating documentation, which Deloitte accepted for readiness but which is the weakest evidence in the pack. Two options. (a) Leave them and re-evidence at the first quarterly cycle, accepting that if Deloitte samples them early we are defending compensating docs for a control that has a real audit trail sitting unused. (b) Re-evidence inside the window in September, which is clean but means changing evidence mid-observation and telling Deloitte why. I have a mild preference for (b) done early and disclosed, but this is exactly the $12.2M question and I do not want to choose alone. R-009 is no longer theoretical — it has a specific name on day one."
+          "body": "One thing did not land and I need a portfolio-level call on it. DEP-009 — re-evidencing CC6.4 and CC6.6 against the completed Temporal audit trail — did not happen before Sep 1. Yuna was consumed by the decommission and I did not escalate hard enough. Those two controls entered the observation window on the July compensating documentation, which the auditor accepted for readiness but which is the weakest evidence in the pack. Two options. (a) Leave them and re-evidence at the first quarterly cycle, accepting that if the auditor samples them early we are defending compensating docs for a control that has a real audit trail sitting unused. (b) Re-evidence inside the window in September, which is clean but means changing evidence mid-observation and telling the auditor why. I have a mild preference for (b) done early and disclosed, but this is exactly the $12.2M question and I do not want to choose alone. R-009 is no longer theoretical — it has a specific name on day one."
         }
       ]
     },
@@ -316,8 +317,8 @@
     },
     {
       "id": "THR-1014",
-      "subject": "Deloitte — observation period logistics and sampling schedule",
-      "from": "e.mcbride@deloitte.com",
+      "subject": "The auditor — observation period logistics and sampling schedule",
+      "from": "external auditor",
       "to": ["fatima.alhassan@novagrid.io"],
       "cc": ["karl.bergstrom@novagrid.io", "james.whitfield@novagrid.io"],
       "labels": ["shield", "external", "fyi"],
@@ -327,7 +328,7 @@
       "messages": [
         {
           "sentAt": "2026-09-01T08:00:00Z",
-          "from": "e.mcbride@deloitte.com",
+          "from": "external auditor",
           "body": "Confirming the observation period runs Sep 1 – Nov 30. We will sample across the period rather than at the end, with the first sampling pass in the week of Sep 21 and monthly thereafter. Please treat every control as live from today. Report issuance target remains Dec 15."
         }
       ]

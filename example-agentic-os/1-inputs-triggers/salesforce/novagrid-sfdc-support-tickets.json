@@ -1,5 +1,6 @@
 {
   "_meta": {
+    "fictional": "NovaGrid, Inc. is a fictional company invented for the book \"Technical Program Manager's Guide to Practical AI\". All people, customers, programs, numbers and events in this file are made up. Any resemblance to real companies or people is coincidental.",
     "source": "Salesforce Service Cloud",
     "instance": "novagrid.my.salesforce.com",
     "exported_at": "2026-08-10T08:00:00Z",
@@ -344,8 +345,8 @@
       "category": "Compliance Documentation",
       "pattern": 4,
       "priority": "P2",
-      "summary": "Yvonne Tran formally requesting SOC 2 Type II evidence documentation for Meridian Financial legal due diligence. Legal team has 90-day clause — SOC 2 evidence must be in progress or completed by May 1 2026. Yvonne needs: current control completion count, Deloitte engagement letter, and estimated certification date. Flagged as deal-blocking by AE Dmitri Volkov.",
-      "resolution": "L2 escalated to SHIELD team (Marcus Chen). Provided in-progress SOC 2 status update: 22 controls completed, Deloitte engaged, target date Aug 2026. Yvonne acknowledged and shared with legal team. Deal continued in pipeline. Meridian Financial legal 90-day clause satisfied by SHIELD M3 close May 26 (evidence package submitted May 12).",
+      "summary": "Yvonne Tran formally requesting SOC 2 Type II evidence documentation for Meridian Financial legal due diligence. Legal team has 90-day clause — SOC 2 evidence must be in progress or completed by May 1 2026. Yvonne needs: current control completion count, the auditor engagement letter, and estimated certification date. Flagged as deal-blocking by AE Dmitri Volkov.",
+      "resolution": "L2 escalated to SHIELD team (Marcus Chen). Provided in-progress SOC 2 status update: 22 controls completed, the auditor engaged, target date Aug 2026. Yvonne acknowledged and shared with legal team. Deal continued in pipeline. Meridian Financial legal 90-day clause satisfied by SHIELD M3 close May 26 (evidence package submitted May 12).",
       "escalatedToL3": false,
       "l3JiraTicket": null,
       "programRelevance": "SHIELD — SOC 2 certification. Blocked deal converted to active pipeline following evidence package delivery."
@@ -382,8 +383,8 @@
       "category": "Compliance Documentation",
       "pattern": 4,
       "priority": "P2",
-      "summary": "Rajiv Patel submitted formal SOC 2 progress update request — has a Q3 board meeting where he must present vendor compliance posture for all data platform vendors. Rajiv asked specifically for: (1) current control count, (2) Deloitte audit engagement confirmation, (3) expected Type II certification date, and (4) what happens if certification slips past Aug 2026. Flagged as board-level deadline by AE Sarah James.",
-      "resolution": "L2 escalated to Marcus Chen (SHIELD PM). Response provided Mar 12: 48 controls completed (out of 86 in scope), Deloitte engagement letter attached, Aug 2026 certification target confirmed, and contingency briefing (interim Type I-equivalent evidence package available if Type II slips). Rajiv acknowledged — satisfied with progress trajectory. Relationship maintained.",
+      "summary": "Rajiv Patel submitted formal SOC 2 progress update request — has a Q3 board meeting where he must present vendor compliance posture for all data platform vendors. Rajiv asked specifically for: (1) current control count, (2) external audit engagement confirmation, (3) expected Type II certification date, and (4) what happens if certification slips past Aug 2026. Flagged as board-level deadline by AE Sarah James.",
+      "resolution": "L2 escalated to Marcus Chen (SHIELD PM). Response provided Mar 12: 48 controls completed (out of 86 in scope), the auditor engagement letter attached, Aug 2026 certification target confirmed, and contingency briefing (interim Type I-equivalent evidence package available if Type II slips). Rajiv acknowledged — satisfied with progress trajectory. Relationship maintained.",
       "escalatedToL3": false,
       "l3JiraTicket": null,
       "programRelevance": "SHIELD — SOC 2 certification. CDO board deadline (Q3) aligns with Aug 2026 target. Nuvera probability now 80%."

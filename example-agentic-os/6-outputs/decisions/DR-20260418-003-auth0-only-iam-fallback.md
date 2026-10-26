@@ -12,7 +12,7 @@
 
 ## Context
 
-The NEXUS IAM unified service (M6) slipped from July 31 to August 28 on March 18 when the CISO (James Whitfield) punted on the Auth0 contract renewal decision for the third time. The August 28 delivery date creates a cascade: 14 SHIELD controls cannot complete before the Deloitte audit window, HORIZON GA cannot happen before August 31 (with zero buffer), and ATLAS is accruing Auth0 workaround technical debt. Combined revenue exposure from HORIZON-dependent deals: approximately $4M.
+The NEXUS IAM unified service (M6) slipped from July 31 to August 28 on March 18 when the CISO (James Whitfield) punted on the Auth0 contract renewal decision for the third time. The August 28 delivery date creates a cascade: 14 SHIELD controls cannot complete before the auditor's audit window, HORIZON GA cannot happen before August 31 (with zero buffer), and ATLAS is accruing Auth0 workaround technical debt. Combined revenue exposure from HORIZON-dependent deals: approximately $4M.
 
 On April 14, Sara Lindqvist and Ingrid Solvang began scoping an alternative: an Auth0-only IAM build that bypasses the full NEXUS IAM unification service. The formal estimate was delivered April 18: Auth0-only IAM can deliver mobile and enterprise SSO by June 30 (8 engineers, 10 weeks). This does not require the Auth0 contract renewal decision — it uses Auth0 as the permanent IAM provider for mobile SSO, deferring full NEXUS IAM unification to H2 2026.
 
@@ -22,7 +22,7 @@ Yuki Tanaka is reviewing the estimate over the weekend (April 19-20). Decision r
 
 ## Decision Drivers
 
-- August 28 IAM delivery puts 14 SHIELD controls outside the Deloitte evidence window (July 15)
+- August 28 IAM delivery puts 14 SHIELD controls outside the auditor's evidence window (July 15)
 - HORIZON needs IAM by June for GA July 31 — August 28 NEXUS delivery creates zero buffer and forced GA slip to August 31
 - Kestrel Media ($1.6M) and Solaris Logistics ($2.4M) deals depend on HORIZON GA date
 - Auth0-only path does not require CISO cooperation on contract renewal — removes the single most persistent decision blocker in the portfolio
@@ -54,7 +54,7 @@ Yuki Tanaka is reviewing the estimate over the weekend (April 19-20). Decision r
 **Proposed:** Authorize the Auth0-only IAM fast path (Option B). Begin 10-week build immediately. Target delivery: June 30, 2026.
 
 **Rationale (Sara's recommendation to Yuki):**
-Option A accepts $4M in deal exposure and a high-probability Deloitte gap with no upside. Option C requires CEO escalation for a decision that may still not recover July. Option B eliminates the CISO dependency entirely and recovers the entire portfolio cascade — SHIELD, HORIZON, ATLAS, and $4M in deals — for the cost of deferring full IAM unification 6 months. The technical debt created is real but bounded and planned.
+Option A accepts $4M in deal exposure and a high-probability the auditor gap with no upside. Option C requires CEO escalation for a decision that may still not recover July. Option B eliminates the CISO dependency entirely and recovers the entire portfolio cascade — SHIELD, HORIZON, ATLAS, and $4M in deals — for the cost of deferring full IAM unification 6 months. The technical debt created is real but bounded and planned.
 
 ---
 

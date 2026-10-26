@@ -12,12 +12,12 @@
 
 | Key Result | Owner | Target | Current (Aug 2026) | Status |
 |-----------|-------|--------|-------------------|--------|
-| KR1.1: Achieve SOC 2 Type II certification | CISO + VP Eng | ~~Aug 2026~~ **Dec 15 2026** | **100/100 controls complete**, evidence accepted by Deloitte Aug 7. Readiness Aug 31; observation Sep 1–Nov 30; report Dec 15. | 🟡 At risk |
+| KR1.1: Achieve SOC 2 Type II certification | CISO + VP Eng | ~~Aug 2026~~ **Dec 15 2026** | **100/100 controls complete**, evidence accepted by the auditor Aug 7. Readiness Aug 31; observation Sep 1–Nov 30; report Dec 15. | 🟡 At risk |
 | KR1.2: Close 29 new enterprise deals (>$500K ARR) | CRO | Dec 2026 | 9 closed. Note: initial NovaAI enterprise contracts are landing at $140K–$360K with expansion gated behind the Type II report — the KR counts logos above $500K, the pipeline is landing below it. | 🔴 Behind |
 | KR1.3: Hit 125% NRR across enterprise segment | CCO | Dec 2026 | 121% | 🟡 At risk |
 | KR1.4: Achieve data residency in EU and APAC regions | VP Eng | Sep 2026 | Architecture spike only. Programme target is **Q1 2027** (CHG-001) — the Sep 2026 KR date has not been formally restated and cannot be met. | 🔴 Behind |
 
-> **KR1.1 was restated by DR-014 (Jul 22).** The original "Aug 2026 certification" was never achievable: Deloitte's observation period opens Sep 1. Aug 31 is audit-readiness; the Type II report is Dec 15. Amber rather than green because the dominant risk is now control **drift** during observation, not control completion.
+> **KR1.1 was restated by DR-014 (Jul 22).** The original "Aug 2026 certification" was never achievable: The auditor's observation period opens Sep 1. Aug 31 is audit-readiness; the Type II report is Dec 15. Amber rather than green because the dominant risk is now control **drift** during observation, not control completion.
 >
 > **KR1.4 carries the same class of defect DR-014 corrected in KR1.1** — a board-level KR date (Sep 2026) that no programme plan supports (Q1 2027). It should be restated deliberately rather than left to be discovered.
 

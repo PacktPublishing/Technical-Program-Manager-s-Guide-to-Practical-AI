@@ -1,5 +1,6 @@
 {
   "_meta": {
+    "fictional": "NovaGrid, Inc. is a fictional company invented for the book \"Technical Program Manager's Guide to Practical AI\". All people, customers, programs, numbers and events in this file are made up. Any resemblance to real companies or people is coincidental.",
     "source": "Google Workspace — Calendar",
     "calendar": "karl.bergstrom@novagrid.io",
     "exported_at": "2026-09-03T07:00:00Z",
@@ -120,7 +121,7 @@
       "attendees": ["fatima.alhassan@novagrid.io", "james.whitfield@novagrid.io"],
       "outcomes": [
         "SHIELD M6 CLOSED on the board-mandated date. James Whitfield signed against the 5 criteria agreed Aug 13.",
-        "Deloitte observation window confirmed Sep 1 – Nov 30, report Dec 15.",
+        "The auditor observation window confirmed Sep 1 – Nov 30, report Dec 15.",
         "DEP-009 not closed — CC6.4 and CC6.6 entered the window on July compensating documentation."
       ],
       "decisionsTaken": ["SHIELD audit readiness accepted Aug 31"]

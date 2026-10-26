@@ -89,7 +89,7 @@ M[N] → M[N+1] → M[N+2] → **Program end**
 **TPM:** Fatima Al-Hassan
 **Program phase:** Execution
 **Last updated:** 2026-03-11
-**Target end date:** 2026-08-15 (Deloitte audit — hard deadline, $180K contract signed)
+**Target end date:** 2026-08-15 (The auditor audit — hard deadline, $180K contract signed)
 
 ## Milestone Summary
 
@@ -108,12 +108,12 @@ M[N] → M[N+1] → M[N+2] → **Program end**
 | M3 | NEXUS IAM unification (14 controls unblocked) | Sara Lindqvist | 2026-07-01 | 🟡 At risk |
 | M4 | MERIDIAN audit logging (8 controls unblocked) | Fatima Al-Hassan | 2026-04-15 | 🟡 At risk |
 | M5 | All 100 controls implementation complete | Fatima Al-Hassan | 2026-07-15 | 🔴 Behind |
-| M6 | Pre-audit readiness review with Deloitte | James Whitfield | 2026-08-01 | — |
-| M7 | Deloitte SOC 2 Type II audit | James Whitfield | 2026-08-15 | — |
+| M6 | Pre-audit readiness review with the auditor | James Whitfield | 2026-08-01 | — |
+| M7 | The auditor SOC 2 Type II audit | James Whitfield | 2026-08-15 | — |
 
 ## Critical Path
 
-M2 (controls) → M3 (NEXUS IAM) → M5 (all complete) → M6 (pre-audit) → **M7 (Deloitte)**
+M2 (controls) → M3 (NEXUS IAM) → M5 (all complete) → M6 (pre-audit) → **M7 (The auditor)**
 
 **Float available:** 0 days — M7 is contractually fixed. Any slip to M5 cascades directly to audit failure.
 

@@ -153,17 +153,17 @@ Referenced by: `/tpm-qbr-prep`
 |------|-----------|--------|-----------|-------|
 | Model Serving unresponsive through Q2 | High | Critical — 6 controls blocked → M2 misses | Karl B. escalation to Leo Nakamura | Karl Bergstrom |
 | NEXUS IAM Jul delivery slip | Medium | High — 14 controls shift to Aug, no time for audit prep | Sara Lindqvist to confirm NEXUS M6 timeline | Sara Lindqvist |
-| Deloitte pre-audit readiness review Aug 1 — no buffer | High | Critical — any single dep slip = audit failure | Weekly SHIELD/NEXUS/MERIDIAN sync | Fatima Al-Hassan |
+| The auditor pre-audit readiness review Aug 1 — no buffer | High | Critical — any single dep slip = audit failure | Weekly SHIELD/NEXUS/MERIDIAN sync | Fatima Al-Hassan |
 
 ## Ask for Q2
 
 > **Yuki Tanaka issues written exec mandate: SHIELD is P0 across all 8 Engineering divisions**
 
-**Context:** Without this mandate, team leads will continue deprioritizing SHIELD against their Q2 roadmaps. 33 controls remain unowned. Aug 15 Deloitte audit — already contracted for $180K — will fail.
+**Context:** Without this mandate, team leads will continue deprioritizing SHIELD against their Q2 roadmaps. 33 controls remain unowned. Aug 15 external audit — already contracted for $180K — will fail.
 
 **Options:**
 - **Option A:** Yuki issues written directive this week — SHIELD controls are non-negotiable P0 alongside roadmap
-- **Option B:** Reduce SHIELD scope to 80 controls and accept partial SOC 2 scope with Deloitte
+- **Option B:** Reduce SHIELD scope to 80 controls and accept partial SOC 2 scope with the auditor
 
 **Recommendation:** Option A — scope reduction in Option B is not viable; it voids our enterprise customer commitments and the audit contract.
 

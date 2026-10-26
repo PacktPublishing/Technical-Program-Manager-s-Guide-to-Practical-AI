@@ -38,7 +38,7 @@ W33 archived; the blackout is reconstructed in `2026-absence-reconstruction-aug1
 | 2 | **Q3 QBR pre-read.** Moved Sep 22 → Sep 8 on Aug 24. Three CFO requirements demanded *in writing*: PULSE dual-run reconciliation with the date the burn stops; ATLAS M9 renegotiated number; SPARK Dec 31 chain end to end. **None drafted.** | Karl B. | **TODAY EOD** | Board pack cut-off. Yuki's 09:00 1:1 is to align on M9 before Marcus Bauer sees it. |
 | 3 | **ATLAS M9 renegotiation.** 4 in production against 15 by Dec 31, four months left. Needs 2.75/month against a demonstrated ~1. Marcus Chen's honest number is **8, maybe 9**. Open since Aug 3. | Yuki T. / Marcus B. | **TODAY** (feeds #2) | *"I want the renegotiated number, not a recovery plan."* — Marcus Bauer, Aug 24. |
 | 4 | **NEXUS M7 target — <200 or <175.** Open since Jul 13. Q3 board trajectory chart is being built and whoever builds it must pick one. Redmount's letter cited service count specifically. | Karl B. / Yuki T. | **TODAY** | The difference is the entire story the chart tells. **See the pace discrepancy below — verify before choosing.** |
-| 5 | **SHIELD DEP-009.** CC6.4 and CC6.6 entered the observation window on July compensating documentation, not on the completed Temporal audit trail. Deloitte samples from the week of Sep 21. | James W. / Karl B. | **before Sep 21** | **$12.2M.** The weakest evidence in the pack sits on controls that have a real audit trail available and unused. |
+| 5 | **SHIELD DEP-009.** CC6.4 and CC6.6 entered the observation window on July compensating documentation, not on the completed Temporal audit trail. The auditor samples from the week of Sep 21. | James W. / Karl B. | **before Sep 21** | **$12.2M.** The weakest evidence in the pack sits on controls that have a real audit trail available and unused. |
 | 6 | **MERIDIAN compatibility shim ownership.** Brightline and Corvid run on v2 through a shim hosted on v1 infrastructure. ~4 weeks of work, **owned by nobody**, 3.7 weeks remain. | Ingrid S. / James O. | **this week** | Two named customers break at v1 EoL. Thornbridge's $1.7M is in Contract Negotiation on the strength of that date. |
 | 7 | **Ratify or reverse — 4 decisions taken in absence, 2 without a record.** | Karl B. | this week | Ingrid: *"If you disagree when you are back, say so."* That window is closing. |
 | 8 | TPM hiring — 2 finalists, competing offers expire Sep 11. | Karl B. / Hanna L. | Sep 10 | Both lost. |
@@ -103,7 +103,7 @@ W33 archived; the blackout is reconstructed in `2026-absence-reconstruction-aug1
 | M8 Public GA — iOS | HORIZON | Sep 7–14 | Apple second review, day 10 | **High (external)** |
 | M7 5 enterprise customers | ATLAS | Sep 15 | 4/5, 5th in contracting | Low |
 | F7 inference autoscaling | ATLAS | Sep 15 | 80% | Low |
-| Deloitte first sampling pass | SHIELD | week of Sep 21 | CC6.4/CC6.6 on weak evidence | **High** |
+| The auditor first sampling pass | SHIELD | week of Sep 21 | CC6.4/CC6.6 on weak evidence | **High** |
 | Read-only mode | PULSE | Sep 14 | Slipped from Sep 1 | **High** |
 | **M7 v1 API EoL** | MERIDIAN | **Sep 30** | Shim work unowned | **High** |
 | **M6 Airflow shutdown** | PULSE | **Sep 30** | Zero margin at Sep 28 | **High** |
@@ -117,7 +117,7 @@ W33 archived; the blackout is reconstructed in `2026-absence-reconstruction-aug1
 | DR-016 | **HORIZON ships Android-only for Aug 31 public GA; iOS held for resubmission** | Aug 20 (ratified Sep 4) | Redefines M8. Android shipped on time; iOS gated on Apple's second review. |
 | DR-017 | **SPARK M3 moves Sep 30 → Oct 16** | Aug 27 (ratified Sep 4) | Removes the last slack from the Dec 31 GA chain. M5 (Nov 30) becomes the pressure point. |
 | DR-018 | **ATLAS M9 renegotiated from 15 to 9 enterprise customers by Dec 31** | Sep 4 | Replaces an unreachable board commitment with a defensible one, before the QBR rather than in it. |
-| DR-019 | **SHIELD CC6.4/CC6.6 re-evidenced inside the observation window, disclosed to Deloitte** | Sep 4 | Trades a disclosed mid-window evidence change for the strongest available evidence ahead of Sep 21 sampling. |
+| DR-019 | **SHIELD CC6.4/CC6.6 re-evidenced inside the observation window, disclosed to the auditor** | Sep 4 | Trades a disclosed mid-window evidence change for the strongest available evidence ahead of Sep 21 sampling. |
 
 ---
 

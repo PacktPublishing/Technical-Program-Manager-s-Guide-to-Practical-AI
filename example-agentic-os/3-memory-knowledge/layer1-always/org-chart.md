@@ -1,6 +1,8 @@
 # NovaGrid — Org Chart
 *Layer 1 context · Always loaded · Update cadence: on org changes*
 
+> **Fictional company.** NovaGrid, Inc. and everything about it in this folder (people, customers, programs, numbers, events) is invented for the book. It is not a real company, and any resemblance to real companies or people is coincidental.
+
 ---
 
 ## Executive leadership

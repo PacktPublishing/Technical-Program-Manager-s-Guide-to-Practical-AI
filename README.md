@@ -4,6 +4,8 @@ The companion repository for **[The Technical Program Manager's Guide to Practic
 
 Every prompt printed in the book is here, with fictional sample data to try it on and, for the bigger use cases, a recorded output to compare against.
 
+> **Everything in this repository is fictional.** NovaGrid, Inc. (the example agentic OS), Halden (the Chapter 5 kit), the Platform Modernization portfolio (the Chapter 8 kit) and Jordan (the Chapter 11 kit) were invented for the book, together with all their people, customers, numbers and events. They are not real companies or people, and any resemblance is coincidental. Product names such as Jira, Datadog, Salesforce or Auth0 appear only to show what kind of tool a sample export imitates; their makers are not involved.
+
 ## Two ways to use it
 
 ### 1. Copy a prompt (no setup, any AI tool)
@@ -44,7 +46,7 @@ Answer yes when Claude Code asks whether to trust the folder, then try `/tpm-pro
 
 ## Before you use real data
 
-All names, companies and numbers in this repository are fictional. Before you paste your own program data, people data or customer data into any AI tool, check your company's AI policy, remove what you don't need to share, and use an approved tool. Chapter 9 covers this in full.
+Before you paste your own program data, people data or customer data into any AI tool, check your company's AI policy, remove what you don't need to share, and use an approved tool. Chapter 9 covers this in full.
 
 ## Feedback
 

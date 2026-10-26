@@ -1,6 +1,8 @@
 # NovaGrid — Company Snapshot
 *Layer 1 context · Always loaded · Update cadence: quarterly*
 
+> **Fictional company.** NovaGrid, Inc. and everything about it in this folder (people, customers, programs, numbers, events) is invented for the book. It is not a real company, and any resemblance to real companies or people is coincidental.
+
 ---
 
 **NovaGrid, Inc.** (NGRD, NASDAQ) — post-IPO B2B Data & AI platform.
@@ -35,6 +37,6 @@ Three product pillars:
 
 ## Public company pressure points
 
-- Board mandated SOC 2 Type II **audit-readiness by Aug 31, 2026**; Deloitte observation period Sep 1 – Nov 30; **Type II report Dec 15, 2026**. Restated by the board Jul 22, 2026 (DR-014 / CHG-006) — the original "certification by Aug 2026" wording described a report the auditor's engagement letter could not produce. Do not quote an Aug 31 certification date to customers.
+- Board mandated SOC 2 Type II **audit-readiness by Aug 31, 2026**; the auditor observation period Sep 1 – Nov 30; **Type II report Dec 15, 2026**. Restated by the board Jul 22, 2026 (DR-014 / CHG-006) — the original "certification by Aug 2026" wording described a report the auditor's engagement letter could not produce. Do not quote an Aug 31 certification date to customers.
 - Analyst community watching NovaAI revenue share (15% → 20% by year end)
 - Two activist investors pushing engineering cost efficiency (current: 31.2% of revenue, target: 28%)

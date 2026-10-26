@@ -28,7 +28,7 @@ Row = program that **needs** something · Column = program that **provides** it 
 
 | Board OKR | Critical path | Risk |
 |-----------|--------------|------|
-| SOC 2 Type II report **Dec 15** (restated, DR-014) | NEXUS IAM ✅ Jul 1 → SHIELD 100 controls ✅ Jul 15 → Deloitte evidence ✅ Aug 7 → readiness Aug 31 → **observation Sep 1–Nov 30** → report Dec 15 | 🟡 Medium — risk is control drift during observation, not delivery |
+| SOC 2 Type II report **Dec 15** (restated, DR-014) | NEXUS IAM ✅ Jul 1 → SHIELD 100 controls ✅ Jul 15 → the auditor evidence ✅ Aug 7 → readiness Aug 31 → **observation Sep 1–Nov 30** → report Dec 15 | 🟡 Medium — risk is control drift during observation, not delivery |
 | NovaAI SLA 99.5% | NEXUS OTel ✅ → PULSE Temporal ✅ Aug 7 → ATLAS F6 circuit breaker ✅ Jul 31 → **F7 autoscaling Sep 15** | 🟡 Medium — 98.9% rolling, target still unmet |
 | v1 API EoL **Sep 30** | MERIDIAN parity ✅ → migration 95% → **8 bespoke mid-market integrations Aug 21** → shutdown Sep 30 | 🟡 Medium — five weeks of margin, all of it behind 8 hand-built migrations |
 | Mobile public GA **Aug 31** (DR-008) | MERIDIAN endpoints ✅ → NEXUS IAM ✅ → HORIZON beta ✅ Jul 22 → soft GA ✅ Jul 31 → submission ✅ Aug 1 → **Apple review Aug 15–22** | 🟡 Medium — **gated externally, not internally** |

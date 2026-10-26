@@ -25,7 +25,7 @@ Since program kickoff in September 2025, SHIELD has carried the objective **"ach
 "reportExpected":            "2026-12-15"
 ```
 
-A SOC 2 Type II report attests that controls **operated effectively over an observation period**. This engagement's observation period does not open until September 1. No Type II report can exist on August 31 — not because anything slipped, but because the date describes a deliverable that does not exist in Deloitte's engagement letter.
+A SOC 2 Type II report attests that controls **operated effectively over an observation period**. This engagement's observation period does not open until September 1. No Type II report can exist on August 31 — not because anything slipped, but because the date describes a deliverable that does not exist in the auditor's engagement letter.
 
 Eleven months of program reporting, executive updates, and sales commitments were built on a date nobody had reconciled against the auditor's own contract.
 
@@ -35,11 +35,11 @@ Eleven months of program reporting, executive updates, and sales commitments wer
 
 Not a review. An audit finding.
 
-SHIELD closed M4 (100 controls complete) on time July 15 and delivered the full evidence package the same day. On **July 16**, Deloitte returned findings: 97 of 100 controls accepted, **3 failed on evidence sufficiency** — A1.7 (log retention, closed Jun 30), CC6.4 (quarterly access review) and CC6.6 (privileged access management), the latter two live only since July 1.
+SHIELD closed M4 (100 controls complete) on time July 15 and delivered the full evidence package the same day. On **July 16**, the auditor returned findings: 97 of 100 controls accepted, **3 failed on evidence sufficiency** — A1.7 (log retention, closed Jun 30), CC6.4 (quarterly access review) and CC6.6 (privileged access management), the latter two live only since July 1.
 
 The failures were not implementation defects. Every control was built and operating. They were **operating-history** defects: a quarterly access review with fifteen days of history cannot evidence a quarterly cycle.
 
-While raising them, Deloitte's engagement partner added an observation NovaGrid had not asked for:
+While raising them, the auditor's engagement partner added an observation NovaGrid had not asked for:
 
 > "The August 31 date in your board materials describes a certification we cannot issue. Our observation period opens September 1 and closes November 30, with the report following December 15. We flag this because your board appears to be tracking a date that does not correspond to any deliverable in our engagement letter."
 
@@ -52,7 +52,7 @@ The August 31, 2026 board mandate is **restated, not moved**:
 | | Old (as recorded) | New (as decided) |
 |---|---|---|
 | **Aug 31, 2026** | SOC 2 Type II certification achieved | **SOC 2 Type II audit-readiness confirmed** |
-| **Sep 1 – Nov 30, 2026** | *(not tracked)* | **Deloitte observation period** |
+| **Sep 1 – Nov 30, 2026** | *(not tracked)* | **The auditor observation period** |
 | **Dec 15, 2026** | *(not tracked)* | **SOC 2 Type II report issued** |
 
 The board accepted the restatement on July 22 on the basis that the original mandate **conflated readiness with certification**, and that no engineering commitment had been missed.
@@ -106,6 +106,6 @@ Nothing in the program's reporting cadence was designed to catch a contradiction
 - SHIELD R-008 — control drift during observation; the dominant risk now
 - SHIELD R-009 — CC6.4 / CC6.6 carry compensating documentation, not operating history
 - SHIELD R-010 — readiness sign-off criteria undefined
-- Vanta `deloitteInteractions` — DELOITTE-FINDING-2026-001 (Jul 16), NG-GOV-2026-003 (Jul 22), DELOITTE-ACK-2026-003 (Aug 7)
+- Vanta `auditorInteractions` — AUDITOR-FINDING-2026-001 (Jul 16), NG-GOV-2026-003 (Jul 22), AUDITOR-ACK-2026-003 (Aug 7)
 - SC-2026-0399 — Nuvera's direct question, arriving through support rather than the account team
 - FY2026 OKR KR1.1 — restated against the Dec 15 report date

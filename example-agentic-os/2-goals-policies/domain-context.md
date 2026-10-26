@@ -1,6 +1,8 @@
 # NovaGrid — TPM Operating Context
 *Always loaded · Update cadence: quarterly or on policy changes*
 
+> **Fictional company.** NovaGrid, Inc. and everything about it in this folder (people, customers, programs, numbers, events) is invented for the book. It is not a real company, and any resemblance to real companies or people is coincidental.
+
 > **Full org and technical detail** lives in `3-memory-knowledge/layer1-always/`. This file owns only what is unique to TPM operations: program taxonomy, RAG standards, Definition of Done, escalation policy, and compliance constraints.
 
 ---
@@ -81,7 +83,7 @@ Program TPM → Karl Bergstrom (Head TPM) → Division Director → Yuki Tanaka 
 | SOX financial controls | CFO (Marcus Bauer) | Jun 2026 | — | 🟢 60% complete |
 | GDPR + data residency (EU + APAC) | VP Eng (Yuki Tanaka) | Sep 2026 | Design phase | 🔴 Behind |
 
-**SOC 2 note:** Deloitte audit date is fixed ($180K contract). Any slip = certification failure. Board mandate — treat as P0 constraint across all programs.
+**SOC 2 note:** external audit date is fixed ($180K contract). Any slip = certification failure. Board mandate — treat as P0 constraint across all programs.
 
 ---
 

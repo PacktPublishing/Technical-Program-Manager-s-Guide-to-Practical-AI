@@ -43,9 +43,9 @@
 - **0 of 7 programs red.** PULSE came off red on Aug 7 when M4 closed — its first time off red since Q1. NEXUS went green Jul 10 at clean hypercare exit; ATLAS held green through GA.
 - **8 milestones closed since Jun 28:** ATLAS M8 (Jun 30), NEXUS M6 (Jul 1), NEXUS M5 (Jul 3), SHIELD M4 (Jul 15), HORIZON M6 (Jul 22), HORIZON M7 (Aug 1), SHIELD M5 (Aug 7), PULSE M4 (Aug 7).
 - **1 milestone missed:** MERIDIAN M6 mid-market, Aug 1 at 96% → revised Aug 21 (DR-015).
-- **5 new decision records (DR-011 to DR-015).** DR-014 is the one to read — it restated the SOC 2 board mandate after Deloitte pointed out that Aug 31 described a certification nobody could issue.
+- **5 new decision records (DR-011 to DR-015).** DR-014 is the one to read — it restated the SOC 2 board mandate after the auditor pointed out that Aug 31 described a certification nobody could issue.
 - **The dependency era ended Jul 1.** NEXUS IAM going live unblocked HORIZON beta, SHIELD's 14 IAM controls, and ATLAS DEP-002 within two weeks. What remains across the portfolio is execution and external gates, not internal blocking.
-- **Two things NovaGrid does not control now gate two programs:** Apple's App Store review decision (HORIZON, expected Aug 15–22) and Deloitte's Sep 1 – Nov 30 observation period (SHIELD).
+- **Two things NovaGrid does not control now gate two programs:** Apple's App Store review decision (HORIZON, expected Aug 15–22) and the auditor's Sep 1 – Nov 30 observation period (SHIELD).
 - **Revenue at risk fell $4.2M** and is now $2.4M *below* baseline. Offsetting that, ~$6.3M of SOC 2-gated pipeline moved Q3 → Q4 as a timing consequence of DR-014.
 - **$3.72M closed YTD** — $1.92M new ARR (Brightpath, Apex, Finex, Corinthia) plus the $1.8M VantagePoint renewal.
 
@@ -90,7 +90,7 @@
 | SHIELD | M4 — 100 controls complete | Jul 15, 2026 (on time) |
 | HORIZON | M6 — Beta, 10 enterprise customers | Jul 22, 2026 (7 days late) |
 | HORIZON | M7 — App Store / Play Store submission | Aug 1, 2026 (on time) |
-| SHIELD | M5 — Audit evidence accepted by Deloitte | Aug 7, 2026 (submitted Jul 15, reopened Jul 16, re-closed Aug 7) |
+| SHIELD | M5 — Audit evidence accepted by the auditor | Aug 7, 2026 (submitted Jul 15, reopened Jul 16, re-closed Aug 7) |
 | PULSE | M4 — FlowEngine pipelines 100% migrated | Aug 7, 2026 (13 days late vs revised) |
 
 *Earlier closes (Apr 24 – Jun 16) are archived in the weekly files. 23 milestones have closed since Apr 24.*

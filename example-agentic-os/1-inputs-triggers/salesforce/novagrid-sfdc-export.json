@@ -1,5 +1,6 @@
 {
   "_meta": {
+    "fictional": "NovaGrid, Inc. is a fictional company invented for the book \"Technical Program Manager's Guide to Practical AI\". All people, customers, programs, numbers and events in this file are made up. Any resemblance to real companies or people is coincidental.",
     "source": "Salesforce CRM",
     "instance": "novagrid.my.salesforce.com",
     "exported_at": "2026-08-10T08:00:00Z",
@@ -37,7 +38,7 @@
       "primaryContact": "Yvonne Tran, VP Data Engineering",
       "accountExecutive": "dmitri.volkov@novagrid.io",
       "tpmDependencies": ["ATLAS", "SHIELD"],
-      "notes": "Largest active pipeline deal. Legal's 90-day clause satisfied — SOC 2 was in progress well before May 1. SHIELD hit 100/100 controls Jul 15 and Deloitte accepted the full evidence package Aug 7. Dmitri Volkov walked Yvonne Tran through DR-014 on Jul 27: audit-readiness Aug 31, observation Sep 1 – Nov 30, Type II report Dec 15. Yvonne's response was that the clarity helps more than the earlier date did — her own legal team had assumed a report, not a readiness milestone. Close moved Q3 → Q4 to sit behind the Dec 15 report. Databricks evaluation still in play."
+      "notes": "Largest active pipeline deal. Legal's 90-day clause satisfied — SOC 2 was in progress well before May 1. SHIELD hit 100/100 controls Jul 15 and the auditor accepted the full evidence package Aug 7. Dmitri Volkov walked Yvonne Tran through DR-014 on Jul 27: audit-readiness Aug 31, observation Sep 1 – Nov 30, Type II report Dec 15. Yvonne's response was that the clarity helps more than the earlier date did — her own legal team had assumed a report, not a readiness milestone. Close moved Q3 → Q4 to sit behind the Dec 15 report. Databricks evaluation still in play."
     },
     {
       "id": "ACC-0067",
@@ -168,9 +169,9 @@
       "probability": 78,
       "programDependencies": [
         { "program": "ATLAS", "requirement": "Enterprise SSO (Okta) live in sandbox by Apr 2026", "status": "completed", "update": "SSO sandbox demo completed Apr 2. ATLAS GA Jun 30, three customers in production." },
-        { "program": "SHIELD", "requirement": "SOC 2 Type II report before signature", "status": "on_track", "update": "100/100 controls complete Jul 15. Deloitte accepted the full evidence package Aug 7. Observation period Sep 1 – Nov 30, report Dec 15 (DR-014)." }
+        { "program": "SHIELD", "requirement": "SOC 2 Type II report before signature", "status": "on_track", "update": "100/100 controls complete Jul 15. The auditor accepted the full evidence package Aug 7. Observation period Sep 1 – Nov 30, report Dec 15 (DR-014)." }
       ],
-      "probabilityChange": "75%→78%, close date Q3→Q4. Probability rose on SHIELD reaching 100/100 controls and Deloitte accepting evidence Aug 7. The date moved because DR-014 clarified that Aug 31 is readiness, not certification — Yvonne Tran's legal team needs the Dec 15 report itself. Dmitri Volkov's read: the restatement cost a quarter but bought credibility, because the alternative was promising an Aug 31 certification that was never going to exist.",
+      "probabilityChange": "75%→78%, close date Q3→Q4. Probability rose on SHIELD reaching 100/100 controls and the auditor accepting evidence Aug 7. The date moved because DR-014 clarified that Aug 31 is readiness, not certification — Yvonne Tran's legal team needs the Dec 15 report itself. Dmitri Volkov's read: the restatement cost a quarter but bought credibility, because the alternative was promising an Aug 31 certification that was never going to exist.",
       "riskNote": "Q4 close now sits directly behind the Dec 15 Type II report, so any control drift during the Sep 1 – Nov 30 observation window moves this deal into FY2027. Databricks evaluation still in play — a two-quarter wait is exactly the window a competitor uses."
     },
     {
@@ -319,7 +320,7 @@
       "programsAffected": ["SHIELD"],
       "dealsAtRisk": ["OPP-2026-044", "OPP-2026-067-EXP", "OPP-2026-134", "OPP-2026-221", "OPP-2026-228"],
       "revenueAtRisk_usd": 12200000,
-      "note": "RE-FRAMED per DR-014. The risk is no longer 'will 100 controls get built' — they were, by Jul 15, and Deloitte accepted the evidence Aug 7. The risk is now control DRIFT during the Sep 1 – Nov 30 observation window: a control that stops operating cleanly restarts its clock and moves the Dec 15 report into FY2027, taking Meridian Financial ($4.2M), Nuvera ($2.1M), and three expansion tracks with it. Note that $6.3M of this already moved from Q3 to Q4 as a timing consequence of the restatement — that is a slipped quarter, not lost revenue."
+      "note": "RE-FRAMED per DR-014. The risk is no longer 'will 100 controls get built' — they were, by Jul 15, and the auditor accepted the evidence Aug 7. The risk is now control DRIFT during the Sep 1 – Nov 30 observation window: a control that stops operating cleanly restarts its clock and moves the Dec 15 report into FY2027, taking Meridian Financial ($4.2M), Nuvera ($2.1M), and three expansion tracks with it. Note that $6.3M of this already moved from Q3 to Q4 as a timing consequence of the restatement — that is a slipped quarter, not lost revenue."
     },
     "ifHorizonAppStoreReviewFails": {
       "programsAffected": ["HORIZON"],

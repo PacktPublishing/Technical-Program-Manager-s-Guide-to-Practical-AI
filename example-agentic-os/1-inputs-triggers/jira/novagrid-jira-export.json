@@ -1,12 +1,13 @@
 {
   "_meta": {
+    "fictional": "NovaGrid, Inc. is a fictional company invented for the book \"Technical Program Manager's Guide to Practical AI\". All people, customers, programs, numbers and events in this file are made up. Any resemblance to real companies or people is coincidental.",
     "source": "Jira Cloud",
     "instance": "novagrid.atlassian.net",
     "exported_at": "2026-08-10T08:00:00Z",
     "exported_by": "tpm-integration@novagrid.io",
     "programs_covered": ["SHIELD", "PULSE", "MERIDIAN"],
     "note": "NEXUS, ATLAS, HORIZON, SPARK tracked in Linear — separate export",
-    "simulation_note": "Simulated state advanced to 2026-08-10 (Sprint 20 Day 1). Sprint 17 closed Jul 10 (324/335 pts), Sprint 18 closed Jul 24 (341/350), Sprint 19 closed Aug 7 (352/360 — highest velocity of the year). Sprint 20 opened Aug 10. Key closures in the window: NEXUS M6 IAM Jul 1, NEXUS M5 CI/CD Jul 3, SHIELD M4 100 controls Jul 15, HORIZON M6 beta Jul 22, HORIZON M7 store submission Aug 1, SHIELD M5 evidence Aug 7 (reopened Jul 16 on Deloitte findings), PULSE M4 FlowEngine Aug 7. Missed: MERIDIAN M6 mid-market (Aug 1 → revised Aug 21, DR-015). Decisions DR-011 to DR-015 applied. Epic-level data reflects Aug 10 snapshot; milestone outcomes sourced from Aha! as SoT. Full event ledger: 1-inputs-triggers/simulation-log.json."
+    "simulation_note": "Simulated state advanced to 2026-08-10 (Sprint 20 Day 1). Sprint 17 closed Jul 10 (324/335 pts), Sprint 18 closed Jul 24 (341/350), Sprint 19 closed Aug 7 (352/360 — highest velocity of the year). Sprint 20 opened Aug 10. Key closures in the window: NEXUS M6 IAM Jul 1, NEXUS M5 CI/CD Jul 3, SHIELD M4 100 controls Jul 15, HORIZON M6 beta Jul 22, HORIZON M7 store submission Aug 1, SHIELD M5 evidence Aug 7 (reopened Jul 16 on the auditor findings), PULSE M4 FlowEngine Aug 7. Missed: MERIDIAN M6 mid-market (Aug 1 → revised Aug 21, DR-015). Decisions DR-011 to DR-015 applied. Epic-level data reflects Aug 10 snapshot; milestone outcomes sourced from Aha! as SoT. Full event ledger: 1-inputs-triggers/simulation-log.json."
   },
   "sprints": [
     {
@@ -106,7 +107,7 @@
       "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
       "completedPoints": 341,
       "plannedPoints": 350,
-      "velocityNote": "97% velocity. SHIELD M4 100 controls CLOSED Jul 15 ✅ on time (14 IAM controls closed Jul 11–14). SHIELD M5 evidence delivered Jul 15 then REOPENED Jul 16 — Deloitte failed A1.7, CC6.4, CC6.6 on operating-effectiveness sufficiency. DR-014 Jul 22: board restated the Aug 31 mandate as audit-readiness, Type II report Dec 15. HORIZON M6 CLOSED Jul 22 (7 days late) — onboarding engineer took 4/10 to 10/10 in two weeks. VantagePoint signed Jul 15 ($1.8M). MERIDIAN: SMB passed 90% Jul 17, Compass flexed onto mid-market. PULSE FlowEngine 252→289 (85%). ATLAS DEP-002 full-IAM planning started Jul 13."
+      "velocityNote": "97% velocity. SHIELD M4 100 controls CLOSED Jul 15 ✅ on time (14 IAM controls closed Jul 11–14). SHIELD M5 evidence delivered Jul 15 then REOPENED Jul 16 — the auditor failed A1.7, CC6.4, CC6.6 on operating-effectiveness sufficiency. DR-014 Jul 22: board restated the Aug 31 mandate as audit-readiness, Type II report Dec 15. HORIZON M6 CLOSED Jul 22 (7 days late) — onboarding engineer took 4/10 to 10/10 in two weeks. VantagePoint signed Jul 15 ($1.8M). MERIDIAN: SMB passed 90% Jul 17, Compass flexed onto mid-market. PULSE FlowEngine 252→289 (85%). ATLAS DEP-002 full-IAM planning started Jul 13."
     },
     {
       "id": "SPR-2026-19",
@@ -117,7 +118,7 @@
       "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
       "completedPoints": 352,
       "plannedPoints": 360,
-      "velocityNote": "98% velocity — highest of the year. PULSE M4 FlowEngine CLOSED Aug 7 ✅ (340/340, 13 days late against the Jul 25 revised target); the final 27 pipelines had cross-pipeline state dependencies missing from the runbook. ATLAS F6 circuit breaker live Jul 31, uptime recovered 96.8% → 98.9%, rate limit lifted Aug 3. HORIZON soft GA Jul 31 ✅ on time; M7 store submission Aug 1 ✅ (Play approved Aug 6, App Store in review). MERIDIAN M6 MISSED Aug 1 at 202/210 → revised Aug 21 (DR-015), 2 engineers assigned Aug 3. SHIELD remediated evidence accepted by Deloitte Aug 7, M5 re-closed."
+      "velocityNote": "98% velocity — highest of the year. PULSE M4 FlowEngine CLOSED Aug 7 ✅ (340/340, 13 days late against the Jul 25 revised target); the final 27 pipelines had cross-pipeline state dependencies missing from the runbook. ATLAS F6 circuit breaker live Jul 31, uptime recovered 96.8% → 98.9%, rate limit lifted Aug 3. HORIZON soft GA Jul 31 ✅ on time; M7 store submission Aug 1 ✅ (Play approved Aug 6, App Store in review). MERIDIAN M6 MISSED Aug 1 at 202/210 → revised Aug 21 (DR-015), 2 engineers assigned Aug 3. SHIELD remediated evidence accepted by the auditor Aug 7, M5 re-closed."
     },
     {
       "id": "SPR-2026-20",
@@ -194,7 +195,7 @@
           "note": "DR-001 authorized May 1. Fatima's pre-staged assignments meant the team started the morning IAM went live — the 14 controls took 13 days from unblock to close."
         }
       ],
-      "changeNote": "COMPLETE Jul 15. Log retention (86th non-IAM) closed Jun 30. All 14 IAM-blocked controls closed Jul 11–14 following the Jul 1 unblock. 100/100 controls complete — M4 closed on time. Note: 3 of these controls (A1.7, CC6.4, CC6.6) subsequently failed Deloitte evidence review Jul 16 — control implementation was complete, evidence sufficiency was not. Tracked in SHIELD-4."
+      "changeNote": "COMPLETE Jul 15. Log retention (86th non-IAM) closed Jun 30. All 14 IAM-blocked controls closed Jul 11–14 following the Jul 1 unblock. 100/100 controls complete — M4 closed on time. Note: 3 of these controls (A1.7, CC6.4, CC6.6) subsequently failed the auditor evidence review Jul 16 — control implementation was complete, evidence sufficiency was not. Tracked in SHIELD-4."
     },
     {
       "id": "SHIELD-4",
@@ -209,22 +210,22 @@
       "completedStoryPoints": 110,
       "targetDate": "2026-07-15",
       "completedDate": "2026-08-07",
-      "labels": ["soc2", "deloitte", "audit", "reopened", "completed"],
+      "labels": ["soc2", "auditor", "audit", "reopened", "completed"],
       "linkedMilestone": "M5 — evidence package submitted",
       "blockers": [
         {
           "id": "SHIELD-402",
-          "summary": "Deloitte evidence sufficiency failure — 3 controls lack operating history",
+          "summary": "The auditor evidence sufficiency failure — 3 controls lack operating history",
           "type": "audit-finding",
-          "raisedBy": "deloitte-audit@external",
+          "raisedBy": "auditor-audit@external",
           "raisedAt": "2026-07-16T00:00:00Z",
           "updatedAt": "2026-08-07T00:00:00Z",
-          "status": "RESOLVED Aug 7. A1.7 (log retention, closed Jun 30), CC6.4 (quarterly access review certification) and CC6.6 (privileged access management) — the last two live only since Jul 1 — carried days of operating history where Type II requires months. Remediation Jul 20 – Aug 5: re-collected evidence with 30+ days where available, compensating documentation for the IAM pair. Deloitte confirmed sufficiency Aug 7.",
+          "status": "RESOLVED Aug 7. A1.7 (log retention, closed Jun 30), CC6.4 (quarterly access review certification) and CC6.6 (privileged access management) — the last two live only since Jul 1 — carried days of operating history where Type II requires months. Remediation Jul 20 – Aug 5: re-collected evidence with 30+ days where available, compensating documentation for the IAM pair. The auditor confirmed sufficiency Aug 7.",
           "escalatedTo": "james.whitfield@novagrid.io",
           "note": "This finding is what forced the certification-date question into the open. See DR-014 — the Aug 31 board mandate was restated as audit-readiness, with the Type II report at Dec 15."
         }
       ],
-      "changeNote": "Full 100-control package delivered to Deloitte Jul 15 on target. REOPENED Jul 16 on evidence sufficiency findings against 3 controls. Remediated and accepted Aug 7. Scope grew 80 → 110 SP for the remediation work."
+      "changeNote": "Full 100-control package delivered to the auditor Jul 15 on target. REOPENED Jul 16 on evidence sufficiency findings against 3 controls. Remediated and accepted Aug 7. Scope grew 80 → 110 SP for the remediation work."
     },
     {
       "id": "SHIELD-5",

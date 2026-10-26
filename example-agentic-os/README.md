@@ -1,5 +1,7 @@
 # Example agentic OS
 
+> **Fictional company.** NovaGrid, Inc. and everything about it in this folder (people, customers, programs, numbers, events) is invented for the book. It is not a real company, and any resemblance to real companies or people is coincidental.
+
 A complete, working example of the agentic system the book builds toward: more than 60 skills, 8 workflows and over 20 agents for running a program portfolio, wired to the data of one fictional company, NovaGrid. Use it to see what the book's ideas look like when they are connected, then copy the parts you need.
 
 You do not need this folder to use the book. Every printed prompt works on its own from [../prompts/](../prompts/README.md).

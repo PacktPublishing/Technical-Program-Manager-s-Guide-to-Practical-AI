@@ -77,7 +77,7 @@ This is not a new target — it was in the FY2026 OKRs. But it is now a **public
 
 - The ATLAS GA launch (June 30) is no longer purely an internal milestone — it is the public-facing proof point for the CEO's commitment
 - Rachel Lim held an emergency call with Marcus Chen and Leo Nakamura on May 28. Key message: "The June 30 date is externally committed. If we need to soft-launch with 2 customers instead of 5, we do that — but we do not delay the announcement."
-- Analyst community will watch Q3 earnings for NovaAI ARR progress. Gartner and Forrester briefings on June 30 will be covered.
+- Analyst community will watch Q3 earnings for NovaAI ARR progress. Industry analyst briefings on June 30 will be covered.
 
 **Program ripple effects:**
 | Program | Impact |
@@ -153,9 +153,9 @@ This is the first time program-level execution details have been directly raised
 **Source:** Board of Directors, presented by James Whitfield (CISO) and Karl Bergstrom (CTO)
 **Type:** Board mandate correction
 
-Since September 2025 the board mandate read "SOC 2 Type II certification by August 2026." It was never achievable — Deloitte's observation period does not open until Sep 1, and a Type II report attests to controls operating *over* a period. The contradiction sat in NovaGrid's own Vanta export the entire time, with `boardMandateDeadline: 2026-08-31` in the same object as `observationPeriodStart: 2026-09-01` and `reportExpected: 2026-12-15`.
+Since September 2025 the board mandate read "SOC 2 Type II certification by August 2026." It was never achievable — the auditor's observation period does not open until Sep 1, and a Type II report attests to controls operating *over* a period. The contradiction sat in NovaGrid's own Vanta export the entire time, with `boardMandateDeadline: 2026-08-31` in the same object as `observationPeriodStart: 2026-09-01` and `reportExpected: 2026-12-15`.
 
-It surfaced on Jul 16, when Deloitte's engagement partner — while returning evidence findings on three controls — volunteered that the Aug 31 date in NovaGrid's board materials did not correspond to any deliverable in their engagement letter.
+It surfaced on Jul 16, when the auditor's engagement partner — while returning evidence findings on three controls — volunteered that the Aug 31 date in NovaGrid's board materials did not correspond to any deliverable in their engagement letter.
 
 The board accepted the restatement on Jul 22 (DR-014): **Aug 31 = audit-readiness · Sep 1–Nov 30 = observation · Dec 15 = Type II report.**
 

@@ -1,15 +1,16 @@
 {
   "_meta": {
+    "fictional": "NovaGrid, Inc. is a fictional company invented for the book \"Technical Program Manager's Guide to Practical AI\". All people, customers, programs, numbers and events in this file are made up. Any resemblance to real companies or people is coincidental.",
     "source": "Vanta",
     "workspace": "novagrid",
     "exported_at": "2026-08-10T08:00:00Z",
     "exported_by": "shield-integration@novagrid.io",
-    "note": "SOC 2 Type II control tracking - SHIELD program only. Real-time Vanta sync. Deloitte observation period: Sep 1 - Nov 30, 2026. Type II report expected Dec 15, 2026. Board mandate Aug 31, 2026 is AUDIT-READINESS, not certification - restated by the board Jul 22 per DR-014.",
-    "simulation_note": "State as of 2026-08-10. All 100 controls complete (M4 closed Jul 15, on time) - the 14 IAM-blocked controls closed Jul 11-14 following the NEXUS IAM go-live Jul 1. Evidence package delivered to Deloitte Jul 15; Deloitte failed 3 controls on operating-effectiveness sufficiency Jul 16 (A1.7, CC6.4, CC6.6); remediated Jul 20 - Aug 5 and accepted Aug 7. That finding is what surfaced the certification-date contradiction the program had carried since kickoff, resolved by DR-014. Focus has shifted from control completion to operating stability ahead of the Sep 1 observation window. Full event ledger: 1-inputs-triggers/simulation-log.json."
+    "note": "SOC 2 Type II control tracking - SHIELD program only. Real-time Vanta sync. The auditor observation period: Sep 1 - Nov 30, 2026. Type II report expected Dec 15, 2026. Board mandate Aug 31, 2026 is AUDIT-READINESS, not certification - restated by the board Jul 22 per DR-014.",
+    "simulation_note": "State as of 2026-08-10. All 100 controls complete (M4 closed Jul 15, on time) - the 14 IAM-blocked controls closed Jul 11-14 following the NEXUS IAM go-live Jul 1. Evidence package delivered to the auditor Jul 15; the auditor failed 3 controls on operating-effectiveness sufficiency Jul 16 (A1.7, CC6.4, CC6.6); remediated Jul 20 - Aug 5 and accepted Aug 7. That finding is what surfaced the certification-date contradiction the program had carried since kickoff, resolved by DR-014. Focus has shifted from control completion to operating stability ahead of the Sep 1 observation window. Full event ledger: 1-inputs-triggers/simulation-log.json."
   },
   "certification": {
     "type": "SOC 2 Type II",
-    "auditor": "Deloitte",
+    "auditor": "The auditor",
     "auditContractValue_usd": 180000,
     "observationPeriodStart": "2026-09-01",
     "observationPeriodEnd": "2026-11-30",
@@ -169,7 +170,7 @@
       "inProgress": 0,
       "status": "COMPLETE",
       "completedDate": "2026-06-30",
-      "note": "Final control A1.7 (Log Retention Policy) closed Jun 30 as expected. Note: A1.7 was later one of the three controls Deloitte failed on evidence sufficiency Jul 16 - closing a control and evidencing it are not the same milestone."
+      "note": "Final control A1.7 (Log Retention Policy) closed Jun 30 as expected. Note: A1.7 was later one of the three controls the auditor failed on evidence sufficiency Jul 16 - closing a control and evidencing it are not the same milestone."
     },
     "wave4": {
       "name": "IAM-Blocked Controls",
@@ -184,7 +185,7 @@
       "waveTargetDate": "2026-07-15",
       "status": "COMPLETE",
       "completedDate": "2026-07-14",
-      "note": "Two of these controls (CC6.4 quarterly access review, CC6.6 privileged access management) were failed by Deloitte on Jul 16 for insufficient operating history: they had been live for 15 days against a Type II standard that expects months."
+      "note": "Two of these controls (CC6.4 quarterly access review, CC6.6 privileged access management) were failed by the auditor on Jul 16 for insufficient operating history: they had been live for 15 days against a Type II standard that expects months."
     }
   },
   "iamBlockedControls": [
@@ -271,7 +272,7 @@
       "completedDate": "2026-07-12",
       "unblockedDate": "2026-07-01",
       "auditorEvidenceOutcome": "FAILED_JUL_16_REMEDIATED_AUG_07",
-      "auditorNote": "Deloitte rejected the initial evidence on operating-effectiveness grounds: control live only since Jul 1, giving 15 days of operating history where Type II expects sustained operation. Remediated with compensating documentation and accepted Aug 7."
+      "auditorNote": "The auditor rejected the initial evidence on operating-effectiveness grounds: control live only since Jul 1, giving 15 days of operating history where Type II expects sustained operation. Remediated with compensating documentation and accepted Aug 7."
     },
     {
       "controlId": "CC6.6",
@@ -294,7 +295,7 @@
       "completedDate": "2026-07-12",
       "unblockedDate": "2026-07-01",
       "auditorEvidenceOutcome": "FAILED_JUL_16_REMEDIATED_AUG_07",
-      "auditorNote": "Deloitte rejected the initial evidence on operating-effectiveness grounds: control live only since Jul 1, giving 15 days of operating history where Type II expects sustained operation. Remediated with compensating documentation and accepted Aug 7."
+      "auditorNote": "The auditor rejected the initial evidence on operating-effectiveness grounds: control live only since Jul 1, giving 15 days of operating history where Type II expects sustained operation. Remediated with compensating documentation and accepted Aug 7."
     },
     {
       "controlId": "CC7.2",
@@ -373,7 +374,7 @@
         "RTO/RPO measurement report"
       ],
       "owner": "Core Infra team",
-      "note": "Full recovery test scheduled July 5 as M4 deliverable. Also satisfies pending Deloitte A1.1 request.",
+      "note": "Full recovery test scheduled July 5 as M4 deliverable. Also satisfies pending the auditor A1.1 request.",
       "vantaCheckId": "vanta-a1.2-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "manual_evidence",
@@ -487,65 +488,65 @@
       "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
     }
   ],
-  "deloitteInteractions": [
+  "auditorInteractions": [
     {
       "date": "2026-05-12",
       "type": "evidence_submission",
-      "direction": "novagrid_to_deloitte",
+      "direction": "novagrid_to_auditor",
       "submittedBy": "Fatima Al-Hassan",
-      "description": "SHIELD submitted in-progress evidence package to Deloitte. 65 controls complete at time of submission (Waves 1 and 2 partial). Package included policy documents, automated Vanta check exports, and infrastructure configuration screenshots.",
+      "description": "SHIELD submitted in-progress evidence package to the auditor. 65 controls complete at time of submission (Waves 1 and 2 partial). Package included policy documents, automated Vanta check exports, and infrastructure configuration screenshots.",
       "controlsSubmitted": 65,
-      "packageRef": "SHIELD-DELOITTE-PKG-001",
+      "packageRef": "SHIELD-AUDITOR-PKG-001",
       "deliveryMethod": "Vanta auditor portal"
     },
     {
       "date": "2026-05-28",
       "type": "acknowledgement",
-      "direction": "deloitte_to_novagrid",
+      "direction": "auditor_to_novagrid",
       "receivedBy": "Fatima Al-Hassan",
-      "description": "Deloitte acknowledged receipt of May 12 evidence package. Confirmation that review has commenced. Assigned lead auditor: Marcus Chen (Deloitte Cyber Risk). Expected initial findings in 3-4 weeks.",
-      "deloitteContact": "Marcus Chen",
-      "packageRef": "SHIELD-DELOITTE-PKG-001",
+      "description": "The auditor acknowledged receipt of May 12 evidence package. Confirmation that review has commenced. Assigned lead auditor: Marcus Chen (The auditor Cyber Risk). Expected initial findings in 3-4 weeks.",
+      "auditorContact": "Marcus Chen",
+      "packageRef": "SHIELD-AUDITOR-PKG-001",
       "deliveryMethod": "email + Vanta auditor portal status update"
     },
     {
       "date": "2026-06-15",
       "type": "auditor_request",
-      "direction": "deloitte_to_novagrid",
+      "direction": "auditor_to_novagrid",
       "receivedBy": "Fatima Al-Hassan",
-      "description": "Deloitte requested additional documentation on 3 controls identified during initial evidence review.",
+      "description": "The auditor requested additional documentation on 3 controls identified during initial evidence review.",
       "controlsRequested": [
         {
           "controlId": "CC6.8",
           "name": "System Hardening Procedures",
-          "deloitteNote": "Evidence submitted references CIS Benchmark policy document but lacks implementation proof. Request: configuration baseline screenshots from production systems showing hardening applied (OS-level, container-level).",
+          "auditorNote": "Evidence submitted references CIS Benchmark policy document but lacks implementation proof. Request: configuration baseline screenshots from production systems showing hardening applied (OS-level, container-level).",
           "requestType": "additional_evidence",
           "urgency": "standard"
         },
         {
           "controlId": "A1.1",
           "name": "Backup Recovery Test Documentation",
-          "deloitteNote": "Policy and schedule submitted. Auditor requires evidence of a completed recovery test including actual RTO/RPO measurements against SLA targets. Backup configuration alone is insufficient for Type II.",
+          "auditorNote": "Policy and schedule submitted. Auditor requires evidence of a completed recovery test including actual RTO/RPO measurements against SLA targets. Backup configuration alone is insufficient for Type II.",
           "requestType": "additional_evidence",
           "urgency": "high"
         },
         {
           "controlId": "PI1.3",
           "name": "Data Processing Accuracy Validation Procedures",
-          "deloitteNote": "Existing evidence shows test case definitions but lacks output validation results. Request: automated test run logs showing input/output accuracy checks passing in production environment.",
+          "auditorNote": "Existing evidence shows test case definitions but lacks output validation results. Request: automated test run logs showing input/output accuracy checks passing in production environment.",
           "requestType": "additional_evidence",
           "urgency": "standard"
         }
       ],
-      "requestRef": "DELOITTE-RFI-2026-001",
+      "requestRef": "AUDITOR-RFI-2026-001",
       "responseDeadlineGiven": "2026-07-01"
     },
     {
       "date": "2026-06-15",
       "type": "evidence_submission",
-      "direction": "novagrid_to_deloitte",
+      "direction": "novagrid_to_auditor",
       "submittedBy": "Fatima Al-Hassan",
-      "description": "Fatima Al-Hassan responded same-day to Deloitte RFI-2026-001 with additional evidence for all 3 requested controls.",
+      "description": "Fatima Al-Hassan responded same-day to the auditor RFI-2026-001 with additional evidence for all 3 requested controls.",
       "controlsResponded": [
         {
           "controlId": "CC6.8",
@@ -572,47 +573,47 @@
           ]
         }
       ],
-      "responseRef": "SHIELD-DELOITTE-RESP-001",
+      "responseRef": "SHIELD-AUDITOR-RESP-001",
       "deliveryMethod": "Vanta auditor portal",
       "turnaroundHours": 3
     },
     {
       "date": "2026-06-17",
       "type": "auditor_response",
-      "direction": "deloitte_to_novagrid",
+      "direction": "auditor_to_novagrid",
       "receivedBy": "Fatima Al-Hassan",
-      "description": "Deloitte acknowledged June 15 response. Two of three controls cleared; one remains open pending July 5 recovery test.",
+      "description": "The auditor acknowledged June 15 response. Two of three controls cleared; one remains open pending July 5 recovery test.",
       "controlOutcomes": [
         {
           "controlId": "CC6.8",
           "outcome": "SATISFIED",
-          "deloitteNote": "Additional hardening evidence accepted. Control evidence file closed."
+          "auditorNote": "Additional hardening evidence accepted. Control evidence file closed."
         },
         {
           "controlId": "PI1.3",
           "outcome": "SATISFIED",
-          "deloitteNote": "Test run logs and accuracy validation results accepted. Control evidence file closed."
+          "auditorNote": "Test run logs and accuracy validation results accepted. Control evidence file closed."
         },
         {
           "controlId": "A1.1",
           "outcome": "PENDING",
-          "deloitteNote": "Understood recovery test scheduled July 5. Awaiting actual test log with RTO/RPO measurements. Will hold control open. Please submit within 5 business days of test completion.",
+          "auditorNote": "Understood recovery test scheduled July 5. Awaiting actual test log with RTO/RPO measurements. Will hold control open. Please submit within 5 business days of test completion.",
           "followUpDeadline": "2026-07-14"
         }
       ],
-      "responseRef": "DELOITTE-ACK-2026-002"
+      "responseRef": "AUDITOR-ACK-2026-002"
     },
     {
       "date": "2026-07-06",
       "type": "evidence_submission",
-      "direction": "novagrid_to_deloitte",
+      "direction": "novagrid_to_auditor",
       "submittedBy": "Fatima Al-Hassan",
       "description": "A1.1 recovery test log submitted following the Jul 5 test. Closes the last item outstanding from the Jun 17 acknowledgement, four business days ahead of the Jul 14 follow-up deadline.",
       "controlOutcomes": [
         {
           "controlId": "A1.1",
           "outcome": "SATISFIED",
-          "deloitteNote": "RTO 42min / RPO 8min measured against 4hr / 1hr targets. Control evidence file closed."
+          "auditorNote": "RTO 42min / RPO 8min measured against 4hr / 1hr targets. Control evidence file closed."
         }
       ],
       "responseRef": "NG-EVID-2026-011"
@@ -620,9 +621,9 @@
     {
       "date": "2026-07-15",
       "type": "evidence_submission",
-      "direction": "novagrid_to_deloitte",
+      "direction": "novagrid_to_auditor",
       "submittedBy": "Fatima Al-Hassan",
-      "description": "Full 100-control audit evidence package delivered on target date. Completes SHIELD M4 (100 controls) and M5 (evidence to Deloitte) on the same day. Package includes the 14 IAM-dependent controls closed Jul 11-14 following the NEXUS IAM go-live.",
+      "description": "Full 100-control audit evidence package delivered on target date. Completes SHIELD M4 (100 controls) and M5 (evidence to the auditor) on the same day. Package includes the 14 IAM-dependent controls closed Jul 11-14 following the NEXUS IAM go-live.",
       "packageContents": {
         "controlsCovered": 100,
         "evidenceItems": 348,
@@ -634,36 +635,36 @@
     {
       "date": "2026-07-16",
       "type": "auditor_finding",
-      "direction": "deloitte_to_novagrid",
+      "direction": "auditor_to_novagrid",
       "receivedBy": "Fatima Al-Hassan",
       "severity": "high",
-      "description": "Deloitte accepted 97 of 100 controls and FAILED 3 on evidence sufficiency. The failures are not implementation defects - every control is built and operating. They are operating-history defects: a Type II report attests that controls operated effectively over a period, and these three had days of history, not months. Escalated to James Whitfield (CISO) same day.",
+      "description": "The auditor accepted 97 of 100 controls and FAILED 3 on evidence sufficiency. The failures are not implementation defects - every control is built and operating. They are operating-history defects: a Type II report attests that controls operated effectively over a period, and these three had days of history, not months. Escalated to James Whitfield (CISO) same day.",
       "controlOutcomes": [
         {
           "controlId": "A1.7",
           "outcome": "INSUFFICIENT_EVIDENCE",
-          "deloitteNote": "Log retention policy closed Jun 30. Policy documentation is complete and correct, but we require evidence of the retention schedule executing across at least one full cycle. Sixteen days of logs is not a retention control operating - it is a retention control existing."
+          "auditorNote": "Log retention policy closed Jun 30. Policy documentation is complete and correct, but we require evidence of the retention schedule executing across at least one full cycle. Sixteen days of logs is not a retention control operating - it is a retention control existing."
         },
         {
           "controlId": "CC6.4",
           "outcome": "INSUFFICIENT_EVIDENCE",
-          "deloitteNote": "Quarterly access review certification. Control live since Jul 1. A quarterly control with fifteen days of history cannot evidence a completed quarterly cycle. This is the clearest example of the general issue in this package."
+          "auditorNote": "Quarterly access review certification. Control live since Jul 1. A quarterly control with fifteen days of history cannot evidence a completed quarterly cycle. This is the clearest example of the general issue in this package."
         },
         {
           "controlId": "CC6.6",
           "outcome": "INSUFFICIENT_EVIDENCE",
-          "deloitteNote": "Privileged access management. Control live since Jul 1. Provisioning and approval workflows are correctly configured, but we have no sustained record of privileged grants being reviewed and revoked under the new IAM. Compensating documentation from the prior Auth0 workaround period may be acceptable - please propose."
+          "auditorNote": "Privileged access management. Control live since Jul 1. Provisioning and approval workflows are correctly configured, but we have no sustained record of privileged grants being reviewed and revoked under the new IAM. Compensating documentation from the prior Auth0 workaround period may be acceptable - please propose."
         }
       ],
-      "auditorContext": "Raised proactively by the Deloitte engagement partner: the Aug 31 date in NovaGrid's board materials describes a certification we cannot issue. Our observation period opens Sep 1 and closes Nov 30, with the report following Dec 15. We flag this because your board appears to be tracking a date that does not correspond to any deliverable in our engagement letter.",
-      "responseRef": "DELOITTE-FINDING-2026-001"
+      "auditorContext": "Raised proactively by the auditor's engagement partner: the Aug 31 date in NovaGrid's board materials describes a certification we cannot issue. Our observation period opens Sep 1 and closes Nov 30, with the report following Dec 15. We flag this because your board appears to be tracking a date that does not correspond to any deliverable in our engagement letter.",
+      "responseRef": "AUDITOR-FINDING-2026-001"
     },
     {
       "date": "2026-07-20",
       "type": "remediation_plan",
-      "direction": "novagrid_to_deloitte",
+      "direction": "novagrid_to_auditor",
       "submittedBy": "Fatima Al-Hassan",
-      "description": "Remediation plan agreed. A1.7 to be re-evidenced Aug 5 with a full 30+ day retention cycle. CC6.4 and CC6.6 to be supported by compensating documentation covering the pre-IAM period, with full operating history accruing inside the observation window. Deloitte confirmed the approach is acceptable in principle pending review of the actual evidence.",
+      "description": "Remediation plan agreed. A1.7 to be re-evidenced Aug 5 with a full 30+ day retention cycle. CC6.4 and CC6.6 to be supported by compensating documentation covering the pre-IAM period, with full operating history accruing inside the observation window. The auditor confirmed the approach is acceptable in principle pending review of the actual evidence.",
       "remediationCommitments": [
         {
           "controlId": "A1.7",
@@ -688,35 +689,35 @@
       "type": "governance_decision",
       "direction": "internal",
       "recordedBy": "Fatima Al-Hassan",
-      "description": "Board accepted the restatement of the SOC 2 mandate. James Whitfield (CISO) and Karl Bergstrom presented the Deloitte engagement-letter dates against the board's Aug 31 mandate. Outcome: Aug 31 is audit-readiness, Sep 1 - Nov 30 is the observation period, Dec 15 is the Type II report. Recorded as DR-014. Sales was re-briefed the same week; Nuvera Insurance moved to Q4 as a direct consequence.",
+      "description": "Board accepted the restatement of the SOC 2 mandate. James Whitfield (CISO) and Karl Bergstrom presented the auditor's engagement-letter dates against the board's Aug 31 mandate. Outcome: Aug 31 is audit-readiness, Sep 1 - Nov 30 is the observation period, Dec 15 is the Type II report. Recorded as DR-014. Sales was re-briefed the same week; Nuvera Insurance moved to Q4 as a direct consequence.",
       "decisionRecord": "DR-014",
       "responseRef": "NG-GOV-2026-003"
     },
     {
       "date": "2026-08-07",
       "type": "auditor_response",
-      "direction": "deloitte_to_novagrid",
+      "direction": "auditor_to_novagrid",
       "receivedBy": "Fatima Al-Hassan",
-      "description": "All three remediated controls accepted. The 100-control evidence package is now complete and accepted for readiness purposes. Deloitte confirmed the Sep 1 observation period start. SHIELD M5 re-closed.",
+      "description": "All three remediated controls accepted. The 100-control evidence package is now complete and accepted for readiness purposes. The auditor confirmed the Sep 1 observation period start. SHIELD M5 re-closed.",
       "controlOutcomes": [
         {
           "controlId": "A1.7",
           "outcome": "SATISFIED",
-          "deloitteNote": "38 days of retention cycle execution evidenced. Accepted."
+          "auditorNote": "38 days of retention cycle execution evidenced. Accepted."
         },
         {
           "controlId": "CC6.4",
           "outcome": "SATISFIED_WITH_COMPENSATING",
-          "deloitteNote": "Off-cycle access review completed Jul 30 and compensating documentation accepted. Note for the observation period: this control must evidence a complete quarterly cycle before Nov 30."
+          "auditorNote": "Off-cycle access review completed Jul 30 and compensating documentation accepted. Note for the observation period: this control must evidence a complete quarterly cycle before Nov 30."
         },
         {
           "controlId": "CC6.6",
           "outcome": "SATISFIED_WITH_COMPENSATING",
-          "deloitteNote": "Compensating documentation accepted. Privileged grant review cadence must run uninterrupted through the observation period."
+          "auditorNote": "Compensating documentation accepted. Privileged grant review cadence must run uninterrupted through the observation period."
         }
       ],
       "auditorContext": "Readiness confirmed. The engagement now depends on sustained operation rather than further build work. Controls that stop operating cleanly during Sep 1 - Nov 30 will be reported as exceptions, and material exceptions move the Dec 15 report date.",
-      "responseRef": "DELOITTE-ACK-2026-003"
+      "responseRef": "AUDITOR-ACK-2026-003"
     }
   ],
   "evidenceStatus": {
@@ -768,7 +769,7 @@
       ],
       "vantaCheckId": "vanta-cc1.1-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -799,7 +800,7 @@
       ],
       "vantaCheckId": "vanta-cc1.2-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -832,7 +833,7 @@
       "vantaCheckId": "vanta-cc2.1-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "training_completion_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -859,7 +860,7 @@
       ],
       "vantaCheckId": "vanta-cc3.2-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "flags": [
         "evidence_refresh_needed"
       ],
@@ -902,7 +903,7 @@
       "vantaCheckId": "vanta-cc4.1-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "siem_integration_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -942,7 +943,7 @@
       "vantaCheckId": "vanta-cc5.3-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "github_branch_protection_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -983,7 +984,7 @@
       "vantaCheckId": "vanta-cc6.7-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "tls_configuration_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1002,7 +1003,7 @@
           "description": "CIS Benchmark hardening report — Ubuntu 22.04 baseline (production nodes)",
           "uploadedAt": "2026-06-15T14:30:00Z",
           "uploadedBy": "Fatima Al-Hassan",
-          "note": "Uploaded in response to Deloitte RFI-2026-001",
+          "note": "Uploaded in response to the auditor RFI-2026-001",
           "vantaEvidenceId": "ev-cc6.8-001"
         },
         {
@@ -1022,8 +1023,8 @@
       ],
       "vantaCheckId": "vanta-cc6.8-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "accepted",
-      "deloitteNote": "Satisfied June 17 after additional evidence submitted June 15",
+      "auditorStatus": "accepted",
+      "auditorNote": "Satisfied June 17 after additional evidence submitted June 15",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1050,7 +1051,7 @@
       "autoCheckType": "identity_provider_integration",
       "autoCheckStatus": "SKIPPED",
       "autoCheckSkipReason": "IAM integration required — will auto-enable post NEXUS IAM go-live",
-      "deloitteStatus": "pending_evidence",
+      "auditorStatus": "pending_evidence",
       "completedDate": "2026-07-11",
       "evidenceAcceptedDate": "2026-07-16"
     },
@@ -1078,7 +1079,7 @@
       "autoCheckType": "identity_provider_integration",
       "autoCheckStatus": "SKIPPED",
       "autoCheckSkipReason": "IAM integration required — will auto-enable post NEXUS IAM go-live",
-      "deloitteStatus": "pending_evidence",
+      "auditorStatus": "pending_evidence",
       "completedDate": "2026-07-11",
       "evidenceAcceptedDate": "2026-07-16"
     },
@@ -1106,7 +1107,7 @@
       "autoCheckType": "access_review_automation",
       "autoCheckStatus": "SKIPPED",
       "autoCheckSkipReason": "IAM integration required — will auto-enable post NEXUS IAM go-live",
-      "deloitteStatus": "pending_evidence",
+      "auditorStatus": "pending_evidence",
       "completedDate": "2026-07-11",
       "evidenceAcceptedDate": "2026-07-16"
     },
@@ -1134,7 +1135,7 @@
       "autoCheckType": "privileged_access_monitoring",
       "autoCheckStatus": "SKIPPED",
       "autoCheckSkipReason": "IAM integration required — will auto-enable post NEXUS IAM go-live",
-      "deloitteStatus": "pending_evidence",
+      "auditorStatus": "pending_evidence",
       "completedDate": "2026-07-12",
       "auditorEvidenceOutcome": "FAILED_JUL_16_REMEDIATED_AUG_07",
       "evidenceAcceptedDate": "2026-08-07"
@@ -1184,7 +1185,7 @@
       "vantaCheckId": "vanta-cc7.1-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "vulnerability_scan_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1222,7 +1223,7 @@
       ],
       "vantaCheckId": "vanta-cc8.1-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1262,7 +1263,7 @@
       "vantaCheckId": "vanta-cc9.1-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "vendor_questionnaire_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1303,8 +1304,8 @@
       "vantaCheckId": "vanta-a1.1-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "backup_job_check",
-      "deloitteStatus": "pending",
-      "deloitteNote": "Awaiting July 5 recovery test log. Deloitte holding control open until received (deadline July 14).",
+      "auditorStatus": "pending",
+      "auditorNote": "Awaiting July 5 recovery test log. The auditor holding control open until received (deadline July 14).",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1320,7 +1321,7 @@
       "owner": "Core Infra team",
       "description": "Recovery tests must include validation of IAM role restoration and access control verification after failover. Testing performed at least annually.",
       "blocker": {
-        "description": "Recovery test requires unified IAM to validate role restoration during failover. July 5 recovery test (M4 deliverable) will satisfy both this control and the pending Deloitte A1.1 request.",
+        "description": "Recovery test requires unified IAM to validate role restoration during failover. July 5 recovery test (M4 deliverable) will satisfy both this control and the pending the auditor A1.1 request.",
         "dependencyProgram": "NEXUS",
         "dependencyMilestone": "NEXUS IAM M3 — IAM Go-Live",
         "expectedUnblockDate": "2026-07-01"
@@ -1328,7 +1329,7 @@
       "evidenceItems": [],
       "vantaCheckId": "vanta-a1.2-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "pending_evidence",
+      "auditorStatus": "pending_evidence",
       "completedDate": "2026-07-13",
       "evidenceAcceptedDate": "2026-07-16"
     },
@@ -1369,7 +1370,7 @@
       "vantaCheckId": "vanta-a1.3-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "uptime_monitor_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1408,7 +1409,7 @@
       "autoCheckEnabled": true,
       "autoCheckType": "log_retention_check",
       "autoCheckStatus": "PENDING_CONFIG",
-      "deloitteStatus": "not_yet_submitted",
+      "auditorStatus": "not_yet_submitted",
       "completedDate": "2026-06-30",
       "auditorEvidenceOutcome": "FAILED_JUL_16_REMEDIATED_AUG_07",
       "evidenceAcceptedDate": "2026-08-07"
@@ -1459,7 +1460,7 @@
       "vantaCheckId": "vanta-c1.2-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "encryption_at_rest_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1490,7 +1491,7 @@
       ],
       "vantaCheckId": "vanta-c1.3-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1517,7 +1518,7 @@
       "autoCheckType": "audit_log_completeness_check",
       "autoCheckStatus": "SKIPPED",
       "autoCheckSkipReason": "IAM integration required — will auto-enable post NEXUS IAM go-live",
-      "deloitteStatus": "pending_evidence",
+      "auditorStatus": "pending_evidence",
       "completedDate": "2026-07-14",
       "evidenceAcceptedDate": "2026-07-16"
     },
@@ -1558,7 +1559,7 @@
       "vantaCheckId": "vanta-pi1.1-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "test_suite_pass_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1577,7 +1578,7 @@
           "description": "FlowEngine automated test run logs — June 12 production run (input/output accuracy check)",
           "uploadedAt": "2026-06-15T14:38:00Z",
           "uploadedBy": "Fatima Al-Hassan",
-          "note": "Uploaded in response to Deloitte RFI-2026-001",
+          "note": "Uploaded in response to the auditor RFI-2026-001",
           "vantaEvidenceId": "ev-pi1.3-001"
         },
         {
@@ -1598,8 +1599,8 @@
       "vantaCheckId": "vanta-pi1.3-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "data_reconciliation_check",
-      "deloitteStatus": "accepted",
-      "deloitteNote": "Satisfied June 17 after additional evidence submitted June 15",
+      "auditorStatus": "accepted",
+      "auditorNote": "Satisfied June 17 after additional evidence submitted June 15",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1632,7 +1633,7 @@
       "vantaCheckId": "vanta-pi1.5-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "alert_configuration_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1663,7 +1664,7 @@
       ],
       "vantaCheckId": "vanta-p1.1-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1697,7 +1698,7 @@
       "vantaCheckId": "vanta-p4.1-novagrid",
       "autoCheckEnabled": true,
       "autoCheckType": "data_lifecycle_check",
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "flags": [
         "evidence_refresh_needed"
       ],
@@ -1731,7 +1732,7 @@
       ],
       "vantaCheckId": "vanta-p5.1-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1755,7 +1756,7 @@
       "evidenceItems": [],
       "vantaCheckId": "vanta-p7.1-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "pending_evidence",
+      "auditorStatus": "pending_evidence",
       "completedDate": "2026-07-14",
       "evidenceAcceptedDate": "2026-07-16"
     },
@@ -1794,7 +1795,7 @@
       ],
       "vantaCheckId": "vanta-cc7.3-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     },
     {
@@ -1825,7 +1826,7 @@
       ],
       "vantaCheckId": "vanta-cc5.1-novagrid",
       "autoCheckEnabled": false,
-      "deloitteStatus": "accepted",
+      "auditorStatus": "accepted",
       "evidenceAcceptedDate": "2026-07-16"
     }
   ]

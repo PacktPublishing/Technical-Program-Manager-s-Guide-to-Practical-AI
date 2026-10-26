@@ -68,7 +68,7 @@ Yuki's decision: "The board timeline for SOC 2 takes priority. We take the Auth0
 |------|-------|-----------|
 | Auth0 vendor dependency — if Auth0 changes pricing or terms, migration is forced | CISO James Whitfield | 12-month contract with migration-out clause. H2 migration plan initiated Q3. |
 | ATLAS Auth0 workaround refactor (3 weeks) — must not land during enterprise deal closings | Marcus Chen | Planned for Aug-Sep 2026 post-GA. Not on critical path. |
-| Auth0-only IAM may not satisfy all 14 SHIELD control requirements | Fatima Al-Hassan | Sara confirmed Apr 18: Auth0-only covers all 14 controls. Deloitte format reviewed. |
+| Auth0-only IAM may not satisfy all 14 SHIELD control requirements | Fatima Al-Hassan | Sara confirmed Apr 18: Auth0-only covers all 14 controls. The auditor format reviewed. |
 
 ---
 

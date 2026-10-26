@@ -1,5 +1,7 @@
 # 1-inputs-triggers/
 
+> **Fictional company.** NovaGrid, Inc. and everything about it in this folder (people, customers, programs, numbers, events) is invented for the book. It is not a real company, and any resemblance to real companies or people is coincidental.
+
 Layer 1 of the example OS: the data the skills read. Everything here is synthetic data for NovaGrid, a fictional company, shaped like real tool exports so the skills work on a fresh clone without any connections.
 
 **Start here:** [novagrid-inputs-overview.md](novagrid-inputs-overview.md) shows every source as a readable table. The skills read the JSON files; the overview is for you. The data is set on 2026-09-04; the tool-system exports (Aha!, Jira, Datadog, Salesforce, Vanta) are deliberately older (2026-08-10). Gmail and Calendar are current.

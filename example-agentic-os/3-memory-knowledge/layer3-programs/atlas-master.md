@@ -61,7 +61,7 @@ NovaAI is the primary investor growth narrative. Enterprise deals worth $40M+ in
 | M8 | GA launch + analyst briefings | Jun 30 2026 | ✅ Done (Jun 30 — on time) | Marcus C. |
 | M9 | 15 enterprise customers in production | Dec 2026 | 🟡 At risk (20% — 3/15) | Marcus C. |
 
-**M8 delivered Jun 30.** Apex Health and Finex Capital live at launch, Corinthia Bank signed Jul 2. Gartner and Forrester briefings delivered; the Gartner note was positive. The "Early Access for Enterprise" framing held, and uptime was communicated honestly as "97.8% current, 99.5% SLA target by Q3."
+**M8 delivered Jun 30.** Apex Health and Finex Capital live at launch, Corinthia Bank signed Jul 2. Industry analyst briefings delivered; the analyst note was positive. The "Early Access for Enterprise" framing held, and uptime was communicated honestly as "97.8% current, 99.5% SLA target by Q3."
 
 **M7 moved Jun 30 → Sep 15, and the reason matters.** 3/5 signed. Onboarding of the 4th and 5th was deliberately frozen Jul 6 – Aug 3 under DR-011 while rolling uptime sat below the 97% internal floor. The milestone was not missed through slow selling — it was traded for the SLA of the three customers already in production. Rate limit lifted Aug 3; 4th onboarding in progress.
 
@@ -144,7 +144,7 @@ NovaAI is the primary investor growth narrative. Enterprise deals worth $40M+ in
 
 ## Latest update (August 10, 2026)
 
-GA shipped on time June 30 with two customers live and a third signed two days later. Gartner's briefing note was positive. On the milestone plan that is a clean quarter.
+GA shipped on time June 30 with two customers live and a third signed two days later. The analysts' briefing note was positive. On the milestone plan that is a clean quarter.
 
 The real story is July 6. Six days after launch, sustained inference traffic hit roughly 3x the pre-GA baseline as three enterprise customers moved production workloads on, model serving queues saturated, and rolling uptime fell to 96.8% — below the 97% internal floor. The SLA monitoring built in M6 caught it within minutes of the burn starting, which is the clearest return that milestone has produced.
 

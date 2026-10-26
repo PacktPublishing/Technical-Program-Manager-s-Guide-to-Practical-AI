@@ -1,5 +1,7 @@
 # NovaGrid inputs at a glance
 
+> **Fictional company.** NovaGrid, Inc. and everything about it in this folder (people, customers, programs, numbers, events) is invented for the book. It is not a real company, and any resemblance to real companies or people is coincidental.
+
 A readable view of the fictional exports in this folder, one table per source, generated from the JSON files. **The skills read the JSON files**, which keep every field a real Jira, Aha!, Datadog, Salesforce, Vanta, Gmail or Calendar export would have. Use this page to see what is in them, or paste a table into any AI tool to try a prompt.
 
 All names, companies, emails and numbers are synthetic.
@@ -214,7 +216,7 @@ Source: [`gmail/novagrid-gmail-export.json`](gmail/novagrid-gmail-export.json) �
 | THR-1011 | MERIDIAN M6 closed Aug 20 — 210/210 | james.okonkwo@novagrid.io | 2026-08-31T12:00:00Z | False |
 | THR-1012 | Re: DEP-002 ATLAS full-IAM refactor — sequencing question | marcus.chen@novagrid.io | 2026-08-25T11:00:00Z | False |
 | THR-1013 | [DataDog] Weekly SLO digest — week of Aug 31 | datadog-alerts@novagrid.io | 2026-08-31T06:00:00Z | False |
-| THR-1014 | Deloitte — observation period logistics and sampling schedule | e.mcbride@deloitte.com | 2026-09-01T08:00:00Z | False |
+| THR-1014 | The auditor — observation period logistics and sampling schedule | external auditor | 2026-09-01T08:00:00Z | False |
 | THR-1015 | TPM hiring — two candidates at final stage, need your debrief slot | hanna.lindgren@novagrid.io | 2026-09-01T16:00:00Z | True |
 | THR-1016 | RESOLVED: Auth0 renewal — signed Aug 18 | james.whitfield@novagrid.io | 2026-08-18T10:00:00Z | False |
 | THR-1017 | All-hands Sep 10 + Q3 benefits enrollment closes Sep 15 | people-ops@novagrid.io | 2026-08-27T09:00:00Z | False |

@@ -161,7 +161,7 @@ The most plausible failure is not missing the audit date — it is arriving at f
 
 **Class:** CORROBORATED (Security Engineer + SRE + Staff Engineer) · **Grounding:** GROUNDED — alignment gap register Gap 2 · **Recurrent:** —
 
-**What happened:** We reported 78% control completion to the board through the summer on the basis of Vanta passing state. In September, Deloitte asked for 90 days of evidence on four controls and we had 11 days. The controls were genuinely implemented — we just implemented them in July. There was no remediation window left, the qualified opinion landed in October, and two enterprise renewals that named SOC 2 as a condition went to a competitor.
+**What happened:** We reported 78% control completion to the board through the summer on the basis of Vanta passing state. In September, the auditor asked for 90 days of evidence on four controls and we had 11 days. The controls were genuinely implemented — we just implemented them in July. There was no remediation window left, the qualified opinion landed in October, and two enterprise renewals that named SOC 2 as a condition went to a competitor.
 
 **Early signature (weeks 2–6):** Anyone asks "how long has this control been passing?" and the answer requires opening Vanta rather than being known. Also: control completion percentage rises faster than evidence age.
 
@@ -191,12 +191,12 @@ The most plausible failure is not missing the audit date — it is arriving at f
 |-------|-------------------------------|----------------------|
 | Interpersonal / political | The CISO's non-responsiveness on the Auth0 decision is logged as a risk, but *why* he is not responding is in no document | "Is there a reason James is not engaging that we are working around instead of naming?" |
 | Attrition / team stability | Vanta lists control owners; it does not list who is interviewing | "Who leaving would stall this for a month?" |
-| Vendor & partner relationship health | The Deloitte relationship exists as a contract and a date | "Is our engagement lead giving us early warnings, or minimum compliance?" |
+| Vendor & partner relationship health | The auditor's relationship exists as a contract and a date | "Is our engagement lead giving us early warnings, or minimum compliance?" |
 | Unwritten organizational commitments | DataCore's 3 controls have no captured conversation at all | "What did we promise DataCore that isn't written down?" |
 
 ## Top 3 Actions This Week
 
 1. Reconcile all 11 "complete" controls against evidence age, not Vanta state — Whitfield, by May 20
-2. Get the exact evidence freeze date from Deloitte in writing — Tanaka, by May 26
+2. Get the exact evidence freeze date from the auditor in writing — Tanaka, by May 26
 3. Convert the Tanaka staffing hedge into a written condition or plan as absent — Bergstrom, by May 22
 ```

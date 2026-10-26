@@ -124,7 +124,7 @@ Referenced by: `/tpm-raid-log`
 | ID | Issue | Impact | Owner | Resolution path | Due | Status |
 |----|-------|--------|-------|----------------|-----|--------|
 | I-001 | Model Serving unresponsive — no control owners assigned despite 2 reminders | 6 controls blocked | Leo Nakamura | Karl B. direct conversation + cc CISO | Mar 15 | 🔴 Active |
-| I-002 | August Deloitte audit date immovable — $180K contract already signed | Hard deadline | James Whitfield | Must hit all milestones — no mitigation | — | Constraint |
+| I-002 | August external audit date immovable — $180K contract already signed | Hard deadline | James Whitfield | Must hit all milestones — no mitigation | — | Constraint |
 
 ## Dependencies
 
