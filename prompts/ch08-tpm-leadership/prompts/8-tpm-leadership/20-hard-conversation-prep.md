@@ -1,0 +1,1 @@
+I need to tell [person] that [situation]. Here is what I know about how they take feedback, what motivates them, and our history: [notes or file]. Help me think through what they are likely to hear that I do not intend to say, where they are likely to get defensive, and what I should lead with. Do not write the script.

@@ -1,0 +1,573 @@
+{
+  "_meta": {
+    "source": "Jira Cloud",
+    "instance": "novagrid.atlassian.net",
+    "exported_at": "2026-08-10T08:00:00Z",
+    "exported_by": "tpm-integration@novagrid.io",
+    "programs_covered": ["SHIELD", "PULSE", "MERIDIAN"],
+    "note": "NEXUS, ATLAS, HORIZON, SPARK tracked in Linear — separate export",
+    "simulation_note": "Simulated state advanced to 2026-08-10 (Sprint 20 Day 1). Sprint 17 closed Jul 10 (324/335 pts), Sprint 18 closed Jul 24 (341/350), Sprint 19 closed Aug 7 (352/360 — highest velocity of the year). Sprint 20 opened Aug 10. Key closures in the window: NEXUS M6 IAM Jul 1, NEXUS M5 CI/CD Jul 3, SHIELD M4 100 controls Jul 15, HORIZON M6 beta Jul 22, HORIZON M7 store submission Aug 1, SHIELD M5 evidence Aug 7 (reopened Jul 16 on Deloitte findings), PULSE M4 FlowEngine Aug 7. Missed: MERIDIAN M6 mid-market (Aug 1 → revised Aug 21, DR-015). Decisions DR-011 to DR-015 applied. Epic-level data reflects Aug 10 snapshot; milestone outcomes sourced from Aha! as SoT. Full event ledger: 1-inputs-triggers/simulation-log.json."
+  },
+  "sprints": [
+    {
+      "id": "SPR-2026-10",
+      "name": "Sprint 2026-10 (Mar 23 – Apr 3)",
+      "state": "closed",
+      "startDate": "2026-03-23T00:00:00Z",
+      "endDate": "2026-04-03T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 348,
+      "plannedPoints": 350,
+      "velocityNote": "SHIELD velocity picked up after Yuki mandate Mar 25. PULSE DataCore unblocked Mar 21 (schema drift resolved). MERIDIAN M1 closed Apr 3."
+    },
+    {
+      "id": "SPR-2026-11",
+      "name": "Sprint 2026-11 (Apr 7 – Apr 17)",
+      "state": "closed",
+      "startDate": "2026-04-07T00:00:00Z",
+      "endDate": "2026-04-17T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 331,
+      "plannedPoints": 360,
+      "velocityNote": "92% velocity. SHIELD Wave 2/3 acceleration. MERIDIAN M4 migration tooling completed Apr 18. PULSE FlowEngine minimal velocity — Amara decided SDK first Apr 15."
+    },
+    {
+      "id": "SPR-2026-12",
+      "name": "Sprint 2026-12 (Apr 20 – May 1)",
+      "state": "closed",
+      "startDate": "2026-04-20T00:00:00Z",
+      "endDate": "2026-05-01T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 312,
+      "plannedPoints": 333,
+      "velocityNote": "94% velocity. ATLAS M3 SSO closed Apr 25. MERIDIAN Python SDK v2 GA Apr 30. Auth0-only IAM authorized May 1 (DR-001). PULSE DataCore M3 closed May 1 (180/180). SHIELD: 57→ control pace holding."
+    },
+    {
+      "id": "SPR-2026-13",
+      "name": "Sprint 2026-13 (May 4 – May 15)",
+      "state": "closed",
+      "startDate": "2026-05-04T00:00:00Z",
+      "endDate": "2026-05-15T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 308,
+      "plannedPoints": 327,
+      "velocityNote": "94% velocity. SHIELD: 67 controls — Wave 3 Sec Eng fully ramped (8-9 controls/week). PULSE NovaAI velocity recovering (35→55 pipelines). MERIDIAN enterprise migration at 10/13. NEXUS OTel M3 closed May 2. ATLAS M4 audit logging at 75%. SHIELD evidence package submitted May 12. Karl forces ATLAS SLA May 13."
+    },
+    {
+      "id": "SPR-2026-14",
+      "name": "Sprint 2026-14 (May 18 – May 29)",
+      "state": "closed",
+      "startDate": "2026-05-18T00:00:00Z",
+      "endDate": "2026-05-29T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 308,
+      "plannedPoints": 330,
+      "velocityNote": "93% velocity. ATLAS M4 CLOSED May 21 ✅. HORIZON M5 Android alpha CLOSED May 21 ✅. SHIELD M3 CLOSED May 26 ✅ (70 controls, 3 final controls completed this sprint). CFO QBR May 27. Sprint closed May 29."
+    },
+    {
+      "id": "SPR-2026-15",
+      "name": "Sprint 2026-15 (Jun 1 – Jun 12)",
+      "state": "closed",
+      "startDate": "2026-06-01T00:00:00Z",
+      "endDate": "2026-06-12T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 298,
+      "plannedPoints": 320,
+      "velocityNote": "93% velocity. NEXUS M4 (60 services) CLOSED May 31 ✅. ATLAS M5 billing CLOSED May 31 ✅. MERIDIAN M3 JS+Java SDK CLOSED May 31 ✅. MERIDIAN M5 enterprise 100% CLOSED Jun 1 ✅. PULSE M5 NovaAI EXTENDED to Jun 10 (83/95 on Jun 1). SPARK M4 Vector Store CLOSED May 29 ✅ (32 days early). Model Serving working session Jun 4 (DR-007): SPARK 65% / ATLAS 35%. VantagePoint accepted renewal terms Jun 12 (DR-010). PULSE M5 NovaAI CLOSED Jun 10 (95/95)."
+    },
+    {
+      "id": "SPR-2026-16",
+      "name": "Sprint 2026-16 (Jun 15 – Jun 26)",
+      "state": "closed",
+      "startDate": "2026-06-15T00:00:00Z",
+      "endDate": "2026-06-26T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 311,
+      "plannedPoints": 330,
+      "velocityNote": "94% velocity. ATLAS M6 SLA monitoring CLOSED Jun 16 (1-day slip) ✅. HORIZON GA definition resolved Jun 15 (DR-008): soft GA Jul 31, App Store Aug 31. PULSE FlowEngine reallocation Jun 15 (DR-009): M4 target Aug 12→Jul 25, 2 new engineers from Stream Processing. SHIELD: 85/86 non-IAM controls complete. NovaAI uptime reaches 97.8% (Jun 20). Finex Capital signs as 2nd enterprise GA customer (Jun 22). NEXUS IAM race condition found Jun 22, fixed Jun 25. NEXUS M5 CI/CD at 94%."
+    },
+    {
+      "id": "SPR-2026-17",
+      "name": "Sprint 2026-17 (Jun 29 – Jul 10)",
+      "state": "closed",
+      "startDate": "2026-06-29T00:00:00Z",
+      "endDate": "2026-07-10T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 324,
+      "plannedPoints": 335,
+      "velocityNote": "97% velocity — the sprint the quarter turned on. NEXUS IAM deployed Jun 30 22:05; M6 CLOSED Jul 1 (1 day late); token-refresh latency spike Jul 2 patched same day; hypercare exited clean Jul 10. NEXUS M5 CI/CD CLOSED Jul 3 (3 days late, Mobile team last). ATLAS GA soft launch Jun 30 ✅; Corinthia Bank signed Jul 2 (3/5); Jul 6 SLO burn alert at 96.8% triggered DR-011 (capacity add + tenant onboarding rate limit). SHIELD log retention closed Jun 30, 14 IAM controls assigned Jul 1, 9 closed by Jul 10. HORIZON beta opened Jul 2, 4/10 at Jul 5 → DR-012 onboarding engineer approved Jul 8. PULSE FlowEngine 200→252 (59%→74%): 22 items against the ~20 needed, validating DR-009; DR-013 chose to continue without descoping."
+    },
+    {
+      "id": "SPR-2026-18",
+      "name": "Sprint 2026-18 (Jul 13 – Jul 24)",
+      "state": "closed",
+      "startDate": "2026-07-13T00:00:00Z",
+      "endDate": "2026-07-24T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 341,
+      "plannedPoints": 350,
+      "velocityNote": "97% velocity. SHIELD M4 100 controls CLOSED Jul 15 ✅ on time (14 IAM controls closed Jul 11–14). SHIELD M5 evidence delivered Jul 15 then REOPENED Jul 16 — Deloitte failed A1.7, CC6.4, CC6.6 on operating-effectiveness sufficiency. DR-014 Jul 22: board restated the Aug 31 mandate as audit-readiness, Type II report Dec 15. HORIZON M6 CLOSED Jul 22 (7 days late) — onboarding engineer took 4/10 to 10/10 in two weeks. VantagePoint signed Jul 15 ($1.8M). MERIDIAN: SMB passed 90% Jul 17, Compass flexed onto mid-market. PULSE FlowEngine 252→289 (85%). ATLAS DEP-002 full-IAM planning started Jul 13."
+    },
+    {
+      "id": "SPR-2026-19",
+      "name": "Sprint 2026-19 (Jul 27 – Aug 7)",
+      "state": "closed",
+      "startDate": "2026-07-27T00:00:00Z",
+      "endDate": "2026-08-07T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 352,
+      "plannedPoints": 360,
+      "velocityNote": "98% velocity — highest of the year. PULSE M4 FlowEngine CLOSED Aug 7 ✅ (340/340, 13 days late against the Jul 25 revised target); the final 27 pipelines had cross-pipeline state dependencies missing from the runbook. ATLAS F6 circuit breaker live Jul 31, uptime recovered 96.8% → 98.9%, rate limit lifted Aug 3. HORIZON soft GA Jul 31 ✅ on time; M7 store submission Aug 1 ✅ (Play approved Aug 6, App Store in review). MERIDIAN M6 MISSED Aug 1 at 202/210 → revised Aug 21 (DR-015), 2 engineers assigned Aug 3. SHIELD remediated evidence accepted by Deloitte Aug 7, M5 re-closed."
+    },
+    {
+      "id": "SPR-2026-20",
+      "name": "Sprint 2026-20 (Aug 10 – Aug 21)",
+      "state": "active",
+      "startDate": "2026-08-10T00:00:00Z",
+      "endDate": "2026-08-21T23:59:59Z",
+      "boards": ["SHIELD", "PULSE", "MERIDIAN", "DATACORE-INFRA"],
+      "completedPoints": 0,
+      "plannedPoints": 345,
+      "velocityNote": "Sprint 20 opened Aug 10. Focus: PULSE M6 Airflow decommission begins (never rehearsed, Sep 30 target, $380K/month until it is off). MERIDIAN 8 complex mid-market integrations to Aug 21 (DR-015). SHIELD shifts from control completion to operating stability ahead of the Sep 1 observation window. Off-board but portfolio-critical: SPARK M2 go/no-go Aug 11 at 88%, HORIZON iOS review decision expected Aug 15–22."
+    }
+  ],
+  "epics": [
+    {
+      "id": "SHIELD-1",
+      "key": "SHIELD-1",
+      "summary": "SOC 2 Control Implementation — Wave 1 (Security & Compliance Eng)",
+      "program": "SHIELD",
+      "status": "Done",
+      "priority": "Highest",
+      "assignee": "fatima.alhassan@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 280,
+      "completedStoryPoints": 280,
+      "targetDate": "2026-05-10",
+      "completedDate": "2026-05-10",
+      "labels": ["soc2", "p0", "board-mandate", "completed"],
+      "linkedMilestone": "M3 — 70 controls complete",
+      "changeNote": "Wave 1 complete. 27/28 Sec Eng controls done. Final 1 control in Wave 3 scope (non-IAM). Sec Eng team fully transitioned to Wave 3 focus from May 1."
+    },
+    {
+      "id": "SHIELD-2",
+      "key": "SHIELD-2",
+      "summary": "SOC 2 Control Implementation — Wave 2 (Core Infrastructure)",
+      "program": "SHIELD",
+      "status": "Done",
+      "priority": "Highest",
+      "assignee": "ingrid.solvang@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 220,
+      "completedStoryPoints": 220,
+      "targetDate": "2026-06-15",
+      "completedDate": "2026-06-15",
+      "labels": ["soc2", "p0", "completed"],
+      "linkedMilestone": "M3 — 70 controls complete",
+      "changeNote": "Wave 2 all 22 controls complete by Jun 15."
+    },
+    {
+      "id": "SHIELD-3",
+      "key": "SHIELD-3",
+      "summary": "SOC 2 Control Implementation — Wave 3 (Model Serving / NovaAI) + IAM-blocked controls",
+      "program": "SHIELD",
+      "status": "Done",
+      "priority": "Highest",
+      "assignee": "leo.nakamura@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 120,
+      "completedStoryPoints": 120,
+      "targetDate": "2026-07-15",
+      "completedDate": "2026-07-15",
+      "labels": ["soc2", "p0", "mandate-applied", "iam-dependency", "completed"],
+      "linkedMilestone": "M4 — 100 controls complete",
+      "blockers": [
+        {
+          "id": "SHIELD-341",
+          "summary": "14 controls blocked on NEXUS IAM — RESOLVED Jul 1",
+          "type": "external-dependency",
+          "raisedBy": "fatima.alhassan@novagrid.io",
+          "raisedAt": "2026-02-24T00:00:00Z",
+          "updatedAt": "2026-07-14T00:00:00Z",
+          "status": "RESOLVED — NEXUS IAM deployed Jun 30 22:05, M6 closed Jul 1. All 14 controls assigned Jul 1 morning and closed Jul 11–14. Blocker open 137 days.",
+          "escalatedTo": "yuki.tanaka@novagrid.io",
+          "note": "DR-001 authorized May 1. Fatima's pre-staged assignments meant the team started the morning IAM went live — the 14 controls took 13 days from unblock to close."
+        }
+      ],
+      "changeNote": "COMPLETE Jul 15. Log retention (86th non-IAM) closed Jun 30. All 14 IAM-blocked controls closed Jul 11–14 following the Jul 1 unblock. 100/100 controls complete — M4 closed on time. Note: 3 of these controls (A1.7, CC6.4, CC6.6) subsequently failed Deloitte evidence review Jul 16 — control implementation was complete, evidence sufficiency was not. Tracked in SHIELD-4."
+    },
+    {
+      "id": "SHIELD-4",
+      "key": "SHIELD-4",
+      "summary": "Vanta evidence collection and audit preparation",
+      "program": "SHIELD",
+      "status": "Done",
+      "priority": "High",
+      "assignee": "fatima.alhassan@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 110,
+      "completedStoryPoints": 110,
+      "targetDate": "2026-07-15",
+      "completedDate": "2026-08-07",
+      "labels": ["soc2", "deloitte", "audit", "reopened", "completed"],
+      "linkedMilestone": "M5 — evidence package submitted",
+      "blockers": [
+        {
+          "id": "SHIELD-402",
+          "summary": "Deloitte evidence sufficiency failure — 3 controls lack operating history",
+          "type": "audit-finding",
+          "raisedBy": "deloitte-audit@external",
+          "raisedAt": "2026-07-16T00:00:00Z",
+          "updatedAt": "2026-08-07T00:00:00Z",
+          "status": "RESOLVED Aug 7. A1.7 (log retention, closed Jun 30), CC6.4 (quarterly access review certification) and CC6.6 (privileged access management) — the last two live only since Jul 1 — carried days of operating history where Type II requires months. Remediation Jul 20 – Aug 5: re-collected evidence with 30+ days where available, compensating documentation for the IAM pair. Deloitte confirmed sufficiency Aug 7.",
+          "escalatedTo": "james.whitfield@novagrid.io",
+          "note": "This finding is what forced the certification-date question into the open. See DR-014 — the Aug 31 board mandate was restated as audit-readiness, with the Type II report at Dec 15."
+        }
+      ],
+      "changeNote": "Full 100-control package delivered to Deloitte Jul 15 on target. REOPENED Jul 16 on evidence sufficiency findings against 3 controls. Remediated and accepted Aug 7. Scope grew 80 → 110 SP for the remediation work."
+    },
+    {
+      "id": "SHIELD-5",
+      "key": "SHIELD-5",
+      "summary": "Control operating stability — pre-observation hardening",
+      "program": "SHIELD",
+      "status": "In Progress",
+      "priority": "Highest",
+      "assignee": "fatima.alhassan@novagrid.io",
+      "percentComplete": 20,
+      "totalStoryPoints": 140,
+      "completedStoryPoints": 28,
+      "targetDate": "2026-08-31",
+      "labels": ["soc2", "observation-period", "dr-014"],
+      "linkedMilestone": "M6 — SOC 2 Type II audit readiness",
+      "changeNote": "NEW epic opened Jul 23 following DR-014. The Jul 16 finding showed that building a control and operating one are different problems. This epic covers monitoring, evidence automation, and drift detection across all 100 controls ahead of the Sep 1 observation window. Any control that drifts during Sep 1 – Nov 30 restarts its clock and moves the Dec 15 report."
+    },
+    {
+      "id": "PULSE-1",
+      "key": "PULSE-1",
+      "summary": "DataCore pipeline migration — Airflow to Temporal (180 pipelines)",
+      "program": "PULSE",
+      "status": "Done",
+      "priority": "High",
+      "assignee": "yuna.park@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 360,
+      "completedStoryPoints": 360,
+      "targetDate": "2026-05-01",
+      "completedDate": "2026-05-01",
+      "labels": ["temporal", "airflow-migration", "datacore", "completed"],
+      "linkedMilestone": "M3 — DataCore pipelines 100% migrated",
+      "changeNote": "COMPLETED May 1. 180/180 DataCore pipelines migrated to Temporal. M3 closed. Pipeline Orchestration team delivered final 38 pipelines in Sprint 12."
+    },
+    {
+      "id": "PULSE-2",
+      "key": "PULSE-2",
+      "summary": "FlowEngine pipeline migration — Airflow to Temporal (340 pipelines)",
+      "program": "PULSE",
+      "status": "Done",
+      "priority": "High",
+      "assignee": "amara.osei@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 680,
+      "completedStoryPoints": 680,
+      "targetDate": "2026-07-25",
+      "completedDate": "2026-08-07",
+      "labels": ["temporal", "airflow-migration", "flowengine", "completed"],
+      "linkedMilestone": "M4 — FlowEngine pipelines 100% migrated",
+      "blockers": [
+        {
+          "id": "PULSE-204",
+          "summary": "Stream Processing team capacity reallocation — resolved Jun 15 (DR-009)",
+          "type": "capacity",
+          "raisedBy": "yuna.park@novagrid.io",
+          "raisedAt": "2026-03-07T00:00:00Z",
+          "updatedAt": "2026-07-10T00:00:00Z",
+          "status": "RESOLVED and validated. Sprint 17 closed at 22 items against the ~20/sprint needed, confirming the DR-009 reallocation worked. DR-013 (Jul 10) chose to continue without descoping on that evidence.",
+          "escalatedTo": "karl.bergstrom@novagrid.io",
+          "note": "The week-1 signal of 9 items that worried the Jul 6 escalation list was a ramp artifact, not a trend."
+        },
+        {
+          "id": "PULSE-231",
+          "summary": "Final 27 pipelines — undocumented cross-pipeline state dependencies",
+          "type": "technical",
+          "raisedBy": "yuna.park@novagrid.io",
+          "raisedAt": "2026-07-25T00:00:00Z",
+          "updatedAt": "2026-08-07T00:00:00Z",
+          "status": "RESOLVED Aug 7. The last 27 FlowEngine pipelines shared state through side-channels the migration runbook never captured. Each needed manual dependency tracing before it could be cut over. Cost: 13 days and $180K of additional dual-run.",
+          "escalatedTo": "amara.osei@novagrid.io",
+          "note": "Root cause for the Jul 25 miss. Worth a retro line: the runbook (M2) was validated against DataCore, whose pipelines are far less entangled than FlowEngine's."
+        }
+      ],
+      "changeNote": "COMPLETE Aug 7. 340/340 migrated, 13 days late against the DR-009 revised target of Jul 25 — but still 5 days ahead of the original Aug 12 date. Trajectory: 200 (Jun 28) → 224 (Jul 5) → 252 (Jul 10) → 289 (Jul 24) → 313 (Jul 25) → 340 (Aug 7). Total dual-run cost at close: $1.38M against a $1.2M projection."
+    },
+    {
+      "id": "PULSE-4",
+      "key": "PULSE-4",
+      "summary": "Airflow decommission — traffic verification, read-only mode, shutdown",
+      "program": "PULSE",
+      "status": "In Progress",
+      "priority": "Highest",
+      "assignee": "yuna.park@novagrid.io",
+      "percentComplete": 12,
+      "totalStoryPoints": 240,
+      "completedStoryPoints": 29,
+      "targetDate": "2026-09-30",
+      "labels": ["temporal", "airflow-migration", "decommission", "cost-critical"],
+      "linkedMilestone": "M6 — Airflow decommission",
+      "changeNote": "NEW epic, started Aug 10 — nothing could begin until M4 closed. Now the critical path for the whole program. Dual-run cost stops only when Airflow is actually off, so every week here is $380K. Sequence: traffic verification (Aug), read-only mode (early Sep), shutdown (Sep 30). Seven weeks for work that has never been rehearsed on this estate."
+    },
+    {
+      "id": "PULSE-3",
+      "key": "PULSE-3",
+      "summary": "NovaAI training pipeline migration — Airflow to Temporal (95 pipelines)",
+      "program": "PULSE",
+      "status": "Done",
+      "priority": "High",
+      "assignee": "leo.nakamura@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 190,
+      "completedStoryPoints": 190,
+      "targetDate": "2026-06-01",
+      "completedDate": "2026-06-10",
+      "labels": ["temporal", "airflow-migration", "novaai", "completed"],
+      "linkedMilestone": "M5 — NovaAI training pipelines migrated",
+      "changeNote": "COMPLETED Jun 10 (9-day slip from Jun 1 target). 83/95 migrated on Jun 1 — extended sprint. All 95/95 pipelines migrated to Temporal by Jun 10. M5 closed. NovaAI uptime reached 97.8% by Jun 20."
+    },
+    {
+      "id": "MERIDIAN-1",
+      "key": "MERIDIAN-1",
+      "summary": "v2 API feature parity — all endpoints including mobile push notifications",
+      "program": "MERIDIAN",
+      "status": "Done",
+      "priority": "Highest",
+      "assignee": "james.okonkwo@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 240,
+      "completedStoryPoints": 240,
+      "targetDate": "2026-04-03",
+      "completedDate": "2026-04-03",
+      "labels": ["api-v2", "parity", "completed"],
+      "linkedMilestone": "M1 — v2 API feature parity",
+      "changeNote": "Completed Apr 3. No change."
+    },
+    {
+      "id": "MERIDIAN-2",
+      "key": "MERIDIAN-2",
+      "summary": "Python SDK v2 GA",
+      "program": "MERIDIAN",
+      "status": "Done",
+      "priority": "High",
+      "assignee": "lara.costa@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 120,
+      "completedStoryPoints": 120,
+      "targetDate": "2026-04-30",
+      "completedDate": "2026-04-30",
+      "labels": ["sdk", "python", "ga", "completed"],
+      "linkedMilestone": "M2 — Python SDK v2 GA",
+      "changeNote": "COMPLETED Apr 30. Release cut Apr 27. GA live Apr 30. Brightpath Analytics closed May 1 — first commercial SDK customer."
+    },
+    {
+      "id": "MERIDIAN-3",
+      "key": "MERIDIAN-3",
+      "summary": "Enterprise customer v1→v2 migration (41 total enterprise customers)",
+      "program": "MERIDIAN",
+      "status": "Done",
+      "priority": "High",
+      "assignee": "james.okonkwo@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 260,
+      "completedStoryPoints": 260,
+      "targetDate": "2026-06-01",
+      "completedDate": "2026-06-01",
+      "labels": ["migration", "enterprise", "customer-success", "completed"],
+      "linkedMilestone": "M5 — Enterprise customers 100% on v2",
+      "changeNote": "COMPLETED Jun 1. All 41/41 enterprise customers migrated to v2. Thornbridge Capital and remaining 2 completed final migrations. M5 closed on target."
+    },
+    {
+      "id": "MERIDIAN-4",
+      "key": "MERIDIAN-4",
+      "summary": "Mid-market customer v1→v2 migration (210 total mid-market customers)",
+      "program": "MERIDIAN",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "james.okonkwo@novagrid.io",
+      "percentComplete": 96,
+      "totalStoryPoints": 420,
+      "completedStoryPoints": 403,
+      "targetDate": "2026-08-21",
+      "labels": ["migration", "mid-market", "customer-success", "missed-target", "dr-015"],
+      "linkedMilestone": "M6 — Mid-market customers 100% on v2",
+      "blockers": [
+        {
+          "id": "MERIDIAN-318",
+          "summary": "8 mid-market customers with bespoke integrations self-service cannot reach",
+          "type": "technical",
+          "raisedBy": "james.okonkwo@novagrid.io",
+          "raisedAt": "2026-08-01T00:00:00Z",
+          "updatedAt": "2026-08-03T00:00:00Z",
+          "status": "OPEN. Custom webhook chains (4), legacy auth flows (2), deprecated batch endpoints (2). Two dedicated engineers assigned Aug 3 per DR-015. Target Aug 21.",
+          "escalatedTo": "ingrid.solvang@novagrid.io",
+          "note": "These same 8 integrations are the most likely to break loudly at the Sep 30 v1 shutdown, so closing them properly matters more than closing them fast."
+        }
+      ],
+      "changeNote": "202/210 migrated (96%). MISSED the Aug 1 M6 target by 8 customers. Compass flexed onto mid-market Jul 17 once SMB passed 90% — moved 163 → 202 in three weeks, the plan worked but started too late. Revised target Aug 21 per DR-015. Note: this epic previously carried an Aug 31 target and a '95% on v2' milestone label, both of which disagreed with Aha! — corrected to Aug 21 / 100%."
+    },
+    {
+      "id": "MERIDIAN-5",
+      "key": "MERIDIAN-5",
+      "summary": "JS + Java SDK v2 GA",
+      "program": "MERIDIAN",
+      "status": "Done",
+      "priority": "High",
+      "assignee": "lara.costa@novagrid.io",
+      "percentComplete": 100,
+      "totalStoryPoints": 180,
+      "completedStoryPoints": 180,
+      "targetDate": "2026-05-31",
+      "completedDate": "2026-05-31",
+      "labels": ["sdk", "js", "java", "completed"],
+      "linkedMilestone": "M3 — JS + Java SDK v2 GA",
+      "changeNote": "COMPLETED May 31. Both JS and Java SDKs v2 GA shipped on target. M3 closed."
+    },
+    {
+      "id": "MERIDIAN-6",
+      "key": "MERIDIAN-6",
+      "summary": "SMB customer migration — Compass Migration Partners engagement",
+      "program": "MERIDIAN",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "james.okonkwo@novagrid.io",
+      "percentComplete": 94,
+      "totalStoryPoints": 200,
+      "completedStoryPoints": 188,
+      "targetDate": "2026-09-30",
+      "labels": ["migration", "smb", "compass", "partner"],
+      "linkedMilestone": "M7 — v1 EoL + infrastructure shutdown",
+      "changeNote": "601/639 SMB customers migrated (94%). Passed the 90% threshold Jul 17, which is what freed Compass Migration Partners to flex onto mid-market. Tracking to ~95%+ by Aug 25. Compass engagement runs through Sep 30."
+    },
+    {
+      "id": "MERIDIAN-7",
+      "key": "MERIDIAN-7",
+      "summary": "v1 API shutdown sequencing and infrastructure teardown",
+      "program": "MERIDIAN",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "james.okonkwo@novagrid.io",
+      "percentComplete": 25,
+      "totalStoryPoints": 160,
+      "completedStoryPoints": 40,
+      "targetDate": "2026-09-30",
+      "labels": ["api-v1", "eol", "shutdown"],
+      "linkedMilestone": "M7 — v1 EoL + infrastructure shutdown",
+      "changeNote": "NEW epic opened Aug 3. Shutdown sequencing, final customer comms, traffic drain, and infrastructure teardown. Gated on MERIDIAN-4 (Aug 21) and SMB reaching ~95%. Five weeks of margin to Sep 30."
+    }
+  ],
+  "issues_by_program": {
+    "SHIELD": {
+      "total": 372,
+      "done": 331,
+      "inProgress": 41,
+      "todo": 0,
+      "blocked": 0,
+      "criticalBlockers": 0,
+      "changeNote": "+62 issues done since Jun 28. All 100 controls complete Jul 15 (M4) — the 14 IAM-blocked controls closed Jul 11–14 once NEXUS IAM went live. Evidence package delivered Jul 15, reopened Jul 16 on 3 sufficiency findings, accepted Aug 7. +74 total issues from the new SHIELD-5 operating-stability epic. Zero blocked for the first time since the program began."
+    },
+    "PULSE": {
+      "total": 512,
+      "done": 451,
+      "inProgress": 55,
+      "todo": 6,
+      "blocked": 0,
+      "criticalBlockers": 0,
+      "changeNote": "+73 issues done since Jun 28. FlowEngine M4 CLOSED Aug 7 ✅ (340/340), 13 days late. All four pipeline estates now on Temporal. +52 issues from the new PULSE-4 decommission epic, which is now the critical path — $380K/month accrues until Airflow is actually off."
+    },
+    "MERIDIAN": {
+      "total": 486,
+      "done": 442,
+      "inProgress": 36,
+      "todo": 0,
+      "blocked": 8,
+      "criticalBlockers": 0,
+      "changeNote": "+34 issues done since Jun 28. Mid-market at 96% (202/210) — MISSED the Aug 1 target by 8. SMB at 94% (601/639), passed 90% Jul 17. The 8 blocked issues are the complex mid-market integrations under DR-015, targeted Aug 21. +46 issues from the new MERIDIAN-7 shutdown epic."
+    }
+  },
+  "team_capacity": {
+    "snapshot_date": "2026-08-10",
+    "teams": [
+      {
+        "name": "Security & Compliance Eng",
+        "headcount": 8,
+        "availableSP_thisprint": 72,
+        "allocations": [
+          { "program": "SHIELD", "percentage": 80, "sp": 58 },
+          { "program": "ATLAS-IAM-refactor", "percentage": 15, "sp": 11 },
+          { "program": "BAU", "percentage": 5, "sp": 3 }
+        ],
+        "overcommitted": false,
+        "notes": "NEXUS IAM shipped Jun 30 — the 25% IAM allocation ended Jul 10 at hypercare exit. Reallocated: SHIELD up to 80% for the SHIELD-5 operating-stability epic ahead of the Sep 1 observation window, 15% seeded into the ATLAS full-IAM refactor (DEP-002)."
+      },
+      {
+        "name": "Pipeline Orchestration",
+        "headcount": 9,
+        "availableSP_thisprint": 81,
+        "allocations": [
+          { "program": "PULSE-decommission", "percentage": 75, "sp": 61 },
+          { "program": "SHIELD", "percentage": 15, "sp": 12 },
+          { "program": "BAU", "percentage": 10, "sp": 8 }
+        ],
+        "overcommitted": false,
+        "notes": "All four pipeline estates migrated as of Aug 7. Team pivoted wholesale onto PULSE-4 Airflow decommission, which is now the program critical path and carries $380K/month of cost pressure until shutdown."
+      },
+      {
+        "name": "Stream Processing",
+        "headcount": 7,
+        "availableSP_thisprint": 63,
+        "allocations": [
+          { "program": "PULSE-decommission", "percentage": 30, "sp": 19 },
+          { "program": "FlowEngine SDK Launch", "percentage": 60, "sp": 38 },
+          { "program": "BAU", "percentage": 10, "sp": 6 }
+        ],
+        "overcommitted": false,
+        "notes": "The 2 engineers reallocated under DR-009 stayed with PULSE through M4 close (Aug 7) and rolled onto decommission rather than returning to SDK. Amara Osei agreed to hold them through Sep 30 — the SDK launch absorbs the delay. DR-009's $150K authorization covers it."
+      },
+      {
+        "name": "Developer Experience",
+        "headcount": 11,
+        "availableSP_thisprint": 99,
+        "allocations": [
+          { "program": "MERIDIAN", "percentage": 55, "sp": 54 },
+          { "program": "NEXUS-service-retirement", "percentage": 30, "sp": 30 },
+          { "program": "BAU", "percentage": 15, "sp": 15 }
+        ],
+        "overcommitted": false,
+        "notes": "CI/CD unification closed Jul 3 (NEXUS M5, all 15 teams). That allocation moved to NEXUS M7 service retirement, where the F3 dependency tooling is doing the sequencing. MERIDIAN share covers the 8 complex integrations (DR-015) plus v1 shutdown prep."
+      },
+      {
+        "name": "Governance & Catalog",
+        "headcount": 6,
+        "availableSP_thisprint": 54,
+        "allocations": [
+          { "program": "SHIELD", "percentage": 40, "sp": 22 },
+          { "program": "MERIDIAN", "percentage": 25, "sp": 13 },
+          { "program": "PULSE", "percentage": 15, "sp": 8 },
+          { "program": "BAU", "percentage": 20, "sp": 11 }
+        ],
+        "overcommitted": false,
+        "notes": "SHIELD share increased Jul 23 — evidence automation and drift detection for the observation window is catalog work as much as security work."
+      },
+      {
+        "name": "Model Serving",
+        "headcount": 13,
+        "availableSP_thisprint": 117,
+        "allocations": [
+          { "program": "SPARK", "percentage": 60, "sp": 70 },
+          { "program": "ATLAS", "percentage": 35, "sp": 41 },
+          { "program": "BAU", "percentage": 5, "sp": 6 }
+        ],
+        "overcommitted": false,
+        "notes": "No longer overcommitted — first clean quarter for this team. The Jun 16 headcount req landed (12 → 13) and SHIELD's 10% ended when the last Wave 3 control closed Jul 15. DR-007 split held all quarter (SPARK 65% nominal, running 60% since the July ATLAS uptime response pulled cycles for the F6 circuit breaker). That borrowed capacity is the direct reason SPARK M2 is at 88% rather than closed going into its Aug 11 target."
+      }
+    ]
+  }
+}

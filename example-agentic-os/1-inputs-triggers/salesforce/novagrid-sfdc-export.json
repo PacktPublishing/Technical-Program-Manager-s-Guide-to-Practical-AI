@@ -1,0 +1,344 @@
+{
+  "_meta": {
+    "source": "Salesforce CRM",
+    "instance": "novagrid.my.salesforce.com",
+    "exported_at": "2026-08-10T08:00:00Z",
+    "exported_by": "revops-integration@novagrid.io",
+    "note": "TPM-relevant subset only: enterprise deals with contractual dependencies on engineering programs. Full CRM export available from RevOps.",
+    "simulation_note": "Account and opportunity data advanced to 2026-08-10. New closes in the window: Corinthia Bank (Jul 2, $220K — 3rd ATLAS enterprise GA customer), VantagePoint renewal (Jul 15, $1.8M). Kestrel tranche 1 ($800K) released Jul 15. The dominant commercial event of the window is DR-014 (Jul 22): the SOC 2 board mandate was restated as audit-readiness Aug 31 with the Type II report at Dec 15. Every SOC 2-gated deal note has been re-baselined against Dec 15 — Nuvera moved to Q4 as a direct result. HORIZON soft GA delivered Jul 31 on time, which repaired the Solaris expectation gap; the Aug 31 public GA now rides on an Apple review decision expected Aug 15-22. Full event ledger: 1-inputs-triggers/simulation-log.json."
+  },
+  "summary": {
+    "totalPipeline_usd": 42800000,
+    "arr_new_closed_ytd_usd": 1920000,
+    "arr_renewals_closed_ytd_usd": 1800000,
+    "arr_total_closed_ytd_usd": 3720000,
+    "new_enterprise_customers_ytd": 4,
+    "arr_new_closed_ytd_breakdown": "Brightpath $1.2M (May 1) + Apex Health $360K (Jun 16) + Finex Capital $140K (Jun 22) + Corinthia Bank $220K (Jul 2). Renewals: VantagePoint $1.8M (Jul 15).",
+    "dealsDependentOnSOC2": 12,
+    "pipelineBlockedBySOC2_usd": 18400000,
+    "dealsDependentOnNovaAIEnterprise": 8,
+    "pipelineBlockedByAtlas_usd": 22600000,
+    "dealsDependentOnMobileApp": 4,
+    "pipelineBlockedByHorizon_usd": 6100000,
+    "dealsDependentOnV2API": 6,
+    "pipelineBlockedByMeridian_usd": 9800000,
+    "revenueAtRiskIncreaseSinceBaseline_usd": -2400000,
+    "changeNote": "Pipeline reduced $44.8M → $42.8M as VantagePoint ($1.8M) and Corinthia ($220K) closed. Revenue at risk fell $4.2M in the window and is now $2.4M BELOW the baseline — driven by ATLAS GA proving out, HORIZON soft GA landing on time, and SHIELD reaching 100 controls. Offsetting that: the SOC 2 date restatement (DR-014) pushed certification-gated revenue from Q3 to Q4, which is a timing loss rather than a risk increase. Active focus: Meridian Financial ($4.2M, Q4), Nuvera ($2.1M, moved to Q4), Solaris ($2.4M, Sep 15, gated on Apple), Kestrel tranche 2 ($800K, Oct)."
+  },
+  "accounts": [
+    {
+      "id": "ACC-0041",
+      "name": "Meridian Financial Group",
+      "tier": "Enterprise",
+      "arr_current": 0,
+      "arr_potential": 4200000,
+      "region": "North America",
+      "industry": "Financial Services",
+      "primaryContact": "Yvonne Tran, VP Data Engineering",
+      "accountExecutive": "dmitri.volkov@novagrid.io",
+      "tpmDependencies": ["ATLAS", "SHIELD"],
+      "notes": "Largest active pipeline deal. Legal's 90-day clause satisfied — SOC 2 was in progress well before May 1. SHIELD hit 100/100 controls Jul 15 and Deloitte accepted the full evidence package Aug 7. Dmitri Volkov walked Yvonne Tran through DR-014 on Jul 27: audit-readiness Aug 31, observation Sep 1 – Nov 30, Type II report Dec 15. Yvonne's response was that the clarity helps more than the earlier date did — her own legal team had assumed a report, not a readiness milestone. Close moved Q3 → Q4 to sit behind the Dec 15 report. Databricks evaluation still in play."
+    },
+    {
+      "id": "ACC-0067",
+      "name": "Apex Health Systems",
+      "tier": "Enterprise",
+      "arr_current": 360000,
+      "arr_potential": 3800000,
+      "region": "North America",
+      "industry": "Healthcare",
+      "primaryContact": "Marcus Webb, CISO",
+      "accountExecutive": "priya.shah@novagrid.io",
+      "tpmDependencies": ["SHIELD", "ATLAS"],
+      "notes": "CLOSED WON Jun 16 as first ATLAS enterprise GA customer. $360K initial annual contract. Live in production through the July uptime dip — Marcus Webb was notified proactively on Jul 6 when rolling uptime fell to 96.8%, and again Aug 3 when the circuit breaker restored 98.9%. Priya Shah reports the proactive disclosure strengthened the relationship rather than damaging it. Expansion potential $3.8M now gated on the Dec 15 Type II report per DR-014, not Aug 31."
+    },
+    {
+      "id": "ACC-0112",
+      "name": "Thornbridge Capital",
+      "tier": "Enterprise",
+      "arr_current": 1200000,
+      "arr_potential": 2900000,
+      "region": "EMEA",
+      "industry": "Asset Management",
+      "primaryContact": "Sophie Andersson, Head of Data",
+      "accountExecutive": "kai.muller@novagrid.io",
+      "tpmDependencies": ["MERIDIAN"],
+      "notes": "MERIDIAN M5 enterprise 100% closed Jun 1. Migration completed — Thornbridge fully on v2 API. Renewal confirmed. Minor risk: v1 API EoL Sep 30 announcement timing — Sophie has not yet been formally notified of final EoL date."
+    },
+    {
+      "id": "ACC-0089",
+      "name": "Solaris Logistics",
+      "tier": "Enterprise",
+      "arr_current": 0,
+      "arr_potential": 2400000,
+      "region": "North America",
+      "industry": "Supply Chain",
+      "primaryContact": "Tom Okafor, VP Engineering",
+      "accountExecutive": "jennifer.wu@novagrid.io",
+      "tpmDependencies": ["HORIZON", "ATLAS"],
+      "notes": "Expectation gap RESOLVED. Jennifer Wu briefed Tom Okafor Jul 1 before beta onboarding that Jul 31 meant limited enterprise release, not App Store GA. Solaris onboarded into the beta cohort Jul 16 and soft GA landed on time Jul 31 — delivering exactly what was promised, after two prior slipped dates, materially repaired credibility. Remaining dependency: public App Store GA Aug 31, which now rides on an Apple review decision expected Aug 15-22. Tom has been told this is outside NovaGrid's control."
+    },
+    {
+      "id": "ACC-0134",
+      "name": "Nuvera Insurance",
+      "tier": "Enterprise",
+      "arr_current": 0,
+      "arr_potential": 2100000,
+      "region": "North America",
+      "industry": "Insurance",
+      "primaryContact": "Rajiv Patel, Chief Data Officer",
+      "accountExecutive": "sarah.james@novagrid.io",
+      "tpmDependencies": ["SHIELD", "ATLAS"],
+      "notes": "Pilot continuing, but the close date moved. Rajiv Patel asked Sarah James directly on Jul 28 whether SOC 2 certification would be in hand on Aug 31. The honest answer under DR-014 is no — readiness Aug 31, report Dec 15. Rajiv's Q3 board deadline cannot be met with a readiness statement, so the close moved to Q4 behind the Dec 15 report. Sarah's assessment: the deal is not lost and the champion is intact, but this is the clearest commercial cost of the date restatement. ATLAS GA and 100/100 controls both remain strong signals."
+    },
+    {
+      "id": "ACC-0178",
+      "name": "VantagePoint Analytics",
+      "tier": "Enterprise",
+      "arr_current": 1800000,
+      "arr_potential": 1800000,
+      "region": "North America",
+      "industry": "Data & Analytics",
+      "primaryContact": "Elena Markov, CTO",
+      "accountExecutive": "dmitri.volkov@novagrid.io",
+      "tpmDependencies": ["SPARK", "ATLAS"],
+      "notes": "CLOSED WON Jul 15. $1.8M renewal signed on target. Daniel Rios escalated past the summer legal queue on Jul 8 after the term sheet had sat since Jul 3 — without that push this would still be unsigned. Elena Markov's Sep 15 roadmap review is contractual and expects SPARK M2 (model serving alpha) to have closed. M2 is at 88% against an Aug 11 target, so the review is live but not yet at risk."
+    },
+    {
+      "id": "ACC-0203",
+      "name": "Kestrel Media Group",
+      "tier": "Enterprise",
+      "arr_current": 0,
+      "arr_potential": 1600000,
+      "region": "EMEA",
+      "industry": "Media & Entertainment",
+      "primaryContact": "Luca Ferraro, VP Technology",
+      "accountExecutive": "nina.ross@novagrid.io",
+      "tpmDependencies": ["HORIZON"],
+      "notes": "Contract signed May 14. Jul 15 tranche ($800K) RELEASED — Kestrel was onboarded into the beta cohort Jul 8 and HORIZON M6 closed Jul 22 with all 10 customers live. Oct tranche ($800K) contingent on HORIZON App Store GA (Aug 31), which is gated on Apple's review decision expected Aug 15-22. Luca Ferraro is an active beta participant; feedback volume in the HORIZON channel rose sharply after soft GA (Priya Kaur triaging)."
+    },
+    {
+      "id": "ACC-0055",
+      "name": "Brightpath Education",
+      "tier": "Enterprise",
+      "arr_current": 1200000,
+      "arr_potential": 1200000,
+      "region": "North America",
+      "industry": "EdTech",
+      "primaryContact": "Aaron Liu, Head of Platform",
+      "accountExecutive": "jennifer.wu@novagrid.io",
+      "tpmDependencies": ["MERIDIAN", "ATLAS"],
+      "notes": "CLOSED WON May 1. Python SDK v2 GA (Apr 30) was the final unlock. Aaron Liu (Head of Platform) confirmed. Now an active ARR customer. Full platform usage underway."
+    },
+    {
+      "id": "ACC-NEW-001",
+      "name": "Finex Capital",
+      "tier": "Enterprise",
+      "arr_current": 140000,
+      "arr_potential": 2500000,
+      "region": "North America",
+      "industry": "Financial Services",
+      "primaryContact": "Alicia Monroe, VP Technology",
+      "accountExecutive": "dmitri.volkov@novagrid.io",
+      "tpmDependencies": ["ATLAS", "SHIELD"],
+      "notes": "CLOSED WON Jun 22 as 2nd ATLAS enterprise GA customer. $140K initial annual contract. Financial services — SHIELD SOC 2 certification required for expansion to full $2.5M potential. Alicia Monroe engaged weekly with Marcus Chen."
+    },
+    {
+      "id": "ACC-NEW-002",
+      "name": "Corinthia Bank",
+      "tier": "Enterprise",
+      "arr_current": 220000,
+      "arr_potential": 3100000,
+      "region": "EMEA",
+      "industry": "Financial Services",
+      "primaryContact": "Henrik Svensson, CTO",
+      "accountExecutive": "kai.muller@novagrid.io",
+      "tpmDependencies": ["ATLAS", "SHIELD"],
+      "notes": "CLOSED WON Jul 2. $220K initial annual contract — 3rd ATLAS enterprise GA customer. Onboarding was then caught by the DR-011 rate limit (Jul 6 – Aug 3): Henrik Svensson's tenant provisioning was deliberately held while uptime sat below the internal floor. Kai Muller handled the disclosure directly and Henrik accepted it as evidence the platform is run responsibly. Onboarding resumed Aug 3. Expansion to $3.1M gated on both the Dec 15 Type II report and EU data residency (Q1 2027, CHG-001) — Kai has caveated both."
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "OPP-2026-044",
+      "accountId": "ACC-0041",
+      "name": "Meridian Financial Group — Enterprise NovaAI",
+      "stage": "Contract Negotiation",
+      "amount_usd": 4200000,
+      "closeDate": "2026-12-31",
+      "probability": 78,
+      "programDependencies": [
+        { "program": "ATLAS", "requirement": "Enterprise SSO (Okta) live in sandbox by Apr 2026", "status": "completed", "update": "SSO sandbox demo completed Apr 2. ATLAS GA Jun 30, three customers in production." },
+        { "program": "SHIELD", "requirement": "SOC 2 Type II report before signature", "status": "on_track", "update": "100/100 controls complete Jul 15. Deloitte accepted the full evidence package Aug 7. Observation period Sep 1 – Nov 30, report Dec 15 (DR-014)." }
+      ],
+      "probabilityChange": "75%→78%, close date Q3→Q4. Probability rose on SHIELD reaching 100/100 controls and Deloitte accepting evidence Aug 7. The date moved because DR-014 clarified that Aug 31 is readiness, not certification — Yvonne Tran's legal team needs the Dec 15 report itself. Dmitri Volkov's read: the restatement cost a quarter but bought credibility, because the alternative was promising an Aug 31 certification that was never going to exist.",
+      "riskNote": "Q4 close now sits directly behind the Dec 15 Type II report, so any control drift during the Sep 1 – Nov 30 observation window moves this deal into FY2027. Databricks evaluation still in play — a two-quarter wait is exactly the window a competitor uses."
+    },
+    {
+      "id": "OPP-2026-067",
+      "accountId": "ACC-0067",
+      "name": "Apex Health Systems — Enterprise Platform",
+      "stage": "Closed Won - Initial Enterprise",
+      "amount_usd": 360000,
+      "closeDate": "2026-06-16",
+      "probability": 100,
+      "programDependencies": [
+        { "program": "SHIELD", "requirement": "SOC 2 Type II (or in-progress) + HIPAA controls documented", "status": "on_track", "update": "100/100 controls complete Jul 15, evidence accepted Aug 7. HIPAA documentation provided. Expansion track requires the Type II report, now Dec 15 per DR-014." },
+        { "program": "ATLAS", "requirement": "SSO working in sandbox by Apr 2 demo + audit logging + billing", "status": "completed", "update": "ATLAS M4 (audit logging) + M5 (billing) were the key enablers for close. Platform held through the July uptime dip with proactive disclosure." }
+      ],
+      "probabilityChange": "CLOSED WON Jun 16. First ATLAS enterprise GA customer. $360K initial. Expansion to $3.8M re-baselined from Aug 31 to Dec 15 following DR-014.",
+      "closedWon": true,
+      "riskNote": "Expansion opportunity created but its unlock moved a quarter. Nearer-term risk is operational, not commercial: Apex Health is a healthcare customer in production and was live through the Jul 6 – Aug 3 uptime dip. The circuit breaker holding through August matters more to this expansion than any sales motion."
+    },
+    {
+      "id": "OPP-2026-112",
+      "accountId": "ACC-0112",
+      "name": "Thornbridge Capital — Renewal + Expansion",
+      "stage": "Renewal — base executed, expansion open",
+      "amount_usd": 2900000,
+      "closeDate": "2026-09-30",
+      "probability": 84,
+      "programDependencies": [
+        { "program": "MERIDIAN", "requirement": "v1 API support through Jun 30 + migration tooling ready", "status": "completed", "update": "MERIDIAN M5 enterprise 100% closed Jun 1. Thornbridge fully on v2." },
+        { "program": "MERIDIAN", "requirement": "Written confirmation of the final v1 EoL date before expansion signature", "status": "at_risk", "update": "M6 mid-market missed Aug 1 and moved to Aug 21 (DR-015). Sophie Andersson has asked whether Sep 30 EoL is still real given that slip. Kai Muller cannot answer until M6 closes." }
+      ],
+      "probabilityChange": "88%→84%, close Jul 1→Sep 30. Base renewal ($1.2M) executed Jul 1 as planned. The $1.7M expansion tranche did not close with it: Sophie Andersson asked for the final v1 EoL date in writing first, and the MERIDIAN M6 miss on Aug 1 made that harder to give, not easier. Probability down 4 points on schedule uncertainty rather than any loss of intent.",
+      "riskNote": "This is the clearest example in the portfolio of a delivery slip converting into a commercial one. Sophie is not asking for a faster EoL — she is asking whether Sep 30 is credible, and MERIDIAN missing its own Aug 1 milestone is the reason she is asking. Closing M6 on Aug 21 is the unlock for $1.7M of expansion."
+    },
+    {
+      "id": "OPP-2026-089",
+      "accountId": "ACC-0089",
+      "name": "Solaris Logistics — Enterprise + Mobile",
+      "stage": "Proposal",
+      "amount_usd": 2400000,
+      "closeDate": "2026-09-15",
+      "probability": 78,
+      "programDependencies": [
+        { "program": "HORIZON", "requirement": "Soft GA Jul 31 (limited enterprise release, per DR-008)", "status": "completed", "update": "Delivered Jul 31 on time. Solaris onboarded into the beta cohort Jul 16; M6 closed Jul 22." },
+        { "program": "HORIZON", "requirement": "Public App Store GA Aug 31", "status": "at_risk", "update": "Submitted Aug 1. Play Store approved Aug 6. Apple review decision expected Aug 15-22 — outside NovaGrid's control." },
+        { "program": "ATLAS", "requirement": "NovaAI enterprise tier live", "status": "completed", "update": "ATLAS GA Jun 30, three customers in production." }
+      ],
+      "probabilityChange": "70%→78%. The expectation gap was closed properly: Jennifer Wu briefed Tom Okafor on Jul 1, before onboarding, that Jul 31 meant limited enterprise release. Soft GA then landed on time. After two previously slipped dates, delivering exactly what was described is what moved this number — not the feature set.",
+      "riskNote": "Remaining risk is entirely external. Aug 31 public GA depends on Apple's review decision (Aug 15-22). If iOS is rejected and needs resubmission, Aug 31 is gone and Tom Okafor sees a third slipped date on a deal that has just recovered. Contingency worth deciding now: Android is already approved and could ship alone."
+    },
+    {
+      "id": "OPP-2026-134",
+      "accountId": "ACC-0134",
+      "name": "Nuvera Insurance — Enterprise NovaAI",
+      "stage": "Pilot",
+      "amount_usd": 2100000,
+      "closeDate": "2026-12-31",
+      "probability": 72,
+      "programDependencies": [
+        { "program": "SHIELD", "requirement": "SOC 2 Type II certification in hand at signature", "status": "at_risk", "update": "100/100 controls complete and evidence accepted Aug 7 — but the report itself is Dec 15 per DR-014, not Aug 31. This is the gate Rajiv Patel's board requires." },
+        { "program": "ATLAS", "requirement": "Enterprise SSO + audit logging by Jun 2026", "status": "completed", "update": "ATLAS GA Jun 30. All required features delivered." }
+      ],
+      "probabilityChange": "80%→72%, close Aug 31→Q4. Rajiv Patel asked Sarah James directly on Jul 28 whether certification would be in hand Aug 31. Under DR-014 the honest answer is no. His Q3 board deadline cannot be met with a readiness statement, so the deal moved behind the Dec 15 report. The 8-point drop reflects a missed board window, not a weakened champion.",
+      "riskNote": "The single clearest commercial cost of the SOC 2 date restatement. Worth being precise about cause: the date did not slip in July — it was never achievable, and July is when NovaGrid stopped saying otherwise. Rajiv now needs a new internal board window, which is a harder ask the second time. Sarah James holding weekly cadence."
+    },
+    {
+      "id": "OPP-2026-178",
+      "accountId": "ACC-0178",
+      "name": "VantagePoint Analytics — Renewal + SPARK",
+      "stage": "Closed Won - Renewal",
+      "amount_usd": 1800000,
+      "closeDate": "2026-07-15",
+      "probability": 100,
+      "closedWon": true,
+      "programDependencies": [
+        { "program": "SPARK", "requirement": "Model serving alpha (M2) closed before the Sep 15 contractual roadmap review", "status": "at_risk", "update": "M2 at 88% against an Aug 11 target. Go/no-go Aug 11. A 1-2 week slip still clears Sep 15; anything longer does not." }
+      ],
+      "probabilityChange": "85%→100%. CLOSED WON Jul 15 on target. $1.8M renewal signed. Daniel Rios escalated past the summer legal queue on Jul 8 after the term sheet sat unowned for five days — the close date held because of that intervention, not despite it.",
+      "riskNote": "Deal is closed, but not finished. The contract carries a Sep 15 roadmap review that expects SPARK M2 to have landed. M2 is at 88% with an Aug 11 target, so the review is live. A missed Sep 15 review does not void the renewal but it is the opening move in next year's negotiation."
+    },
+    {
+      "id": "OPP-2026-203",
+      "accountId": "ACC-0203",
+      "name": "Kestrel Media Group — Mobile First",
+      "stage": "Contract Review",
+      "amount_usd": 1600000,
+      "closeDate": "2026-07-15 (partial $800K tranche 1) + 2026-10-15 (full $800K tranche 2)",
+      "probability": 92,
+      "programDependencies": [
+        { "program": "HORIZON", "requirement": "Beta cohort onboarding for tranche 1 release", "status": "completed", "update": "Kestrel onboarded Jul 8. M6 closed Jul 22 with all 10 customers live. Tranche 1 ($800K) released Jul 15." },
+        { "program": "HORIZON", "requirement": "Public App Store GA Aug 31 for tranche 2", "status": "at_risk", "update": "Submitted Aug 1. Play approved Aug 6. Apple review decision expected Aug 15-22." },
+        { "program": "NEXUS", "requirement": "IAM service live by Jul 1 (gate for HORIZON beta)", "status": "completed", "update": "Deployed Jun 30 22:05, M6 closed Jul 1, hypercare exited clean Jul 10." }
+      ],
+      "probabilityChange": "90%→92%. Tranche 1 ($800K) RELEASED Jul 15 — the IAM deploy landed and beta onboarding completed. Tranche 2 ($800K, Oct) rides on App Store GA Aug 31. Luca Ferraro is an engaged beta participant, which is the strongest signal on this account.",
+      "riskNote": "Tranche 1 banked. Tranche 2 depends on an Apple review decision NovaGrid does not control. Nina Ross should not commit an Oct date to Luca until the iOS review clears (Aug 15-22)."
+    },
+    {
+      "id": "OPP-2026-055",
+      "accountId": "ACC-0055",
+      "name": "Brightpath Education — Platform",
+      "stage": "Closed Won",
+      "amount_usd": 1200000,
+      "closeDate": "2026-05-01",
+      "probability": 100,
+      "programDependencies": [
+        { "program": "MERIDIAN", "requirement": "Python SDK v2 GA by Apr 2026", "status": "completed", "update": "Python SDK v2 GA Apr 30. Deal closed May 1." },
+        { "program": "ATLAS", "requirement": "SSO (Azure AD) by Apr 2026", "status": "completed", "update": "SSO Azure AD confirmed working. Delivered Apr 25." }
+      ],
+      "probabilityChange": "76%→84%→100%. CLOSED WON May 1. Python SDK v2 GA (Apr 30) was the final unlock. Aaron Liu confirmed. ARR active.",
+      "closedWon": true,
+      "riskNote": "CLOSED. No open risk. $1.2M ARR active. Customer health: green."
+    },
+    {
+      "id": "OPP-2026-221",
+      "accountId": "ACC-NEW-001",
+      "name": "Finex Capital — Enterprise Platform",
+      "stage": "Closed Won - Initial",
+      "amount_usd": 140000,
+      "closeDate": "2026-06-22",
+      "probability": 100,
+      "closedWon": true,
+      "programDependencies": [
+        { "program": "ATLAS", "requirement": "Enterprise GA with audit logging + billing", "status": "completed", "update": "ATLAS GA June 30 — all M4/M5/M6 complete." }
+      ],
+      "probabilityChange": "NEW deal — CLOSED WON Jun 22. Finex Capital signed as 2nd ATLAS enterprise GA customer. $140K initial annual. AE: dmitri.volkov@novagrid.io. Expansion potential $2.5M over 3 years pending SHIELD SOC 2 certification.",
+      "riskNote": "Expansion contingent on SHIELD SOC 2 Aug 31 certification. Financial services regulatory requirement."
+    },
+    {
+      "id": "OPP-2026-228",
+      "accountId": "ACC-NEW-002",
+      "name": "Corinthia Bank — Enterprise NovaAI",
+      "stage": "Closed Won - Initial",
+      "amount_usd": 220000,
+      "closeDate": "2026-07-02",
+      "probability": 100,
+      "closedWon": true,
+      "programDependencies": [
+        { "program": "ATLAS", "requirement": "Enterprise GA — audit logging, billing, SSO", "status": "completed", "update": "ATLAS GA Jun 30. All M4/M5/M6 complete." },
+        { "program": "SHIELD", "requirement": "SOC 2 Type II report for expansion beyond initial contract", "status": "on_track", "update": "100/100 controls complete, evidence accepted Aug 7. Report Dec 15 per DR-014 — Kai Muller re-briefed Henrik Svensson Jul 27." }
+      ],
+      "probabilityChange": "CLOSED WON Jul 2. $220K initial annual — 3rd ATLAS enterprise GA customer, which is what let Rachel Lim's GA announcement claim three production customers rather than two.",
+      "riskNote": "Onboarding was held Jul 6 – Aug 3 by the DR-011 rate limit while ATLAS uptime sat below its internal floor. Kai Muller disclosed the hold and the reason directly; Henrik Svensson read it as disciplined operations. Resumed Aug 3. Expansion to $3.1M has two gates: the Dec 15 Type II report and EU data residency (Q1 2027, CHG-001), both caveated in writing."
+    }
+  ],
+  "revenueAtRisk": {
+    "ifSOC2ObservationPeriodFails": {
+      "programsAffected": ["SHIELD"],
+      "dealsAtRisk": ["OPP-2026-044", "OPP-2026-067-EXP", "OPP-2026-134", "OPP-2026-221", "OPP-2026-228"],
+      "revenueAtRisk_usd": 12200000,
+      "note": "RE-FRAMED per DR-014. The risk is no longer 'will 100 controls get built' — they were, by Jul 15, and Deloitte accepted the evidence Aug 7. The risk is now control DRIFT during the Sep 1 – Nov 30 observation window: a control that stops operating cleanly restarts its clock and moves the Dec 15 report into FY2027, taking Meridian Financial ($4.2M), Nuvera ($2.1M), and three expansion tracks with it. Note that $6.3M of this already moved from Q3 to Q4 as a timing consequence of the restatement — that is a slipped quarter, not lost revenue."
+    },
+    "ifHorizonAppStoreReviewFails": {
+      "programsAffected": ["HORIZON"],
+      "dealsAtRisk": ["OPP-2026-089", "OPP-2026-203"],
+      "revenueAtRisk_usd": 3200000,
+      "newlyAtRisk_usd": -800000,
+      "note": "Kestrel tranche 1 ($800K) RELEASED Jul 15 — removed from risk. Remaining exposure: Solaris ($2.4M, Sep 15) and Kestrel tranche 2 ($800K, Oct), both gated on public App Store GA Aug 31. Soft GA landed on time Jul 31, so the delivery risk is closed; what remains is an Apple review decision expected Aug 15-22 that NovaGrid does not control. A rejection requiring resubmission is the scenario that puts $3.2M back in play."
+    },
+    "ifAtlasUptimeRegresses": {
+      "programsAffected": ["ATLAS"],
+      "dealsAtRisk": ["OPP-2026-044", "OPP-2026-134", "OPP-2026-067-EXP"],
+      "revenueAtRisk_usd": 5900000,
+      "note": "RE-FRAMED. Launch risk is gone — GA shipped Jun 30 with 3 enterprise customers in production. The live risk is operational: rolling uptime fell to 96.8% on Jul 6 under GA load and was only recovered by rate-limiting onboarding (DR-011) until the F6 circuit breaker shipped Jul 31. Uptime is 98.9% and holding, but the 99.0% July commitment was missed. Apex Health is a healthcare customer in production. A second visible breach costs more than the first, because the first was disclosed proactively and the second would look like a pattern."
+    },
+    "ifSparkM2Slips": {
+      "programsAffected": ["SPARK"],
+      "dealsAtRisk": ["OPP-2026-178-RENEWAL-FY27"],
+      "revenueAtRisk_usd": 1800000,
+      "note": "VantagePoint renewal CLOSED WON Jul 15 — the $1.8M is banked, not at risk this year. What is exposed is the Sep 15 contractual roadmap review, which expects M2 (model serving alpha) to have closed. M2 sits at 88% against an Aug 11 target with go/no-go today. A 1-2 week slip still clears Sep 15; a longer one turns a satisfied renewal into a difficult FY2027 negotiation."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+name,title,division,team,manager,slack_handle,email
+Priya Anand,CEO,Executive,Executive,,@priya.anand,priya.anand@novagrid.io
+David Okonkwo,CTO,Executive,Executive,Priya Anand,@david.okonkwo,david.okonkwo@novagrid.io
+Rachel Lim,CPO,Executive,Executive,Priya Anand,@rachel.lim,rachel.lim@novagrid.io
+Marcus Bauer,CFO,Executive,Executive,Priya Anand,@marcus.bauer,marcus.bauer@novagrid.io
+Yuki Tanaka,VP Engineering,Engineering,Engineering Leadership,David Okonkwo,@yuki.tanaka,yuki.tanaka@novagrid.io
+Sofia Reyes,VP Product,Product,Product Leadership,Rachel Lim,@sofia.reyes,sofia.reyes@novagrid.io
+James Whitfield,CISO,Security,Security Leadership,David Okonkwo,@james.whitfield,james.whitfield@novagrid.io
+Ethan Park,Director,DataCore Platform,Ingestion & Connectors; Storage & Indexing; Governance & Catalog; Query Engine,Yuki Tanaka,@ethan.park,ethan.park@novagrid.io
+Amara Osei,Director,FlowEngine,Pipeline Orchestration; Stream Processing; Transformation Layer,Yuki Tanaka,@amara.osei,amara.osei@novagrid.io
+Leo Nakamura,Director,NovaAI,Model Serving; AI Application Builder; Embeddings & Vector Store,Yuki Tanaka,@leo.nakamura,leo.nakamura@novagrid.io
+Ingrid Solvang,Director,Platform & Infrastructure,Core Infrastructure; Security & Compliance Eng; Developer Experience; Mobile,Yuki Tanaka,@ingrid.solvang,ingrid.solvang@novagrid.io
+Karl Bergstrom,Head of TPM,Technical Program Management,TPM,Yuki Tanaka,@karl.bergstrom,karl.bergstrom@novagrid.io
+Sara Lindqvist,Sr. TPM,Technical Program Management,NEXUS,Karl Bergstrom,@sara.lindqvist,sara.lindqvist@novagrid.io
+Marcus Chen,Sr. TPM,Technical Program Management,ATLAS,Karl Bergstrom,@marcus.chen,marcus.chen@novagrid.io
+Fatima Al-Hassan,TPM,Technical Program Management,SHIELD,Karl Bergstrom,@fatima.alhassan,fatima.alhassan@novagrid.io
+James Okonkwo,TPM,Technical Program Management,MERIDIAN,Karl Bergstrom,@james.okonkwo,james.okonkwo@novagrid.io
+Yuna Park,TPM,Technical Program Management,PULSE,Karl Bergstrom,@yuna.park,yuna.park@novagrid.io
+Priya Kaur,Associate TPM,Technical Program Management,HORIZON,Karl Bergstrom,@priya.kaur,priya.kaur@novagrid.io
+Daniel Rios,Associate TPM,Technical Program Management,SPARK,Karl Bergstrom,@daniel.rios,daniel.rios@novagrid.io

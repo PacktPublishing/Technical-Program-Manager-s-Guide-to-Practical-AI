@@ -1,0 +1,645 @@
+{
+  "_meta": {
+    "source": "Datadog",
+    "workspace": "novagrid",
+    "exported_at": "2026-08-10T08:00:00Z",
+    "coverage_period": "2026-03-01 to 2026-08-10",
+    "note": "TPM-relevant subset - incidents with customer impact or program relevance. NEXUS services completed the OTel migration May 2, so DataDog coverage for NEXUS is partial from May onward and identity-service telemetry from Jul 1 arrives via the OTel collector rather than the DataDog agent.",
+    "simulation_note": "Synthetic dataset generated for Practical AI for TPMs simulation. All customer names, ticket numbers, and incident details are fictional and created for training and decision-support purposes only."
+  },
+  "sloTargets": {
+    "novaai_api_uptime": "99.5%",
+    "api_p99_latency_ms": 500,
+    "pipeline_success_rate": "99.5%",
+    "datacore_query_p99_ms": 2000,
+    "api_error_rate": "0.1%"
+  },
+  "sloActuals": {
+    "period": "2026-04-01 to 2026-08-10",
+    "novaai_api_uptime": {
+      "apr": "94.2%",
+      "may": "95.8%",
+      "jun": "97.8%",
+      "jul": "97.1%",
+      "aug_1_10": "98.9%",
+      "aug_10_rolling_7d": "98.9%",
+      "target": "99.5%",
+      "internalFloor": "97.0%",
+      "julyCommitment": "99.0%",
+      "trend": "recovered, commitment missed. GA load from Jun 30 pushed rolling uptime to 96.8% on Jul 6 - below the 97% internal floor and the trigger for DR-011. Contained by emergency capacity plus a rate limit on new tenant onboarding, then structurally fixed by the F6 circuit breaker on Jul 31. July closed at a 97.1% month average against a 99.0% commitment. August is running 98.9%. The 99.5% SLA target remains unmet."
+    },
+    "pipeline_success_rate": {
+      "apr": "97.8%",
+      "may": "98.9%",
+      "jun": "99.4%",
+      "jul": "99.1%",
+      "aug_1_10": "99.6%",
+      "target": "99.5%",
+      "trend": "dipped then exceeded target. July softened to 99.1% during the final FlowEngine cutover batches, which is expected churn for a migration of that size. August is running 99.6% - above target for the first time this year, and the first month with no Airflow-side failures in the FlowEngine estate."
+    },
+    "api_error_rate": {
+      "apr": "0.31%",
+      "may": "0.22%",
+      "jun": "0.14%",
+      "jul": "0.28%",
+      "aug_1_10": "0.09%",
+      "target": "0.1%",
+      "trend": "The July spike is the inference API 5xx surge under GA load - the same event as the uptime dip. Post-circuit breaker, August is inside target for the first time."
+    },
+    "identity_service_availability": {
+      "jul_1_10": "99.62%",
+      "jul": "99.94%",
+      "aug_1_10": "99.98%",
+      "target": "99.9%",
+      "trend": "New series - NEXUS IAM went live Jun 30 22:05. The Jul 1-10 figure covers the hypercare window and includes the Jul 2 token-refresh latency incident. Stable and above target since."
+    }
+  },
+  "incidentSummary": {
+    "total": 23,
+    "bySeverity": {
+      "SEV1": 2,
+      "SEV2": 11,
+      "SEV3": 10
+    },
+    "byService": {
+      "novaai-model-serving": 6,
+      "novaai-inference-api": 5,
+      "airflow-scheduler": 5,
+      "datacore-query-engine": 4,
+      "auth-service": 4,
+      "mobile-backend": 3,
+      "api-gateway-v1": 2,
+      "flowengine-orchestrator": 1,
+      "api-gateway-v2": 1
+    },
+    "byProgram": {
+      "ATLAS": 8,
+      "PULSE": 7,
+      "NEXUS": 4,
+      "HORIZON": 3,
+      "MERIDIAN": 3,
+      "SPARK": 1,
+      "SHIELD": 1
+    },
+    "mttd_minutes": {
+      "SEV1": 8,
+      "SEV2": 14,
+      "SEV3": 38
+    },
+    "mttr_minutes": {
+      "SEV1": 35,
+      "SEV2": 118,
+      "SEV3": 51
+    },
+    "trendNote": "SEV1+SEV2 rate: 3 in Mar, 5 in Apr, 3 in May, 1 in Jun, 2 in Jul, 1 in Aug to date. Zero SEV1 since May. MTTD for SEV2 improved 18 -> 14 minutes on the back of the ATLAS M6 SLA monitoring stack. MTTR for SEV2 worsened sharply (72 -> 118 min), which is not a detection or response regression: it is driven by two long-running July incidents where the correct action was deliberate and slow - INC-0121, where Leo Nakamura spent five hours choosing between capacity and rate-limiting rather than reaching for a fast rollback, and INC-0126, where PULSE rolled back a cutover and traced dependencies by hand rather than forcing it through. Both are good decisions that make the metric look worse.",
+    "periodNote": "Jul 1 - Aug 10 added 6 incidents. The window's defining event is INC-2026-0121 (Jul 6), which breached the ATLAS internal uptime floor and triggered DR-011."
+  },
+  "incidents": [
+    {
+      "id": "INC-2026-0034",
+      "title": "SEV1: novaai-model-serving + auth-service outage — connection pool exhaustion under enterprise beta load",
+      "severity": "SEV1",
+      "status": "resolved",
+      "startTime": "2026-03-08T14:22:00Z",
+      "resolvedTime": "2026-03-08T15:09:00Z",
+      "durationMinutes": 47,
+      "affectedServices": [
+        "novaai-model-serving",
+        "auth-service"
+      ],
+      "rootCause": "Connection pool exhaustion triggered by Auth0 token refresh storms under concurrent enterprise beta load. With 14 enterprise beta customers onboarding simultaneously, the auth-service connection pool (configured for nominal load) was saturated by Auth0 refresh calls, which backlogged and cascaded into novaai-model-serving request queues. The pool limit of 128 connections was hit within 4 minutes of the load spike; no circuit breaker was in place to isolate the auth path from model-serving traffic.",
+      "customerImpact": "Full service unavailability for NovaAI API and model-serving endpoints. Enterprise beta customers received HTTP 503 for all inference requests during the 47-minute window. Several customers who were in active demos or POC evaluation sessions experienced complete session failures.",
+      "customersAffected": 14,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "ATLAS",
+        "NEXUS"
+      ],
+      "linkedL3Ticket": "JIRA-4402",
+      "resolution": "On-call SRE identified connection pool saturation via Datadog APM traces at T+8min. Auth-service was restarted with a temporary connection pool limit increase (128 → 512). Model-serving recovered automatically once auth-service resumed healthy. Auth0 token refresh retry intervals were throttled via config change to prevent re-storm on recovery.",
+      "preventiveAction": "Incident filed as input to what became DR-006 (NovaAI uptime improvement plan). Immediate actions: (1) connection pool sizing review for auth-service under peak beta load; (2) circuit breaker pattern scoped for NEXUS IAM sprint; (3) Auth0 retry backoff policy hardened. Longer-term: NEXUS IAM service (replacing Auth0 workaround) accelerated on roadmap.",
+      "notes": "This incident directly contributed to creation of DR-006, authorized June 2. Auth0 workaround recognized formally as ATLAS Risk R-001 following this event."
+    },
+    {
+      "id": "INC-2026-0039",
+      "title": "SEV2: airflow-scheduler memory leak — 28 FlowEngine pipelines delayed 4+ hours",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-03-15T03:14:00Z",
+      "resolvedTime": "2026-03-15T03:42:00Z",
+      "durationMinutes": 28,
+      "affectedServices": [
+        "airflow-scheduler"
+      ],
+      "rootCause": "Airflow scheduler process experienced a gradual memory leak introduced in version 2.8.1 (deployed Feb 28). Memory consumption grew unchecked during the overnight batch window, reaching OOM at 03:14 UTC. The scheduler process was killed by the kernel OOM killer, halting task queuing for all 28 active FlowEngine DAGs. The memory leak was traced to a DAG serialization bug in Airflow 2.8.1 — subsequent patch (2.8.2) released by Apache two weeks later.",
+      "customerImpact": "28 FlowEngine pipelines experienced 4+ hour delays in job execution. Three mid-market customers (Crestview Analytics, PineFork Data Co., Talbot Systems) had pipeline SLAs breached — contracted refresh windows of 06:00 UTC were missed. Customer success notified all three accounts. Two customers filed support tickets.",
+      "customersAffected": 3,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "PULSE"
+      ],
+      "linkedL3Ticket": "JIRA-4491",
+      "resolution": "Scheduler process restarted at T+6min after OOM detected via Datadog process monitor alert. All 28 delayed DAG runs backfilled and completed by 07:30 UTC. Airflow downgraded to 2.8.0 as immediate mitigation. Customer comms sent at 06:15 UTC with ETA for backfill completion.",
+      "preventiveAction": "Added Datadog memory utilization alert threshold at 80% for airflow-scheduler process (previously unmonitored). Pinned Airflow version in deployment manifest. Incident elevated PULSE team's case for Airflow → Temporal migration — used as evidence in migration acceleration proposal submitted March 22.",
+      "notes": "Third Airflow scheduler reliability event in 6 weeks (two prior were non-customer-impacting). PULSE migration urgency formally flagged to TPM after this incident."
+    },
+    {
+      "id": "INC-2026-0041",
+      "title": "SEV2: novaai-inference-api p99 latency spike >5s — GPU memory pressure from concurrent large model requests",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-03-19T10:47:00Z",
+      "resolvedTime": "2026-03-19T13:05:00Z",
+      "durationMinutes": 138,
+      "affectedServices": [
+        "novaai-inference-api",
+        "novaai-model-serving"
+      ],
+      "rootCause": "GPU memory pressure on model-serving hosts caused by simultaneous large-context inference requests (>32k token context windows) from 8 enterprise beta customers. No request scheduling or GPU memory reservation policy existed at the time — all requests competed for GPU VRAM on shared A100 instances. When GPU memory was exhausted, inference requests queued and timed out, driving p99 latency above 5 seconds (SLA target: <500ms). The condition was self-reinforcing as timed-out clients retried, adding further load.",
+      "customerImpact": "Degraded inference quality and severely elevated latency for all enterprise beta customers submitting large-context requests. Requests did not fail outright (HTTP 200 returned after timeout backoff) but response times exceeded usability thresholds. No data loss occurred.",
+      "customersAffected": 8,
+      "postmortemComplete": false,
+      "programRelevance": [
+        "ATLAS",
+        "SPARK"
+      ],
+      "linkedL3Ticket": "JIRA-4523",
+      "resolution": "SRE team manually rate-limited large-context requests (>16k tokens) via inference API config at T+45min. This reduced concurrent GPU pressure and allowed the queue to drain. Full p99 recovery to <500ms achieved by T+138min. Config change required manual approval from SPARK team lead.",
+      "preventiveAction": "SPARK team scoped GPU memory reservation policy and per-customer request scheduling as P1 engineering work. Inference concurrency limits introduced as temporary control. Request scheduling policy added to ATLAS launch criteria — large-context inference not to be GA until scheduling policy is live.",
+      "notes": "No postmortem filed — SEV2 with no customer data loss, per postmortem policy. Engineering notes captured in JIRA-4523."
+    },
+    {
+      "id": "INC-2026-0045",
+      "title": "SEV2: datacore-query-engine performance regression post-deploy — 4x latency on complex scans",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-03-22T16:03:00Z",
+      "resolvedTime": "2026-03-22T16:43:00Z",
+      "durationMinutes": 40,
+      "affectedServices": [
+        "datacore-query-engine"
+      ],
+      "rootCause": "A query optimizer refactor deployed in release v3.14.2 introduced a regression in the cost-based query planner. For queries involving multi-table scans with more than 3 joins, the planner incorrectly estimated row cardinality, producing suboptimal execution plans with 3.8–4.2x higher scan costs. The regression only manifested on production-scale datasets; staging tests used smaller fixtures and did not trigger the affected code path.",
+      "customerImpact": "Thornbridge Capital and two other enterprise DataCore customers experienced severe query slowdowns on their standard analytics workloads during the 40-minute window. Thornbridge Capital's overnight risk model run, which typically completes in ~8 minutes, stalled at 34 minutes before the rollback cleared it. One customer filed a priority support ticket.",
+      "customersAffected": 3,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "NEXUS"
+      ],
+      "linkedL3Ticket": "JIRA-4556",
+      "resolution": "Deploy pipeline rollback to v3.14.1 initiated at T+18min after Datadog p99 latency alert fired and on-call engineer confirmed regression via query plan comparison. Full query performance restored within 5 minutes of rollback completing. Affected customer jobs resubmitted and completed successfully.",
+      "preventiveAction": "Added production-representative query fixtures to DataCore regression test suite (large multi-join scans). Canary deploy policy updated: DataCore releases now require 30-minute canary with p99 latency gate before full rollout. Thornbridge Capital CSM contacted with incident summary and SLA credit issued.",
+      "notes": "Thornbridge Capital is a Tier 1 enterprise account. Incident escalated to VP Engineering for awareness. No data corruption — impact was latency only."
+    },
+    {
+      "id": "INC-2026-0052",
+      "title": "SEV1: auth-service + novaai-model-serving cascade — Auth0 token refresh failure under concurrent POC load",
+      "severity": "SEV1",
+      "status": "resolved",
+      "startTime": "2026-04-03T19:31:00Z",
+      "resolvedTime": "2026-04-03T19:54:00Z",
+      "durationMinutes": 23,
+      "affectedServices": [
+        "auth-service",
+        "novaai-model-serving",
+        "novaai-inference-api"
+      ],
+      "rootCause": "Auth0 token refresh failure cascade. With 15+ concurrent enterprise POC sessions active simultaneously (peak onboarding period), Auth0 token refresh calls from auth-service saturated the outbound connection pool to Auth0's API. Auth0 responded with HTTP 429 rate limiting, causing all refresh calls to fail simultaneously. Auth-service propagated auth failures upstream, causing novaai-model-serving to reject all authenticated inference requests. This is a distinct failure path from INC-2026-0034 (pool exhaustion) — here the failure was Auth0 rate limiting rather than internal pool saturation, but the blast radius was identical. Root cause maps to ATLAS Risk R-001: NEXUS IAM service dependency — Auth0 workaround has no fallback for rate-limit scenarios.",
+      "customerImpact": "Complete NovaAI API and model-serving unavailability for 23 minutes. All authenticated inference requests returned HTTP 401. Apex Health, a strategic POC account in final evaluation before $2.1M contract signing, had their POC session interrupted. 11 enterprise beta customers affected. Customer success placed on high alert for Apex Health relationship.",
+      "customersAffected": 11,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "ATLAS",
+        "NEXUS"
+      ],
+      "linkedL3Ticket": "JIRA-4698",
+      "resolution": "On-call SRE identified Auth0 rate limit errors in auth-service logs at T+8min. Immediate mitigation: reduced concurrent Auth0 refresh calls via auth-service config to stay under Auth0 rate limit tier. Service recovered within 3 minutes of config application. Auth0 enterprise tier upgrade (higher rate limits) requested and approved same evening.",
+      "preventiveAction": "Auth0 upgraded to enterprise rate limit tier (immediate). Auth-service token caching TTL extended from 5 minutes to 55 minutes to dramatically reduce refresh call frequency under load. NEXUS IAM service moved to highest priority engineering track — blocking ATLAS GA readiness. Apex Health assigned dedicated CSM technical contact and offered extended POC timeline.",
+      "notes": "This was the second SEV1 in 26 days involving the same Auth0 workaround. ATLAS Risk R-001 formally elevated to Critical. VP Engineering briefed. Incident documented as forcing function for NEXUS IAM acceleration."
+    },
+    {
+      "id": "INC-2026-0055",
+      "title": "SEV2: airflow-scheduler worker OOM — 180 DataCore pipelines paused during peak batch run",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-04-07T02:08:00Z",
+      "resolvedTime": "2026-04-07T03:40:00Z",
+      "durationMinutes": 92,
+      "affectedServices": [
+        "airflow-scheduler"
+      ],
+      "rootCause": "Airflow worker processes on 3 of 6 worker nodes experienced simultaneous OOM conditions during peak Monday morning batch run (highest weekly pipeline volume). Root cause: task concurrency per worker was set to 32 (default), but the April batch expansion increased active DataCore pipeline count to 180 concurrent tasks during the 02:00–04:00 UTC window. Worker nodes ran on r5.4xlarge instances (128GB RAM) which proved insufficient at this concurrency. OOM killer terminated worker processes, pausing all queued tasks.",
+      "customerImpact": "180 DataCore pipeline jobs paused for up to 90 minutes. Internal data engineering teams experienced delayed dataset refreshes. No direct customer-facing SLA breach confirmed, though downstream customer dashboards were stale during recovery. No customer escalations filed.",
+      "customersAffected": 0,
+      "postmortemComplete": false,
+      "programRelevance": [
+        "PULSE"
+      ],
+      "linkedL3Ticket": "JIRA-4734",
+      "resolution": "Affected worker nodes restarted and task concurrency reduced from 32 to 16 per worker as emergency config change. Additional 2 worker nodes provisioned to compensate for halved per-node concurrency. All 180 paused jobs resumed and completed by 04:15 UTC.",
+      "preventiveAction": "Worker concurrency limit permanently reduced to 16 per node pending capacity review. Instance type upgrade to r5.8xlarge scheduled. PULSE team cited this incident as additional justification for Temporal migration — Temporal's worker model handles resource pressure more gracefully. No postmortem filed per policy (no customer SLA breach).",
+      "notes": "Fourth Airflow reliability event in 7 weeks. PULSE migration priority debate intensified following this incident."
+    },
+    {
+      "id": "INC-2026-0061",
+      "title": "SEV2: Temporal/Airflow worker resource contention — 15 PULSE-migrated NovaAI pipelines failed during batch run",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-04-15T06:22:00Z",
+      "resolvedTime": "2026-04-15T08:37:00Z",
+      "durationMinutes": 135,
+      "affectedServices": [
+        "airflow-scheduler",
+        "novaai-inference-api"
+      ],
+      "rootCause": "Resource contention in the mixed Airflow/Temporal environment. During the morning batch run, 15 NovaAI inference pipelines that had already been migrated to Temporal shared the same underlying Kubernetes node pool as residual Airflow workers. An Airflow DAG with a runaway retry loop (unbounded retry configuration) consumed all available CPU on shared nodes, starving Temporal workers. Temporal workers failed to heartbeat and were marked as failed by the Temporal server, causing 15 pipeline task failures. The scheduling conflict was a known risk of the hybrid migration period, but the runaway retry scenario was not anticipated.",
+      "customerImpact": "15 NovaAI inference pipelines that process customer data transformations failed mid-run. Affected pipelines served internal ML feature store updates. No direct customer-facing inference API downtime, but stale features caused inference quality degradation for approximately 2 hours until pipelines were re-run.",
+      "customersAffected": 0,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "PULSE",
+        "ATLAS"
+      ],
+      "linkedL3Ticket": "JIRA-4801",
+      "resolution": "Runaway Airflow DAG identified and paused at T+22min via Airflow UI. Temporal workers recovered after CPU pressure released. All 15 failed pipelines manually retriggered and completed successfully by T+135min. Node pool separation for Temporal vs Airflow workers implemented as emergency infra change.",
+      "preventiveAction": "Airflow DAG retry policies audited and bounded (max_retries=3, retry_delay=300s enforced globally). Temporal and Airflow worker node pools separated in Kubernetes via node selector labels. PULSE migration accelerated: target for Airflow → Temporal full cutover moved from Q3 to Q2 end.",
+      "notes": "Postmortem identified the hybrid migration period as the highest-risk window. PULSE team and Platform team agreed on dedicated migration sprints to minimize time in mixed-environment state."
+    },
+    {
+      "id": "INC-2026-0067",
+      "title": "SEV3: api-gateway-v1 rate limiter misconfiguration — enterprise customers hit unexpected HTTP 429s",
+      "severity": "SEV3",
+      "status": "resolved",
+      "startTime": "2026-04-18T14:05:00Z",
+      "resolvedTime": "2026-04-18T14:27:00Z",
+      "durationMinutes": 22,
+      "affectedServices": [
+        "api-gateway-v1"
+      ],
+      "rootCause": "A configuration push to api-gateway-v1 as part of MERIDIAN v1 API deprecation preparation incorrectly set the per-tenant rate limiter to 10 req/min (intended value was 1000 req/min). The config value was expressed in different units between the staging config template and the production Helm values file — a unit mismatch introduced during manual config transcription. No automated config validation caught the unit discrepancy before deployment.",
+      "customerImpact": "Enterprise and mid-market customers using the v1 API received unexpected HTTP 429 Too Many Requests responses for any workload above 10 req/min. Thornbridge Capital's real-time data ingestion pipeline and 5 mid-market customers were affected. No data loss — requests were rejected, not dropped silently.",
+      "customersAffected": 6,
+      "postmortemComplete": false,
+      "programRelevance": [
+        "MERIDIAN"
+      ],
+      "linkedL3Ticket": "JIRA-4834",
+      "resolution": "Config reverted to previous values at T+14min after Datadog error rate alert fired and root cause was confirmed by MERIDIAN engineer on call. HTTP 429 rate immediately dropped to zero post-revert.",
+      "preventiveAction": "Config validation schema added to api-gateway-v1 deployment pipeline — rate limit values now validated for unit consistency against known-good ranges before apply. MERIDIAN team added v1 API config changes to change-freeze window requiring dual approval. Customer communications sent to all 6 affected accounts.",
+      "notes": "No postmortem per SEV3 policy. MERIDIAN team added this to their v2 migration risk register as evidence of v1 brittleness."
+    },
+    {
+      "id": "INC-2026-0071",
+      "title": "SEV3: datacore-query-engine transformation pipeline timeout on large schema joins",
+      "severity": "SEV3",
+      "status": "resolved",
+      "startTime": "2026-04-24T11:33:00Z",
+      "resolvedTime": "2026-04-24T11:47:00Z",
+      "durationMinutes": 14,
+      "affectedServices": [
+        "datacore-query-engine"
+      ],
+      "rootCause": "Three customers submitted simultaneous large schema join queries (>500 column, >50M row joins) that exceeded the default transformation pipeline timeout of 12 minutes. The queries were legitimate but unusually large, triggering a timeout that caused the pipeline executor to mark them as failed rather than returning partial results. Auto-recovery logic re-queued and completed the queries on retry.",
+      "customerImpact": "Three DataCore enterprise customers experienced a 14-minute delay on large transformation queries. Queries eventually completed on auto-retry. No data loss or corruption. Customers received no error notification — the timeout was handled transparently by the retry mechanism.",
+      "customersAffected": 3,
+      "postmortemComplete": false,
+      "programRelevance": [],
+      "linkedL3Ticket": null,
+      "resolution": "Auto-recovery via retry queue completed all three queries successfully within the 14-minute window. No manual intervention required.",
+      "preventiveAction": "Transformation pipeline timeout extended from 12 to 30 minutes for enterprise tier customers (config change). Large-schema join query patterns flagged for query planner optimization in DataCore backlog (JIRA-4872).",
+      "notes": "Auto-recovered without human intervention. Flagged as SEV3 only due to brief customer-visible delay. No pattern identified — isolated event."
+    },
+    {
+      "id": "INC-2026-0078",
+      "title": "SEV2: novaai-inference-api rate limiter bug — incorrect token bucket configuration caused 120 minutes degraded service",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-05-02T08:14:00Z",
+      "resolvedTime": "2026-05-02T10:14:00Z",
+      "durationMinutes": 120,
+      "affectedServices": [
+        "novaai-inference-api"
+      ],
+      "rootCause": "A token bucket rate limiter implementation bug introduced in inference-api v2.3.1 (deployed Apr 30) incorrectly calculated the token refill rate for the enterprise tier. The refill rate was set to 1/10th of the intended value due to a unit conversion error (tokens-per-second vs tokens-per-minute) in the rate limiter configuration parser. Enterprise tier customers who submitted sustained inference workloads (normal production load) were throttled as if they were on the free tier. The bug was not caught in QA because integration tests used low-volume test scenarios.",
+      "customerImpact": "Six enterprise beta customers experienced degraded service — inference requests were throttled and returned HTTP 429 errors after the first ~6 requests per minute. Nuvera Insurance, in active pilot evaluation, was heavily impacted: their automated underwriting pipeline ran at ~40 req/min and was effectively non-functional for 2 hours. Nuvera filed support ticket SC-2026-0234. ATLAS program risk elevated as a result.",
+      "customersAffected": 6,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "ATLAS"
+      ],
+      "linkedL3Ticket": "JIRA-4956",
+      "resolution": "Root cause identified by SPARK engineer at T+35min via rate limiter metrics in Datadog. Hot-fix to rate limiter config parser deployed at T+120min (required inference-api restart with rolling deploy to avoid downtime). Enterprise tier customers notified of fix and offered make-good credits. Nuvera Insurance received personal call from Director of Customer Success.",
+      "preventiveAction": "Rate limiter unit test coverage expanded to include production-realistic request volumes. Config parser hardened with explicit unit annotations and validation. Integration test suite updated with enterprise-tier traffic simulation. Nuvera Insurance CSM engagement plan initiated to manage pilot relationship. SC-2026-0234 closed with resolution confirmation from Nuvera.",
+      "notes": "This incident highlighted the risk of releasing inference-api changes without enterprise-tier load testing. ATLAS launch gate updated to require rate limiter validation under production-representative load before GA."
+    },
+    {
+      "id": "INC-2026-0082",
+      "title": "SEV3: datacore-query-engine Iceberg metadata scan timeout during large table migration",
+      "severity": "SEV3",
+      "status": "resolved",
+      "startTime": "2026-05-05T22:41:00Z",
+      "resolvedTime": "2026-05-05T23:28:00Z",
+      "durationMinutes": 47,
+      "affectedServices": [
+        "datacore-query-engine"
+      ],
+      "rootCause": "An internal data engineering team running a large Iceberg table migration (approximately 2.4TB, 180M row Parquet table) triggered a full metadata scan during the migration job. The Iceberg metadata catalog had not been pruned in 8 months, accumulating ~1.2M snapshot entries. The metadata scan timed out after 30 minutes, causing the migration job to fail. No customer-facing queries were affected as the migration ran against internal engineering tables.",
+      "customerImpact": "No customer impact. Internal data engineering table migration job failed and required manual restart after catalog pruning.",
+      "customersAffected": 0,
+      "postmortemComplete": false,
+      "programRelevance": [],
+      "linkedL3Ticket": "JIRA-4987",
+      "resolution": "Iceberg metadata catalog pruned (expired snapshots older than 30 days removed) by data platform engineer. Migration job restarted and completed successfully over approximately 3.5 hours.",
+      "preventiveAction": "Automated Iceberg metadata pruning scheduled as weekly maintenance job (cron: Sundays 01:00 UTC). Metadata scan timeout increased to 60 minutes for internal migration workloads. Pruning runbook added to DataCore operations guide.",
+      "notes": "Entirely internal. No customer notification required. Logged as SEV3 per incident policy for any query engine timeout regardless of customer impact."
+    },
+    {
+      "id": "INC-2026-0089",
+      "title": "SEV2: novaai-model-serving memory leak after hot-reload of model weights — 2 enterprise beta customers impacted 85 minutes",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-05-13T09:07:00Z",
+      "resolvedTime": "2026-05-13T10:32:00Z",
+      "durationMinutes": 85,
+      "affectedServices": [
+        "novaai-model-serving"
+      ],
+      "rootCause": "A memory leak in the model-serving hot-reload path was triggered when a new model version (NovaAI v1.4.2) was deployed via hot-reload without restarting the serving process. The previous model version's GPU memory allocations were not properly released during the reload sequence, causing GPU VRAM to fill over ~45 minutes of live traffic. Once VRAM was exhausted, model-serving requests failed with CUDA out-of-memory errors. The hot-reload path had not been tested with the new CUDA memory allocator introduced in the serving runtime v3.1.0 update.",
+      "customerImpact": "Two enterprise beta customers experienced inference API failures (HTTP 500) for 85 minutes while the memory leak manifested and was remediated. Both customers were running automated batch inference jobs that failed and required manual restart. Incident coincided with Karl Bergstrom's (VP Engineering) SLA forcing function memo (DR-003, issued May 13), which cited NovaAI's pattern of reliability incidents as grounds for mandatory uptime improvement plan.",
+      "customersAffected": 2,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "ATLAS",
+        "SPARK"
+      ],
+      "linkedL3Ticket": "JIRA-5067",
+      "resolution": "Model-serving process hard-restarted (cold restart, not hot-reload) at T+52min after CUDA OOM errors confirmed in Datadog logs. VRAM fully reclaimed on restart. Inference service restored to full capacity. GPU memory metrics added to Datadog dashboard for model-serving hosts.",
+      "preventiveAction": "Hot-reload path disabled as deployment mechanism pending memory allocator fix — all model version updates now require graceful restart. CUDA memory allocator compatibility testing added to model-serving CI pipeline. GPU VRAM utilization alert threshold set at 85% with PagerDuty integration. SPARK team scoped hot-reload memory management fix as P1 engineering work (JIRA-5082).",
+      "notes": "This incident, combined with DR-003 issued the same day, created the forcing function for the DR-006 uptime plan authorized June 2. The timing of this incident with Karl Bergstrom's SLA memo is not coincidental — the memo was already in draft but this incident accelerated its issuance."
+    },
+    {
+      "id": "INC-2026-0094",
+      "title": "SEV2: airflow-scheduler process crash — 45 minute downtime, 12 pipeline jobs delayed",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-05-20T14:52:00Z",
+      "resolvedTime": "2026-05-20T15:37:00Z",
+      "durationMinutes": 45,
+      "affectedServices": [
+        "airflow-scheduler"
+      ],
+      "rootCause": "Airflow scheduler process crashed with a segmentation fault during a high-concurrency DAG parsing cycle. The crash occurred while parsing a newly added DAG with a recursive import pattern that created a circular dependency in the DAG module loading path. Python's import system, combined with Airflow's DAG serialization, triggered a native library call into libgcc that segfaulted under the recursive condition. The new DAG was added by a data engineer without the circular import being caught by code review.",
+      "customerImpact": "12 pipeline jobs delayed for 45 minutes during scheduler downtime. No direct customer-facing SLA breaches confirmed. Internal data engineering and analytics teams experienced stale data during the window.",
+      "customersAffected": 0,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "PULSE"
+      ],
+      "linkedL3Ticket": "JIRA-5134",
+      "resolution": "Scheduler process auto-restarted via systemd after crash detected. However, the offending DAG caused repeated crashes on restart. SRE manually identified and removed the problematic DAG at T+22min, allowing the scheduler to stabilize. All 12 delayed pipeline jobs backfilled and completed within 90 minutes of recovery.",
+      "preventiveAction": "DAG validation added to CI pipeline: circular import detection and DAG loading smoke test required before merge to main. Airflow scheduler configured with separate DAG parsing subprocess (isolated_imports: true) to prevent parser crashes from killing the main scheduler process. This was the final Airflow reliability incident that hardened the PULSE team's case for migration acceleration — PULSE migration target moved to top of Q3 priority stack.",
+      "notes": "Fifth customer-impacting Airflow incident since March. PULSE migration acceleration formally approved in May 22 planning session following this incident."
+    },
+    {
+      "id": "INC-2026-0098",
+      "title": "SEV3: mobile-backend session token expiry too aggressive — 23 internal HORIZON alpha testers experienced forced logouts",
+      "severity": "SEV3",
+      "status": "resolved",
+      "startTime": "2026-06-01T10:18:00Z",
+      "resolvedTime": "2026-06-01T11:52:00Z",
+      "durationMinutes": 94,
+      "affectedServices": [
+        "mobile-backend"
+      ],
+      "rootCause": "Mobile session token TTL was configured at 15 minutes (inherited from web session defaults) rather than the intended 7-day mobile session standard. Mobile clients running in background received session expiry responses on next foreground activation, forcing re-authentication. The misconfiguration was introduced during initial mobile-backend service setup in late May when web auth defaults were copied without mobile-specific review.",
+      "customerImpact": "No production customer impact — affected 23 internal NovaGrid employees participating in the HORIZON mobile app alpha program. All testers experienced forced logout and had to re-authenticate. Caused friction and negative alpha feedback in the daily alpha standup.",
+      "customersAffected": 0,
+      "postmortemComplete": false,
+      "programRelevance": [
+        "HORIZON"
+      ],
+      "linkedL3Ticket": "JIRA-5201",
+      "resolution": "Mobile-backend session token TTL updated from 15 minutes to 7 days via config change deployed at T+94min. No service restart required — config hot-reload applied. All alpha testers notified via Slack to log out and back in once.",
+      "preventiveAction": "Mobile auth configuration separated from web auth defaults in config management. Mobile-specific auth parameters documented in HORIZON technical spec. Alpha feedback channel used to collect additional UX issues surfaced during forced re-auth event.",
+      "notes": "Internal alpha only — no production customer risk. HORIZON mobile app in internal alpha as of June 1. Config separation between mobile and web auth added to HORIZON pre-launch checklist."
+    },
+    {
+      "id": "INC-2026-0103",
+      "title": "SEV3: novaai-inference-api connection pool warning — auto-recovery within 8 minutes. DR-006 tuning working as intended.",
+      "severity": "SEV3",
+      "status": "resolved",
+      "startTime": "2026-06-10T15:44:00Z",
+      "resolvedTime": "2026-06-10T15:52:00Z",
+      "durationMinutes": 8,
+      "affectedServices": [
+        "novaai-inference-api"
+      ],
+      "rootCause": "Connection pool utilization for the novaai-inference-api service reached 78% (warning threshold: 75%) during an early-afternoon load spike from 3 enterprise customers running concurrent large batch inference jobs. The alert fired correctly per the new DR-006 connection pool monitoring configuration deployed June 2. Under pre-DR-006 configuration, this load level would have silently grown to pool exhaustion and triggered a SEV1 (cf. INC-2026-0034, INC-2026-0052). The DR-006 connection pool expansion and auto-scaling configuration resolved the pressure automatically.",
+      "customerImpact": "No customer impact. Service remained within SLA parameters throughout. No degradation observed.",
+      "customersAffected": 0,
+      "postmortemComplete": false,
+      "programRelevance": [
+        "ATLAS",
+        "NEXUS"
+      ],
+      "linkedL3Ticket": null,
+      "resolution": "Auto-scaling added 2 additional inference-api pods within 4 minutes of pool warning alert. Connection pool utilization dropped to 41% once additional capacity came online. Alert resolved automatically. No manual intervention required.",
+      "preventiveAction": "No additional action required — system behaved as designed under DR-006 protocols. Incident logged as proof point for DR-006 effectiveness. SRE team noted this in June monthly reliability report as evidence that early detection and auto-scaling are preventing SEV1/SEV2 escalation.",
+      "notes": "This incident is evidence that DR-006 is working. Under identical load conditions in March and April, this scenario escalated to SEV1. The prevention here is a direct result of: (1) expanded connection pools, (2) 75% utilization alerts, (3) auto-scaling configuration. Uptime tracking at 97.8% as of June 20."
+    },
+    {
+      "id": "INC-2026-0108",
+      "title": "SEV3: novaai-model-serving async inference queue depth exceeded 80% threshold — warning alert, no customer impact",
+      "severity": "SEV3",
+      "status": "resolved",
+      "startTime": "2026-06-20T11:22:00Z",
+      "resolvedTime": "2026-06-20T11:34:00Z",
+      "durationMinutes": 12,
+      "affectedServices": [
+        "novaai-model-serving"
+      ],
+      "rootCause": "Async inference queue depth reached 83% of capacity during a mid-morning load spike coinciding with three enterprise customers running concurrent batch inference workloads. The 80% threshold alert (introduced as part of DR-006 stage 2 async inference refactor) fired and notified on-call. Queue depth normalized as the DR-006 async queue auto-drain logic shed lower-priority background jobs to protect enterprise real-time inference. System self-healed within the 12-minute monitoring window.",
+      "customerImpact": "No customer impact. All enterprise inference requests were served within SLA. Only internal background inference batch jobs were briefly deprioritized by the auto-drain logic.",
+      "customersAffected": 0,
+      "postmortemComplete": false,
+      "programRelevance": [
+        "ATLAS",
+        "SPARK"
+      ],
+      "linkedL3Ticket": null,
+      "resolution": "Auto-drain logic shed low-priority background inference jobs. Queue depth returned to 45% within 12 minutes. On-call acknowledged alert and confirmed no customer impact. No manual intervention needed.",
+      "preventiveAction": "No additional action required. On-call logged the event as expected system behavior under DR-006 stage 2 protocols. Queue depth behavior reviewed in June 20 ATLAS/SPARK sync — async refactor performing as designed. Uptime remains at 97.8% as of June 20.",
+      "notes": "DR-006 stage 2 (async inference refactor) deployed June 10. This is the first alert-and-self-heal event post-deployment, confirming the refactor is functioning. Previously, queue saturation at this level would have progressed silently to OOM and service degradation. The 80% alert + auto-drain broke the escalation chain."
+    },
+    {
+      "id": "INC-2026-0112",
+      "title": "SEV3: mobile-backend push notification service timeout during Android beta stress test",
+      "severity": "SEV3",
+      "status": "resolved",
+      "startTime": "2026-06-22T16:05:00Z",
+      "resolvedTime": "2026-06-22T16:31:00Z",
+      "durationMinutes": 26,
+      "affectedServices": [
+        "mobile-backend"
+      ],
+      "rootCause": "Push notification delivery via Firebase Cloud Messaging (FCM) timed out during a structured Android beta stress test run with 34 simultaneous test devices. The mobile-backend's FCM client was configured with a 2-second send timeout (web default) rather than the FCM-recommended 10-second timeout for mobile delivery, which includes additional delivery confirmation round-trips. Under normal production alpha load (2–4 devices), the 2-second timeout was sufficient. Under 34-device concurrent stress test, FCM response times exceeded 2 seconds and all push notifications failed silently.",
+      "customerImpact": "No production customer impact. 34 test devices (all internal HORIZON alpha testers) failed to receive push notifications during the 26-minute stress test window. The test itself successfully identified the timeout misconfiguration before any external beta release.",
+      "customersAffected": 0,
+      "postmortemComplete": false,
+      "programRelevance": [
+        "HORIZON"
+      ],
+      "linkedL3Ticket": "JIRA-5289",
+      "resolution": "FCM client send timeout updated from 2 seconds to 10 seconds via config change deployed at T+26min. Stress test re-run post-fix confirmed successful push delivery to all 34 devices at full load.",
+      "preventiveAction": "FCM configuration reviewed against Firebase best practices — all timeout and retry parameters aligned to FCM documentation recommendations. Push notification delivery success rate added to HORIZON alpha test dashboard. HORIZON launch readiness checklist updated to include push notification load test at 100+ device scale before external beta release.",
+      "notes": "Discovered via intentional stress testing — this is a success case for HORIZON's pre-launch testing protocol. The bug was caught internally before any external exposure. HORIZON remains in internal alpha as of June 28."
+    },
+    {
+      "id": "INC-2026-0117",
+      "title": "SEV2: auth-service token refresh latency spike following NEXUS IAM production cutover",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-07-02T09:14:00Z",
+      "resolvedTime": "2026-07-02T12:38:00Z",
+      "durationMinutes": 204,
+      "affectedServices": [
+        "auth-service",
+        "novaai-inference-api",
+        "api-gateway-v2"
+      ],
+      "rootCause": "Two days after the NEXUS IAM cutover, token refresh p99 latency rose from 180ms to 3.4s during the Europe morning peak. The unified IAM service was issuing a fresh introspection call to Auth0 on every refresh rather than serving from its local cache, because the cache TTL was configured in seconds but read as milliseconds by the deserializer - a unit mismatch that made every cache entry expire effectively instantly. Staging never surfaced it because staging load never sustained enough concurrent refreshes for cache behaviour to matter.",
+      "customerImpact": "Elevated login and session-refresh latency for all API consumers for 3h24m. No failed authentications - requests were slow, not rejected. Two enterprise customers (Apex Health, Finex Capital) reported slow dashboard loads.",
+      "customersAffected": 2,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "NEXUS",
+        "ATLAS",
+        "SHIELD"
+      ],
+      "linkedL3Ticket": "SUPP-016",
+      "resolution": "Cache TTL deserializer corrected and redeployed at T+204min. Token refresh p99 returned to 165ms.",
+      "preventiveAction": "Unit-typed configuration added for all duration values in the IAM service. Sustained-concurrency load profile added to the IAM staging suite. Hypercare extended through Jul 10 as originally planned - this incident is the reason the hypercare window earned its keep.",
+      "notes": "The only incident during the NEXUS IAM hypercare window. Sara Lindqvist's team found and fixed it inside one business day. Hypercare exited clean Jul 10 with no recurrence."
+    },
+    {
+      "id": "INC-2026-0121",
+      "title": "SEV2: novaai-inference-api 5xx surge under GA load - SLO burn alert breaches internal uptime floor",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-07-06T13:04:00Z",
+      "resolvedTime": "2026-07-06T18:47:00Z",
+      "durationMinutes": 343,
+      "affectedServices": [
+        "novaai-inference-api",
+        "novaai-model-serving"
+      ],
+      "rootCause": "Six days after GA soft launch, sustained inference traffic reached roughly 3x the pre-GA baseline as Apex Health, Finex Capital and Corinthia Bank moved production workloads onto the platform. Model serving pods began returning 5xx under queue saturation. The async inference refactor (DR-006 stage 2) had been sized against pre-GA traffic assumptions; there was no circuit breaker to shed load gracefully, so saturation surfaced to customers as errors rather than as queuing. Rolling 7-day uptime fell to 96.8%, below the 97.0% internal floor.",
+      "customerImpact": "Intermittent 5xx on inference calls for 5h43m across all three production enterprise customers. Estimated 2.1% of inference requests failed during the window. Apex Health (healthcare, production workload) was notified proactively by Marcus Chen the same afternoon.",
+      "customersAffected": 3,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "ATLAS",
+        "SPARK"
+      ],
+      "linkedL3Ticket": "SUPP-017",
+      "resolution": "Emergency inference capacity added (T+90min, +40% pods). New tenant onboarding rate-limited to zero at T+343min under DR-011 to stop the load curve growing while the structural fix was built.",
+      "preventiveAction": "F6 circuit breaker on model-serving endpoints accelerated and shipped Jul 31 - it sheds load into queuing rather than errors. Autoscaling for inference capacity (F7) opened to replace the manual capacity add. Onboarding rate limit lifted Aug 3 once rolling uptime held above 98.5% for seven days.",
+      "notes": "The defining incident of the window. Leo Nakamura's 17:00 decision chose the SLA over the milestone: ATLAS M7 sat frozen at 3/5 enterprise customers for four weeks because onboarding was deliberately stopped. The Jun 16 SLA monitoring milestone (ATLAS M6) is what caught this within minutes of the burn starting."
+    },
+    {
+      "id": "INC-2026-0124",
+      "title": "SEV3: datacore-query-engine p99 regression during FlowEngine cutover batch 14",
+      "severity": "SEV3",
+      "status": "resolved",
+      "startTime": "2026-07-21T02:30:00Z",
+      "resolvedTime": "2026-07-21T04:05:00Z",
+      "durationMinutes": 95,
+      "affectedServices": [
+        "datacore-query-engine"
+      ],
+      "rootCause": "A FlowEngine cutover batch ran its backfill against DataCore during the overnight window without a rate limit, driving query p99 from 900ms to 2.6s and breaching the 2000ms SLO for 95 minutes.",
+      "customerImpact": "No customer-facing impact - internal analytics queries only, during an off-peak window.",
+      "customersAffected": 0,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "PULSE"
+      ],
+      "linkedL3Ticket": null,
+      "resolution": "Backfill throttled to 200 rows/sec. Batch completed without further SLO impact.",
+      "preventiveAction": "Backfill rate limit made a required parameter in the cutover runbook rather than an optional one.",
+      "notes": "Minor, but it belongs in the PULSE retro: the migration runbook (M2) was validated against DataCore's own pipelines and did not anticipate FlowEngine batches loading DataCore as a dependency."
+    },
+    {
+      "id": "INC-2026-0126",
+      "title": "SEV2: airflow-scheduler task starvation during final FlowEngine cutover - 27 entangled pipelines",
+      "severity": "SEV2",
+      "status": "resolved",
+      "startTime": "2026-07-25T11:12:00Z",
+      "resolvedTime": "2026-07-25T19:58:00Z",
+      "durationMinutes": 526,
+      "affectedServices": [
+        "airflow-scheduler",
+        "flowengine-orchestrator"
+      ],
+      "rootCause": "The final 27 FlowEngine pipelines shared execution state through Airflow XCom side-channels not captured in the migration runbook. Cutting over a subset left the remainder waiting on state that would now only ever be written on the Temporal side, and the scheduler starved. Discovered on the day M4 was due to close.",
+      "customerImpact": "14 internal data products delivered late by up to 8 hours. No external customer impact - these feed internal dashboards and the finance close, not customer-facing surfaces.",
+      "customersAffected": 0,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "PULSE"
+      ],
+      "linkedL3Ticket": null,
+      "resolution": "Cutover rolled back for the affected subset, dependency graph traced manually over the following week, and the 27 pipelines migrated as a single atomic batch on Aug 7.",
+      "preventiveAction": "Cross-pipeline state dependency scan added to the runbook as a mandatory pre-cutover step.",
+      "notes": "This is the direct cause of PULSE M4 missing Jul 25 and closing Aug 7 - 13 days late and $180K of additional dual-run cost. Worth carrying into the program retro: the runbook was validated against DataCore, whose pipelines are materially less entangled than FlowEngine's."
+    },
+    {
+      "id": "INC-2026-0129",
+      "title": "SEV3: mobile-backend session refresh failures for beta cohort after soft GA",
+      "severity": "SEV3",
+      "status": "resolved",
+      "startTime": "2026-08-03T08:40:00Z",
+      "resolvedTime": "2026-08-03T10:12:00Z",
+      "durationMinutes": 92,
+      "affectedServices": [
+        "mobile-backend",
+        "auth-service"
+      ],
+      "rootCause": "Mobile clients held IAM refresh tokens with a 24-hour lifetime while the backend assumed 7 days, so the first cohort of soft-GA users to cross the 24-hour mark were silently logged out mid-session. Surfaced three days after soft GA because that is when the first full cohort crossed the boundary.",
+      "customerImpact": "Approximately 60 beta users across Kestrel and Solaris were logged out and had to re-authenticate. Two customers raised it through their CSMs.",
+      "customersAffected": 2,
+      "postmortemComplete": true,
+      "programRelevance": [
+        "HORIZON",
+        "NEXUS"
+      ],
+      "linkedL3Ticket": "SUPP-019",
+      "resolution": "Mobile refresh token lifetime aligned to 7 days at T+92min.",
+      "preventiveAction": "Token lifetime added to the shared IAM integration contract so mobile and backend read one value. Session-continuity test added to the HORIZON release checklist at 24h and 7d boundaries.",
+      "notes": "First real-world friction from the HORIZON-NEXUS IAM integration. Low severity, but it landed two days after soft GA in front of the two customers whose renewals depend on the mobile programme."
+    },
+    {
+      "id": "INC-2026-0131",
+      "title": "SEV3: api-gateway-v1 elevated latency as v1 traffic concentrates on remaining mid-market integrations",
+      "severity": "SEV3",
+      "status": "resolved",
+      "startTime": "2026-08-06T14:20:00Z",
+      "resolvedTime": "2026-08-06T15:35:00Z",
+      "durationMinutes": 75,
+      "affectedServices": [
+        "api-gateway-v1"
+      ],
+      "rootCause": "v1 gateway capacity was scaled down in July in step with the migration curve. The 8 remaining mid-market customers include two running high-volume batch integrations, and their combined load now represents a far larger share of a much smaller pool. A routine batch window pushed p99 to 1.4s.",
+      "customerImpact": "Elevated latency for 3 of the 8 remaining v1 mid-market customers for 75 minutes. No errors.",
+      "customersAffected": 3,
+      "postmortemComplete": false,
+      "programRelevance": [
+        "MERIDIAN"
+      ],
+      "linkedL3Ticket": "SUPP-020",
+      "resolution": "v1 gateway scaled back up to the June footprint pending completion of the final 8 migrations.",
+      "preventiveAction": "v1 capacity reduction re-planned to track actual remaining traffic rather than customer count.",
+      "notes": "A direct operational consequence of the MERIDIAN M6 miss: the shutdown plan assumed the mid-market tail would be gone by Aug 1. Every week those 8 customers remain, v1 infrastructure has to stay warm for them."
+    }
+  ]
+}

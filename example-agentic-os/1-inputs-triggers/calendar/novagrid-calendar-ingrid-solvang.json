@@ -1,0 +1,198 @@
+{
+  "_meta": {
+    "source": "Google Workspace — Calendar",
+    "calendar": "ingrid.solvang@novagrid.io",
+    "exported_at": "2026-09-03T07:00:00Z",
+    "exported_by": "tpm-integration@novagrid.io",
+    "synthetic": true,
+    "note": "Decision-bearing events only, plus the recurring 1:1s that were cancelled during the absence — for the `em` persona a cancelled 1:1 series is signal, not noise. `attendedByUser: false` inside the absence window marks a forum that ran without the user.",
+    "simulation_note": "Covers Ingrid Solvang's absence, 2026-08-03 to 2026-09-02 (last working day Fri 2026-07-31), plus the forward two weeks. ONE exception: EVT-3104 on 2026-08-20, the HORIZON contingency call she joined from leave. Consistent with novagrid-gmail-ingrid-solvang.json and with the portfolio-level exports.",
+    "window": { "from": "2026-08-01", "to": "2026-09-15" },
+    "timezone": "Europe/Berlin"
+  },
+  "user": { "name": "Ingrid Solvang", "email": "ingrid.solvang@novagrid.io", "role": "Director, Platform & Infrastructure" },
+  "heldDuringAbsence": [
+    {
+      "id": "EVT-3101",
+      "title": "Core Infra change advisory board — PULSE decommission exemption",
+      "start": "2026-08-12T14:00:00+02:00",
+      "durationMin": 30,
+      "organizer": "anders.holt@novagrid.io",
+      "attendedByUser": false,
+      "attendees": ["anders.holt@novagrid.io", "yuna.park@novagrid.io", "amara.osei@novagrid.io"],
+      "outcomes": [
+        "DECIDED: standing change-freeze exemption for PULSE decommission cutovers through Sep 30, conditional on Core Infra on-call notification before each cutover. 6 cutovers expected.",
+        "Rationale: normal CAB cadence adds ~4 days per cutover on a 7-week sequence with no slack; $380K/month at stake."
+      ],
+      "decisionsTaken": ["Standing CAB exemption for PULSE decommission cutovers"],
+      "decisionRecordId": null,
+      "flag": "A standing exemption to the user's own change control, granted by the covering lead. Has since produced one SEV2 with 5 cutovers remaining."
+    },
+    {
+      "id": "EVT-3102",
+      "title": "Platform & Infra staffing — DevEx capacity",
+      "start": "2026-08-17T11:00:00+02:00",
+      "durationMin": 45,
+      "organizer": "anders.holt@novagrid.io",
+      "attendedByUser": false,
+      "attendees": ["anders.holt@novagrid.io", "owen.blake@novagrid.io", "sara.lindqvist@novagrid.io"],
+      "outcomes": [
+        "DECIDED: 3 of 8 Developer Experience engineers (Kalle, Bea, Ravi) loaned to NEXUS service-retirement tooling from Aug 17.",
+        "Rationale: F3 and F4 shipped, DevEx had no committed Q3 roadmap, NEXUS needed retirement pace held at ~6/week.",
+        "Framed as a loan, not a transfer. No end date set."
+      ],
+      "decisionsTaken": ["3 DevEx engineers loaned to NEXUS M7 tooling"],
+      "decisionRecordId": null,
+      "flag": "The user's org structure changed in her absence. Loan has run 4 weeks with no end date."
+    },
+    {
+      "id": "EVT-3103",
+      "title": "iOS pre-submission review — HORIZON",
+      "start": "2026-08-19T17:00:00+02:00",
+      "durationMin": 60,
+      "organizer": "mei.watanabe@novagrid.io",
+      "attendedByUser": false,
+      "attendees": ["mei.watanabe@novagrid.io", "priya.kaur@novagrid.io"],
+      "outcomes": [
+        "Apple rejection received day 18 — guideline 5.1.1(v), no in-app account deletion path.",
+        "Root cause accepted as a Mobile process gap: the pre-submission checklist contained NovaGrid's release checklist, not the App Store review guidelines.",
+        "3 days of engineering; resubmission Aug 24."
+      ],
+      "decisionsTaken": []
+    },
+    {
+      "id": "EVT-3104",
+      "title": "HORIZON launch contingency call — iOS vs Android",
+      "start": "2026-08-20T14:00:00+02:00",
+      "durationMin": 45,
+      "organizer": "ingrid.solvang@novagrid.io",
+      "attendedByUser": true,
+      "attendedFromLeave": true,
+      "attendees": ["ingrid.solvang@novagrid.io", "priya.kaur@novagrid.io", "sofia.reyes@novagrid.io", "sara.lindqvist@novagrid.io", "karl.bergstrom@novagrid.io"],
+      "outcomes": [
+        "DECIDED by the user: ship Android publicly Aug 31, hold iOS for the resubmission.",
+        "Marketing to run the Aug 31 campaign as an Android launch with iOS 'weeks away'.",
+        "No decision record written. No owner assigned for the iOS communications that the phrase 'weeks away' created."
+      ],
+      "decisionsTaken": ["HORIZON Android-only public GA Aug 31"],
+      "decisionRecordId": null,
+      "flag": "The only forum the user joined during leave. The decision landed; its consequences — the DR, the iOS date commitment, the support load it multiplied — did not get followed up by anyone."
+    },
+    {
+      "id": "EVT-3105",
+      "title": "INC-2026-0131 — SEV2 incident bridge (PULSE cutover / DataCore ingestion)",
+      "start": "2026-08-26T10:15:00+02:00",
+      "durationMin": 251,
+      "organizer": "anders.holt@novagrid.io",
+      "attendedByUser": false,
+      "attendees": ["anders.holt@novagrid.io", "yuna.park@novagrid.io", "ethan.park@novagrid.io"],
+      "outcomes": [
+        "DataCore ingestion pipeline down 4h11m. MTTD 9 minutes. Backfill completed same day, no customer-visible data loss.",
+        "Ran under the Aug 12 standing exemption. On-call notification happened; nobody checked downstream consumers of the pipeline's metadata table — the step the CAB would have forced."
+      ],
+      "decisionsTaken": []
+    },
+    {
+      "id": "EVT-3106",
+      "title": "SHIELD audit-readiness sign-off",
+      "start": "2026-08-31T16:00:00+02:00",
+      "durationMin": 60,
+      "organizer": "fatima.alhassan@novagrid.io",
+      "attendedByUser": false,
+      "attendees": ["fatima.alhassan@novagrid.io", "james.whitfield@novagrid.io"],
+      "outcomes": [
+        "SHIELD M6 closed on the board-mandated date against five acceptance criteria.",
+        "Two of the five — 'monitoring live on all 100 controls' and 'drift detection armed' — are operated continuously by Security & Compliance Eng for 91 days.",
+        "The sustained staffing cost of those two criteria (~1.5 FTE, Sep 1 – Nov 30) was not costed with the team that carries it, and the team's director was not in the room."
+      ],
+      "decisionsTaken": ["SHIELD audit readiness accepted Aug 31 — five criteria binding through Nov 30"],
+      "flag": "A 91-day operating commitment was made on the user's team without the user or the team lead present."
+    },
+    {
+      "id": "EVT-3107",
+      "title": "1:1 series — Ingrid / direct reports (Anders, Rania, Owen, Mei)",
+      "start": "2026-08-03T09:00:00+02:00",
+      "recurrence": "weekly",
+      "occurrencesInWindow": 20,
+      "attendedByUser": false,
+      "status": "cancelled_for_absence",
+      "flag": "20 cancelled 1:1s across 4 direct reports. Two of the four escalations now sitting in the inbox (Mei on mobile support, Owen on DevEx charter) were first raised in 1:1s and had nowhere else to go."
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "EVT-3201",
+      "title": "1:1 — Mei Watanabe (Mobile)",
+      "start": "2026-09-03T14:00:00+02:00",
+      "durationMin": 30,
+      "note": "First 1:1 back. Carries mobile run ownership, Tomas Berg's transfer, the offer approval, and the rebuilt pre-submission checklist. Everything in Act Now #1 and #2 can be settled here."
+    },
+    {
+      "id": "EVT-3202",
+      "title": "1:1 — Anders Holt (Core Infrastructure)",
+      "start": "2026-09-03T15:00:00+02:00",
+      "durationMin": 30,
+      "note": "Cover debrief. Change-freeze exemption, F7, the MERIDIAN shim owner question."
+    },
+    {
+      "id": "EVT-3203",
+      "title": "INC-2026-0131 post-incident review",
+      "start": "2026-09-04T11:00:00+02:00",
+      "durationMin": 60,
+      "organizer": "yuna.park@novagrid.io",
+      "attendees": ["yuna.park@novagrid.io", "anders.holt@novagrid.io", "amara.osei@novagrid.io", "ingrid.solvang@novagrid.io", "karl.bergstrom@novagrid.io"],
+      "note": "The forum where the exemption is either confirmed with a downstream-consumer check added, or withdrawn. 5 cutovers remain."
+    },
+    {
+      "id": "EVT-3204",
+      "title": "1:1 — Rania Haddad (Security & Compliance Eng)",
+      "start": "2026-09-04T14:00:00+02:00",
+      "durationMin": 30,
+      "note": "Sec Eng triple-commitment: SHIELD observation 1.5 FTE, DEP-002 at 15%, possible CC6.4/CC6.6 re-evidence before Deloitte's Sep 21 sampling pass."
+    },
+    {
+      "id": "EVT-3205",
+      "title": "1:1 — Owen Blake (Developer Experience)",
+      "start": "2026-09-07T11:00:00+02:00",
+      "durationMin": 30,
+      "note": "DevEx Q3 charter, or make the 3-engineer loan permanent and staff DevEx at 5 deliberately."
+    },
+    {
+      "id": "EVT-3206",
+      "title": "Q3 internal transfer window closes",
+      "start": "2026-09-07T17:00:00+02:00",
+      "allDay": false,
+      "type": "deadline",
+      "note": "Tomas Berg's transfer request rolls to the December window if not actioned."
+    },
+    {
+      "id": "EVT-3207",
+      "title": "Senior Mobile Engineer — competing offer expires",
+      "start": "2026-09-08T17:00:00+02:00",
+      "type": "deadline",
+      "note": "Hanna needs 48h to get an offer out and negotiated. Approval on Sep 3 or 4 is the difference."
+    },
+    {
+      "id": "EVT-3208",
+      "title": "Deloitte first sampling pass — SHIELD observation window",
+      "start": "2026-09-21T09:00:00+02:00",
+      "type": "deadline",
+      "note": "Any CC6.4/CC6.6 re-evidence has to be done and disclosed before this."
+    },
+    {
+      "id": "EVT-3209",
+      "title": "MERIDIAN v1 API EoL + infrastructure shutdown",
+      "start": "2026-09-30T09:00:00+02:00",
+      "type": "deadline",
+      "note": "Compatibility shim for Brightline and Corvid runs on v1 infrastructure. ~4 weeks of work, currently unowned. 27 days out."
+    }
+  ],
+  "absenceSummary": {
+    "workingDaysMissed": 23,
+    "meetingsDeclinedOrMissed": 96,
+    "oneOnOnesCancelled": 20,
+    "decisionForumsHeldWithoutUser": 5,
+    "decisionsTakenWithoutUser": 4,
+    "decisionsTakenByUserFromLeave": 1
+  }
+}

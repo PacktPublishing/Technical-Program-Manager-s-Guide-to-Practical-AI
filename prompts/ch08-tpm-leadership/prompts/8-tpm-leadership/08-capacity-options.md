@@ -1,0 +1,1 @@
+Show me three options: absorb it with current staffing, absorb it by descoping something existing, or hiring. For each, give me the earliest realistic start date and what it costs me. Flag any option that depends on a team outside my portfolio, and any option that conflicts with a decision in the executive decision log. Use only the files from the previous prompt.

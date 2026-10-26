@@ -1,0 +1,1 @@
+Read `4-skills-tools/5-execution-delivery/tpm-power-questions.md` and follow its instructions exactly.

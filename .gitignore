@@ -1,0 +1,18 @@
+# Never published. Stays on this machine and is not backed up by git.
+local/
+
+# Local machine state
+.claude/settings.local.json
+**/.claude/settings.local.json
+.tpm-toolkit-audit.jsonl
+
+# Fresh runs of the chapter kits (the recorded outputs are committed)
+prompts/**/*.new.md
+
+# Secrets, logs, OS junk
+.env
+.env.*
+*.log
+__pycache__/
+Thumbs.db
+.DS_Store

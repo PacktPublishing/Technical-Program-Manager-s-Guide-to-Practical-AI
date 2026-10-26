@@ -1,0 +1,1 @@
+Here is my packet ([file]) and the leveling definition ([file]). Argue against this promotion the way a skeptical calibration participant would. What is the weakest piece of evidence, and what will I be asked that I currently cannot answer? Quote the packet line behind each objection.

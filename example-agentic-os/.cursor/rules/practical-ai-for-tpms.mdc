@@ -1,0 +1,43 @@
+---
+description: Practical AI for TPMs — slash-command routing, context files, design principles
+alwaysApply: true
+---
+
+# Practical AI for TPMs
+
+When the user invokes a `/tpm-*` slash command, read the mapped file from root `CLAUDE.md` and follow it exactly.
+
+## Always load first
+
+- `2-goals-policies/domain-context.md`
+- `2-goals-policies/personal-context.md`
+
+## Program Architect (9-agent suite)
+
+Full workflow: `/tpm-workflow-program-architect` → `5-agent-harness/workflows/tpm-workflow-program-architect.md`
+
+Standalone agents in `5-agent-harness/sub-agents/`:
+
+| Command | File |
+|---------|------|
+| `/tpm-ops-framework` | `tpm-ops-framework.md` |
+| `/tpm-scope-cutter` | `tpm-scope-cutter.md` |
+| `/tpm-build-vs-buy` | `tpm-build-vs-buy.md` |
+| `/tpm-effort-estimator` | `tpm-effort-estimator.md` |
+| `/tpm-quarter-architect` | `tpm-quarter-architect.md` |
+| `/tpm-program-roadmap` | `tpm-program-roadmap.md` |
+| `/tpm-platform-decision` | `tpm-platform-decision.md` |
+| `/tpm-ai-validator` | `tpm-ai-validator.md` |
+| `/tpm-launch-auditor` | `tpm-launch-auditor.md` |
+
+**Human checkpoint:** After Stage 4 (scope + estimates), stop and get explicit TPM sign-off before roadmap stages.
+
+## Skill discovery
+
+- Full catalog: `CLAUDE.md`
+- Cursor-native skills: `.cursor/skills/*/SKILL.md`
+- Claude Code commands: `.claude/commands/`
+
+## Design principles
+
+Delivery first · Risk visibility · Cross-team alignment · Tool-connected · Context aware

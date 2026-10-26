@@ -1,0 +1,8 @@
+* text=auto
+*.sh text eol=lf
+*.md text
+*.json text
+*.csv text
+*.html text
+*.pdf binary
+*.png binary

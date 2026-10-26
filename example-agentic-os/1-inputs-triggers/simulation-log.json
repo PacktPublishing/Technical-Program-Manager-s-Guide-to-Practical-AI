@@ -1,0 +1,185 @@
+{
+  "_meta": {
+    "note": "Event ledger for the NovaGrid portfolio simulation. Written BEFORE any state file is advanced. Every downstream file (Aha!, Jira, Salesforce, Vanta, DataDog, program masters, portfolio layer, weekly archives) is a projection of this ledger. If a state file disagrees with this file, the state file is wrong.",
+    "simulation_note": "Synthetic dataset for the Practical AI for TPMs simulation. All customers, incidents, and people are fictional."
+  },
+
+  "simulationRun": "2026-08-10T08:00:00Z",
+  "fromDate": "2026-07-06",
+  "toDate": "2026-08-10",
+  "weeksAdvanced": 5,
+  "baselineNote": "Baseline is July 6, not June 28. The weekly layer (this-week.md, raid-log.md) had already been advanced to Jul 5-6 while the data exports and program masters remained at Jun 28-29. This run adopts the Jul 6 narrative as canon and backfills Jun 29 - Jul 5 into every export as part of the advance, closing the split.",
+  "outcomePosture": "realistic mixed — probability-weighted per portfolio-simulator.md. Some commitments held, two slipped, one unplanned failure surfaced that was not on the July watchlist.",
+
+  "sprints": [
+    { "id": "SPR-2026-17", "window": "Jun 29 – Jul 10", "outcome": "closed", "completedPoints": 324, "plannedPoints": 335, "note": "PULSE velocity recovered to 22 items — DR-009 reallocation validated. SHIELD burned 9 IAM controls." },
+    { "id": "SPR-2026-18", "window": "Jul 13 – Jul 24", "outcome": "closed", "completedPoints": 341, "plannedPoints": 350, "note": "SHIELD M4+M5 closed Jul 15 then M5 reopened Jul 16 on Deloitte findings. HORIZON onboarding engineer ramped." },
+    { "id": "SPR-2026-19", "window": "Jul 27 – Aug 7", "outcome": "closed", "completedPoints": 352, "plannedPoints": 360, "note": "Highest velocity of the year. PULSE M4 closed Aug 7. ATLAS circuit breaker live Jul 31." },
+    { "id": "SPR-2026-20", "window": "Aug 10 – Aug 21", "outcome": "active", "completedPoints": 0, "plannedPoints": 345, "note": "Opens today. SPARK M2 go/no-go is Day 2." }
+  ],
+
+  "tensionsResolved": [
+    "ATLAS post-GA uptime breach — protected by rate-limiting new tenant onboarding (DR-011), then structurally fixed by the F6 circuit breaker Jul 31. Cost: ATLAS M7 stalled at 3/5 enterprise customers for four weeks.",
+    "PULSE DR-009 reallocation — Sprint 17 closed at 22 items/sprint against the ~20 needed, validating the June decision. The July 10 checkpoint chose to continue without descoping (DR-013).",
+    "NEXUS hypercare — exited clean Jul 10. NEXUS is the portfolio's first solid green since Q1. DEP-002 (ATLAS full-IAM planning) started Jul 13.",
+    "VantagePoint $1.8M renewal — signed Jul 15. Daniel Rios escalated past the summer legal queue on Jul 8.",
+    "SOC 2 date ambiguity — the Aug 31 board mandate was formally reinterpreted as audit-readiness, with the Type II report landing Dec 15 (DR-014). This had been an unstated contradiction in the data since the program began."
+  ],
+
+  "tensionsWorsened": [
+    "SHIELD evidence sufficiency — Deloitte's Jul 16 review failed 3 controls on operating-effectiveness grounds. The 14 IAM controls only went live Jul 1, so they carry almost no operating history. This was not on any July watchlist and is the run's unplanned failure.",
+    "MERIDIAN mid-market long tail — the last 8 of 210 customers have complex integrations that self-service migration cannot reach. M6 missed Aug 1 and needs bespoke engineering support.",
+    "HORIZON App Store dependency — submission made Aug 1 on time, but the iOS review is outside NovaGrid's control and the Aug 31 public GA now depends on it."
+  ],
+
+  "weeks": [
+    {
+      "week": "W27",
+      "window": "2026-06-29 to 2026-07-03",
+      "events": [
+        { "date": "2026-06-30", "program": "NEXUS", "event": "IAM unified service deployed to production 22:05. Go/no-go given by Sara Lindqvist at 21:00." },
+        { "date": "2026-06-30", "program": "ATLAS", "event": "GA soft launch executed. Apex Health and Finex Capital live at launch. Gartner briefing note positive." },
+        { "date": "2026-07-01", "program": "NEXUS", "event": "M6 IAM unified service live — CLOSED, 1 day late." },
+        { "date": "2026-07-01", "program": "SHIELD", "event": "14 IAM-blocked controls assigned. Log retention policy (86th non-IAM control) closed Jun 30 as expected." },
+        { "date": "2026-07-02", "program": "NEXUS", "event": "Token-refresh latency spike under production load. Patched same day. Hypercare declared through Jul 10." },
+        { "date": "2026-07-02", "program": "HORIZON", "event": "Beta cohort onboarding opened — 48h behind the Jul 1 plan, absorbed." },
+        { "date": "2026-07-02", "program": "ATLAS", "event": "Corinthia Bank signed. 3/5 enterprise GA customers." },
+        { "date": "2026-07-03", "program": "NEXUS", "event": "M5 Unified CI/CD all 15 teams — CLOSED, 3 days late. Mobile team final migration completed." },
+        { "date": "2026-07-03", "program": "SPARK", "event": "VantagePoint term sheet received. $1.8M. Counter-signature path unowned." },
+        { "date": "2026-07-03", "program": "PORTFOLIO", "event": "SteerCo. Karl Bergstrom confirmed NEXUS hypercare to Jul 10 and flagged ATLAS GA-load uptime as a watch item." }
+      ]
+    },
+    {
+      "week": "W28",
+      "window": "2026-07-06 to 2026-07-10",
+      "events": [
+        { "date": "2026-07-06", "program": "ATLAS", "event": "13:04 Datadog SLO burn alert — rolling 7d uptime 96.8%, below the 97% internal floor. 5xx spike on the inference API under GA load." },
+        { "date": "2026-07-06", "program": "ATLAS", "event": "17:00 Leo Nakamura decision (DR-011): emergency capacity add AND rate-limit new tenant onboarding until the circuit breaker ships. Protects the three live customers; freezes ATLAS M7 at 3/5.", "decisionRecord": "DR-011" },
+        { "date": "2026-07-08", "program": "HORIZON", "event": "Priya Kaur and Ingrid Solvang approve a dedicated onboarding engineer (DR-012), effective Jul 13. Ramp time means M6 lands ~Jul 22, not Jul 15 — the decision was right but two weeks late.", "decisionRecord": "DR-012" },
+        { "date": "2026-07-08", "program": "SPARK", "event": "Daniel Rios escalates VantagePoint counter-signature past the summer legal queue. Legal owner assigned, target Jul 15." },
+        { "date": "2026-07-10", "program": "PULSE", "event": "Sprint 17 closes: 22 items against the ~20/sprint needed. FlowEngine 66% → 74%. The week-1 signal of 9 items was a ramp artifact, not a trend." },
+        { "date": "2026-07-10", "program": "PULSE", "event": "Amara Osei and Yuna Park decide to continue without descoping (DR-013). Jul 25 M4 held as the working target.", "decisionRecord": "DR-013" },
+        { "date": "2026-07-10", "program": "NEXUS", "event": "Hypercare exits clean. No further incidents after the Jul 2 patch. NEXUS → green." },
+        { "date": "2026-07-10", "program": "SHIELD", "event": "9 of 14 IAM controls closed. Evidence freeze Jul 11 confirmed." },
+        { "date": "2026-07-10", "program": "PORTFOLIO", "event": "SteerCo. HORIZON pace decision ratified, PULSE velocity accepted, ATLAS rate-limit accepted as the cost of protecting SLA." }
+      ]
+    },
+    {
+      "week": "W29",
+      "window": "2026-07-13 to 2026-07-17",
+      "events": [
+        { "date": "2026-07-13", "program": "ATLAS", "event": "DEP-002 unblocked — full-IAM refactor planning starts now that NEXUS IAM is stable. Auth0 workaround retirement scheduled Aug-Sep." },
+        { "date": "2026-07-15", "program": "SHIELD", "event": "M4 100 controls complete — CLOSED on time. All 14 IAM controls closed Jul 11-14." },
+        { "date": "2026-07-15", "program": "SHIELD", "event": "M5 audit evidence package delivered to Deloitte — CLOSED on time. 100-control package." },
+        { "date": "2026-07-15", "program": "SPARK", "event": "VantagePoint renewal signed. $1.8M booked. SPARK's only open commercial thread closed." },
+        { "date": "2026-07-15", "program": "HORIZON", "event": "M6 checkpoint: 6/10 enterprise beta customers. Misses the Jul 15 target. Revised to Jul 22 with the onboarding engineer ramped." },
+        { "date": "2026-07-16", "program": "SHIELD", "event": "UNPLANNED: Deloitte evidence review fails 3 controls on operating-effectiveness grounds — log retention (closed Jun 30) and 2 IAM controls (live only since Jul 1). Type II requires evidence of controls operating over time; these have days, not months. M5 reopens.", "severity": "high" },
+        { "date": "2026-07-17", "program": "MERIDIAN", "event": "SMB reaches 90% (575/639). Compass Migration Partners flexed onto mid-market as James Okonkwo had planned." }
+      ]
+    },
+    {
+      "week": "W30",
+      "window": "2026-07-20 to 2026-07-24",
+      "events": [
+        { "date": "2026-07-20", "program": "SHIELD", "event": "Remediation plan agreed with Deloitte: re-collect evidence through August. But the operating-effectiveness clock cannot be compressed — it forces the certification-date question into the open." },
+        { "date": "2026-07-22", "program": "SHIELD", "event": "James Whitfield (CISO) and Karl Bergstrom take the date question to the board (DR-014). The Aug 31 mandate is formally restated as AUDIT-READINESS. Observation period Sep 1 - Nov 30, Type II report Dec 15. Board accepted — the original mandate had conflated readiness with certification.", "decisionRecord": "DR-014" },
+        { "date": "2026-07-22", "program": "HORIZON", "event": "M6 Beta 10 enterprise customers — CLOSED, 7 days late. Kestrel, Solaris and 8 others live." },
+        { "date": "2026-07-24", "program": "ATLAS", "event": "F6 circuit breaker at 70%, tracking to Jul 31. Uptime holding 97.9% under the rate limit." },
+        { "date": "2026-07-24", "program": "PULSE", "event": "Sprint 18 closes strong. FlowEngine 74% → 85% (289/340)." }
+      ]
+    },
+    {
+      "week": "W31",
+      "window": "2026-07-27 to 2026-07-31",
+      "events": [
+        { "date": "2026-07-25", "program": "PULSE", "event": "M4 FlowEngine misses its revised Jul 25 target at 92% (313/340). Slips to Aug 7. The last 27 pipelines are the most entangled. PULSE stays red." },
+        { "date": "2026-07-31", "program": "ATLAS", "event": "F6 circuit breaker live in production. Rolling uptime recovers to 98.9%. July month average 97.1% — the 99.0% July commitment was missed, honestly and by a small margin." },
+        { "date": "2026-07-31", "program": "HORIZON", "event": "Soft GA executed per DR-008 — limited release to Kestrel, Solaris and the beta cohort. On time." },
+        { "date": "2026-07-31", "program": "MERIDIAN", "event": "Mid-market at 197/210 (94%). The remaining 13 are complex integrations." },
+        { "date": "2026-07-31", "program": "SPARK", "event": "M2 model serving alpha at 79%. Aug 11 target still live." }
+      ]
+    },
+    {
+      "week": "W32",
+      "window": "2026-08-03 to 2026-08-07",
+      "events": [
+        { "date": "2026-08-01", "program": "MERIDIAN", "event": "M6 mid-market 100% on v2 misses at 202/210 (96%). 8 customers with bespoke integrations remain. Revised to Aug 21 with dedicated engineering support (DR-015).", "decisionRecord": "DR-015" },
+        { "date": "2026-08-01", "program": "HORIZON", "event": "M7 App Store and Play Store submission — SUBMITTED on time. Android approved Aug 6. iOS in review, 2-3 week window, decision expected Aug 15-22." },
+        { "date": "2026-08-03", "program": "ATLAS", "event": "Rate limit on new tenant onboarding lifted. 4th enterprise customer onboarding resumes. M7 unfreezes." },
+        { "date": "2026-08-05", "program": "SHIELD", "event": "3 remediated controls re-evidenced with 30+ days of operating history where available; compensating documentation for the IAM pair." },
+        { "date": "2026-08-07", "program": "SHIELD", "event": "Deloitte confirms the remediated evidence is sufficient for readiness. M5 re-closes. Observation period Sep 1 confirmed." },
+        { "date": "2026-08-07", "program": "PULSE", "event": "M4 FlowEngine pipelines 100% migrated — CLOSED, 13 days late. 340/340. Total dual-run cost $1.38M. PULSE off red for the first time since Q1." },
+        { "date": "2026-08-07", "program": "PORTFOLIO", "event": "Sprint 19 closes at 352/360 — the year's highest velocity." }
+      ]
+    }
+  ],
+
+  "milestoneOutcomes": [
+    { "id": "NEXUS-M5", "result": "closed", "date": "2026-07-03", "target": "2026-06-30", "delta": "3 days late" },
+    { "id": "NEXUS-M6", "result": "closed", "date": "2026-07-01", "target": "2026-06-30", "delta": "1 day late" },
+    { "id": "ATLAS-M8", "result": "closed", "date": "2026-06-30", "target": "2026-06-30", "delta": "on time" },
+    { "id": "ATLAS-M7", "result": "open", "percentComplete": 60, "note": "3/5 enterprise customers. Frozen Jul 6 - Aug 3 by the DR-011 rate limit. 4th onboarding now in progress.", "revisedTarget": "2026-09-15" },
+    { "id": "SHIELD-M4", "result": "closed", "date": "2026-07-15", "target": "2026-07-15", "delta": "on time" },
+    { "id": "SHIELD-M5", "result": "closed", "date": "2026-08-07", "target": "2026-07-15", "delta": "closed Jul 15, reopened Jul 16 on Deloitte findings, re-closed Aug 7" },
+    { "id": "SHIELD-M6", "result": "open", "percentComplete": 45, "note": "Restated per DR-014: audit-readiness Aug 31, observation period Sep 1 - Nov 30, Type II report Dec 15.", "revisedTarget": "2026-12-15" },
+    { "id": "MERIDIAN-M6", "result": "missed", "percentComplete": 96, "target": "2026-08-01", "revisedTarget": "2026-08-21", "note": "202/210. 8 complex integrations remain." },
+    { "id": "PULSE-M4", "result": "closed", "date": "2026-08-07", "target": "2026-07-25", "delta": "13 days late" },
+    { "id": "HORIZON-M6", "result": "closed", "date": "2026-07-22", "target": "2026-07-15", "delta": "7 days late" },
+    { "id": "HORIZON-M7", "result": "closed", "date": "2026-08-01", "target": "2026-08-01", "delta": "on time — submitted; iOS review pending" },
+    { "id": "HORIZON-M8", "result": "open", "percentComplete": 55, "note": "Soft GA done Jul 31. Public App Store GA Aug 31 contingent on iOS review (Aug 15-22)." },
+    { "id": "SPARK-M2", "result": "open", "percentComplete": 88, "target": "2026-08-11", "note": "DUE TOMORROW. Go/no-go Aug 11. The single most consequential open item at the simulation boundary." }
+  ],
+
+  "eventsInjected": [],
+  "eventsTriggered": [
+    "Audit finding (Jul 16) — Deloitte evidence sufficiency failure on 3 SHIELD controls. Triggered per the simulator's event table; cascaded into the DR-014 certification-date restatement.",
+    "Sprint overcommit avoided — PULSE Sprint 17 recovered rather than halving, per the DR-009 reallocation."
+  ],
+
+  "salesforceChanges": {
+    "closedWon": [
+      { "account": "VantagePoint", "date": "2026-07-15", "amount_usd": 1800000, "note": "Renewal. DR-010 terms accepted Jun 12, term sheet Jul 3, signed Jul 15." },
+      { "account": "Corinthia Bank", "date": "2026-07-02", "amount_usd": 220000, "note": "3rd enterprise GA customer." }
+    ],
+    "probabilityChanges": [
+      { "account": "Kestrel Dynamics", "direction": "up", "note": "HORIZON beta live and soft GA delivered. Jul 15 tranche released." },
+      { "account": "Solaris Logistics", "direction": "up", "note": "Soft GA on time repaired the DR-008 expectation gap. Public GA Aug 31 remains the condition." },
+      { "account": "Meridian Financial Group", "direction": "up", "note": "SHIELD 100 controls complete. Readiness restatement (DR-014) communicated as a schedule clarification, not a slip." },
+      { "account": "Nuvera", "direction": "down", "note": "Asked directly whether SOC 2 certification lands Aug 31. The Dec 15 answer moved their close date to Q4." }
+    ],
+    "arr_new_closed_ytd_usd": 1920000,
+    "arr_renewals_closed_ytd_usd": 1800000,
+    "arr_total_closed_ytd_usd": 3720000,
+    "thornbridgeNote": "Base renewal ($1.2M, already in ARR) executed Jul 1 as planned, but the $1.7M expansion tranche did not close with it — Sophie Andersson asked for the final v1 EoL date in writing, and the MERIDIAN M6 miss on Aug 1 made that harder to give. Moved to Sep 30. This is the run's clearest example of a delivery slip converting directly into a commercial one."
+  },
+
+  "revenueAtRiskDelta_usd": -4200000,
+
+  "newDecisionRecords": [
+    { "id": "DR-011", "date": "2026-07-06", "title": "ATLAS uptime protection — capacity add plus tenant onboarding rate limit" },
+    { "id": "DR-012", "date": "2026-07-08", "title": "HORIZON dedicated onboarding engineer for the beta cohort" },
+    { "id": "DR-013", "date": "2026-07-10", "title": "PULSE FlowEngine — continue without descope after the Sprint 17 velocity checkpoint" },
+    { "id": "DR-014", "date": "2026-07-22", "title": "SOC 2 board mandate restated — Aug 31 is audit-readiness, certification is Dec 15" },
+    { "id": "DR-015", "date": "2026-08-01", "title": "MERIDIAN mid-market long tail — bespoke migration support and Aug 21 revised target" }
+  ],
+
+  "ragAtBoundary": {
+    "NEXUS": "green",
+    "ATLAS": "green",
+    "SHIELD": "amber",
+    "MERIDIAN": "amber",
+    "PULSE": "amber",
+    "HORIZON": "amber",
+    "SPARK": "amber"
+  },
+
+  "openTensionsAtBoundary": [
+    "SPARK M2 model serving alpha is due tomorrow (Aug 11) at 88%. Go/no-go today.",
+    "HORIZON iOS App Store review is outside NovaGrid's control. Aug 31 public GA depends on a decision expected Aug 15-22.",
+    "MERIDIAN's last 8 mid-market customers need bespoke work by Aug 21, and the Sep 30 v1 EoL sits behind them.",
+    "SHIELD's observation period opens Sep 1. Every one of the 100 controls must operate without drift for three months — a different discipline from building them.",
+    "ATLAS M7 lost four weeks to the rate limit. 3/5 enterprise customers with a Dec 31 target of 15 (M9)."
+  ],
+
+  "narrativeSummary": "Five weeks that moved the portfolio from dependency management to execution. NEXUS exited hypercare clean and is the first solid green since Q1. ATLAS chose its SLA over its customer-count milestone — the July uptime breach was contained by rate-limiting onboarding, then structurally fixed by the circuit breaker on Jul 31, at the cost of four frozen weeks on M7. PULSE finally closed FlowEngine on Aug 7, thirteen days late and $1.38M into dual-run, but off red for the first time this year. HORIZON delivered soft GA on time after buying back its beta slip with a dedicated onboarding engineer, and now waits on Apple. The real story is SHIELD: 100 controls closed on time on Jul 15, then Deloitte failed 3 of them on Jul 16 for having no operating history — which forced into the open a contradiction the program had carried since kickoff. The board's Aug 31 mandate was never achievable as certification; it was always audit-readiness, with the Type II report landing Dec 15. Naming that (DR-014) cost one uncomfortable board conversation and removed a structural lie from the portfolio. At the boundary, SPARK M2 is due tomorrow at 88%."
+}

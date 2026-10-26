@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHIELD — Boardroom Review · March 27, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #f4f6f9;
+    padding: 32px 24px;
+  }
+
+  .page-header {
+    max-width: 1080px;
+    margin: 0 auto 32px;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0d1b2a;
+  }
+
+  .page-header .meta {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  .program-badge {
+    display: inline-block;
+    background: #c0392b;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .status-badge {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 3px;
+    vertical-align: middle;
+  }
+
+  .main { max-width: 1080px; margin: 0 auto; }
+
+  /* Vote summary bar */
+  .vote-summary {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+
+  .vote-summary h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .vote-tally {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .tally-block {
+    flex: 1;
+    min-width: 120px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .tally-block.not-ready { background: #fdf0ef; border: 2px solid #e74c3c; }
+  .tally-block.conditional { background: #fef9e7; border: 2px solid #f39c12; }
+  .tally-block.approve { background: #eafaf1; border: 2px solid #27ae60; }
+
+  .tally-num {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .tally-block.not-ready .tally-num { color: #c0392b; }
+  .tally-block.conditional .tally-num { color: #e67e22; }
+  .tally-block.approve .tally-num { color: #27ae60; }
+
+  .tally-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #666;
+  }
+
+  .vote-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  .vote-table th {
+    text-align: left;
+    padding: 8px 12px;
+    background: #f4f6f9;
+    font-weight: 700;
+    color: #555;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-bottom: 2px solid #e8eaed;
+  }
+
+  .vote-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+  }
+
+  .vote-table tr:last-child td { border-bottom: none; }
+
+  .advisor-name { font-weight: 600; color: #0d1b2a; }
+  .advisor-lens { font-size: 12px; color: #888; }
+
+  .vote-pill {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .vote-pill.not-ready { background: #fdecea; color: #c0392b; }
+  .vote-pill.conditional { background: #fef5e4; color: #d68910; }
+  .vote-pill.approve { background: #eafaf1; color: #1e8449; }
+
+  .changed-icon {
+    font-size: 11px;
+    color: #e74c3c;
+    margin-left: 4px;
+    font-weight: 700;
+  }
+
+  /* Recommended decision banner */
+  .decision-banner {
+    background: #1a1a2e;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .decision-banner .label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #aaa;
+    margin-bottom: 6px;
+  }
+
+  .decision-banner .verdict {
+    font-size: 18px;
+    font-weight: 700;
+    color: #e74c3c;
+    margin-bottom: 8px;
+  }
+
+  .decision-banner p {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.6;
+  }
+
+  /* Conditions list */
+  .conditions {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+
+  .conditions h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .condition-item {
+    display: flex;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .condition-item:last-child { border-bottom: none; }
+
+  .condition-num {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    background: #0d1b2a;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+  }
+
+  .condition-text strong {
+    font-weight: 700;
+    display: block;
+    color: #0d1b2a;
+    margin-bottom: 3px;
+    font-size: 13px;
+  }
+
+  .condition-text p { font-size: 13px; color: #555; }
+
+  /* Advisor cards */
+  .advisor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .advisor-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border-top: 4px solid #ccc;
+  }
+
+  .advisor-card.not-ready { border-top-color: #e74c3c; }
+  .advisor-card.conditional { border-top-color: #f39c12; }
+  .advisor-card.approve { border-top-color: #27ae60; }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+
+  .card-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0d1b2a;
+  }
+
+  .card-lens {
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+  }
+
+  .card-votes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+
+  .vote-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #aaa;
+  }
+
+  .vote-row span:first-child { font-weight: 600; }
+
+  .card-summary {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.55;
+    margin-top: 8px;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  .changed-tag {
+    font-size: 10px;
+    background: #fdecea;
+    color: #c0392b;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /* Sliders */
+  .sliders-panel {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+
+  .sliders-panel h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .sliders-panel .subtitle {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+
+  .slider-row {
+    margin-bottom: 20px;
+  }
+
+  .slider-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+  }
+
+  .slider-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0d1b2a;
+  }
+
+  .slider-value {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0d1b2a;
+    min-width: 40px;
+    text-align: right;
+  }
+
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    outline: none;
+    background: linear-gradient(to right, #0d1b2a var(--val, 50%), #e0e0e0 var(--val, 50%));
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #0d1b2a;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+
+  .readiness-result {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .readiness-result.low { background: #fdecea; color: #c0392b; border: 2px solid #e74c3c; }
+  .readiness-result.medium { background: #fef9e7; color: #d68910; border: 2px solid #f39c12; }
+  .readiness-result.high { background: #eafaf1; color: #1e8449; border: 2px solid #27ae60; }
+
+  /* Key tensions */
+  .tensions-panel {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+
+  .tensions-panel h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .tension-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .tension-item:last-child { border-bottom: none; }
+  .tension-item strong { color: #0d1b2a; }
+
+  /* Insight callout */
+  .insight {
+    background: #0d1b2e;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+  }
+
+  .insight .label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #88aacc;
+    margin-bottom: 8px;
+  }
+
+  .insight p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e8e8e8;
+  }
+
+  /* Print */
+  @media print {
+    body { background: white; padding: 16px; font-size: 12px; }
+    .sliders-panel { display: none; }
+    .advisor-grid { grid-template-columns: repeat(2, 1fr); }
+    .page-header, .main { max-width: 100%; }
+    .advisor-card, .vote-summary, .decision-banner, .conditions, .tensions-panel, .insight {
+      box-shadow: none;
+      border: 1px solid #ddd;
+      break-inside: avoid;
+    }
+  }
+
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>
+    <span class="program-badge">P0</span>
+    SHIELD — SOC 2 Type II Certification
+    <span class="status-badge">🔴 Behind</span>
+  </h1>
+  <div class="meta">Boardroom Review · March 27, 2026 · TPM: Fatima Al-Hassan · Sponsor: James Whitfield (CISO)</div>
+</div>
+
+<div class="main">
+
+  <!-- Decision Banner -->
+  <div class="decision-banner">
+    <div class="label">Recommended Decision</div>
+    <div class="verdict">Not Ready — Address Three Issues Before Proceeding</div>
+    <p>The program has three structural blockers that must be resolved before execution continues: (1) Deloitte observation period confirmation, (2) governance scaffolding and exec mandate, (3) milestone plan rebuild with buffer and acceptance criteria.</p>
+  </div>
+
+  <!-- Vote Summary -->
+  <div class="vote-summary">
+    <h2>Final Vote Tally</h2>
+    <div class="vote-tally">
+      <div class="tally-block not-ready">
+        <div class="tally-num">7</div>
+        <div class="tally-label">Not Ready</div>
+      </div>
+      <div class="tally-block conditional">
+        <div class="tally-num">1</div>
+        <div class="tally-label">Conditional</div>
+      </div>
+      <div class="tally-block approve">
+        <div class="tally-num">0</div>
+        <div class="tally-label">Approve</div>
+      </div>
+    </div>
+
+    <table class="vote-table">
+      <thead>
+        <tr>
+          <th>Advisor</th>
+          <th>Lens</th>
+          <th>Round 1</th>
+          <th>Final</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="advisor-name">The Architect</span></td>
+          <td><span class="advisor-lens">Technical feasibility, dependencies, scale</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span></td>
+        </tr>
+        <tr>
+          <td><span class="advisor-name">The Product Manager</span></td>
+          <td><span class="advisor-lens">Customer outcomes, success metrics, scope</span></td>
+          <td><span class="vote-pill conditional">Conditional</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span> <span class="changed-icon">↑</span></td>
+        </tr>
+        <tr>
+          <td><span class="advisor-name">The CTO</span></td>
+          <td><span class="advisor-lens">Tech strategy, capacity, build vs. buy</span></td>
+          <td><span class="vote-pill conditional">Conditional</span></td>
+          <td><span class="vote-pill conditional">Conditional</span></td>
+        </tr>
+        <tr>
+          <td><span class="advisor-name">The CPO</span></td>
+          <td><span class="advisor-lens">Product strategy, portfolio tradeoffs</span></td>
+          <td><span class="vote-pill conditional">Conditional</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span> <span class="changed-icon">↑</span></td>
+        </tr>
+        <tr>
+          <td><span class="advisor-name">The Skeptic</span></td>
+          <td><span class="advisor-lens">Devil's advocate — blind spots, unstated risks</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span></td>
+        </tr>
+        <tr>
+          <td><span class="advisor-name">The Ops Lead</span></td>
+          <td><span class="advisor-lens">Execution, milestones, RACI, handoffs</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span></td>
+        </tr>
+        <tr>
+          <td><span class="advisor-name">Director of TPM</span></td>
+          <td><span class="advisor-lens">Governance, TPM authority, operating model</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span></td>
+        </tr>
+        <tr>
+          <td><span class="advisor-name">The SRE Lead</span></td>
+          <td><span class="advisor-lens">Production readiness, observability, blast radius</span></td>
+          <td><span class="vote-pill conditional">Conditional</span></td>
+          <td><span class="vote-pill not-ready">Not Ready</span> <span class="changed-icon">↑</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Conditions to Address -->
+  <div class="conditions">
+    <h2>Required Actions Before Proceeding</h2>
+    <div class="condition-item">
+      <div class="condition-num">1</div>
+      <div class="condition-text">
+        <strong>Deloitte pre-audit call — within 14 days</strong>
+        <p>Confirm minimum observation period for Type II evidence, evidence format requirements, and whether controls completing in Q2/Q3 qualify. This is the blocking question — the entire program scope depends on the answer. If 6 months is required, a board-level strategic reset is needed.</p>
+      </div>
+    </div>
+    <div class="condition-item">
+      <div class="condition-num">2</div>
+      <div class="condition-text">
+        <strong>Governance scaffolding — within 5 business days</strong>
+        <p>Exec mandate from Yuki Tanaka naming SHIELD as priority over team roadmap work, with a named team-priority directive. Formal RACI with decision rights and a named escalation path with resolution SLAs. Weekly delivery cadence with all 8 team leads established and documented — not in Fatima's head.</p>
+      </div>
+    </div>
+    <div class="condition-item">
+      <div class="condition-num">3</div>
+      <div class="condition-text">
+        <strong>Milestone plan rebuild — within 2 weeks</strong>
+        <p>Team-level sub-milestones under M3 and M4 with named team owners. Buffer inserted between M4 and M5 (M4 no later than June 30). Written acceptance criteria for NEXUS IAM, MERIDIAN v2 API, and PULSE Temporal — signed by the delivering TPMs. Correct M2 milestone status to reflect 14 unowned controls.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Insight -->
+  <div class="insight">
+    <div class="label">Sharpest Insight from the Debate</div>
+    <p>M2 ("All controls assigned to owners") is marked complete — but the program's own control table shows 14 controls across three teams with no owner assigned. The milestone tracker is inaccurate. If the tracking mechanism says M2 is done while 14 controls are unowned, all downstream milestone tracking is suspect, and the board is at risk of receiving Green status reports until the week of a catastrophic miss.</p>
+  </div>
+
+  <!-- Advisor Cards -->
+  <div class="section-title">Advisor Positions</div>
+  <div class="advisor-grid">
+
+    <div class="advisor-card not-ready">
+      <div class="card-header">
+        <div>
+          <div class="card-name">The Architect</div>
+          <div class="card-lens">Technical feasibility · Dependencies · Scale</div>
+        </div>
+        <div class="card-votes">
+          <div class="vote-row"><span>R1:</span><span class="vote-pill not-ready">Not Ready</span></div>
+          <div class="vote-row"><span>Final:</span><span class="vote-pill not-ready">Not Ready</span></div>
+        </div>
+      </div>
+      <div class="card-summary">Zero buffer between NEXUS IAM (July, 🔴 Behind) and SHIELD M4 (July). MERIDIAN v2 audit logging is due in 4 weeks with no confirmed delivery commitment. PULSE dependency delivers inside the Deloitte window with no buffer. 14% of controls have no engineering ownership. Critical path is a chain of coincidences, not a plan.</div>
+    </div>
+
+    <div class="advisor-card not-ready">
+      <div class="card-header">
+        <div>
+          <div class="card-name">The Product Manager</div>
+          <div class="card-lens">Outcomes · Success metrics · Scope</div>
+        </div>
+        <div class="card-votes">
+          <div class="vote-row"><span>R1:</span><span class="vote-pill conditional">Conditional</span></div>
+          <div class="vote-row"><span>Final:</span><span class="vote-pill not-ready">Not Ready</span> <span class="changed-tag">Changed</span></div>
+        </div>
+      </div>
+      <div class="card-summary">SOC 2 Type II requires an evidence observation period — the doc is silent on what Deloitte requires. Controls completing in Q2/Q3 may only qualify as Type I. The $8M pipeline deals with May deadline clauses are treated as a risk footnote rather than a milestone driver. M3 and M4 are owned by the CISO with no team-level execution accountability.</div>
+    </div>
+
+    <div class="advisor-card conditional">
+      <div class="card-header">
+        <div>
+          <div class="card-name">The CTO</div>
+          <div class="card-lens">Tech strategy · Capacity · Org design</div>
+        </div>
+        <div class="card-votes">
+          <div class="vote-row"><span>R1:</span><span class="vote-pill conditional">Conditional</span></div>
+          <div class="vote-row"><span>Final:</span><span class="vote-pill conditional">Conditional</span></div>
+        </div>
+      </div>
+      <div class="card-summary">Model Serving at 170%+ capacity across ATLAS + SPARK, with 12 SHIELD controls and 6 unowned. Security Eng split across 3 programs. The capacity decision belongs at the CTO level, not with the Head of TPM. Governance fixes are achievable in a week with CTO and VP Eng commitment — holds CONDITIONAL on that basis.</div>
+    </div>
+
+    <div class="advisor-card not-ready">
+      <div class="card-header">
+        <div>
+          <div class="card-name">The CPO</div>
+          <div class="card-lens">Product strategy · Portfolio tradeoffs</div>
+        </div>
+        <div class="card-votes">
+          <div class="vote-row"><span>R1:</span><span class="vote-pill conditional">Conditional</span></div>
+          <div class="vote-row"><span>Final:</span><span class="vote-pill not-ready">Not Ready</span> <span class="changed-tag">Changed</span></div>
+        </div>
+      </div>
+      <div class="card-summary">Forcing Model Serving to prioritize SHIELD over ATLAS creates a circular dependency — SHIELD unlocks enterprise deals; ATLAS converts them. What are we not doing so we can do SHIELD? That question isn't answered. Portfolio tradeoffs cannot be made until the observation period question clarifies what certification scope is actually being built.</div>
+    </div>
+
+    <div class="advisor-card not-ready">
+      <div class="card-header">
+        <div>
+          <div class="card-name">The Skeptic</div>
+          <div class="card-lens">Blind spots · Unstated risks · Missing assumptions</div>
+        </div>
+        <div class="card-votes">
+          <div class="vote-row"><span>R1:</span><span class="vote-pill not-ready">Not Ready</span></div>
+          <div class="vote-row"><span>Final:</span><span class="vote-pill not-ready">Not Ready</span></div>
+        </div>
+      </div>
+      <div class="card-summary">Nobody has verified the Deloitte observation period requirement — the August date may already be missed. M2 is marked Done while 14 controls are unowned. The exec mandate has been needed for 6+ weeks and still hasn't been issued. Six weeks of inaction is a structural problem, not a coordination gap. A 7-day deadline with no consequence changes nothing.</div>
+    </div>
+
+    <div class="advisor-card not-ready">
+      <div class="card-header">
+        <div>
+          <div class="card-name">The Ops Lead</div>
+          <div class="card-lens">Execution · Milestones · RACI · Handoffs</div>
+        </div>
+        <div class="card-votes">
+          <div class="vote-row"><span>R1:</span><span class="vote-pill not-ready">Not Ready</span></div>
+          <div class="vote-row"><span>Final:</span><span class="vote-pill not-ready">Not Ready</span></div>
+        </div>
+      </div>
+      <div class="card-summary">M4 and M5 are both in July — zero days of buffer to compile and QA the evidence package before Deloitte submission. No RACI, no decision rights. Inbound dependencies have dates but no handoff criteria — what NEXUS IAM must specifically deliver for SHIELD to close 14 controls is not written anywhere. The plan must be rebuilt, not patched.</div>
+    </div>
+
+    <div class="advisor-card not-ready">
+      <div class="card-header">
+        <div>
+          <div class="card-name">Director of TPM</div>
+          <div class="card-lens">Governance · TPM authority · Operating model</div>
+        </div>
+        <div class="card-votes">
+          <div class="vote-row"><span>R1:</span><span class="vote-pill not-ready">Not Ready</span></div>
+          <div class="vote-row"><span>Final:</span><span class="vote-pill not-ready">Not Ready</span></div>
+        </div>
+      </div>
+      <div class="card-summary">Fatima has no authority over the 8 teams she's accountable for coordinating. Escalation path is informal: Fatima → Karl → Leo, with no SLA, no forum, no consequence. The exec mandate has been needed for 6+ weeks and is not yet issued. The operating cadence exists in Fatima's head, not in a written document. A program without a defined escalation path isn't a program — it's a hope.</div>
+    </div>
+
+    <div class="advisor-card not-ready">
+      <div class="card-header">
+        <div>
+          <div class="card-name">The SRE Lead</div>
+          <div class="card-lens">Production readiness · Observability · Blast radius</div>
+        </div>
+        <div class="card-votes">
+          <div class="vote-row"><span>R1:</span><span class="vote-pill conditional">Conditional</span></div>
+          <div class="vote-row"><span>Final:</span><span class="vote-pill not-ready">Not Ready</span> <span class="changed-tag">Changed</span></div>
+        </div>
+      </div>
+      <div class="card-summary">PULSE Temporal migration (4.1% pipeline failure rate) is delivering audit trail infrastructure into the Deloitte window — compound production risk. No runbooks, alerting, or rollback plans for audit logging or access control infrastructure. A broken audit trail during the observation window silently invalidates evidence. Requires a production freeze on audit systems in the 30 days before Deloitte submission.</div>
+    </div>
+
+  </div>
+
+  <!-- Sliders -->
+  <div class="sliders-panel">
+    <h2>Program Readiness Assessment</h2>
+    <div class="subtitle">Adjust sliders to reflect your current view. Readiness summary updates automatically. Pre-filled from advisor debate estimates.</div>
+
+    <div class="slider-row">
+      <div class="slider-label-row">
+        <span class="slider-name">Timeline Confidence</span>
+        <span class="slider-value" id="val-timeline">20%</span>
+      </div>
+      <input type="range" id="s-timeline" min="0" max="100" value="20"
+             oninput="updateSlider('timeline', this.value)">
+    </div>
+
+    <div class="slider-row">
+      <div class="slider-label-row">
+        <span class="slider-name">Resource Adequacy</span>
+        <span class="slider-value" id="val-resource">25%</span>
+      </div>
+      <input type="range" id="s-resource" min="0" max="100" value="25"
+             oninput="updateSlider('resource', this.value)">
+    </div>
+
+    <div class="slider-row">
+      <div class="slider-label-row">
+        <span class="slider-name">Scope Clarity</span>
+        <span class="slider-value" id="val-scope">30%</span>
+      </div>
+      <input type="range" id="s-scope" min="0" max="100" value="30"
+             oninput="updateSlider('scope', this.value)">
+    </div>
+
+    <div class="slider-row">
+      <div class="slider-label-row">
+        <span class="slider-name">Risk Level (higher = more risk)</span>
+        <span class="slider-value" id="val-risk">85%</span>
+      </div>
+      <input type="range" id="s-risk" min="0" max="100" value="85"
+             oninput="updateSlider('risk', this.value)">
+    </div>
+
+    <div class="readiness-result low" id="readiness-result">
+      Program Readiness: <strong id="readiness-text">Not Ready</strong> — Timeline confidence and resource adequacy are critically low; risk level is high. Address three blocking conditions before proceeding.
+    </div>
+  </div>
+
+  <!-- Key Tensions -->
+  <div class="tensions-panel">
+    <h2>Key Tensions from the Debate</h2>
+    <div class="tension-item">
+      <strong>Observation period as CONDITIONAL vs. NOT READY trigger.</strong> Three advisors initially voted CONDITIONAL. The Skeptic's finding — that the program has never confirmed with Deloitte what evidence observation period is required for Type II — changed those votes. If the answer is 6 months, controls completing after February don't qualify, and the certification scope is fundamentally different from the plan.
+    </div>
+    <div class="tension-item">
+      <strong>CTO vs. the field on governance triage.</strong> The CTO argued governance gaps (exec mandate, RACI, escalation path) are fixable in 7 days if Yuki and Whitfield prioritize it, and held CONDITIONAL. The Director of TPM and Skeptic argued six weeks of inaction on the exec mandate is structural evidence the dynamic won't change with a deadline alone — and went NOT READY.
+    </div>
+    <div class="tension-item">
+      <strong>Governance fix vs. milestone plan rebuild.</strong> The Ops Lead argued that even with perfect governance, the milestone plan is still broken — M4 and M5 in July with zero buffer is a scheduling error, not a governance artifact, and requires a plan rebuild regardless of mandate status.
+    </div>
+    <div class="tension-item">
+      <strong>SHIELD vs. ATLAS circular dependency.</strong> The CPO identified that forcing Model Serving to prioritize SHIELD over ATLAS creates a circular dependency: SHIELD unlocks enterprise deals through compliance; ATLAS converts them through NovaAI. Depriving ATLAS of Model Serving capacity to serve SHIELD may undermine the revenue the certification is supposed to enable.
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function updateSlider(id, val) {
+    var num = parseInt(val);
+    document.getElementById('val-' + id).textContent = num + '%';
+    var el = document.getElementById('s-' + id);
+    el.style.background = 'linear-gradient(to right, #0d1b2a ' + num + '%, #e0e0e0 ' + num + '%)';
+    computeReadiness();
+  }
+
+  function computeReadiness() {
+    var timeline = parseInt(document.getElementById('s-timeline').value);
+    var resource = parseInt(document.getElementById('s-resource').value);
+    var scope = parseInt(document.getElementById('s-scope').value);
+    var risk = parseInt(document.getElementById('s-risk').value);
+
+    // Readiness = weighted average of positive factors, penalized by risk
+    var positive = (timeline * 0.35) + (resource * 0.30) + (scope * 0.35);
+    var adjusted = positive * (1 - (risk / 100) * 0.5);
+
+    var result = document.getElementById('readiness-result');
+    var text = document.getElementById('readiness-text');
+
+    result.className = 'readiness-result';
+
+    if (adjusted < 30) {
+      result.classList.add('low');
+      text.textContent = 'Not Ready';
+      result.innerHTML = '<strong>Program Readiness: Not Ready</strong> — Critical gaps in timeline confidence, resourcing, or scope clarity, compounded by high risk level. Address blocking conditions before proceeding.';
+    } else if (adjusted < 55) {
+      result.classList.add('medium');
+      text.textContent = 'Conditional';
+      result.innerHTML = '<strong>Program Readiness: Conditional</strong> — Direction is sound but key conditions must be met before full approval. Address the highest-risk items and recheck.';
+    } else {
+      result.classList.add('high');
+      text.textContent = 'Approve';
+      result.innerHTML = '<strong>Program Readiness: Approve</strong> — Program has sufficient confidence, resourcing, and clarity to proceed. Continue monitoring risk register.';
+    }
+  }
+
+  // Initialize all slider backgrounds
+  ['timeline','resource','scope','risk'].forEach(function(id) {
+    var el = document.getElementById('s-' + id);
+    var val = el.value;
+    el.style.background = 'linear-gradient(to right, #0d1b2a ' + val + '%, #e0e0e0 ' + val + '%)';
+  });
+
+  computeReadiness();
+</script>
+
+<p style="margin-top: 32px; font-size: 11px; color: #aaa; text-align: center; max-width: 1080px; margin-left: auto; margin-right: auto;">
+  <em>To create PDF: open this file in a browser → File → Print → Save as PDF. Recommended: Letter/A4, margins Normal.</em>
+</p>
+
+</body>
+</html>

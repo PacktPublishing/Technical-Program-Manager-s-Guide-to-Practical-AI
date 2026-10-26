@@ -1,0 +1,1832 @@
+{
+  "_meta": {
+    "source": "Vanta",
+    "workspace": "novagrid",
+    "exported_at": "2026-08-10T08:00:00Z",
+    "exported_by": "shield-integration@novagrid.io",
+    "note": "SOC 2 Type II control tracking - SHIELD program only. Real-time Vanta sync. Deloitte observation period: Sep 1 - Nov 30, 2026. Type II report expected Dec 15, 2026. Board mandate Aug 31, 2026 is AUDIT-READINESS, not certification - restated by the board Jul 22 per DR-014.",
+    "simulation_note": "State as of 2026-08-10. All 100 controls complete (M4 closed Jul 15, on time) - the 14 IAM-blocked controls closed Jul 11-14 following the NEXUS IAM go-live Jul 1. Evidence package delivered to Deloitte Jul 15; Deloitte failed 3 controls on operating-effectiveness sufficiency Jul 16 (A1.7, CC6.4, CC6.6); remediated Jul 20 - Aug 5 and accepted Aug 7. That finding is what surfaced the certification-date contradiction the program had carried since kickoff, resolved by DR-014. Focus has shifted from control completion to operating stability ahead of the Sep 1 observation window. Full event ledger: 1-inputs-triggers/simulation-log.json."
+  },
+  "certification": {
+    "type": "SOC 2 Type II",
+    "auditor": "Deloitte",
+    "auditContractValue_usd": 180000,
+    "observationPeriodStart": "2026-09-01",
+    "observationPeriodEnd": "2026-11-30",
+    "reportExpected": "2026-12-15",
+    "boardMandateDeadline": "2026-08-31",
+    "currentStatus": "audit_readiness_confirmed",
+    "certificationPathStatus": "on_track",
+    "tpmOwner": "Fatima Al-Hassan",
+    "sponsor": "James Whitfield",
+    "sponsorTitle": "CISO",
+    "boardMandateScope": "audit_readiness",
+    "boardMandateRestatedBy": "DR-014 (2026-07-22)",
+    "boardMandateNote": "Originally recorded as 'certification by Aug 31, 2026'. That was never achievable: a Type II report attests to controls operating over an observation period, and this engagement's period does not open until Sep 1. The board accepted the restatement on Jul 22 - Aug 31 is readiness, Dec 15 is the report. The contradiction sat unexamined in this record for eleven months and was only forced into the open by the Jul 16 evidence findings.",
+    "readinessDeadline": "2026-08-31",
+    "readinessStatus": "on_track"
+  },
+  "controlSummary": {
+    "totalControls": 100,
+    "complete": 100,
+    "inProgress": 0,
+    "blocked": 0,
+    "notStarted": 0,
+    "completionPct": 100.0,
+    "iamBlockedCount": 0,
+    "iamUnblockDate": "2026-07-01",
+    "byCategory": {
+      "CC": {
+        "label": "Common Criteria",
+        "total": 47,
+        "complete": 47,
+        "inProgress": 0,
+        "blocked": 0,
+        "notStarted": 0
+      },
+      "A": {
+        "label": "Availability",
+        "total": 18,
+        "complete": 18,
+        "inProgress": 0,
+        "blocked": 0,
+        "notStarted": 0
+      },
+      "C": {
+        "label": "Confidentiality",
+        "total": 12,
+        "complete": 12,
+        "inProgress": 0,
+        "blocked": 0,
+        "notStarted": 0
+      },
+      "PI": {
+        "label": "Processing Integrity",
+        "total": 11,
+        "complete": 11,
+        "inProgress": 0,
+        "blocked": 0,
+        "notStarted": 0
+      },
+      "P": {
+        "label": "Privacy",
+        "total": 12,
+        "complete": 12,
+        "inProgress": 0,
+        "blocked": 0,
+        "notStarted": 0
+      }
+    },
+    "completedDate": "2026-07-15",
+    "evidenceAcceptedByAuditor": 100,
+    "evidenceAcceptedDate": "2026-08-07"
+  },
+  "waveProgress": {
+    "wave1": {
+      "name": "Security Engineering",
+      "team": "Sec Eng",
+      "controlRange": "1-28",
+      "controlIds": [
+        "CC1.1",
+        "CC1.2",
+        "CC2.1",
+        "CC2.2",
+        "CC2.3",
+        "CC3.1",
+        "CC3.2",
+        "CC3.3",
+        "CC3.4",
+        "CC4.1",
+        "CC4.2",
+        "CC5.1",
+        "CC5.2",
+        "CC5.3",
+        "CC7.1",
+        "CC8.1",
+        "CC8.2",
+        "CC9.1",
+        "CC9.2",
+        "A1.1",
+        "A1.3",
+        "C1.1-partial",
+        "PI1.1",
+        "PI1.2",
+        "PI1.4",
+        "PI1.5",
+        "P1.1",
+        "P2.1"
+      ],
+      "totalControls": 28,
+      "complete": 28,
+      "completedDate": "2026-05-10",
+      "status": "COMPLETE"
+    },
+    "wave2": {
+      "name": "Core Infrastructure",
+      "team": "Core Infra",
+      "controlRange": "29-50",
+      "controlIds": [
+        "CC5.4",
+        "CC5.5",
+        "CC6.7",
+        "CC6.8",
+        "CC6.9",
+        "CC6.10",
+        "CC7.3",
+        "CC7.4",
+        "CC7.5",
+        "A1.1",
+        "A1.3",
+        "A1.4",
+        "A1.5",
+        "A1.6",
+        "C1.2",
+        "C1.3",
+        "PI1.3",
+        "PI1.6",
+        "P3.1",
+        "P4.1",
+        "P5.1",
+        "P6.1"
+      ],
+      "totalControls": 22,
+      "complete": 22,
+      "completedDate": "2026-06-15",
+      "status": "COMPLETE"
+    },
+    "wave3": {
+      "name": "Cross-Team (DataCore, FlowEngine, NovaAI, DevEx, Mobile)",
+      "teams": [
+        "DataCore",
+        "FlowEngine",
+        "NovaAI",
+        "DevEx",
+        "Mobile"
+      ],
+      "controlRange": "51-86",
+      "totalControls": 36,
+      "complete": 36,
+      "inProgress": 0,
+      "status": "COMPLETE",
+      "completedDate": "2026-06-30",
+      "note": "Final control A1.7 (Log Retention Policy) closed Jun 30 as expected. Note: A1.7 was later one of the three controls Deloitte failed on evidence sufficiency Jul 16 - closing a control and evidencing it are not the same milestone."
+    },
+    "wave4": {
+      "name": "IAM-Blocked Controls",
+      "team": "Cross-team — unblocks on NEXUS IAM go-live",
+      "controlRange": "87-100",
+      "totalControls": 14,
+      "complete": 14,
+      "blocked": 0,
+      "blockerDescription": "RESOLVED. NEXUS IAM deployed Jun 30 22:05 and M6 closed Jul 1. All 14 controls assigned Jul 1 morning from pre-staged assignments and closed Jul 11-14 - 13 days from unblock to complete.",
+      "iamDeployDate": "2026-06-30",
+      "waveStartDate": "2026-07-01",
+      "waveTargetDate": "2026-07-15",
+      "status": "COMPLETE",
+      "completedDate": "2026-07-14",
+      "note": "Two of these controls (CC6.4 quarterly access review, CC6.6 privileged access management) were failed by Deloitte on Jul 16 for insufficient operating history: they had been live for 15 days against a Type II standard that expects months."
+    }
+  },
+  "iamBlockedControls": [
+    {
+      "controlId": "CC6.1",
+      "name": "Logical Access Provisioning",
+      "category": "CC",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "access provisioning workflow screenshot",
+        "automated provisioning policy doc",
+        "user onboarding audit log"
+      ],
+      "owner": "Fatima Al-Hassan / NEXUS team",
+      "vantaCheckId": "vanta-cc6.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "identity_provider_integration",
+      "completedDate": "2026-07-11",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "CC6.2",
+      "name": "User Access Removal / Offboarding",
+      "category": "CC",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "automated deprovision workflow doc",
+        "offboarding audit log sample",
+        "ticketing integration screenshot"
+      ],
+      "owner": "Fatima Al-Hassan / NEXUS team",
+      "vantaCheckId": "vanta-cc6.2-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "identity_provider_integration",
+      "completedDate": "2026-07-11",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "CC6.3",
+      "name": "Role-Based Access Control",
+      "category": "CC",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "RBAC policy document",
+        "role hierarchy screenshot",
+        "least-privilege review report"
+      ],
+      "owner": "Fatima Al-Hassan / NEXUS team",
+      "vantaCheckId": "vanta-cc6.3-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "access_review_automation",
+      "completedDate": "2026-07-11",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "CC6.4",
+      "name": "Access Review — Quarterly Certification",
+      "category": "CC",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "quarterly access review report",
+        "sign-off from system owners",
+        "exceptions log"
+      ],
+      "owner": "Sec Eng team",
+      "vantaCheckId": "vanta-cc6.4-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "manual_review",
+      "completedDate": "2026-07-12",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "FAILED_JUL_16_REMEDIATED_AUG_07",
+      "auditorNote": "Deloitte rejected the initial evidence on operating-effectiveness grounds: control live only since Jul 1, giving 15 days of operating history where Type II expects sustained operation. Remediated with compensating documentation and accepted Aug 7."
+    },
+    {
+      "controlId": "CC6.6",
+      "name": "Privileged Access Management",
+      "category": "CC",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "privileged account inventory",
+        "PAM policy doc",
+        "audit trail export",
+        "break-glass procedure doc"
+      ],
+      "owner": "Fatima Al-Hassan",
+      "vantaCheckId": "vanta-cc6.6-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "privileged_access_monitoring",
+      "completedDate": "2026-07-12",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "FAILED_JUL_16_REMEDIATED_AUG_07",
+      "auditorNote": "Deloitte rejected the initial evidence on operating-effectiveness grounds: control live only since Jul 1, giving 15 days of operating history where Type II expects sustained operation. Remediated with compensating documentation and accepted Aug 7."
+    },
+    {
+      "controlId": "CC7.2",
+      "name": "System Monitoring for Unauthorized Access",
+      "category": "CC",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "SIEM alert configuration screenshot",
+        "IAM event stream integration doc",
+        "sample alert investigation log"
+      ],
+      "owner": "Sec Eng team",
+      "vantaCheckId": "vanta-cc7.2-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "siem_integration_check",
+      "completedDate": "2026-07-12",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "CC6.5",
+      "name": "Authentication Controls — MFA Enforcement",
+      "category": "CC",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "MFA enforcement policy",
+        "Auth0 MFA configuration screenshot",
+        "MFA coverage report (% users enrolled)"
+      ],
+      "owner": "NEXUS team",
+      "vantaCheckId": "vanta-cc6.5-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "mfa_coverage_check",
+      "completedDate": "2026-07-11",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "CC9.3",
+      "name": "Vendor Access Controls",
+      "category": "CC",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "vendor access policy",
+        "scoped role definition",
+        "vendor account audit log"
+      ],
+      "owner": "Fatima Al-Hassan",
+      "vantaCheckId": "vanta-cc9.3-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "manual_review",
+      "completedDate": "2026-07-13",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "A1.2",
+      "name": "Recovery Testing with Access Controls",
+      "category": "A",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "recovery test runbook",
+        "recovery test log with IAM validation",
+        "RTO/RPO measurement report"
+      ],
+      "owner": "Core Infra team",
+      "note": "Full recovery test scheduled July 5 as M4 deliverable. Also satisfies pending Deloitte A1.1 request.",
+      "vantaCheckId": "vanta-a1.2-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "manual_evidence",
+      "completedDate": "2026-07-13",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "A1.5",
+      "name": "Availability Monitoring — Identity Service SLA",
+      "category": "A",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "uptime monitoring configuration",
+        "Datadog SLO dashboard screenshot",
+        "30-day uptime report"
+      ],
+      "owner": "Core Infra team",
+      "vantaCheckId": "vanta-a1.5-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "uptime_monitor_check",
+      "completedDate": "2026-07-13",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "A1.6",
+      "name": "Disaster Recovery — IAM Failover",
+      "category": "A",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "DR runbook — IAM failover section",
+        "Auth0 HA configuration doc",
+        "failover test log"
+      ],
+      "owner": "Core Infra team",
+      "vantaCheckId": "vanta-a1.6-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "manual_evidence",
+      "completedDate": "2026-07-14",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "C1.1",
+      "name": "Data Access Logging — Identity Binding",
+      "category": "C",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "data access log sample with user identity",
+        "IAM-to-audit-log integration doc",
+        "log completeness test results"
+      ],
+      "owner": "DataCore team",
+      "vantaCheckId": "vanta-c1.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "audit_log_completeness_check",
+      "completedDate": "2026-07-14",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "C1.4",
+      "name": "Data Classification Access Enforcement",
+      "category": "C",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "data classification policy",
+        "role-to-data-tier mapping doc",
+        "access enforcement test results"
+      ],
+      "owner": "DataCore team",
+      "vantaCheckId": "vanta-c1.4-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "manual_evidence",
+      "completedDate": "2026-07-14",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    },
+    {
+      "controlId": "P7.1",
+      "name": "Data Subject Access Requests — IAM-Verified Identity",
+      "category": "P",
+      "status": "COMPLETE",
+      "blocker": "RESOLVED - NEXUS IAM live in production Jun 30 22:05",
+      "dependency": "NEXUS IAM",
+      "expectedUnblockDate": "2026-07-01",
+      "evidenceRequired": [
+        "DSAR workflow doc",
+        "identity verification step screenshot",
+        "sample DSAR completion log"
+      ],
+      "owner": "Fatima Al-Hassan / Legal",
+      "vantaCheckId": "vanta-p7.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "manual_evidence",
+      "completedDate": "2026-07-14",
+      "unblockedDate": "2026-07-01",
+      "auditorEvidenceOutcome": "ACCEPTED_JUL_16"
+    }
+  ],
+  "deloitteInteractions": [
+    {
+      "date": "2026-05-12",
+      "type": "evidence_submission",
+      "direction": "novagrid_to_deloitte",
+      "submittedBy": "Fatima Al-Hassan",
+      "description": "SHIELD submitted in-progress evidence package to Deloitte. 65 controls complete at time of submission (Waves 1 and 2 partial). Package included policy documents, automated Vanta check exports, and infrastructure configuration screenshots.",
+      "controlsSubmitted": 65,
+      "packageRef": "SHIELD-DELOITTE-PKG-001",
+      "deliveryMethod": "Vanta auditor portal"
+    },
+    {
+      "date": "2026-05-28",
+      "type": "acknowledgement",
+      "direction": "deloitte_to_novagrid",
+      "receivedBy": "Fatima Al-Hassan",
+      "description": "Deloitte acknowledged receipt of May 12 evidence package. Confirmation that review has commenced. Assigned lead auditor: Marcus Chen (Deloitte Cyber Risk). Expected initial findings in 3-4 weeks.",
+      "deloitteContact": "Marcus Chen",
+      "packageRef": "SHIELD-DELOITTE-PKG-001",
+      "deliveryMethod": "email + Vanta auditor portal status update"
+    },
+    {
+      "date": "2026-06-15",
+      "type": "auditor_request",
+      "direction": "deloitte_to_novagrid",
+      "receivedBy": "Fatima Al-Hassan",
+      "description": "Deloitte requested additional documentation on 3 controls identified during initial evidence review.",
+      "controlsRequested": [
+        {
+          "controlId": "CC6.8",
+          "name": "System Hardening Procedures",
+          "deloitteNote": "Evidence submitted references CIS Benchmark policy document but lacks implementation proof. Request: configuration baseline screenshots from production systems showing hardening applied (OS-level, container-level).",
+          "requestType": "additional_evidence",
+          "urgency": "standard"
+        },
+        {
+          "controlId": "A1.1",
+          "name": "Backup Recovery Test Documentation",
+          "deloitteNote": "Policy and schedule submitted. Auditor requires evidence of a completed recovery test including actual RTO/RPO measurements against SLA targets. Backup configuration alone is insufficient for Type II.",
+          "requestType": "additional_evidence",
+          "urgency": "high"
+        },
+        {
+          "controlId": "PI1.3",
+          "name": "Data Processing Accuracy Validation Procedures",
+          "deloitteNote": "Existing evidence shows test case definitions but lacks output validation results. Request: automated test run logs showing input/output accuracy checks passing in production environment.",
+          "requestType": "additional_evidence",
+          "urgency": "standard"
+        }
+      ],
+      "requestRef": "DELOITTE-RFI-2026-001",
+      "responseDeadlineGiven": "2026-07-01"
+    },
+    {
+      "date": "2026-06-15",
+      "type": "evidence_submission",
+      "direction": "novagrid_to_deloitte",
+      "submittedBy": "Fatima Al-Hassan",
+      "description": "Fatima Al-Hassan responded same-day to Deloitte RFI-2026-001 with additional evidence for all 3 requested controls.",
+      "controlsResponded": [
+        {
+          "controlId": "CC6.8",
+          "evidenceProvided": [
+            "CIS Benchmark hardening screenshots (Ubuntu 22.04 baseline)",
+            "Container image security scan results (Trivy)",
+            "Terraform baseline policy config export"
+          ]
+        },
+        {
+          "controlId": "A1.1",
+          "evidenceProvided": [
+            "Backup policy doc (updated)",
+            "Scheduled recovery test plan for July 5 2026",
+            "Note: full recovery test log pending — scheduled as M4 deliverable alongside Wave 4 IAM work"
+          ]
+        },
+        {
+          "controlId": "PI1.3",
+          "evidenceProvided": [
+            "FlowEngine automated test run logs (June 12 production run)",
+            "Input/output validation results CSV",
+            "NovaAI data pipeline accuracy check export"
+          ]
+        }
+      ],
+      "responseRef": "SHIELD-DELOITTE-RESP-001",
+      "deliveryMethod": "Vanta auditor portal",
+      "turnaroundHours": 3
+    },
+    {
+      "date": "2026-06-17",
+      "type": "auditor_response",
+      "direction": "deloitte_to_novagrid",
+      "receivedBy": "Fatima Al-Hassan",
+      "description": "Deloitte acknowledged June 15 response. Two of three controls cleared; one remains open pending July 5 recovery test.",
+      "controlOutcomes": [
+        {
+          "controlId": "CC6.8",
+          "outcome": "SATISFIED",
+          "deloitteNote": "Additional hardening evidence accepted. Control evidence file closed."
+        },
+        {
+          "controlId": "PI1.3",
+          "outcome": "SATISFIED",
+          "deloitteNote": "Test run logs and accuracy validation results accepted. Control evidence file closed."
+        },
+        {
+          "controlId": "A1.1",
+          "outcome": "PENDING",
+          "deloitteNote": "Understood recovery test scheduled July 5. Awaiting actual test log with RTO/RPO measurements. Will hold control open. Please submit within 5 business days of test completion.",
+          "followUpDeadline": "2026-07-14"
+        }
+      ],
+      "responseRef": "DELOITTE-ACK-2026-002"
+    },
+    {
+      "date": "2026-07-06",
+      "type": "evidence_submission",
+      "direction": "novagrid_to_deloitte",
+      "submittedBy": "Fatima Al-Hassan",
+      "description": "A1.1 recovery test log submitted following the Jul 5 test. Closes the last item outstanding from the Jun 17 acknowledgement, four business days ahead of the Jul 14 follow-up deadline.",
+      "controlOutcomes": [
+        {
+          "controlId": "A1.1",
+          "outcome": "SATISFIED",
+          "deloitteNote": "RTO 42min / RPO 8min measured against 4hr / 1hr targets. Control evidence file closed."
+        }
+      ],
+      "responseRef": "NG-EVID-2026-011"
+    },
+    {
+      "date": "2026-07-15",
+      "type": "evidence_submission",
+      "direction": "novagrid_to_deloitte",
+      "submittedBy": "Fatima Al-Hassan",
+      "description": "Full 100-control audit evidence package delivered on target date. Completes SHIELD M4 (100 controls) and M5 (evidence to Deloitte) on the same day. Package includes the 14 IAM-dependent controls closed Jul 11-14 following the NEXUS IAM go-live.",
+      "packageContents": {
+        "controlsCovered": 100,
+        "evidenceItems": 348,
+        "compensatingControls": 4,
+        "narrativeDocuments": 12
+      },
+      "responseRef": "NG-EVID-2026-012"
+    },
+    {
+      "date": "2026-07-16",
+      "type": "auditor_finding",
+      "direction": "deloitte_to_novagrid",
+      "receivedBy": "Fatima Al-Hassan",
+      "severity": "high",
+      "description": "Deloitte accepted 97 of 100 controls and FAILED 3 on evidence sufficiency. The failures are not implementation defects - every control is built and operating. They are operating-history defects: a Type II report attests that controls operated effectively over a period, and these three had days of history, not months. Escalated to James Whitfield (CISO) same day.",
+      "controlOutcomes": [
+        {
+          "controlId": "A1.7",
+          "outcome": "INSUFFICIENT_EVIDENCE",
+          "deloitteNote": "Log retention policy closed Jun 30. Policy documentation is complete and correct, but we require evidence of the retention schedule executing across at least one full cycle. Sixteen days of logs is not a retention control operating - it is a retention control existing."
+        },
+        {
+          "controlId": "CC6.4",
+          "outcome": "INSUFFICIENT_EVIDENCE",
+          "deloitteNote": "Quarterly access review certification. Control live since Jul 1. A quarterly control with fifteen days of history cannot evidence a completed quarterly cycle. This is the clearest example of the general issue in this package."
+        },
+        {
+          "controlId": "CC6.6",
+          "outcome": "INSUFFICIENT_EVIDENCE",
+          "deloitteNote": "Privileged access management. Control live since Jul 1. Provisioning and approval workflows are correctly configured, but we have no sustained record of privileged grants being reviewed and revoked under the new IAM. Compensating documentation from the prior Auth0 workaround period may be acceptable - please propose."
+        }
+      ],
+      "auditorContext": "Raised proactively by the Deloitte engagement partner: the Aug 31 date in NovaGrid's board materials describes a certification we cannot issue. Our observation period opens Sep 1 and closes Nov 30, with the report following Dec 15. We flag this because your board appears to be tracking a date that does not correspond to any deliverable in our engagement letter.",
+      "responseRef": "DELOITTE-FINDING-2026-001"
+    },
+    {
+      "date": "2026-07-20",
+      "type": "remediation_plan",
+      "direction": "novagrid_to_deloitte",
+      "submittedBy": "Fatima Al-Hassan",
+      "description": "Remediation plan agreed. A1.7 to be re-evidenced Aug 5 with a full 30+ day retention cycle. CC6.4 and CC6.6 to be supported by compensating documentation covering the pre-IAM period, with full operating history accruing inside the observation window. Deloitte confirmed the approach is acceptable in principle pending review of the actual evidence.",
+      "remediationCommitments": [
+        {
+          "controlId": "A1.7",
+          "approach": "Re-collect with 30+ days of retention cycle execution",
+          "targetDate": "2026-08-05"
+        },
+        {
+          "controlId": "CC6.4",
+          "approach": "Compensating documentation from the Auth0 workaround period plus a completed off-cycle access review",
+          "targetDate": "2026-08-05"
+        },
+        {
+          "controlId": "CC6.6",
+          "approach": "Compensating documentation of privileged grant reviews under the prior IAM, plus current-state configuration attestation",
+          "targetDate": "2026-08-05"
+        }
+      ],
+      "responseRef": "NG-REMED-2026-001"
+    },
+    {
+      "date": "2026-07-22",
+      "type": "governance_decision",
+      "direction": "internal",
+      "recordedBy": "Fatima Al-Hassan",
+      "description": "Board accepted the restatement of the SOC 2 mandate. James Whitfield (CISO) and Karl Bergstrom presented the Deloitte engagement-letter dates against the board's Aug 31 mandate. Outcome: Aug 31 is audit-readiness, Sep 1 - Nov 30 is the observation period, Dec 15 is the Type II report. Recorded as DR-014. Sales was re-briefed the same week; Nuvera Insurance moved to Q4 as a direct consequence.",
+      "decisionRecord": "DR-014",
+      "responseRef": "NG-GOV-2026-003"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "auditor_response",
+      "direction": "deloitte_to_novagrid",
+      "receivedBy": "Fatima Al-Hassan",
+      "description": "All three remediated controls accepted. The 100-control evidence package is now complete and accepted for readiness purposes. Deloitte confirmed the Sep 1 observation period start. SHIELD M5 re-closed.",
+      "controlOutcomes": [
+        {
+          "controlId": "A1.7",
+          "outcome": "SATISFIED",
+          "deloitteNote": "38 days of retention cycle execution evidenced. Accepted."
+        },
+        {
+          "controlId": "CC6.4",
+          "outcome": "SATISFIED_WITH_COMPENSATING",
+          "deloitteNote": "Off-cycle access review completed Jul 30 and compensating documentation accepted. Note for the observation period: this control must evidence a complete quarterly cycle before Nov 30."
+        },
+        {
+          "controlId": "CC6.6",
+          "outcome": "SATISFIED_WITH_COMPENSATING",
+          "deloitteNote": "Compensating documentation accepted. Privileged grant review cadence must run uninterrupted through the observation period."
+        }
+      ],
+      "auditorContext": "Readiness confirmed. The engagement now depends on sustained operation rather than further build work. Controls that stop operating cleanly during Sep 1 - Nov 30 will be reported as exceptions, and material exceptions move the Dec 15 report date.",
+      "responseRef": "DELOITTE-ACK-2026-003"
+    }
+  ],
+  "evidenceStatus": {
+    "totalEvidenceItems": 348,
+    "uploaded": 348,
+    "pendingUpload": 0,
+    "autoCollectedByVanta": 191,
+    "manuallyUploaded": 157,
+    "staleEvidenceCount": 0,
+    "staleThresholdDays": 90,
+    "staleItems": [],
+    "vantaAutoChecks": {
+      "enabled": 74,
+      "passing": 74,
+      "failing": 0,
+      "skipped": 0,
+      "skippedReason": "None - the 3 previously skipped IAM checks auto-enabled Jul 1 when NEXUS IAM went live"
+    },
+    "nextEvidenceRefreshDeadline": "2026-09-01",
+    "auditReadinessScore": 96,
+    "note": "Score rose 87 -> 96 across the window: +14 controls complete, all stale evidence refreshed, and the 3 IAM auto-checks enabled. It is not 100 because CC6.4 and CC6.6 carry compensating documentation rather than full operating history, and that gap only closes with time inside the observation period."
+  },
+  "controls": [
+    {
+      "controlId": "CC1.1",
+      "trustServiceCriteria": "CC1 — Control Environment",
+      "name": "Board-Level Oversight of Security Program",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-01",
+      "owner": "James Whitfield (CISO)",
+      "description": "Board of directors maintains oversight of the entity's security program through quarterly security briefings and board audit committee reporting.",
+      "evidenceItems": [
+        {
+          "type": "meeting_minutes",
+          "description": "Q1 2026 Board Audit Committee meeting minutes — security briefing section",
+          "uploadedAt": "2026-05-01T10:15:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc1.1-001"
+        },
+        {
+          "type": "policy_document",
+          "description": "Information Security Governance Policy v2.3",
+          "uploadedAt": "2026-05-01T10:20:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc1.1-002"
+        }
+      ],
+      "vantaCheckId": "vanta-cc1.1-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC1.2",
+      "trustServiceCriteria": "CC1 — Control Environment",
+      "name": "Management Accountability — Security Roles and Responsibilities",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-02",
+      "owner": "James Whitfield (CISO)",
+      "description": "Management defines, assigns, and communicates security roles and responsibilities across the organization.",
+      "evidenceItems": [
+        {
+          "type": "org_chart",
+          "description": "Security org chart with role definitions — June 2026",
+          "uploadedAt": "2026-05-02T09:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc1.2-001"
+        },
+        {
+          "type": "policy_document",
+          "description": "Security Roles and Responsibilities Matrix v1.8",
+          "uploadedAt": "2026-05-02T09:05:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc1.2-002"
+        }
+      ],
+      "vantaCheckId": "vanta-cc1.2-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC2.1",
+      "trustServiceCriteria": "CC2 — Communication and Information",
+      "name": "Internal Communication of Security Policies",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-03",
+      "owner": "Fatima Al-Hassan",
+      "description": "The entity communicates security policies and procedures to all personnel through documented channels and annual training.",
+      "evidenceItems": [
+        {
+          "type": "training_completion_report",
+          "description": "Annual Security Awareness Training — 2026 completion report (97% completion rate)",
+          "uploadedAt": "2026-05-03T11:30:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc2.1-001"
+        },
+        {
+          "type": "automated_check",
+          "description": "Vanta security training integration — Workday LMS sync",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-cc2.1-002"
+        }
+      ],
+      "vantaCheckId": "vanta-cc2.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "training_completion_check",
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC3.2",
+      "trustServiceCriteria": "CC3 — Risk Assessment",
+      "name": "Annual Risk Assessment",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-05",
+      "owner": "Fatima Al-Hassan",
+      "description": "The entity performs an annual risk assessment to identify and evaluate threats to achievement of entity objectives.",
+      "evidenceItems": [
+        {
+          "type": "risk_assessment_report",
+          "description": "FY2025 Annual Risk Assessment Report — approved Dec 2025",
+          "uploadedAt": "2026-05-05T14:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "lastUpdated": "2025-12-15",
+          "stale": true,
+          "stalenessNote": "FY2026 risk assessment in progress — refresh scheduled for July 2026",
+          "vantaEvidenceId": "ev-cc3.2-001"
+        }
+      ],
+      "vantaCheckId": "vanta-cc3.2-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "accepted",
+      "flags": [
+        "evidence_refresh_needed"
+      ],
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC4.1",
+      "trustServiceCriteria": "CC4 — Monitoring Activities",
+      "name": "Continuous Security Monitoring",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-08",
+      "owner": "Sec Eng team",
+      "description": "The entity monitors security controls on an ongoing basis using automated tooling including Datadog SIEM and Vanta continuous compliance checks.",
+      "evidenceItems": [
+        {
+          "type": "automated_check",
+          "description": "Datadog SIEM configuration export — security monitoring rules active",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-cc4.1-001"
+        },
+        {
+          "type": "screenshot",
+          "description": "Datadog security monitoring dashboard — June 2026",
+          "uploadedAt": "2026-06-01T09:00:00Z",
+          "uploadedBy": "Priya Nair (Sec Eng)",
+          "vantaEvidenceId": "ev-cc4.1-002"
+        },
+        {
+          "type": "policy_document",
+          "description": "Security Monitoring and Alerting Policy v1.5",
+          "uploadedAt": "2026-05-08T10:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc4.1-003"
+        }
+      ],
+      "vantaCheckId": "vanta-cc4.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "siem_integration_check",
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC5.3",
+      "trustServiceCriteria": "CC5 — Control Activities",
+      "name": "Change Management — Production Deployment Controls",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-09",
+      "owner": "DevEx team",
+      "description": "All production deployments require peer code review, automated test passage, and release manager approval before promotion to production.",
+      "evidenceItems": [
+        {
+          "type": "automated_check",
+          "description": "GitHub branch protection rules — main branch requires 2 approvers and CI pass",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-cc5.3-001"
+        },
+        {
+          "type": "screenshot",
+          "description": "GitHub repository settings — branch protection configuration",
+          "uploadedAt": "2026-05-09T11:00:00Z",
+          "uploadedBy": "Sam Reyes (DevEx)",
+          "vantaEvidenceId": "ev-cc5.3-002"
+        },
+        {
+          "type": "policy_document",
+          "description": "Change Management Policy v3.1",
+          "uploadedAt": "2026-05-09T11:05:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc5.3-003"
+        }
+      ],
+      "vantaCheckId": "vanta-cc5.3-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "github_branch_protection_check",
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC6.7",
+      "trustServiceCriteria": "CC6 — Logical and Physical Access",
+      "name": "Encryption in Transit",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 2,
+      "completedDate": "2026-06-05",
+      "owner": "Core Infra team",
+      "description": "All data transmitted over public networks is encrypted using TLS 1.2 or higher. Internal service-to-service communication uses mTLS.",
+      "evidenceItems": [
+        {
+          "type": "automated_check",
+          "description": "TLS configuration scan — all public endpoints (SSL Labs equivalent)",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-cc6.7-001"
+        },
+        {
+          "type": "automated_check",
+          "description": "mTLS enforcement check — internal service mesh (Istio)",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-cc6.7-002"
+        },
+        {
+          "type": "policy_document",
+          "description": "Encryption Policy v2.0 — in-transit and at-rest requirements",
+          "uploadedAt": "2026-06-05T13:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc6.7-003"
+        }
+      ],
+      "vantaCheckId": "vanta-cc6.7-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "tls_configuration_check",
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC6.8",
+      "trustServiceCriteria": "CC6 — Logical and Physical Access",
+      "name": "System Hardening Procedures",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 2,
+      "completedDate": "2026-06-10",
+      "owner": "Core Infra team",
+      "description": "Production systems are hardened per CIS Benchmark standards. Container images are scanned for vulnerabilities before deployment. Terraform baseline enforces hardening configuration.",
+      "evidenceItems": [
+        {
+          "type": "screenshot",
+          "description": "CIS Benchmark hardening report — Ubuntu 22.04 baseline (production nodes)",
+          "uploadedAt": "2026-06-15T14:30:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "note": "Uploaded in response to Deloitte RFI-2026-001",
+          "vantaEvidenceId": "ev-cc6.8-001"
+        },
+        {
+          "type": "test_results",
+          "description": "Trivy container image security scan results — June 12 production build",
+          "uploadedAt": "2026-06-15T14:35:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc6.8-002"
+        },
+        {
+          "type": "configuration_export",
+          "description": "Terraform baseline policy config export — hardening controls",
+          "uploadedAt": "2026-06-15T14:40:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc6.8-003"
+        }
+      ],
+      "vantaCheckId": "vanta-cc6.8-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "accepted",
+      "deloitteNote": "Satisfied June 17 after additional evidence submitted June 15",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC6.1",
+      "trustServiceCriteria": "CC6 — Logical and Physical Access",
+      "name": "Logical Access Provisioning",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 4,
+      "blockedDate": "2026-04-01",
+      "expectedStartDate": "2026-07-01",
+      "expectedCompletionDate": "2026-07-10",
+      "owner": "Fatima Al-Hassan / NEXUS team",
+      "description": "The entity controls logical access provisioning to systems and data through a unified IAM platform. Access is granted based on job role and follows least-privilege principles.",
+      "blocker": {
+        "description": "Requires Auth0-backed NEXUS unified IAM. Pre-NEXUS IAM state has fragmented provisioning across 6 systems with no single audit trail.",
+        "dependencyProgram": "NEXUS",
+        "dependencyMilestone": "NEXUS IAM M3 — IAM Go-Live",
+        "expectedUnblockDate": "2026-07-01"
+      },
+      "evidenceItems": [],
+      "vantaCheckId": "vanta-cc6.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "identity_provider_integration",
+      "autoCheckStatus": "SKIPPED",
+      "autoCheckSkipReason": "IAM integration required — will auto-enable post NEXUS IAM go-live",
+      "deloitteStatus": "pending_evidence",
+      "completedDate": "2026-07-11",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC6.2",
+      "trustServiceCriteria": "CC6 — Logical and Physical Access",
+      "name": "User Access Removal / Offboarding",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 4,
+      "blockedDate": "2026-04-01",
+      "expectedStartDate": "2026-07-01",
+      "expectedCompletionDate": "2026-07-10",
+      "owner": "Fatima Al-Hassan / NEXUS team",
+      "description": "The entity revokes access for departed employees within 24 hours of separation through automated IAM offboarding workflows.",
+      "blocker": {
+        "description": "Automated offboarding workflow requires NEXUS unified IAM integration with HR system (Workday). Current process is manual and lacks audit trail.",
+        "dependencyProgram": "NEXUS",
+        "dependencyMilestone": "NEXUS IAM M3 — IAM Go-Live",
+        "expectedUnblockDate": "2026-07-01"
+      },
+      "evidenceItems": [],
+      "vantaCheckId": "vanta-cc6.2-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "identity_provider_integration",
+      "autoCheckStatus": "SKIPPED",
+      "autoCheckSkipReason": "IAM integration required — will auto-enable post NEXUS IAM go-live",
+      "deloitteStatus": "pending_evidence",
+      "completedDate": "2026-07-11",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC6.3",
+      "trustServiceCriteria": "CC6 — Logical and Physical Access",
+      "name": "Role-Based Access Control",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 4,
+      "blockedDate": "2026-04-01",
+      "expectedStartDate": "2026-07-01",
+      "expectedCompletionDate": "2026-07-12",
+      "owner": "Fatima Al-Hassan / NEXUS team",
+      "description": "The entity implements role-based access control (RBAC) to ensure users have access only to systems and data required for their job function.",
+      "blocker": {
+        "description": "RBAC requires unified role taxonomy across all NovaGrid services, only achievable through NEXUS IAM role management layer.",
+        "dependencyProgram": "NEXUS",
+        "dependencyMilestone": "NEXUS IAM M3 — IAM Go-Live",
+        "expectedUnblockDate": "2026-07-01"
+      },
+      "evidenceItems": [],
+      "vantaCheckId": "vanta-cc6.3-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "access_review_automation",
+      "autoCheckStatus": "SKIPPED",
+      "autoCheckSkipReason": "IAM integration required — will auto-enable post NEXUS IAM go-live",
+      "deloitteStatus": "pending_evidence",
+      "completedDate": "2026-07-11",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC6.6",
+      "trustServiceCriteria": "CC6 — Logical and Physical Access",
+      "name": "Privileged Access Management",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 4,
+      "blockedDate": "2026-04-01",
+      "expectedStartDate": "2026-07-01",
+      "expectedCompletionDate": "2026-07-12",
+      "owner": "Fatima Al-Hassan",
+      "description": "Privileged accounts are inventoried, monitored, and subject to enhanced authentication requirements. All privileged actions are logged to an immutable audit trail.",
+      "blocker": {
+        "description": "Immutable audit trail for privileged account actions requires NEXUS IAM event stream integration with Datadog.",
+        "dependencyProgram": "NEXUS",
+        "dependencyMilestone": "NEXUS IAM M3 — IAM Go-Live",
+        "expectedUnblockDate": "2026-07-01"
+      },
+      "evidenceItems": [],
+      "vantaCheckId": "vanta-cc6.6-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "privileged_access_monitoring",
+      "autoCheckStatus": "SKIPPED",
+      "autoCheckSkipReason": "IAM integration required — will auto-enable post NEXUS IAM go-live",
+      "deloitteStatus": "pending_evidence",
+      "completedDate": "2026-07-12",
+      "auditorEvidenceOutcome": "FAILED_JUL_16_REMEDIATED_AUG_07",
+      "evidenceAcceptedDate": "2026-08-07"
+    },
+    {
+      "controlId": "CC7.1",
+      "trustServiceCriteria": "CC7 — System Operations",
+      "name": "Vulnerability Management",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-07",
+      "owner": "Sec Eng team",
+      "description": "The entity identifies, evaluates, and remediates security vulnerabilities through a structured vulnerability management program including automated scanning and SLA-driven remediation.",
+      "evidenceItems": [
+        {
+          "type": "automated_check",
+          "description": "Snyk vulnerability scan — all production repositories",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-cc7.1-001"
+        },
+        {
+          "type": "automated_check",
+          "description": "AWS Inspector scan results — production workloads",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-cc7.1-002"
+        },
+        {
+          "type": "policy_document",
+          "description": "Vulnerability Management Policy v2.2 — SLA by severity",
+          "uploadedAt": "2026-05-07T10:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc7.1-003"
+        },
+        {
+          "type": "report",
+          "description": "May 2026 vulnerability remediation report — zero critical open, 2 high (within SLA)",
+          "uploadedAt": "2026-06-03T09:00:00Z",
+          "uploadedBy": "Priya Nair (Sec Eng)",
+          "vantaEvidenceId": "ev-cc7.1-004"
+        }
+      ],
+      "vantaCheckId": "vanta-cc7.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "vulnerability_scan_check",
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC8.1",
+      "trustServiceCriteria": "CC8 — Change Management",
+      "name": "Formal Change Management Process",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-09",
+      "owner": "DevEx team",
+      "description": "Changes to production systems follow a formal change management process including change request, risk assessment, testing, peer review, and post-deployment verification.",
+      "evidenceItems": [
+        {
+          "type": "screenshot",
+          "description": "Jira change request workflow — configuration screenshot",
+          "uploadedAt": "2026-05-09T12:00:00Z",
+          "uploadedBy": "Sam Reyes (DevEx)",
+          "vantaEvidenceId": "ev-cc8.1-001"
+        },
+        {
+          "type": "test_results",
+          "description": "Sample change requests (5) with full audit trail — May 2026",
+          "uploadedAt": "2026-05-09T12:05:00Z",
+          "uploadedBy": "Sam Reyes (DevEx)",
+          "vantaEvidenceId": "ev-cc8.1-002"
+        },
+        {
+          "type": "policy_document",
+          "description": "Change Management Policy v3.1",
+          "uploadedAt": "2026-05-09T11:05:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc8.1-003"
+        }
+      ],
+      "vantaCheckId": "vanta-cc8.1-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC9.1",
+      "trustServiceCriteria": "CC9 — Risk Mitigation",
+      "name": "Vendor Risk Management",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-10",
+      "owner": "Fatima Al-Hassan",
+      "description": "The entity assesses security risk of third-party vendors prior to onboarding and on an annual basis. Vendors with access to customer data must complete security questionnaire and provide SOC 2 report or equivalent.",
+      "evidenceItems": [
+        {
+          "type": "report",
+          "description": "Vendor risk register — 47 vendors assessed as of May 2026",
+          "uploadedAt": "2026-05-10T15:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc9.1-001"
+        },
+        {
+          "type": "policy_document",
+          "description": "Third-Party Risk Management Policy v1.9",
+          "uploadedAt": "2026-05-10T15:05:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc9.1-002"
+        },
+        {
+          "type": "automated_check",
+          "description": "Vanta vendor portal — vendor questionnaire completion tracker",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-cc9.1-003"
+        }
+      ],
+      "vantaCheckId": "vanta-cc9.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "vendor_questionnaire_check",
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "A1.1",
+      "trustServiceCriteria": "A1 — Availability",
+      "name": "Backup and Recovery Procedures",
+      "category": "A",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-06",
+      "owner": "Core Infra team",
+      "description": "The entity maintains automated backups of all production data with defined recovery point objectives (RPO: 1 hour) and recovery time objectives (RTO: 4 hours). Backups are tested on a scheduled basis.",
+      "evidenceItems": [
+        {
+          "type": "automated_check",
+          "description": "AWS Backup — automated backup job status check",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-a1.1-001"
+        },
+        {
+          "type": "policy_document",
+          "description": "Backup and Recovery Policy v2.1 — RPO/RTO targets",
+          "uploadedAt": "2026-05-06T10:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-a1.1-002"
+        },
+        {
+          "type": "report",
+          "description": "Scheduled recovery test plan — July 5 2026 (full recovery test with IAM)",
+          "uploadedAt": "2026-06-15T14:32:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "note": "Full recovery test log pending. Scheduled July 5 as M4 deliverable.",
+          "vantaEvidenceId": "ev-a1.1-003"
+        }
+      ],
+      "vantaCheckId": "vanta-a1.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "backup_job_check",
+      "deloitteStatus": "pending",
+      "deloitteNote": "Awaiting July 5 recovery test log. Deloitte holding control open until received (deadline July 14).",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "A1.2",
+      "trustServiceCriteria": "A1 — Availability",
+      "name": "Recovery Testing with Access Controls",
+      "category": "A",
+      "status": "COMPLETE",
+      "wave": 4,
+      "blockedDate": "2026-04-01",
+      "expectedStartDate": "2026-07-01",
+      "expectedCompletionDate": "2026-07-08",
+      "owner": "Core Infra team",
+      "description": "Recovery tests must include validation of IAM role restoration and access control verification after failover. Testing performed at least annually.",
+      "blocker": {
+        "description": "Recovery test requires unified IAM to validate role restoration during failover. July 5 recovery test (M4 deliverable) will satisfy both this control and the pending Deloitte A1.1 request.",
+        "dependencyProgram": "NEXUS",
+        "dependencyMilestone": "NEXUS IAM M3 — IAM Go-Live",
+        "expectedUnblockDate": "2026-07-01"
+      },
+      "evidenceItems": [],
+      "vantaCheckId": "vanta-a1.2-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "pending_evidence",
+      "completedDate": "2026-07-13",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "A1.3",
+      "trustServiceCriteria": "A1 — Availability",
+      "name": "System Availability Monitoring — 99.9% SLA",
+      "category": "A",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-07",
+      "owner": "Core Infra team",
+      "description": "The entity monitors system availability against a 99.9% uptime SLA using continuous synthetic monitoring and alerting. Incidents trigger PagerDuty escalation within 5 minutes.",
+      "evidenceItems": [
+        {
+          "type": "automated_check",
+          "description": "Datadog SLO monitor — API and dashboard uptime check",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-a1.3-001"
+        },
+        {
+          "type": "screenshot",
+          "description": "Datadog SLO dashboard — 30-day rolling uptime 99.97%",
+          "uploadedAt": "2026-06-01T09:15:00Z",
+          "uploadedBy": "Core Infra team",
+          "vantaEvidenceId": "ev-a1.3-002"
+        },
+        {
+          "type": "policy_document",
+          "description": "Incident Response and Escalation Policy v2.0",
+          "uploadedAt": "2026-05-07T10:30:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-a1.3-003"
+        }
+      ],
+      "vantaCheckId": "vanta-a1.3-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "uptime_monitor_check",
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "A1.7",
+      "trustServiceCriteria": "A1 — Availability",
+      "name": "Log Retention Policy",
+      "category": "A",
+      "status": "COMPLETE",
+      "wave": 3,
+      "startedDate": "2026-06-01",
+      "expectedCompletionDate": "2026-06-30",
+      "owner": "DataCore team",
+      "description": "The entity retains system and security logs for a minimum of 12 months in accordance with the Log Retention Policy. Logs are stored in immutable, tamper-evident storage.",
+      "progressNote": "Policy document drafted and approved. S3 lifecycle rules configured and validated in staging. Pending final evidence upload to Vanta and sign-off from Fatima Al-Hassan. Expected June 30.",
+      "completionBlockers": [
+        "Vanta evidence upload pending",
+        "Final TPM sign-off pending"
+      ],
+      "evidenceItems": [
+        {
+          "type": "policy_document",
+          "description": "Log Retention Policy v1.0 — DRAFT (pending final upload)",
+          "uploadedAt": null,
+          "status": "pending_upload",
+          "vantaEvidenceId": null
+        },
+        {
+          "type": "configuration_export",
+          "description": "AWS S3 lifecycle rule configuration — 12-month retention with Glacier tier",
+          "uploadedAt": null,
+          "status": "pending_upload",
+          "vantaEvidenceId": null
+        }
+      ],
+      "vantaCheckId": "vanta-a1.7-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "log_retention_check",
+      "autoCheckStatus": "PENDING_CONFIG",
+      "deloitteStatus": "not_yet_submitted",
+      "completedDate": "2026-06-30",
+      "auditorEvidenceOutcome": "FAILED_JUL_16_REMEDIATED_AUG_07",
+      "evidenceAcceptedDate": "2026-08-07"
+    },
+    {
+      "controlId": "C1.2",
+      "trustServiceCriteria": "C1 — Confidentiality",
+      "name": "Encryption at Rest",
+      "category": "C",
+      "status": "COMPLETE",
+      "wave": 2,
+      "completedDate": "2026-06-08",
+      "owner": "Core Infra team",
+      "description": "All customer data at rest is encrypted using AES-256. Database volumes, object storage, and backup snapshots are encrypted with customer-managed keys (CMK) via AWS KMS.",
+      "evidenceItems": [
+        {
+          "type": "automated_check",
+          "description": "AWS KMS key usage check — all production volumes encrypted",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-c1.2-001"
+        },
+        {
+          "type": "automated_check",
+          "description": "RDS encryption-at-rest check — all production databases",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-c1.2-002"
+        },
+        {
+          "type": "automated_check",
+          "description": "S3 bucket default encryption check — all production buckets",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-c1.2-003"
+        },
+        {
+          "type": "policy_document",
+          "description": "Encryption Policy v2.0 — at-rest requirements",
+          "uploadedAt": "2026-06-08T10:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-c1.2-004"
+        }
+      ],
+      "vantaCheckId": "vanta-c1.2-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "encryption_at_rest_check",
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "C1.3",
+      "trustServiceCriteria": "C1 — Confidentiality",
+      "name": "Data Classification Policy",
+      "category": "C",
+      "status": "COMPLETE",
+      "wave": 2,
+      "completedDate": "2026-06-09",
+      "owner": "Fatima Al-Hassan",
+      "description": "The entity maintains a data classification policy defining four tiers (Public, Internal, Confidential, Restricted) with associated handling requirements for each tier.",
+      "evidenceItems": [
+        {
+          "type": "policy_document",
+          "description": "Data Classification Policy v2.0 — four-tier framework",
+          "uploadedAt": "2026-06-09T11:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-c1.3-001"
+        },
+        {
+          "type": "screenshot",
+          "description": "Data catalog — classification labels applied to top 50 datasets",
+          "uploadedAt": "2026-06-09T11:05:00Z",
+          "uploadedBy": "DataCore team",
+          "vantaEvidenceId": "ev-c1.3-002"
+        }
+      ],
+      "vantaCheckId": "vanta-c1.3-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "C1.1",
+      "trustServiceCriteria": "C1 — Confidentiality",
+      "name": "Data Access Logging — Identity Binding",
+      "category": "C",
+      "status": "COMPLETE",
+      "wave": 4,
+      "blockedDate": "2026-04-01",
+      "expectedStartDate": "2026-07-01",
+      "expectedCompletionDate": "2026-07-13",
+      "owner": "DataCore team",
+      "description": "The entity logs all access to confidential and restricted data, with each log event bound to an authenticated user identity. Logs are retained for 12 months.",
+      "blocker": {
+        "description": "Identity binding in data access logs requires unified IAM to provide consistent user identity tokens across all NovaGrid services.",
+        "dependencyProgram": "NEXUS",
+        "dependencyMilestone": "NEXUS IAM M3 — IAM Go-Live",
+        "expectedUnblockDate": "2026-07-01"
+      },
+      "evidenceItems": [],
+      "vantaCheckId": "vanta-c1.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "audit_log_completeness_check",
+      "autoCheckStatus": "SKIPPED",
+      "autoCheckSkipReason": "IAM integration required — will auto-enable post NEXUS IAM go-live",
+      "deloitteStatus": "pending_evidence",
+      "completedDate": "2026-07-14",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "PI1.1",
+      "trustServiceCriteria": "PI1 — Processing Integrity",
+      "name": "Input Validation Controls",
+      "category": "PI",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-04",
+      "owner": "FlowEngine team",
+      "description": "The entity validates all inputs to production processing pipelines against defined schemas before processing begins. Invalid inputs are rejected and logged.",
+      "evidenceItems": [
+        {
+          "type": "automated_check",
+          "description": "FlowEngine input validation test suite — automated CI run",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-pi1.1-001"
+        },
+        {
+          "type": "test_results",
+          "description": "Input validation test results — June 12 production pipeline run",
+          "uploadedAt": "2026-06-14T09:00:00Z",
+          "uploadedBy": "FlowEngine team",
+          "vantaEvidenceId": "ev-pi1.1-002"
+        },
+        {
+          "type": "policy_document",
+          "description": "Data Processing Integrity Policy v1.3",
+          "uploadedAt": "2026-05-04T11:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-pi1.1-003"
+        }
+      ],
+      "vantaCheckId": "vanta-pi1.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "test_suite_pass_check",
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "PI1.3",
+      "trustServiceCriteria": "PI1 — Processing Integrity",
+      "name": "Data Processing Accuracy Validation",
+      "category": "PI",
+      "status": "COMPLETE",
+      "wave": 2,
+      "completedDate": "2026-06-12",
+      "owner": "FlowEngine team / NovaAI team",
+      "description": "The entity validates the accuracy of data processing outputs through automated reconciliation checks. Discrepancies above defined thresholds trigger alerts and human review.",
+      "evidenceItems": [
+        {
+          "type": "test_results",
+          "description": "FlowEngine automated test run logs — June 12 production run (input/output accuracy check)",
+          "uploadedAt": "2026-06-15T14:38:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "note": "Uploaded in response to Deloitte RFI-2026-001",
+          "vantaEvidenceId": "ev-pi1.3-001"
+        },
+        {
+          "type": "report",
+          "description": "Input/output validation results CSV — June 12 (0 discrepancies above threshold)",
+          "uploadedAt": "2026-06-15T14:39:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-pi1.3-002"
+        },
+        {
+          "type": "test_results",
+          "description": "NovaAI data pipeline accuracy check export — model output validation",
+          "uploadedAt": "2026-06-15T14:40:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-pi1.3-003"
+        }
+      ],
+      "vantaCheckId": "vanta-pi1.3-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "data_reconciliation_check",
+      "deloitteStatus": "accepted",
+      "deloitteNote": "Satisfied June 17 after additional evidence submitted June 15",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "PI1.5",
+      "trustServiceCriteria": "PI1 — Processing Integrity",
+      "name": "Error Handling and Processing Exception Management",
+      "category": "PI",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-05",
+      "owner": "FlowEngine team",
+      "description": "The entity implements structured error handling for all production processing pipelines. Processing exceptions are logged, alerted, and reviewed within defined SLAs.",
+      "evidenceItems": [
+        {
+          "type": "automated_check",
+          "description": "Datadog alert configuration — processing error rate monitors",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-pi1.5-001"
+        },
+        {
+          "type": "screenshot",
+          "description": "PagerDuty escalation policy — processing error alert routing",
+          "uploadedAt": "2026-05-05T12:00:00Z",
+          "uploadedBy": "FlowEngine team",
+          "vantaEvidenceId": "ev-pi1.5-002"
+        }
+      ],
+      "vantaCheckId": "vanta-pi1.5-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "alert_configuration_check",
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "P1.1",
+      "trustServiceCriteria": "P1 — Privacy — Notice and Communication of Objectives",
+      "name": "Privacy Policy — External Notice",
+      "category": "P",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-04",
+      "owner": "Legal / Fatima Al-Hassan",
+      "description": "The entity provides external notice of its privacy practices through a publicly available privacy policy covering data collection, use, retention, and subject rights.",
+      "evidenceItems": [
+        {
+          "type": "screenshot",
+          "description": "NovaGrid Privacy Policy — publicly accessible at novagrid.io/privacy (June 2026)",
+          "uploadedAt": "2026-05-04T14:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-p1.1-001"
+        },
+        {
+          "type": "policy_document",
+          "description": "Privacy Policy v3.2 — approved by Legal April 2026",
+          "uploadedAt": "2026-05-04T14:05:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-p1.1-002"
+        }
+      ],
+      "vantaCheckId": "vanta-p1.1-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "P4.1",
+      "trustServiceCriteria": "P4 — Privacy — Use, Retention, and Disposal",
+      "name": "Data Retention and Disposal Schedule",
+      "category": "P",
+      "status": "COMPLETE",
+      "wave": 2,
+      "completedDate": "2026-06-14",
+      "owner": "Fatima Al-Hassan / Legal",
+      "description": "The entity maintains a data retention schedule defining retention periods for all data categories. Data is disposed of in accordance with the schedule using secure deletion methods.",
+      "evidenceItems": [
+        {
+          "type": "policy_document",
+          "description": "Data Retention and Disposal Schedule v2.1 — approved June 2026",
+          "uploadedAt": null,
+          "status": "pending_upload",
+          "note": "Policy updated in policy management system but Vanta upload pending",
+          "vantaEvidenceId": null
+        },
+        {
+          "type": "automated_check",
+          "description": "AWS S3 lifecycle policy check — data disposal automation",
+          "vantaAutoCollected": true,
+          "lastChecked": "2026-06-28T06:00:00Z",
+          "checkResult": "PASS",
+          "vantaEvidenceId": "ev-p4.1-002"
+        }
+      ],
+      "vantaCheckId": "vanta-p4.1-novagrid",
+      "autoCheckEnabled": true,
+      "autoCheckType": "data_lifecycle_check",
+      "deloitteStatus": "accepted",
+      "flags": [
+        "evidence_refresh_needed"
+      ],
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "P5.1",
+      "trustServiceCriteria": "P5 — Privacy — Access",
+      "name": "Data Subject Access Request (DSAR) Process",
+      "category": "P",
+      "status": "COMPLETE",
+      "wave": 2,
+      "completedDate": "2026-06-13",
+      "owner": "Legal / Fatima Al-Hassan",
+      "description": "The entity provides a documented process for data subjects to exercise their access rights (GDPR Art. 15, CCPA). Requests are fulfilled within 30 days.",
+      "evidenceItems": [
+        {
+          "type": "policy_document",
+          "description": "DSAR Procedure v1.4 — intake, verification, fulfillment steps",
+          "uploadedAt": "2026-06-13T10:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-p5.1-001"
+        },
+        {
+          "type": "report",
+          "description": "DSAR fulfillment log — Q1 2026 (12 requests, all fulfilled within SLA)",
+          "uploadedAt": "2026-06-13T10:05:00Z",
+          "uploadedBy": "Legal team",
+          "vantaEvidenceId": "ev-p5.1-002"
+        }
+      ],
+      "vantaCheckId": "vanta-p5.1-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "P7.1",
+      "trustServiceCriteria": "P7 — Privacy — Disclosure to Third Parties",
+      "name": "Data Subject Access Requests — IAM-Verified Identity",
+      "category": "P",
+      "status": "COMPLETE",
+      "wave": 4,
+      "blockedDate": "2026-04-01",
+      "expectedStartDate": "2026-07-01",
+      "expectedCompletionDate": "2026-07-14",
+      "owner": "Fatima Al-Hassan / Legal",
+      "description": "DSAR fulfillment for sensitive data tiers requires identity verification of the requestor via the unified IAM platform before data is released.",
+      "blocker": {
+        "description": "Identity verification step in DSAR workflow requires NEXUS unified IAM to authenticate requestor identity before releasing restricted or confidential data.",
+        "dependencyProgram": "NEXUS",
+        "dependencyMilestone": "NEXUS IAM M3 — IAM Go-Live",
+        "expectedUnblockDate": "2026-07-01"
+      },
+      "evidenceItems": [],
+      "vantaCheckId": "vanta-p7.1-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "pending_evidence",
+      "completedDate": "2026-07-14",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC7.3",
+      "trustServiceCriteria": "CC7 — System Operations",
+      "name": "Incident Response Plan",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 2,
+      "completedDate": "2026-06-11",
+      "owner": "Fatima Al-Hassan",
+      "description": "The entity maintains a documented incident response plan covering detection, containment, eradication, recovery, and post-incident review. The plan is tested annually via tabletop exercise.",
+      "evidenceItems": [
+        {
+          "type": "policy_document",
+          "description": "Incident Response Plan v2.3 — full lifecycle coverage",
+          "uploadedAt": "2026-06-11T11:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc7.3-001"
+        },
+        {
+          "type": "meeting_minutes",
+          "description": "Tabletop exercise results — May 2026 (ransomware scenario)",
+          "uploadedAt": "2026-06-11T11:05:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc7.3-002"
+        },
+        {
+          "type": "report",
+          "description": "Post-tabletop improvement tracking log — 4 action items, 3 closed",
+          "uploadedAt": "2026-06-11T11:10:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc7.3-003"
+        }
+      ],
+      "vantaCheckId": "vanta-cc7.3-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    },
+    {
+      "controlId": "CC5.1",
+      "trustServiceCriteria": "CC5 — Control Activities",
+      "name": "Security Policies — Annual Review and Approval",
+      "category": "CC",
+      "status": "COMPLETE",
+      "wave": 1,
+      "completedDate": "2026-05-03",
+      "owner": "Fatima Al-Hassan",
+      "description": "Security policies are reviewed and approved by management at least annually. Policy versions are tracked and communicated to all personnel upon update.",
+      "evidenceItems": [
+        {
+          "type": "policy_document",
+          "description": "Information Security Policy Suite v4.0 — CISO-approved April 2026",
+          "uploadedAt": "2026-05-03T10:00:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc5.1-001"
+        },
+        {
+          "type": "screenshot",
+          "description": "Policy management system — version history and approval trail",
+          "uploadedAt": "2026-05-03T10:05:00Z",
+          "uploadedBy": "Fatima Al-Hassan",
+          "vantaEvidenceId": "ev-cc5.1-002"
+        }
+      ],
+      "vantaCheckId": "vanta-cc5.1-novagrid",
+      "autoCheckEnabled": false,
+      "deloitteStatus": "accepted",
+      "evidenceAcceptedDate": "2026-07-16"
+    }
+  ]
+}

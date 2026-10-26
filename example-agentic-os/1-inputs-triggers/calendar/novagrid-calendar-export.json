@@ -1,0 +1,210 @@
+{
+  "_meta": {
+    "source": "Google Workspace — Calendar",
+    "calendar": "karl.bergstrom@novagrid.io",
+    "exported_at": "2026-09-03T07:00:00Z",
+    "exported_by": "tpm-integration@novagrid.io",
+    "synthetic": true,
+    "note": "Decision-bearing events only. Recurring 1:1s, focus blocks and travel are excluded unless a decision was taken in them. `attendedByUser: false` on an event inside the absence window marks a forum that ran without the user — the primary signal for the 'Ratify or reverse' bucket.",
+    "simulation_note": "Covers Karl Bergstrom's absence, 2026-08-11 to 2026-09-02 (PTO), plus the forward week 2026-09-03 to 2026-09-15. Consistent with the Aug 10 state in novagrid-aha-export.json, raid-log.md and this-week.md, and with 1-inputs-triggers/gmail/novagrid-gmail-export.json. Built for /tpm-catchup-brief.",
+    "window": { "from": "2026-08-11", "to": "2026-09-15" },
+    "timezone": "Europe/Berlin"
+  },
+  "user": { "name": "Karl Bergstrom", "email": "karl.bergstrom@novagrid.io", "role": "Head of TPM" },
+  "heldDuringAbsence": [
+    {
+      "id": "EVT-2101",
+      "title": "Weekly TPM SteerCo",
+      "start": "2026-08-14T10:00:00+02:00",
+      "durationMin": 60,
+      "organizer": "karl.bergstrom@novagrid.io",
+      "chairedBy": "sara.lindqvist@novagrid.io",
+      "attendedByUser": false,
+      "attendees": ["sara.lindqvist@novagrid.io", "marcus.chen@novagrid.io", "fatima.alhassan@novagrid.io", "james.okonkwo@novagrid.io", "yuna.park@novagrid.io", "priya.kaur@novagrid.io", "daniel.rios@novagrid.io"],
+      "outcomes": [
+        "SPARK M2 NO-GO recorded (called Aug 11). Revised target Aug 25.",
+        "SHIELD readiness criteria tabled by Fatima Al-Hassan — 5 acceptance items, James Whitfield named as signer. I-004 on a path.",
+        "HORIZON: Apple review still pending at day 13. Priya asked to draft the Android-only contingency as a decision, not a fallback."
+      ],
+      "decisionsTaken": []
+    },
+    {
+      "id": "EVT-2102",
+      "title": "HORIZON launch contingency call — iOS vs Android",
+      "start": "2026-08-20T14:00:00+02:00",
+      "durationMin": 45,
+      "organizer": "ingrid.solvang@novagrid.io",
+      "attendedByUser": false,
+      "userResponse": "no_response_out_of_office",
+      "attendees": ["ingrid.solvang@novagrid.io", "priya.kaur@novagrid.io", "sofia.reyes@novagrid.io", "sara.lindqvist@novagrid.io", "karl.bergstrom@novagrid.io"],
+      "outcomes": [
+        "DECIDED: ship Android publicly Aug 31, hold iOS for the resubmission. No decision record written.",
+        "Marketing to run the Aug 31 campaign as an Android launch with iOS 'weeks away'.",
+        "M8 definition changed in substance — public GA now means Android-only on Aug 31."
+      ],
+      "decisionsTaken": ["HORIZON Android-only public GA Aug 31"],
+      "decisionRecordId": null,
+      "flag": "Decision forum held in the user's absence. Changes the meaning of a board-visible milestone with no DR."
+    },
+    {
+      "id": "EVT-2103",
+      "title": "Weekly TPM SteerCo",
+      "start": "2026-08-21T10:00:00+02:00",
+      "durationMin": 60,
+      "organizer": "karl.bergstrom@novagrid.io",
+      "chairedBy": "sara.lindqvist@novagrid.io",
+      "attendedByUser": false,
+      "outcomes": [
+        "MERIDIAN M6 closed Aug 20 at 210/210, one day early against the DR-015 revised date.",
+        "Apple rejection Aug 19 (5.1.1(v)) reported; resubmission planned Aug 24.",
+        "PULSE traffic verification week 2 — no findings reported yet."
+      ],
+      "decisionsTaken": []
+    },
+    {
+      "id": "EVT-2104",
+      "title": "Q3 QBR reschedule — CFO office",
+      "start": "2026-08-24T09:00:00+02:00",
+      "durationMin": 15,
+      "organizer": "marcus.bauer@novagrid.io",
+      "attendedByUser": false,
+      "attendees": ["marcus.bauer@novagrid.io", "yuki.tanaka@novagrid.io"],
+      "outcomes": [
+        "Q3 QBR moved from Sep 22 to Sep 8, 14:00, to land inside the board pack cut-off.",
+        "Pre-read deadline set at Sep 4 EOD.",
+        "Three named pre-read requirements: PULSE dual-run reconciliation, ATLAS M9 renegotiated number, SPARK Dec 31 chain end to end."
+      ],
+      "decisionsTaken": ["Q3 QBR moved to Sep 8; pre-read due Sep 4 EOD"],
+      "flag": "A deadline binding on the user was set while the user was out. The pre-read is due the day after return."
+    },
+    {
+      "id": "EVT-2105",
+      "title": "Weekly TPM SteerCo",
+      "start": "2026-08-28T10:00:00+02:00",
+      "durationMin": 60,
+      "organizer": "karl.bergstrom@novagrid.io",
+      "chairedBy": "sara.lindqvist@novagrid.io",
+      "attendedByUser": false,
+      "outcomes": [
+        "PULSE: 14 pipelines still writing Airflow-managed state. Read-only mode moved Sep 1 → Sep 14.",
+        "SPARK M2 tracking to close Aug 27; M3 replan flagged.",
+        "SHIELD readiness sign-off scheduled for Aug 31.",
+        "INC-2026-0131 (SEV2, PULSE, Aug 26) reported. PIR set for Sep 4."
+      ],
+      "decisionsTaken": []
+    },
+    {
+      "id": "EVT-2106",
+      "title": "SPARK M3 replan — Daniel Rios / Leo Nakamura",
+      "start": "2026-08-27T15:30:00+02:00",
+      "durationMin": 30,
+      "organizer": "daniel.rios@novagrid.io",
+      "attendedByUser": false,
+      "attendees": ["daniel.rios@novagrid.io", "leo.nakamura@novagrid.io"],
+      "outcomes": [
+        "DECIDED: SPARK M3 (visual workflow builder beta) moves Sep 30 → Oct 16. No decision record written.",
+        "Consequence accepted: Dec 31 GA chain loses its remaining slack; M5 (Nov 30) becomes the next pressure point.",
+        "SPARK M6 evaluation framework missed Aug 31 at 52%. No new date set."
+      ],
+      "decisionsTaken": ["SPARK M3 moved to Oct 16"],
+      "decisionRecordId": null,
+      "flag": "A date on the Dec 31 GA chain moved without portfolio review or a DR."
+    },
+    {
+      "id": "EVT-2107",
+      "title": "SHIELD audit-readiness sign-off",
+      "start": "2026-08-31T16:00:00+02:00",
+      "durationMin": 60,
+      "organizer": "fatima.alhassan@novagrid.io",
+      "attendedByUser": false,
+      "attendees": ["fatima.alhassan@novagrid.io", "james.whitfield@novagrid.io"],
+      "outcomes": [
+        "SHIELD M6 CLOSED on the board-mandated date. James Whitfield signed against the 5 criteria agreed Aug 13.",
+        "Deloitte observation window confirmed Sep 1 – Nov 30, report Dec 15.",
+        "DEP-009 not closed — CC6.4 and CC6.6 entered the window on July compensating documentation."
+      ],
+      "decisionsTaken": ["SHIELD audit readiness accepted Aug 31"]
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "EVT-2201",
+      "title": "Welcome back / handover — Sara Lindqvist",
+      "start": "2026-09-03T16:00:00+02:00",
+      "durationMin": 30,
+      "organizer": "sara.lindqvist@novagrid.io",
+      "attendees": ["sara.lindqvist@novagrid.io", "karl.bergstrom@novagrid.io"],
+      "note": "Verbal handover against the WYWO thread. Last chance to ask the cover TPM questions before the QBR pre-read is written."
+    },
+    {
+      "id": "EVT-2202",
+      "title": "Karl / Yuki 1:1 — ATLAS M9 number before Marcus sees it",
+      "start": "2026-09-04T09:00:00+02:00",
+      "durationMin": 30,
+      "organizer": "yuki.tanaka@novagrid.io",
+      "attendees": ["yuki.tanaka@novagrid.io", "karl.bergstrom@novagrid.io"],
+      "note": "Added Aug 24 in response to the QBR reschedule. Yuki wants alignment on the renegotiated M9 number before it goes into the pre-read."
+    },
+    {
+      "id": "EVT-2203",
+      "title": "INC-2026-0131 post-incident review (PULSE)",
+      "start": "2026-09-04T11:00:00+02:00",
+      "durationMin": 60,
+      "organizer": "yuna.park@novagrid.io",
+      "attendees": ["yuna.park@novagrid.io", "amara.osei@novagrid.io", "karl.bergstrom@novagrid.io"],
+      "note": "SEV2, Aug 26, 4h11m. Self-inflicted by decommission cutover work."
+    },
+    {
+      "id": "EVT-2204",
+      "title": "Weekly TPM SteerCo",
+      "start": "2026-09-04T10:00:00+02:00",
+      "durationMin": 60,
+      "organizer": "karl.bergstrom@novagrid.io",
+      "chairedBy": "karl.bergstrom@novagrid.io",
+      "note": "First SteerCo back. Clashes with the INC-2026-0131 PIR at 11:00 only if SteerCo overruns. Pre-read for this was not circulated.",
+      "conflict": false
+    },
+    {
+      "id": "EVT-2205",
+      "title": "Q3 QBR — Marcus Bauer / Yuki Tanaka",
+      "start": "2026-09-08T14:00:00+02:00",
+      "durationMin": 120,
+      "organizer": "marcus.bauer@novagrid.io",
+      "attendees": ["marcus.bauer@novagrid.io", "yuki.tanaka@novagrid.io", "karl.bergstrom@novagrid.io", "sofia.reyes@novagrid.io"],
+      "note": "Moved from Sep 22 on Aug 24. Pre-read due Sep 4 EOD. Three named requirements — see EVT-2104."
+    },
+    {
+      "id": "EVT-2206",
+      "title": "TPM final-stage debrief — 2 Sr. TPM candidates",
+      "start": "2026-09-09T13:00:00+02:00",
+      "durationMin": 45,
+      "organizer": "hanna.lindgren@novagrid.io",
+      "attendees": ["hanna.lindgren@novagrid.io", "karl.bergstrom@novagrid.io"],
+      "note": "Both candidates hold competing offers expiring Sep 11. Decision needed Sep 10."
+    },
+    {
+      "id": "EVT-2207",
+      "title": "VantagePoint contractual roadmap review",
+      "start": "2026-09-15T15:00:00+02:00",
+      "durationMin": 90,
+      "organizer": "dmitri.volkov@novagrid.io",
+      "attendees": ["dmitri.volkov@novagrid.io", "daniel.rios@novagrid.io", "karl.bergstrom@novagrid.io"],
+      "note": "Contractual review tied to the Jul 15 $1.8M renewal. Expects SPARK M2 closed — it is, as of Aug 27. Now also a place where the M3 → Oct 16 move will be visible."
+    },
+    {
+      "id": "EVT-2208",
+      "title": "Solaris Logistics — signature (Jennifer Wu)",
+      "start": "2026-09-15T10:00:00+02:00",
+      "durationMin": 60,
+      "organizer": "jennifer.wu@novagrid.io",
+      "note": "$2.4M. Their legal review opens Sep 4 and needs the mobile availability language settled first."
+    }
+  ],
+  "absenceSummary": {
+    "workingDaysMissed": 17,
+    "meetingsDeclinedOrMissed": 47,
+    "decisionForumsHeldWithoutUser": 3,
+    "decisionsTakenWithoutUser": 4,
+    "steercosChairedByCover": 3
+  }
+}

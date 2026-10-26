@@ -1,0 +1,1 @@
+Draft a first-thirty-days plan for a new TPM joining [portfolio] and owning [programs]. Base it only on the current portfolio reports and configs ([reports folder], [config folders]). Flag anything you could not ground in them, and list what I need to decide myself.

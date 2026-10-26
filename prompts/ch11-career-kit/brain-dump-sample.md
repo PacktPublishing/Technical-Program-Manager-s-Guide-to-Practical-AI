@@ -1,0 +1,3 @@
+# Brain dump (fictional sample, as dictated)
+
+So the thing with the SOC 2 stuff last year, we had like six weeks and after the reorg a bunch of controls just didn't have anyone, I think fourteen? Maybe more. Security kept pinging me because I was running the program but I didn't own the systems. I made a spreadsheet, matched controls to whoever owns the system now, that took a couple of days honestly. Some teams pushed back, the data platform folks said it wasn't theirs. I set up a short weekly thing with the security lead. Two controls nobody would take so I went to the director, she wasn't thrilled. In the end we had everything done early, like two weeks before. One control we actually redesigned. I probably should have escalated sooner, I did a lot of it myself.

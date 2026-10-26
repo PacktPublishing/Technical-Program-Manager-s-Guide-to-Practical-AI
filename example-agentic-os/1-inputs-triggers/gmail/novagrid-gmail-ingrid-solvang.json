@@ -1,0 +1,401 @@
+{
+  "_meta": {
+    "source": "Google Workspace — Gmail",
+    "mailbox": "ingrid.solvang@novagrid.io",
+    "exported_at": "2026-09-03T07:00:00Z",
+    "exported_by": "tpm-integration@novagrid.io",
+    "synthetic": true,
+    "note": "TPM/EM-relevant subset of the Director, Platform & Infrastructure mailbox. Ingrid leads four teams — Core Infrastructure, Security & Compliance Eng, Developer Experience, Mobile — and sponsors HORIZON and MERIDIAN. People-management threads (1:1 notes, transfer requests, offer approvals) are included because they are the primary 'Act now' feed for the `em` persona.",
+    "simulation_note": "Covers Ingrid Solvang's absence, 2026-08-03 to 2026-09-02 (leave; last working day Fri 2026-07-31), plus the first hours of 2026-09-03. ONE documented exception: she joined the HORIZON contingency call on 2026-08-20 and sent one decision email that day — see THR-2004 and cal EVT-2102 in the portfolio calendar export. Thread THR-2001 is the designated handoff log (Anders Holt, Core Infrastructure lead, covering). Consistent with novagrid-aha-export.json, raid-log.md, this-week.md and novagrid-gmail-export.json (Karl Bergstrom's mailbox).",
+    "window": { "from": "2026-08-01", "to": "2026-09-03" },
+    "handoffLogThreadId": "THR-2001",
+    "counts": { "threads": 17, "unread": 388, "directToUser": 63, "mentionsRequiringReply": 11 }
+  },
+  "user": {
+    "name": "Ingrid Solvang",
+    "email": "ingrid.solvang@novagrid.io",
+    "role": "Director, Platform & Infrastructure",
+    "teams": [
+      { "name": "Core Infrastructure", "lead": "anders.holt@novagrid.io", "headcount": 34 },
+      { "name": "Security & Compliance Eng", "lead": "rania.haddad@novagrid.io", "headcount": 21 },
+      { "name": "Developer Experience", "lead": "owen.blake@novagrid.io", "headcount": 8 },
+      { "name": "Mobile", "lead": "mei.watanabe@novagrid.io", "headcount": 11 }
+    ],
+    "sponsorOf": ["HORIZON", "MERIDIAN"],
+    "outOfOffice": {
+      "from": "2026-08-03",
+      "to": "2026-09-02",
+      "coverBy": "anders.holt@novagrid.io",
+      "exceptions": ["2026-08-20 — joined HORIZON launch contingency call and issued the Android-only decision"],
+      "autoReply": "On leave until Sep 2. Platform & Infrastructure matters to Anders Holt. Mobile to Mei Watanabe. Security & Compliance Eng to Rania Haddad."
+    }
+  },
+  "threads": [
+    {
+      "id": "THR-2001",
+      "subject": "WYWO — Platform & Infra cover notes (Aug 3 – Sep 2)",
+      "isHandoffLog": true,
+      "from": "anders.holt@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io"],
+      "labels": ["handoff", "platform-infra"],
+      "lastMessageAt": "2026-09-02T18:00:00Z",
+      "messageCount": 5,
+      "requiresReply": true,
+      "messages": [
+        {
+          "sentAt": "2026-08-07T17:00:00Z",
+          "from": "anders.holt@novagrid.io",
+          "body": "Week 1. Good week. Rate limit lifted Aug 3 — uptime held above 98.5% for seven straight days and the F6 circuit breaker is doing exactly what it was built to do. Marcus Chen restarted the 4th enterprise onboarding. Sec Eng: Deloitte accepted all three remediated controls Aug 7, so SHIELD is 100/100 with accepted evidence. Rania's people did that and I have told them so. F7 autoscaling at 68%. Nothing for you."
+        },
+        {
+          "sentAt": "2026-08-12T18:30:00Z",
+          "from": "anders.holt@novagrid.io",
+          "body": "Week 2, and one thing I decided that you should look at when you are back. Yuna's decommission work needs to touch Airflow metadata tables that sit under our change control, and the normal CAB cadence would have added four days to every cutover on a seven-week sequence that has no slack. I granted a standing change-freeze exemption for PULSE decommission cutovers through Sep 30, with a requirement to notify Core Infra on-call before each one. I think it was the right trade. I also think it is the kind of thing you would want to have been asked about, so I am telling you rather than burying it in a ticket."
+        },
+        {
+          "sentAt": "2026-08-21T17:15:00Z",
+          "from": "anders.holt@novagrid.io",
+          "body": "Week 3. Apple rejected HORIZON on Aug 19 — 5.1.1(v), in-app account deletion. Three days of work, resubmitted Aug 24. Mei is unhappy about it and so am I: it is a documented, checkable requirement and our pre-submission review did not check it. That is a process gap in Mobile, not bad luck. You made the Android-only call on the 20th; marketing is running with it. Separately, and I want to be straight with you: I moved 3 of Owen's 8 DevEx engineers onto NEXUS service-retirement tooling on Aug 17. F3 and F4 are done, DevEx had no committed roadmap for Q3, and Sara needed the retirement pace held at 6/week. It was a loan, not a transfer, but four weeks is long enough that you should confirm it or take it back."
+        },
+        {
+          "sentAt": "2026-08-28T17:40:00Z",
+          "from": "anders.holt@novagrid.io",
+          "body": "Week 4. INC-2026-0131, SEV2, Aug 26 — a PULSE traffic-verification cutover dropped a DataCore ingestion pipeline for 4h11m. Detected in 9 minutes, backfilled same day, no customer-visible loss. It ran under the exemption I granted in week 2. I am not walking that back on one incident, but there are five more cutovers to come and the PIR is Sep 4. Also: traffic verification found 14 pipelines still writing Airflow state, read-only slipped Sep 1 → Sep 14. F7 at 80%, Sep 15 still credible but I would not add scope to it."
+        },
+        {
+          "sentAt": "2026-09-02T18:00:00Z",
+          "from": "anders.holt@novagrid.io",
+          "body": "Last note. Two people things I deliberately did not touch, because they are yours. (1) Tomas Berg filed an internal transfer request to Core Infrastructure on Aug 26. I would take him tomorrow and that is exactly why I am not going to be the one who approves it — he is the DR-012 engineer and he is the only person holding mobile support up. (2) Hanna has an offer approval for the Senior Mobile Engineer sitting since Aug 27 with a competing-offer deadline of Sep 8. Mei has signed off, it needs you. Android GA shipped Aug 31 clean, by the way — 4,100 installs in 48 hours, no incidents. Welcome back."
+        }
+      ]
+    },
+    {
+      "id": "THR-2002",
+      "subject": "Internal transfer request — Tomas Berg, Mobile → Core Infrastructure",
+      "from": "tomas.berg@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io"],
+      "cc": ["mei.watanabe@novagrid.io", "hanna.lindgren@novagrid.io"],
+      "labels": ["people", "mobile", "action-required"],
+      "lastMessageAt": "2026-09-01T10:20:00Z",
+      "messageCount": 2,
+      "requiresReply": true,
+      "messages": [
+        {
+          "sentAt": "2026-08-26T09:00:00Z",
+          "from": "tomas.berg@novagrid.io",
+          "body": "Filing this formally because I have raised it twice in 1:1s and nothing has changed. I was brought in on Jul 13 under DR-012 to onboard the beta cohort. That work finished Jul 22 and I closed it 10/10. Since Jul 31 soft GA I have been doing production support — triage, escalations, on-call — which is not what I was scoped for, was never agreed with me, and has no end date. Since Aug 31 public GA the L1 mobile volume has roughly tripled and I am the only person who can resolve most of it. I am requesting a transfer to Core Infrastructure. I would rather stay in Mobile if there is a real plan for who runs support, but I have been told twice that there will be a plan and there is not one."
+        },
+        {
+          "sentAt": "2026-09-01T10:20:00Z",
+          "from": "hanna.lindgren@novagrid.io",
+          "body": "Process note: the Q3 internal transfer window closes Sep 7. If Ingrid has not actioned it by then it rolls to the Q4 window in December, which in my experience is how a transfer request becomes a resignation. Ingrid — this needs you, and I would treat the Sep 7 date as real."
+        }
+      ]
+    },
+    {
+      "id": "THR-2003",
+      "subject": "Offer approval needed — Senior Mobile Engineer, competing offer expires Sep 8",
+      "from": "hanna.lindgren@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io"],
+      "cc": ["mei.watanabe@novagrid.io"],
+      "labels": ["hiring", "mobile", "action-required"],
+      "lastMessageAt": "2026-09-02T11:00:00Z",
+      "messageCount": 2,
+      "requiresReply": true,
+      "messages": [
+        {
+          "sentAt": "2026-08-27T14:00:00Z",
+          "from": "hanna.lindgren@novagrid.io",
+          "body": "Candidate cleared the loop Aug 25, unanimous hire, strong on iOS release engineering specifically. Mei has signed off. Level and comp are inside band, so this is a single approval from you, not a committee. They have a competing offer with a stated deadline of Sep 8."
+        },
+        {
+          "sentAt": "2026-09-02T11:00:00Z",
+          "from": "hanna.lindgren@novagrid.io",
+          "body": "Bumping. Sep 8 is Tuesday and I need 48 hours to get an offer out and negotiated. Realistically you approving on Sep 3 or 4 is the difference between having them and not. Worth noting the coincidence, since nobody else seems to have: this candidate's strongest area is exactly the release-engineering gap that produced the Apple 5.1.1(v) rejection, and they would be the second person in Mobile capable of carrying support."
+        }
+      ]
+    },
+    {
+      "id": "THR-2004",
+      "subject": "Decision: HORIZON ships Android-only Aug 31",
+      "from": "ingrid.solvang@novagrid.io",
+      "to": ["priya.kaur@novagrid.io", "karl.bergstrom@novagrid.io"],
+      "cc": ["sofia.reyes@novagrid.io", "sara.lindqvist@novagrid.io"],
+      "labels": ["horizon", "decision", "sent"],
+      "lastMessageAt": "2026-08-20T15:50:00Z",
+      "messageCount": 1,
+      "requiresReply": false,
+      "sentByUserDuringAbsence": true,
+      "messages": [
+        {
+          "sentAt": "2026-08-20T15:50:00Z",
+          "from": "ingrid.solvang@novagrid.io",
+          "body": "Summarising the call: we ship Android publicly on Aug 31 and hold iOS for the resubmission rather than delaying both. Reasoning — Solaris and Kestrel are both majority-Android estates, a staged launch we chose reads better than a launch we missed, and holding Android to keep the platforms paired buys nothing. Marketing runs the Aug 31 campaign as an Android launch with iOS 'weeks away'. Karl, you were on the invite; I did not want to hold the decision three weeks for you."
+        }
+      ]
+    },
+    {
+      "id": "THR-2005",
+      "subject": "Mobile post-GA support — I still have no run owner",
+      "from": "mei.watanabe@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io"],
+      "cc": ["priya.kaur@novagrid.io"],
+      "labels": ["mobile", "escalation", "action-required"],
+      "lastMessageAt": "2026-09-02T16:45:00Z",
+      "messageCount": 3,
+      "requiresReply": true,
+      "messages": [
+        {
+          "sentAt": "2026-08-05T11:00:00Z",
+          "from": "mei.watanabe@novagrid.io",
+          "body": "Flagging early so it is not a surprise. Soft GA on Jul 31 roughly doubled inbound mobile L1. Tomas is absorbing it on top of the onboarding work he was loaned for. I-005 is in the RAID log with an Aug 24 due date and no owner. Public GA on Aug 31 will multiply it again."
+        },
+        {
+          "sentAt": "2026-08-24T09:30:00Z",
+          "from": "mei.watanabe@novagrid.io",
+          "body": "I-005 is due today and there is no owner. I cannot assign one out of 11 people who are all committed to the iOS resubmission and the Q4 roadmap. This needs headcount or an explicit decision to degrade mobile support and say so out loud."
+        },
+        {
+          "sentAt": "2026-09-02T16:45:00Z",
+          "from": "mei.watanabe@novagrid.io",
+          "body": "Post-GA numbers: mobile L1 up ~3x versus the soft-GA baseline, p95 mobile-backend latency up 34% (still inside SLO), median first response on mobile tickets out from 4h to 19h. Tomas has filed a transfer. If iOS is approved in the next fortnight this doubles again and I will have one fewer person. I am not asking you to fix it today — I am asking you to decide today whether we staff it or publicly degrade it, because I am currently doing neither and calling it coping."
+        }
+      ]
+    },
+    {
+      "id": "THR-2006",
+      "subject": "Sec Eng is committed twice over — SHIELD observation vs ATLAS IAM refactor",
+      "from": "rania.haddad@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io"],
+      "cc": ["fatima.alhassan@novagrid.io", "marcus.chen@novagrid.io"],
+      "labels": ["sec-eng", "shield", "atlas", "action-required"],
+      "lastMessageAt": "2026-09-01T12:00:00Z",
+      "messageCount": 2,
+      "requiresReply": true,
+      "messages": [
+        {
+          "sentAt": "2026-08-31T18:00:00Z",
+          "from": "rania.haddad@novagrid.io",
+          "body": "James Whitfield signed SHIELD audit-readiness today against five criteria, two of which are 'monitoring live on all 100 controls' and 'drift detection armed'. Those are operated by my team, continuously, from Sep 1 to Nov 30. Nobody costed that before it was signed. My estimate is 1.5 FTE sustained for 91 days."
+        },
+        {
+          "sentAt": "2026-09-01T12:00:00Z",
+          "from": "rania.haddad@novagrid.io",
+          "body": "And the same team is seeded at 15% on DEP-002, the ATLAS full-IAM refactor that retires the Auth0 workaround — Marcus started the sprint Aug 17 and is planning to land it late September. 15% does not deliver that and does not cover the observation load either. There is also a live question from Fatima about re-evidencing CC6.4 and CC6.6 inside the window against the Temporal audit trail, which if we do it is my team doing it, in September, before Deloitte's first sampling pass in the week of Sep 21. Three commitments, one team, and I need you to tell me which two. My recommendation: SHIELD observation is non-negotiable at 1.5 FTE, take the CC6.4/CC6.6 re-evidence if Fatima wants it, and let DEP-002 slip to October with that stated openly rather than discovered in October."
+        }
+      ]
+    },
+    {
+      "id": "THR-2007",
+      "subject": "MERIDIAN v1 EoL — the compatibility shim runs on our infrastructure and nobody owns removing it",
+      "from": "james.okonkwo@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io"],
+      "cc": ["anders.holt@novagrid.io", "kai.muller@novagrid.io"],
+      "labels": ["meridian", "sponsor", "action-required"],
+      "lastMessageAt": "2026-08-31T12:10:00Z",
+      "messageCount": 2,
+      "requiresReply": true,
+      "messages": [
+        {
+          "sentAt": "2026-08-20T17:30:00Z",
+          "from": "james.okonkwo@novagrid.io",
+          "body": "M6 closed today at 210/210, one day ahead of the DR-015 revised date. The two dedicated engineers cleared all 8 bespoke integrations in 17 days. Per-customer status to you weekly as you asked. Kai Muller has the confirmed Sep 30 v1 EoL date and Thornbridge's $1.7M expansion moved to Contract Negotiation on Aug 24."
+        },
+        {
+          "sentAt": "2026-08-31T12:10:00Z",
+          "from": "james.okonkwo@novagrid.io",
+          "body": "The caveat, and it is yours rather than mine because it lands on Core Infrastructure. Two of the eight — Brightline Logistics and Corvid Systems — are counted as migrated but reach v2 through a compatibility shim that translates their legacy webhook signatures, and that shim runs on v1 infrastructure. If v1 goes dark on Sep 30 with the shim still in place, those two customers break at EoL. Replacing it with native integrations is about four weeks of work. It is not in anyone's plan, it is not visible in the 210/210 number, and Sep 30 is four weeks and two days away. I need an owner from your org this week or we should move the EoL date deliberately rather than discover this on Oct 1."
+        }
+      ]
+    },
+    {
+      "id": "THR-2008",
+      "subject": "DevEx — 3 engineers on loan to NEXUS retirement tooling since Aug 17",
+      "from": "owen.blake@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io"],
+      "cc": ["anders.holt@novagrid.io", "sara.lindqvist@novagrid.io"],
+      "labels": ["devex", "people", "decision"],
+      "lastMessageAt": "2026-09-01T15:00:00Z",
+      "messageCount": 2,
+      "requiresReply": true,
+      "messages": [
+        {
+          "sentAt": "2026-08-18T10:00:00Z",
+          "from": "owen.blake@novagrid.io",
+          "body": "For the record rather than as a complaint: Anders moved Kalle, Bea and Ravi onto NEXUS service-retirement tooling yesterday. F3 and F4 shipped, we had no committed Q3 roadmap, and I could not argue with the reasoning. I would like it revisited when you are back."
+        },
+        {
+          "sentAt": "2026-09-01T15:00:00Z",
+          "from": "owen.blake@novagrid.io",
+          "body": "Two weeks on: retirement pace held at ~6/week and 247 went to 223, so the loan is working for NEXUS. My concern is structural. DevEx is 8 people, 3 are lent out, and the 5 remaining are on unplanned toil because we never replaced the Q3 roadmap that F3 and F4 used to be. A team with no committed roadmap does not stay a team for long — it becomes a pool. I would like a decision: give DevEx a Q3 charter, or fold the loan into a permanent transfer and staff DevEx at 5 deliberately. Either is fine. Drifting is not."
+        }
+      ]
+    },
+    {
+      "id": "THR-2009",
+      "subject": "Standing change-freeze exemption for PULSE decommission cutovers",
+      "from": "anders.holt@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io"],
+      "cc": ["yuna.park@novagrid.io", "amara.osei@novagrid.io"],
+      "labels": ["core-infra", "change-control", "decision"],
+      "lastMessageAt": "2026-08-27T09:00:00Z",
+      "messageCount": 2,
+      "requiresReply": true,
+      "messages": [
+        {
+          "sentAt": "2026-08-12T14:00:00Z",
+          "from": "anders.holt@novagrid.io",
+          "body": "Granting a standing exemption from the Core Infra change window for PULSE decommission cutovers through Sep 30. Rationale: the normal CAB cadence adds ~4 days per cutover across a 7-week sequence with no slack, and every week of delay is $380K. Condition: notify Core Infra on-call before each cutover. Six cutovers expected."
+        },
+        {
+          "sentAt": "2026-08-27T09:00:00Z",
+          "from": "anders.holt@novagrid.io",
+          "body": "Update after INC-2026-0131. Cutover 1 of 6 dropped a DataCore ingestion pipeline for 4h11m yesterday. The on-call notification happened; what did not happen was anyone checking which downstream consumers read from that pipeline's metadata table, which is precisely what the CAB step would have caught. Five cutovers remain. I would keep the exemption and add a mandatory downstream-consumer check to the notification, but the exemption is yours to confirm now that you are back. PIR Sep 4 11:00."
+        }
+      ]
+    },
+    {
+      "id": "THR-2010",
+      "subject": "Apple 5.1.1(v) rejection — pre-submission review gap",
+      "from": "mei.watanabe@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io"],
+      "cc": ["priya.kaur@novagrid.io", "anders.holt@novagrid.io"],
+      "labels": ["mobile", "horizon", "quality"],
+      "lastMessageAt": "2026-09-02T09:00:00Z",
+      "messageCount": 2,
+      "requiresReply": true,
+      "messages": [
+        {
+          "sentAt": "2026-08-19T19:30:00Z",
+          "from": "mei.watanabe@novagrid.io",
+          "body": "Rejected on day 18, guideline 5.1.1(v) — an app offering account creation must offer in-app account deletion. We route deletion through the web console. This is on my team. It is a published, checkable requirement and our pre-submission checklist does not contain the App Store review guidelines; it contains our own release checklist. Three days to fix, resubmitting Aug 24."
+        },
+        {
+          "sentAt": "2026-09-02T09:00:00Z",
+          "from": "mei.watanabe@novagrid.io",
+          "body": "Day 10 of the second review, no signal yet. I have rebuilt the pre-submission checklist against the full guideline set — 47 items, run by two people, evidence captured. It is done and I would like you to look at it, because the fix is cheap and the failure cost us the Aug 31 iOS date and a third slipped date in front of Solaris. The candidate in Hanna's pipeline does exactly this for a living."
+        }
+      ]
+    },
+    {
+      "id": "THR-2011",
+      "subject": "F7 inference autoscaling — 80%, Sep 15, and please do not add to it",
+      "from": "anders.holt@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io"],
+      "cc": ["marcus.chen@novagrid.io"],
+      "labels": ["core-infra", "atlas"],
+      "lastMessageAt": "2026-08-31T10:00:00Z",
+      "messageCount": 1,
+      "requiresReply": false,
+      "messages": [
+        {
+          "sentAt": "2026-08-31T10:00:00Z",
+          "from": "anders.holt@novagrid.io",
+          "body": "F7 at 80%, tracking to Sep 15. Until it lands, the July manual capacity add is still the only thing between GA load and another 96.8% week — R-004 has no automated protection yet. ATLAS onboards its 5th enterprise customer around the same date. The two should not be the same week and that is Marcus's call, but I want it on your radar. Uptime has held 98.9–99.2% daily since Aug 3; August average 99.1%, first month above the 99.0% commitment since GA."
+        }
+      ]
+    },
+    {
+      "id": "THR-2012",
+      "subject": "Deloitte — observation period sampling schedule",
+      "from": "e.mcbride@deloitte.com",
+      "to": ["fatima.alhassan@novagrid.io"],
+      "cc": ["ingrid.solvang@novagrid.io", "rania.haddad@novagrid.io", "james.whitfield@novagrid.io"],
+      "labels": ["shield", "external", "fyi"],
+      "lastMessageAt": "2026-09-01T08:00:00Z",
+      "messageCount": 1,
+      "requiresReply": false,
+      "messages": [
+        {
+          "sentAt": "2026-09-01T08:00:00Z",
+          "from": "e.mcbride@deloitte.com",
+          "body": "Confirming the observation period runs Sep 1 – Nov 30. We will sample across the period rather than at the end, with the first sampling pass in the week of Sep 21 and monthly thereafter. Please treat every control as live from today. Report issuance target remains Dec 15."
+        }
+      ]
+    },
+    {
+      "id": "THR-2013",
+      "subject": "SHIELD readiness signed off Aug 31",
+      "from": "fatima.alhassan@novagrid.io",
+      "to": ["james.whitfield@novagrid.io", "karl.bergstrom@novagrid.io"],
+      "cc": ["ingrid.solvang@novagrid.io", "rania.haddad@novagrid.io"],
+      "labels": ["shield", "fyi"],
+      "lastMessageAt": "2026-08-31T17:00:00Z",
+      "messageCount": 1,
+      "requiresReply": false,
+      "messages": [
+        {
+          "sentAt": "2026-08-31T17:00:00Z",
+          "from": "fatima.alhassan@novagrid.io",
+          "body": "Readiness signed off today against the five criteria agreed Aug 13: 100/100 controls with accepted evidence, named owner per control, monitoring live on all 100, drift detection armed, documented exception path. Deloitte confirmed observation Sep 1 – Nov 30, report Dec 15. M6 closed on the board-mandated date."
+        }
+      ]
+    },
+    {
+      "id": "THR-2014",
+      "subject": "Q3 QBR moved to Sep 8 — pre-read due Sep 4",
+      "from": "marcus.bauer@novagrid.io",
+      "to": ["karl.bergstrom@novagrid.io", "yuki.tanaka@novagrid.io"],
+      "cc": ["ingrid.solvang@novagrid.io"],
+      "labels": ["exec", "qbr", "fyi"],
+      "lastMessageAt": "2026-08-24T09:15:00Z",
+      "messageCount": 1,
+      "requiresReply": false,
+      "messages": [
+        {
+          "sentAt": "2026-08-24T09:15:00Z",
+          "from": "marcus.bauer@novagrid.io",
+          "body": "CC only. QBR moves Sep 22 → Sep 8, pre-read due Sep 4 EOD, owned by Karl. Requirements are PULSE dual-run reconciliation, ATLAS M9 renegotiated number, SPARK Dec 31 chain. Ingrid is not an attendee."
+        }
+      ]
+    },
+    {
+      "id": "THR-2015",
+      "subject": "SPARK M2 closed Aug 27 — proposing M3 to Oct 16",
+      "from": "daniel.rios@novagrid.io",
+      "to": ["karl.bergstrom@novagrid.io", "leo.nakamura@novagrid.io"],
+      "cc": ["ingrid.solvang@novagrid.io", "rachel.lim@novagrid.io"],
+      "labels": ["spark", "fyi"],
+      "lastMessageAt": "2026-08-27T17:15:00Z",
+      "messageCount": 1,
+      "requiresReply": false,
+      "messages": [
+        {
+          "sentAt": "2026-08-27T17:15:00Z",
+          "from": "daniel.rios@novagrid.io",
+          "body": "CC only. M2 closed Aug 27, 16 days late. M3 moves Sep 30 → Oct 16. Model Serving is Leo's division; no Platform & Infra dependency in either date."
+        }
+      ]
+    },
+    {
+      "id": "THR-2016",
+      "subject": "Auth0 renewal signed Aug 18 — 24 months, flat",
+      "from": "james.whitfield@novagrid.io",
+      "to": ["ingrid.solvang@novagrid.io", "sara.lindqvist@novagrid.io"],
+      "labels": ["sec-eng", "resolved"],
+      "lastMessageAt": "2026-08-18T10:00:00Z",
+      "messageCount": 1,
+      "requiresReply": false,
+      "messages": [
+        {
+          "sentAt": "2026-08-18T10:00:00Z",
+          "from": "james.whitfield@novagrid.io",
+          "body": "Auth0 renewal signed, 24 months, pricing flat. NEXUS R-006 vendor dependency closed."
+        }
+      ]
+    },
+    {
+      "id": "THR-2017",
+      "subject": "All-hands Sep 10 · Q3 benefits enrollment closes Sep 15 · manager comp cycle briefing",
+      "from": "people-ops@novagrid.io",
+      "to": ["all-managers@novagrid.io"],
+      "labels": ["noise"],
+      "lastMessageAt": "2026-08-27T09:00:00Z",
+      "messageCount": 4,
+      "requiresReply": false,
+      "messages": [
+        { "sentAt": "2026-08-27T09:00:00Z", "from": "people-ops@novagrid.io", "body": "Standard manager notices. Comp cycle briefing is Sep 17; nothing due before then." }
+      ]
+    }
+  ]
+}
